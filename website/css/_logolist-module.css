@@ -1,0 +1,35 @@
+.logolist-module {position:relative; z-index: 1; clear: both; width: 100%; padding:80px 0; background: var(--brand-green);}
+.logolist-main {display: flex; flex-wrap: wrap; justify-content:space-between; gap:39px; opacity: 0.5; align-items: center;}
+.logolist-wrap .h6 {margin: 0; color: var(--white);}
+.logolist-lt {width: 148.6px;}
+.logolist-rt {flex: 1;}
+.logolist-rt-inner {display: flex; flex-wrap: wrap; align-items:center; gap:40px 3.6616623947272062%; width: 100%; }
+.logolist {display: inline-block; width:13.603075796411568%; text-align: center}
+
+@media only screen and (max-width: 1199px) and (min-width: 1024px) {
+    .logolist-main {gap: 15px;}
+    .logolist-rt-inner {gap: 40px 2%;}
+    .logolist {width: 15%;}
+}
+
+@media only screen and (max-width: 1023px) and (min-width:200px) {
+    .logolist-lt {width: 100%;}
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .logolist-module .container {padding: 0 40px;}
+    .logolist-module {padding:61px 0;}
+    .logolist-main {gap:28px;}
+    .logolist-rt-inner {gap:27px 4.69208211143695%;}
+    .logolist {width: 30.205278592375368%;}
+
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px) { 
+    .logolist-module {padding: 40px 0;}
+    .logolist-wrap .h6 {font-size: 1rem; line-height: 1; letter-spacing: 0.32px;}
+    .logolist{width: 46.774193548387096%;}
+    .logolist-main {gap:20px;}
+    .logolist-rt-inner {gap: 20px 6.451612903225806%;}
+
+}

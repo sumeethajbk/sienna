@@ -1,0 +1,49 @@
+.default-banner-section {float: left; width: 100%; position: relative; z-index: 2; background: var(--white); padding: 40px 0 0 0;}
+.default-banner-section .container {max-width: 1440px; padding: 0 40px;}
+.default-banner-section .banner-bg {clip-path: polygon(0px 0px, 160px 0px, 1360px 202px, 1360px 760px, 273px 760px, 0px 160px);}
+.default-banner-main {width: 100%; min-height:760px; position: relative; align-items: flex-end;}
+.default-banner-main .default-banner-text {clear: both; width: calc(100% - 256px); text-align: right; margin:0 13px -29px auto;}
+.default-banner-main .default-banner-text h1 {color: var(--white); font-size: 9.125rem; letter-spacing: 2.92px; margin: 0;}
+
+.mac .default-banner-main .default-banner-text {margin:0 13px -24px auto;}
+
+
+
+
+/*-- media starts here --*/
+
+@media only screen and (max-width:1279px) and (min-width:810px) {
+    .default-banner-section .container {padding: 0 32px;}   
+}
+
+@media only screen and (max-width: 1023px) and (min-width:200px){
+    .default-banner-main .default-banner-text {margin: 0 6px -60px auto;}
+    .default-banner-main .default-banner-text h1 {font-size:9rem; letter-spacing: 2.88px;}
+    .default-banner-main .default-banner-text h1 span {display: block;line-height: 1; letter-spacing: 0.98px; font-size: 3.063rem; color: var(--brand-green); margin:-18px -7px 0 0;}
+    .iphone .default-banner-main .default-banner-text {margin: 0 6px -55px auto;}
+}
+
+@media only screen and (max-width: 1023px) and (min-width:768px){
+    .default-banner-section {padding: 32px 0 0 0;}
+    .default-banner-main {min-height: 595px;}
+    .default-banner-section .banner-bg  {clip-path:polygon(0px 0px, 96px 0px, 1023px 186px, 1023px 595px, 205px 595px, 0px 96px);}
+    .default-banner-main .default-banner-text {width: calc(100% - 210px);}
+    
+}
+ 
+@media only screen and (max-width: 809px) and (min-width: 768px){
+.default-banner-section .banner-bg  {clip-path:polygon(0px 0px, 88px 0px, 1023px 186px, 1023px 595px, 205px 595px, 0px 88px);}
+}
+@media only screen and (max-width: 809px) and (min-width: 200px){
+    .default-banner-section .container {padding: 0 20px;}  
+    .default-banner-section {padding: 20px 0 0 0; background: none;}    
+    .default-banner-section .default-banner-main:before {content: ""; background: var(--white); left: -100%; width: 1000%; bottom: 0; height: calc(100% - 36px); position: absolute; display: block; z-index: -1;}
+    
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .default-banner-main {min-height: 89.2vw;}
+    .default-banner-section .banner-bg  {clip-path:polygon(0px 0px, 88px 0px, 1023px 196px, 1023px 1023px, 205px 690px, 0px 88px);}
+    .default-banner-main .default-banner-text {width: calc(100% - 70px);}
+
+}

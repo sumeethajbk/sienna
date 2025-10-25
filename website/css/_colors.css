@@ -1,0 +1,33 @@
+:root {
+    --white: #ffffff;
+    --white-15: rgb(255 255 255 / 15%);
+    --white-25: rgb(255 255 255 / 25%);
+    --white-50: rgb(255 255 255 / 50%);
+    --white-60: rgb(255 255 255 / 60%);
+    --white-70: rgb(255 255 255 / 70%);
+    --white-75: rgb(255 255 255 / 75%);
+    --white-80: rgb(255 255 255 / 80%);
+    --white-90: rgb(255 255 255 / 90%);
+    --heading: #004739;
+    --body-text: #000000;
+    --anchor: #000000;
+    --anchor-hover: rgba(0, 71, 57, 1);
+    --coal:⁨⁨⁨#25282a;
+    --light-blue:rgba(236, 245, 249, 1);
+    --light-teal:rgba(239, 248, 247, 1);
+    --light-orange: rgba(254, 242, 231, 1);
+    --light-purple: rgba(240, 237, 251, 1);
+    --brand-green: rgba(0, 71, 57, 1);
+    --brand-blue:rgba(51, 100, 250, 1);
+    --brand-mint: rgba(184, 252, 191, 1);
+    --brand-orange: rgba(237, 101, 31, 1);
+    --brand-chartreuse: rgba(234, 238, 111, 1);
+    --base-foreground: rgba(0, 0, 0, 1);
+    --base-elevated: rgba(227, 239, 237, 1);
+    --base-dark-gray: rgba(88, 89, 91, 1);
+    --base-light-gray: rgba(198, 198, 198, 1);
+    --base-orange:rgba(234, 79, 0, 1);
+    --brand-green-25: rgba(0, 71, 57, 0.25);
+    
+    
+}

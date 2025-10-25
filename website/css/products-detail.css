@@ -1,0 +1,105 @@
+@import url("_hero-banner.css");
+@import url("_intro-module.css");
+@import url("_featurette-module.css");
+@import url("_mfg-module.css");
+@import url("_more-features-module.css");
+@import url("_pricing-module.css");
+@import url("_short-services-module.css");
+@import url("_trusted-by.css");
+@import url("_logo-slider.css");
+@import url("_kisp-pm-module.css");
+@import url("_cta-module.css");
+
+
+.product-features {position: relative; clear: both; width: 100%; z-index: 1; background: var(--base-elevated); padding: 82px 0 80px;}
+.product-features .h1b {margin-bottom:38px;}
+.pf-slider-wrap {display:flex; flex-wrap:wrap; width:calc(100% + 16px); justify-content:space-between; flex-direction:row-reverse; gap:40px; padding: 0 16px;
+  position: relative; left: 0;}
+
+.pf-rt {width:calc(100% - 424px);}
+.pf-lt {width:384px; display: flex; flex-wrap: wrap;}
+.pf-lt .pf-nav {clear: both; width: 100%;}
+.pf-slide {position: relative; display: none;}
+.pf-slide.active {display:block;}
+
+.pf-slide .pf-rt-thumb {max-height: 560px; overflow: hidden;}
+.pf-slide .pf-rt-cnt {padding: 80px 0; position: relative; z-index: 1;}
+.pf-slide .pf-rt-shadow {width:100%; height:100%; top:0; left: 0; display: block; z-index: -1; clip-path: var(--path-80); transform: scale(-1, 1);}
+
+.pf-thumb .pf-bg { clip-path: var(--path-16); background: var(--white-50); transform: scale(-1, 1); width: calc(100% + 16px); height: calc(100% + 16px); display: block; z-index: -1; left: -16px; bottom: -16px;}
+.pf-thumb .pf-thumb-nav {margin: 0; color: var(--brand-green); padding:12px 50px 12px 12px; cursor:pointer; font-size: 1rem; font-weight: bold; line-height: 1.5; display: flex; flex-wrap: wrap;}
+.pf-thumb .pf-thumb-nav .if-icon {height: 24px; width: 27px; position: absolute; right: 12px;}
+.pf-thumb .pf-thumb-nav .if-icon svg {width: 100%; height: 100%; fill:var(--brand-blue); filter: drop-shadow(2px 2px 0 var(--brand-mint));}
+.pf-thumb.active .pf-thumb-nav .if-icon svg {fill:var(--white); filter: none;}
+
+
+.pf-thumb-nav figure{ right: 12px; position: absolute;}
+/*-- media css starts here --*/
+@media only screen and (min-width:1024px){
+  .pf-thumb {margin: 0 0 36px 0; clear: both; width: 100%; transition: all 0.5s ease-in-out; background: var(--white);}
+  .pf-thumb:last-child {margin:0;}
+}
+@media only screen and (max-width: 1280px) and (min-width:1024px){
+  .pf-slide .pf-rt-shadow {clip-path: var(--path-80-1);}
+  .pf-slide .pf-rt-cnt { padding: 75px 0;}
+
+
+}
+@media only screen and (max-width: 1149px) and (min-width:1024px){
+  .pf-lt { width: 320px;}
+  .pf-rt { width: calc(100% - 360px); }
+
+
+}
+@media only screen and (min-width:1024px){
+   
+}
+
+@media (min-width:768px) {}
+
+
+
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+  .product-features {padding: 64px 0;}
+  .product-features .h1b {font-size: 3rem; margin-bottom: 32px;}
+  .pf-slider-wrap{flex-direction: column;}
+    
+}
+
+@media only screen and (max-width: 1023px) and (min-width:768px){
+  .pf-rt.pf-slider-for{width: 100%}
+  .pf-lt{width: 100%;}
+  .pf-nav.pf-slider-nav{display: flex; gap: 24px; flex-wrap: wrap;}
+  .pf-thumb{width: calc(50% - 24px);}
+
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+  .product-features {padding: 40px 0 40px;}
+  .product-features .h1b {font-size: 2.5rem; margin-bottom: 20px;}
+    .pf-slider-wrap{display: block}
+  .pf-rt{display: block; width: 100%}
+  .pf-lt{display: block; width: 100%; padding-top: 20px;}
+
+  .pf-thumb .pf-bg {
+  clip-path: var(--path-12);
+  transform: scale(-1, 1);
+  width: calc(100% + 12px);
+  height: calc(100% + 12px); left: -12px; bottom: -12px}
+  .pf-slide{height: 286px;}
+  .pf-slider-nav .slick-list{overflow: inherit;}
+  .pf-slider-nav .pf-thumb{margin: 0 13px; width: 312px;}
+  .pf-thumb .pf-thumb-nav{background-color: var(--white);}
+  .custom-arrows{padding-top: 33px; gap: 42px; width: fit-content; margin: auto;}
+  .custom-arrows .slick-arrow{position: relative;}
+
+  .pf-slide .pf-rt-cnt { padding: 30px 0;}
+
+  .pf-slide .pf-rt-shadow {clip-path: var(--path-25);}
+
+    .featurette-rt .featurette-thumb {transform : inherit!important}
+}
+
+
+
+@media only screen and (max-width: 389px) {}

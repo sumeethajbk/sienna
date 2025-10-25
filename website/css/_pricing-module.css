@@ -1,0 +1,68 @@
+.pricing-module {background-color: var(--brand-green); clear: both; width: 100%; position: relative; z-index: 1; padding: 82px 0 79px 0;}
+.pricing-module .h1b {margin-bottom: 0; color: var(--brand-mint);}
+.pm-list-main{gap:35px; padding: 16px 0 0 16px;}
+.pm-list {width:22.865%; background: var(--white); padding: 22px 30px 20px 20px; position: relative; line-height: 1.5; font-size: 0.875rem;}
+
+.pm-amt {clear: both; width: 100%; margin: 0 0 14px 0;}
+.pm-amt span {display: block; font-size: 3rem; font-weight: 900; line-height: 1; letter-spacing: 0.96px; color: var(--brand-green); font-family: 'Correct XXX Condensed', sans-serif; text-transform: uppercase;}
+.pm-shadow {width: calc(100% + 16px); height: calc(100% + 16px); display: block; background: var(--brand-mint); z-index: -1; left: -16px; top: -16px; clip-path: var(--path-16);}
+.edition-type {gap:11px; font-size: 1.125rem; font-weight: bold; line-height: 1; color: var(--brand-blue); margin: 0 0 20px 0; padding: 0 0 0 28px; position: relative;}
+.edition-type figure {width: fit-content; top: -1px; position: absolute; left: 0; max-width: 20px;}
+.edition-type figure img {max-height: 21px; max-width: 20px;}
+
+.pm-list p{margin-bottom: 20px;}
+.pm-list ul {margin:0 0 24px 24px;}
+.pm-list li {margin-bottom: 6px; display: block;}
+.pm-list li:before {content: "\f058"; position: absolute; display: inline-block; color: var(--brand-blue); width: 16px; height: 16px; font-family: "Font Awesome 6 Sharp"; font-weight: 900; font-size: 1rem; background: transparent; top:2px; line-height: 1; border-radius: 0; left: -24px;}
+.pm-list li[data-status="disabled"] {text-decoration: line-through; opacity: 0.5;}
+.pm-list li[data-status="disabled"]:before {content: "\f057"; color: var(--base-light-gray);}
+
+
+@media only screen and (min-width:1280px) {
+}
+
+@media only screen and (max-width:1400px) and (min-width: 1024px){
+    .pm-list { width: 22.5%; }
+    .pm-list p{font-size: 12px;}
+    .pm-list li {font-size: 12px; margin-bottom: 5px;}
+
+
+}
+
+@media only screen and (max-width:1279px) and (min-width: 1024px) {
+     .pm-list-main{gap: 33px;}
+     .pm-list { width: 48%; }
+     .pm-list {padding: 16px;}
+    
+
+}
+
+@media only screen and (max-width:1023px) and (min-width: 768px) {
+    .pricing-module {padding: 64px 0;}
+    .pm-list-main{gap: 33px;}
+    .pricing-module .h1b {font-size: 3rem;}
+    .pm-list { width: 47%; }
+    .pm-list p{font-size: 12px;}
+    .pm-list li { margin-bottom: 4px;}
+    .pm-list p { margin-bottom: 15px; }
+}
+
+@media only screen and (max-width:767px) and (min-width: 200px) {
+    .pricing-module {padding: 40px 0;}
+    .pricing-module .h1b {font-size: 2.5rem;}
+    .pm-list-main {flex-direction: column; padding: 12px 0 0 12px;}
+    .pm-list { width: 100%;}
+    .pm-wrap .heading { clear: both; padding: 0 0 20px;}
+    .pm-shadow { width: calc(100% + 12px); height: calc(100% + 12px); left: -12px; top: -12px; clip-path: var(--path-12); }
+
+    .pm-amt span {font-size: 2rem;}
+    .pm-list p{font-size: 12px; margin-bottom: 10px;}
+    .pm-list {padding: 16px 18px 16px 16px;}
+    .pm-list li {font-size: 12px; margin-bottom: 4px;}
+    .edition-type {margin: 0 0 14px 0;}
+
+    .pm-list ul { margin: 0 0 14px 8px; }
+
+    .pm-wrap .btn-full.hide-in-desktop{margin-top: 20px;} 
+
+}

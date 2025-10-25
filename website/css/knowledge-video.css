@@ -1,0 +1,38 @@
+@import url("default-page.css");
+
+.no-banner-bg {max-height: 349px;}
+.general-default-article-section {padding:76px 0 41px 0;}
+.general-default-article-section .default-inner {padding:36px 80px 79px 80px;}
+.general-default-article-section .default-inner .video-player {clear: both; width: calc(100% + 160px); left: -80px; top:-36px;}
+.general-default-article-section .default-inner h1 {margin-bottom: 22px;}
+.general-default-article-section > .default-inner > p {margin-bottom: 40px;}
+.general-default-article-section .default-inner ul {margin: 0 0 28px 25px;}
+.general-default-article-section .default-inner ul li {margin-bottom: 12px;}
+.general-default-article-section .default-inner ul li:before {content: "\f058"; text-shadow: 2px 2px 0 #b8fcbf; font-size: 1.125rem; line-height: 1; color: var(--brand-blue); background: none; border-radius: 0; font-family: "Font Awesome 6 Sharp"; width: 18px; height: 18px; left: -26px; top: 4px;}
+.general-default-article-section .default-inner > h3 {padding: 2px 0 0 0;}
+
+
+@media only screen and (min-width: 1024px) {
+    .general-default-article-section .default-inner .video-player {min-height: 540px;}
+    .related-video {padding: 80px 0 80px;}
+}
+
+@media only screen and (max-width: 1023px) and (min-width:768px) {
+    .general-default-article-section .default-inner {padding:36px 40px 79px 40px;}
+    .general-default-article-section .default-inner .video-player {clear: both; width: calc(100% + 80px); left: -40px; top:-36px; min-height: 360px;}
+
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px) {
+    .no-banner-bg {max-height:120px;}  
+    .general-default-article-section .default-inner .breadcrumb {display: none;}
+    .general-default-article-section .default-inner {padding:36px 20px 40px 20px;}
+    .general-default-article-section .default-inner .video-player {clear: both; width: calc(100% + 40px); left: -20px; top:-36px; margin-bottom: -14px; min-height: 174px;}
+    .general-default-article-section > .default-inner > p {margin-bottom: 20px;}
+    .general-default-article-section .default-inner > h3 {font-size: 1.5rem; letter-spacing: 0.48px; margin-bottom: 10px;}
+    .general-default-article-section .default-inner ul {margin: 0 0 28px 24px;}
+    .general-default-article-section .default-inner ul li::before {width: 16px; height: 16px; font-size: 1rem; left: -24px;}
+
+    .related-video {padding: 22px 0 40px;}
+
+}

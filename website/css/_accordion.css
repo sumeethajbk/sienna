@@ -1,0 +1,26 @@
+.accordion-module {clear: both; width: 100%; padding:23px 0 26px;}
+.accordion-main .accordion { margin:0 0 20px 0;}
+.accordion-main .accordion:last-child {margin: 0;}
+
+.accordion-item .accordion-heading { display: block; line-height:1.5; font-size:1rem; color: var(--brand-green); text-decoration: none; font-weight: bold; padding: 14px 40px 14px 18px; position: relative; background: var(--base-elevated); letter-spacing: normal; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out;}
+.accordion-item.active .accordion-heading {background: var(--white); color: var(--anchor-hover); padding: 12px 40px 14px 18px;}
+
+.accordion-item .accordion-heading::after { content: "\f055"; font-family: "Font Awesome 6 Sharp"; font-style: normal; font-weight: 900; font-size: 1rem; line-height:1; color:var(--brand-green); right: 20px; top: 18px; position: absolute; display: inline-block; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out;}
+.accordion-item.active .accordion-heading::after {content: "\f056"; color: var(--brand-blue); top:16px;}
+
+.accordion-item:hover {border-color: var(--brand-mint); box-shadow: 6px 6px 0px 0px var(--brand-blue), 5px 5px 0px 0px var(--brand-blue), 4px 4px 0px 0px var(--brand-blue), 3px 3px 0px 0px var(--brand-blue), 2px 2px 0px 0px var(--brand-blue), 1px 1px 0px 0px var(--brand-blue);
+}
+.accordion-item:hover .accordion-heading {background: var(--brand-mint);}
+
+.accordion-item {position: relative; border: 2px solid var(--base-elevated);}
+.accordion-item.active {border: 2px solid var(--brand-mint);}
+.accordion-item .content { display: none; padding:20px 24px 30px 26px; line-height: 1.5; font-size:1rem; color: var(--base-dark-gray);}
+
+
+/*-- media starts here --*/
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .accordion-item .accordion-heading {padding:12px 40px 16px 18px; font-size: 0.875rem; line-height: 1.5;}
+    .accordion-item .accordion-heading::after {top: 0!important; bottom: 0; margin: auto; display: flex; align-items: center; right: 18px;}
+    .accordion-item .content {font-size: 0.875rem; line-height: 1.5;}
+    
+}

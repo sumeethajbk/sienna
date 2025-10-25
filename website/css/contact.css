@@ -1,0 +1,61 @@
+@import url("_locations-module.css");
+@import url("_cta-module.css");
+
+.contact-section {clear: both; width: 100%; padding: 76px 0 7px; position: relative; z-index: 1;}
+.contact-main {gap:80px;}
+.contact-main h1 {font-size: 6rem; letter-spacing: 1.92px; margin: 0 0 12px 0;}
+.contact-main .contact-left {width: 350px; flex-grow: 1; padding: 4px 0 0 0; color: var(--brand-green);}
+.contact-main .contact-right {width: calc(100% - 430px); flex-grow: 1;}
+.contact-main .contact-links {clear: both; width: 100%; margin: 32px 0 0 0;}
+.contact-main .contact-links li:before {display: none;}
+.contact-main .contact-links li {margin: 0 0 24px 0;}
+.contact-main .contact-links li a {font-size: 1.25rem; font-weight: bold; gap:15px; width: fit-content;}
+.contact-main .contact-links li a i {color: var(--brand-blue); font-size: 2.5rem; text-shadow: 2px 2px 0 var(--brand-mint);}
+.contact-main .contact-links li a:hover {color: var(--brand-blue);}
+.contact-main .contact-links li a:hover:after {display: none;}
+
+ .frm_forms .frm_message { margin: -4px;}
+ 
+
+/*-- media css starts here --*/
+@media only screen and (min-width:1440px) {
+
+ .cta-module .cta-main { padding: 44px 80px 64px 40px; display: flex; justify-content: space-between; align-items: center;}
+ .cta-module .h1 { margin-bottom: 0;}
+ .cta-btns-wrap{margin-bottom: 4px;}
+
+
+}
+@media only screen and (max-width:1280px) {
+    .contact-main .contact-left {font-size: 1rem; line-height: 1.5;}
+    .contact-main .contact-links li a {font-size: 1.125rem;}
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 1024px){
+.frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {bottom: -13px; font-size: 9px!important;}
+
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .contact-section {padding: 60px 0 7px;}
+    .contact-main {gap:40px;}
+    .contact-main h1 {font-size:4rem; letter-spacing: 1.12px;}
+    .contact-main .contact-links {display: flex; flex-wrap: wrap; gap:30px;}  
+       
+}
+
+@media only screen and (max-width: 1023px) and (min-width:200px){
+    .contact-main .contact-left {width: 100%; padding: 0;}
+    .contact-main .contact-right {width: 100%;}
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .contact-section {padding: 42px 0 7px;}
+    .contact-main {gap:16px;}
+    .contact-main h1 {font-size:3rem; letter-spacing: 0.96px; margin: 0 0 14px 0;}
+
+    .frm_forms .frm_message { padding: 20px 10px 5px 25px; }
+    .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {bottom: -9px; font-size: 9px!important;}
+
+}
+@media only screen and (max-width: 389px) {}

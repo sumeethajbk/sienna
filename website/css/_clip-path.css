@@ -1,0 +1,44 @@
+:root {
+    --path-660:polygon(660px 0, 100% 0, 100% calc(100% - 660px), calc(100% - 660px) 100%, 0 100%, 0 660px);
+    --path-600:polygon(600px 0, 100% 0, 100% calc(100% - 600px), calc(100% - 600px) 100%, 0 100%, 0 600px);
+    --path-581:polygon(581px 0, 100% 0, 100% calc(100% - 581px), calc(100% - 581px) 100%, 0 100%, 0 581px);    
+    --path-362:polygon(362px 0, 100% 0, 100% calc(100% - 362px), calc(100% - 362px) 100%, 0 100%, 0 362px);
+    --path-180:polygon(180px 0, 100% 0, 100% calc(100% - 180px), calc(100% - 180px) 100%, 0 100%, 0 180px);
+    --path-160:polygon(0 0,calc(100% - 160px) 0,100% 160px,100% 100%,160px 100%,0 calc(100% - 160px));
+    --path-158:polygon(0 0,calc(100% - 157.5px) 0,100% 159px,100% 100%,159px 100%,0 calc(100% - 157.5px));
+    --path-148:polygon(148px 0, 100% 0, 100% calc(100% - 148px), calc(100% - 148px) 100%, 0 100%, 0 148px);
+    --path-140:polygon(0 0,calc(100% - 140px) 0,100% 140px,100% 100%,140px 100%,0 calc(100% - 140px));
+
+    --path-120:polygon(0 0,calc(100% - 120px) 0,100% 120px,100% 100%,120px 100%,0 calc(100% - 120px));
+    --path-120-1:polygon(0 0,calc(100% - 120px) 0,100% 120px,100% 100%, 0 100%,0 0);
+    --path-96-1:polygon(0 0,calc(100% - 96px) 0,100% 96px,100% 100%, 0 100%,0 0);
+    --path-87: polygon(87px 0,100% 0,100% calc(100% - 87px),calc(100% - 87px) 100%,0 100%,0 87px);
+    --path-80: polygon(0 0,calc(100% - 80px) 0,100% 80px,100% 100%,80px 100%,0 calc(100% - 80px));
+    --path-80-1: polygon(0 0,calc(100% - 75px) 0,100% 75px,100% 100%,75px 100%,0 calc(100% - 75px));
+    --path-80-2: polygon(0 0,calc(100% - 80px) 0,100% 80px,100% 100%,80px 100%,0 calc(100% - 80px));
+    --path-77: polygon(77px 0,100% 0,100% calc(100% - 77px),calc(100% - 77px) 100%,0 100%,0 77px);
+    --path-73:polygon(73px 0, 100% 0, 100% calc(100% - 73px), calc(100% - 73px) 100%, 0 100%, 0 73px);
+    --path-60: polygon(0 0,calc(100% - 60px) 0,100% 60px,100% 100%,60px 100%,0 calc(100% - 60px));
+    --path-60-1:polygon(0 0,calc(100% - 60px) 0,100% 60px,100% 100%, 0 100%,0 0);
+    --path-68:polygon(68px 0, 100% 0, 100% calc(100% - 68px), calc(100% - 68px) 100%, 0 100%, 0 68px);
+    --path-64: polygon(0 0,calc(100% - 64px) 0,100% 64px,100% 100%,64px 100%,0 calc(100% - 64px));
+    --path-50: polygon(0 0,calc(100% - 50px) 0,100% 50px,100% 100%,50px 100%,0 calc(100% - 50px));
+    --path-55:polygon(55px 0, 100% 0, 100% calc(100% - 55px), calc(100% - 55px) 100%, 0 100%, 0 55px);
+    --path-40: polygon(0 0,calc(100% - 40px) 0,100% 40px,100% 100%,40px 100%,0 calc(100% - 40px));
+
+    --path-25: polygon(0 0,calc(100% - 25px) 0,100% 25px,100% 100%,25px 100%,0 calc(100% - 25px));
+
+    --path-148-1:polygon(0 0,calc(100% - 148px) 0,100% 148px,100% 100%,148px 100%,0 calc(100% - 148px));
+    --path-168:polygon(0 0,calc(100% - 168px) 0,100% 168px,100% 100%,168px 100%,0 calc(100% - 168px));
+
+
+    --path-4: polygon(0 0,calc(100% - 4px) 0,100% 4px,100% 100%,4px 100%,0 calc(100% - 4px));
+    --path-24: polygon(0 0,calc(100% - 24px) 0,100% 24px,100% 100%,24px 100%,0 calc(100% - 24px));
+    --path-20: polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px));
+    --path-ltbr-24:polygon(24px 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%, 0 24px);
+    --path-ltbr-16:polygon(16px 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%, 0 16px);
+    --path-16: polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px));
+    --path-12: polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px));
+
+    
+}

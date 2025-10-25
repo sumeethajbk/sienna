@@ -1,0 +1,54 @@
+@import url("_cta-module.css");
+
+.support-section {clear: both; width: 100%; padding: 76px 0 40px; position: relative; z-index: 1;}
+.support-main {gap:80px;}
+.support-main h1 {font-size: 6rem; letter-spacing: 1.92px; margin: 0 0 12px 0;}
+.support-main .support-left {width: 350px; flex-grow: 1; padding: 4px 0 0 0; color: var(--brand-green);}
+.support-main .support-right {width: calc(100% - 430px); flex-grow: 1;}
+.support-main .support-links {clear: both; width: 100%; margin: 32px 0 0 0;}
+.support-main .support-links li:before {display: none;}
+.support-main .support-links li {margin: 0 0 24px 0;}
+.support-main .support-links li a {font-size: 1.25rem; font-weight: bold; gap:15px; width: fit-content;}
+.support-main .support-links li a i {color: var(--brand-blue); font-size: 2.5rem; text-shadow: 2px 2px 0 var(--brand-mint);}
+.support-main .support-links li a:hover {color: var(--brand-blue);}
+.support-main .support-links li a:hover:after {display: none;}
+
+.support-main .frm_forms .frm_message { margin: -4px;}
+ 
+
+/*-- media css starts here --*/
+
+@media only screen and (max-width:1280px) {
+    .support-main .support-left {font-size: 1rem; line-height: 1.5;}
+    .support-main .support-links li a {font-size: 1.125rem;}
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 1024px){
+.support-main .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {bottom: -13px; font-size: 9px!important;}
+    .support-main .default_form .frm_forms .frm_filed_wrapper .frm_html_container {flex: 100%; text-align: left;}
+    .support-main .frm_forms .frm_filed_wrapper {justify-content: flex-end;}
+
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .support-section {padding: 60px 0 60px;}
+    .support-main {gap:40px;}
+    .support-main h1 {font-size:4rem; letter-spacing: 1.12px;}
+    .support-main .support-links {display: flex; flex-wrap: wrap; gap:30px;}  
+       
+}
+
+@media only screen and (max-width: 1023px) and (min-width:200px){
+    .support-main .support-left {width: 100%; padding: 0;}
+    .support-main .support-right {width: 100%;}
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .support-section {padding:42px 0 40px;}
+    .support-main {gap:16px;}
+    .support-main h1 {font-size:3rem; letter-spacing: 0.96px; margin: 0 0 14px 0;}
+
+    .support-main .frm_forms .frm_message { padding: 20px 10px 5px 25px; }
+    .support-main .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {bottom: -10px; font-size: 10px!important;}
+
+}
