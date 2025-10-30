@@ -1,7 +1,6 @@
-.page-not-found-main{padding:120px 0 120px; text-align: center; width: 100%;  position: relative;}
-.page-not-found-main .page-txt {margin: 0 auto; max-width: 750px;}
-.page-not-found-main .page-txt p {margin-bottom: 40px;}
+.page-not-main{padding:120px 0 120px; text-align: center; width: 100%;  position: relative;}
+.page-not-main .page-not-txt {margin: 0 auto; max-width: 750px;}
 
 @media only screen and (max-width: 1023px) and (min-width:200px){
-    .page-not-found-main{padding:80px 0 80px;} 
+    .page-not-main{padding:80px 0 80px;} 
 }
