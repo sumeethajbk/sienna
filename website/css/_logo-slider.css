@@ -1,8 +1,0 @@
-.logo-slider-module {position:relative; z-index: 1; clear: both; width: 100%; padding:58px 0;}
-.logo-slider-row {display: flex; flex-wrap: wrap; justify-content: center;}
-.logo-slider-row:before, .logo-slider-row:after {background-image: linear-gradient(to right, var(--white) 0%, rgba(255, 255, 255, 0) 100%); display: block; content: ""; width: 40px; height: 80px; position: absolute; top: 0; left: 0; z-index: 1;}
-.logo-slider-row:after{right: 0; left: inherit; transform: rotate(-180deg);}
-.logo-slider-row .slick-track{display: flex; align-items: center;}
-.logo-slider {margin: 0 auto; padding: 44px 0 0 0;}
-.logo-img { margin: 0 20px;}
-.logo-img img{max-height: 88px; width: auto; height: auto; max-width: 197px;}
