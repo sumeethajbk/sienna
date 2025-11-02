@@ -15,7 +15,7 @@ jQuery(document).ready(function () {
     e.preventDefault();
     jQuery(this).toggleClass('active');
     jQuery('header').toggleClass('head-active');
-    jQuery('.search_form').slideToggle(300);
+    jQuery('.search_form').toggleClass('form-active');
   });
 	
 	jQuery('.clear-btn').click(function(){

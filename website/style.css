@@ -135,9 +135,10 @@ Text Domain:Sienna Senior Living
     font-display: swap;
 }
 
-body {font-family: "Blackbird", sans-serif;  color:var(--body-text); font-size:⁨1.188rem!important; line-height:157.895%; font-weight:400; font-style:normal; overflow-x:hidden; background:var(--white); height:100%; display:flex; flex-direction:column; -webkit-overflow-scrolling: touch; padding: 0;}
+body {font-family: "Blackbird", sans-serif;  color:var(--body-text); font-size:⁨1rem; line-height:1.5; font-weight:400; font-style:normal; overflow-x:hidden; background:var(--white); height:100%; display:flex; flex-direction:column; -webkit-overflow-scrolling: touch; padding: 0;}
 #main {overflow:hidden; position:relative; float:left; width:100%; flex:1 0 auto;}
-#mainContent {clear:both; position:relative; float:left; width:100%; padding:88px 0 0 0;}
+#mainContent {clear:both; position:relative; float:left; width:100%; padding:0;}
+.spacetop #mainContent {padding:88px 0 0 0;}
 .container {max-width:1200px; margin:0 auto; width:100%;}
 .container .container {padding: 0;}
 .container-lg {padding:0 40px 0 40px; max-width: 1440px; margin: 0 auto; width: 100%;}
@@ -145,7 +146,7 @@ body {font-family: "Blackbird", sans-serif;  color:var(--body-text); font-size:�
 .container-sm {max-width: 960px; margin: 0 auto; width: 100%;}
 .btn {display:block;}
 .btn-wrap {width:100%; clear:both; font-size: 0; display: flex; flex-wrap: wrap; gap:10px; align-items: center;}
-.optional-text {font-size:0.684rem; color:var(--optional-txt); font-weight: bold; margin:0 0 18px 0; display:block; line-height: 1.25; width: 100%; text-transform: uppercase; font-family: "Blackbird",sans-serif;}
+.optional-text {font-size:1rem; color:var(--optional-txt); font-weight: bold; margin:0 0 18px 0; display:block; line-height: 1.2; width: 100%; font-family: "Blackbird",sans-serif;}
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {color:var(--heading); text-decoration: none;}
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .h1 a:hover, .h2 a:hover, .h3 a:hover, .h4 a:hover, .h5 a:hover, .h6 a:hover {color:var(--blue);}
