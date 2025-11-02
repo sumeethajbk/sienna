@@ -85,7 +85,7 @@ jQuery(document).ready(function () {
   });
 
 
-  jQuery('.case-studies-lists').slick({
+  jQuery('.resources-slider-row').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
@@ -93,8 +93,8 @@ jQuery(document).ready(function () {
     dots: false,
     variableWidth: true,
     infinite: false,
-    prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-light fa-chevron-left"></i></span></div>',
-    nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-light fa-chevron-right"></i></span></div>',
+    prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-left"></i></span></div>',
+    nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-right"></i></span></div>',
     responsive: [{
         breakpoint: 1024,
         settings: {
