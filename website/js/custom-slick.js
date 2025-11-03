@@ -101,7 +101,6 @@ jQuery(document).ready(function () {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: true,
-          variableWidth: false,
           adaptiveHeight: true,
         }
       },
@@ -112,7 +111,7 @@ jQuery(document).ready(function () {
           slidesToScroll: 1,
           adaptiveHeight: true,
           arrows: true,
-          variableWidth: false,
+          dots: true
         }
       }
     ]

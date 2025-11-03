@@ -7,8 +7,7 @@
 .location-title h2{margin-bottom: 0; color: var(--Sienna-Orange);}
 .location-sort{width: fit-content; gap: 20px;}
 
-.location-image{height: 210px;}
-.location-image img{min-height: 210px; max-height: 210px;}
+
 .location-details{padding: 32px; color: var(--anchor);}
 .location-details h2{margin-bottom: 0;}
 .location-details hr{background: var(--Sienna-Orange); margin: 16px 0;}
@@ -27,7 +26,66 @@
 span.location-btn-text{font-size: 1rem; color: var(--Foreground); font-weight: 700; line-height: 1.35; transition: all .5s ease; left: -3px; position: relative; display: none;}
 .circle-arrow-btn:hover span.location-btn-text{left: 0; display: block;}
 
+.location-show-btn{gap: 16px; }
+.location-line{margin: 0; flex: 1;}
+
 @media screen  and (min-width: 1024px){
+    .location-main{padding: 200px 0; gap: 48px;}
     .location-item{flex: 0 0 calc(33.333% - 27px);}
-    .location-main{padding: 200px 0;}
+    .location-image{height: 210px;}
+    .location-image img{min-height: 210px; max-height: 210px;}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .location-main{padding: 48px 0; gap: 32px;}
+    .location-heading{gap: 16px;}
+    .location-title h2{font-size: 1.333rem; line-height: 1.2;}
+    .location-title h2 br{display: none;}
+    .location-sort{width: 100%; gap: 16px;}
+    .location-city-dropdown, .location-funding-dropdown{flex: 0 0 calc(50% - 8px);}
+    body .location-city-dropdown .selectBox-dropdown,
+    body .location-funding-dropdown .selectBox-dropdown{display: flex; justify-content: center; gap: 8px; font-size: 0.889rem;}
+    body .location-city-dropdown .selectBox-dropdown .selectBox-label,
+    body .location-funding-dropdown .selectBox-dropdown .selectBox-label{width: fit-content !important;}
+    body .location-city-dropdown .selectBox-dropdown .selectBox-arrow,
+    body .location-funding-dropdown .selectBox-dropdown .selectBox-arrow{position: relative; right: auto; font-size: 1.111rem;}
+    .location-lists{gap: 28px;}
+    .location-item{flex: 0 0 calc(50% - 14px);}
+    .location-details{padding: 24px; font-size: 0.889rem; line-height: 1.5;}
+    .location-details h2{font-size: 1.333rem;}
+    .location-details hr{margin: 12px 0; }
+    .location-details ul{margin: 0 0 22px 0;}
+    .location-details ul li{gap: 10px;}
+    .location-details ul li span{font-size: 0.889rem;}
+    .location-details ul li span.fa-sharp{font-size: 1rem;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .location-main{padding: 28px 0; gap: 28px;}
+    .location-heading{gap: 12px; }
+    .location-title h2{font-size: 1.111rem; line-height: 1.2;}
+    .location-sort{width: 100%; gap: 12px;}
+    .location-city-dropdown, .location-funding-dropdown{width: 100%;}
+    body .location-city-dropdown .selectBox-dropdown,
+    body .location-funding-dropdown .selectBox-dropdown{display: flex; justify-content: center; gap: 8px; font-size: 0.889rem;}
+    body .location-city-dropdown .selectBox-dropdown .selectBox-label,
+    body .location-funding-dropdown .selectBox-dropdown .selectBox-label{width: fit-content !important;}
+    body .location-city-dropdown .selectBox-dropdown .selectBox-arrow,
+    body .location-funding-dropdown .selectBox-dropdown .selectBox-arrow{position: relative; right: auto; font-size: 1.111rem;}
+    .location-lists{gap: 24px;}
+    .location-item{width: 100%;}
+    .location-image{height: 184px;}
+    .location-image img{min-height: 184px; max-height: 184px;}
+    .location-details{padding: 20px;}
+    .location-details h2{font-size: 1.111rem; line-height: 1.2; }
+    .location-details hr{margin: 8px 0;}
+    .location-details p{margin-bottom: 4px; font-size: 0.889rem;}
+    .location-details ul{margin: 0 0 14px 0; gap: 4px; }
+    .location-details ul li,
+    .location-details ul li a{gap: 6px;}
+    .location-details ul li span.fa-sharp{font-size: 1rem;}
+    .location-details ul li span{font-size: 0.889rem;}
+    .circle-arrow-btn span.fa-sharp{width: 40px; height: 40px; font-size: 1.111rem;}
+    span.location-btn-text{font-size: 0.889rem;}
+    .location-show-btn{gap: 8px;}
+    
 }
