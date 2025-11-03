@@ -1,6 +1,7 @@
 :root {
 	--black:#000000;
     --black-50: rgba(0 0 0 / 50%);
+    --black-60: rgba(0 0 0 / 60%);
     --black-75: rgba(0 0 0 / 75%);
     --white: #ffffff;
     --white-10: rgb(255 255 255 / 10%);
