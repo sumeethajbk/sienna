@@ -1,4 +1,4 @@
-footer#main_footer {clear: both; padding:115px 0 104px; width: 100%; position: relative; background: var(--Sienna-Orange); z-index: 1; color: var(--white); overflow: hidden;}
+footer#main_footer {clear: both; padding:115px 0 104px; width: 100%; position: relative; background: var(--Tint-Pink); z-index: 1; overflow: hidden;}
 footer#main_footer .footer {position: relative; transform: translateY(-150px); opacity: 1;}
 footer#main_footer .footer ul {margin: 0;}
 footer#main_footer .footer li:before {display: none;}

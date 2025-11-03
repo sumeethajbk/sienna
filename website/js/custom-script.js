@@ -11,15 +11,24 @@ jQuery(document).ready(function () {
   });
 
   /* Header Search */
-  jQuery('.search-btn').on('click', function (e) {
+  jQuery('.search-btn').on('click', function(e) {
     e.preventDefault();
     jQuery(this).toggleClass('active');
     jQuery('header').toggleClass('head-active');
     jQuery('.search_form').toggleClass('form-active');
   });
-	
-	jQuery('.clear-btn').click(function(){
+
+  jQuery('.clear-btn').on('click', function() {
     jQuery('.search-field').val('');
+  });
+
+  // Clicking outside the search box (on blurred overlay) closes it
+  jQuery('.search_form').on('click', function(e) {
+    if (!jQuery(e.target).closest('.search_form_container').length) {
+      jQuery('.search_form').removeClass('form-active');
+      jQuery('.search-btn').removeClass('active');
+      jQuery('header').removeClass('head-active');
+    }
   });
 
 
