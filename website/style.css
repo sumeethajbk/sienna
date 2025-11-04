@@ -335,8 +335,8 @@ body .frm_forms .frm_form_fields input:focus, body .frm_forms .frm_form_fields t
 
 /* Form Button */
 .frm_forms .frm_submit{margin:0;}
-body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {display: inline-block; font-size:0.737rem!important; font-weight: 700!important; line-height:1.57!important; padding:14px 39px 14px!important; vertical-align: middle!important; cursor: pointer!important; border:0 none!important; position: relative; transition: 0.3s; text-align: center!important; color: var(--blue)!important; font-family:"Blackbird", sans-serif; text-decoration: none; overflow: hidden; z-index: 1; border-radius:90px!important; outline: 0; box-sizing: border-box; text-transform:uppercase; box-shadow: none!important; margin: 0!important;}
-body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:hover, body .frm_forms .frm_submit button:focus {color: var(--blue)!important; background-color: var(--button-hover) !important;}
+body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {display: inline-block; font-size:1.333rem!important; font-weight: 700!important; line-height:100%!important; padding:16px 20px 16px 20px!important; vertical-align: middle!important; cursor: pointer!important; border:0 none!important; position: relative; transition: 0.3s; text-align: center!important; color: var(--white)!important; font-family:"Blackbird", sans-serif; text-decoration: none; overflow: hidden; z-index: 1; border-radius:300px!important; outline: 4px solid transparent; box-sizing: border-box; box-shadow: none!important; margin: 0!important;}
+body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:hover, body .frm_forms .frm_submit button:focus {color: var(--white)!important; outline:4px solid var(--button-outline);}
 
 
 .frm_forms .frm_filed_wrapper {gap: 16px; justify-content: space-between; }

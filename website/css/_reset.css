@@ -80,7 +80,7 @@ hr {display: block; background:var(--black); height: 1px; width: 100%; vertical-
 ::-moz-selection {background-color: var(--Sienna-Orange); color: #fff;}
 
 
-input, textarea, select {outline: 0; width: 100%; font-size: 1rem; line-height: normal; background:var(--input); box-shadow: none; padding: 14px 16px 14px; vertical-align: middle; font-weight: bold; height: auto; transition: all .5s ease-in-out; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border:0 none; border-radius:90px; font-family:"Blackbird", sans-serif;}
+input, textarea, select {outline: 0; width: 100%; font-size: 0.778rem; line-height: normal; background:var(--input); box-shadow: none; padding: 12px; vertical-align: middle; font-weight: bold; height: auto; transition: all .5s ease-in-out; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border:0 none; border-radius:90px; font-family:"Blackbird", sans-serif;}
 select {padding:14px 46px 14px 16px;}
 textarea {width: 100%; resize: none; height: 118px;}
 input:focus, textarea:focus {outline: 0;}
@@ -111,6 +111,10 @@ button:focus, .button:focus, button:active, .button:active {color: var(--white);
 .btn-white {background: var(--white); color: var(--button);}
 .btn-white:hover {background: var(--white); color: var(--button);}
 .btn-white:active, .btn-white:focus {background: var(--white); color: var(--button);}
+
+.btn-gray {background: var(--Dark-Gray); color: var(--white);}
+.btn-gray:hover {background: var(--Foreground); color: var(--white);}
+.btn-gray:active, .btn-gray:focus {background: var(--Dark-Gray); color: var(--white);}
 
 .arrow-btn {position: relative; display: flex; flex-wrap: wrap; gap:9px; min-width: inherit; font-size: 1rem; align-items: center; font-weight: 700; padding: 9px 20px 10px; justify-content: center;}
 .arrow-btn:after {content: "\f061"; position: relative; display: inline-block; font-family: "Font Awesome 7 Sharp";}
