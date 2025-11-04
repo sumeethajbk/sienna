@@ -30,7 +30,7 @@ span.location-btn-text{font-size: 1rem; color: var(--Foreground); font-weight: 7
 .location-line{margin: 0; flex: 1;}
 
 @media screen  and (min-width: 1024px){
-    .location-main{padding: 200px 0; gap: 48px;}
+    .location-main{padding: 80px 0; gap: 48px;}
     .location-item{flex: 0 0 calc(33.333% - 27px);}
     .location-image{height: 210px;}
     .location-image img{min-height: 210px; max-height: 210px;}

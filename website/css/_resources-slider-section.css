@@ -20,6 +20,23 @@ ul.resources-slider-category li::before{display: none;}
     .resources-slider-item{width: 480px; margin-right: 40px; }
 }
 
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .resources-slider-main{padding: 48px 0;}
+    .resources-slider-header{width: calc(100% - 154px); margin-bottom: 48px;}
+    .resources-slider-header .optional-text{margin: 0 0 12px 0; font-size: 0.889rem; line-height: 1;}
+    .resources-slider-header h2{font-size: 2.222rem; line-height: 1.2;}
+    .resources-slider-item{width: 480px; margin: 0 28px 0 0;}
+    .resources-slider-image{height: 270px;}
+    .resources-slider-image{min-height: 270px; max-height: 270px;}
+    .resources-slider-text{padding: 20px;}
+    ul.resources-slider-category{margin: 0 0 16px 0;}
+    ul.resources-slider-category li{font-size: 0.778rem;}
+    .resources-slider-text h2{margin-bottom: 16px; font-size: 1.333rem; line-height: 1.2;}
+    .resources-slider-row .slick-arrow{width: 48px; height: 48px;}
+    .resources-slider-row .slick-arrow span i{font-size: 20px; line-height: 20px;}
+    .resources-slider-row .slick-arrow.slick-prev{right: 58px; left: auto;}
+}
+
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .resources-slider-main{padding: 28px 0;}
     .resources-slider-header{width: 100%; margin-bottom: 40px;}
