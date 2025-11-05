@@ -12,9 +12,9 @@
 @import url("_cta-module.css");
 @import url("_signup-module.css");
 
+.hero-banner-main .hero-banner-text h1 {font-size: 3.556rem;}
 
 .general-default-container {float: left; width: 100%; padding:120px 0 118px 0; position: relative; z-index: 1;}
-.general-default-container ul >:is(h2, h3, h4, h5, h6), .general-default-container ol >:is(h2, h3, h4, h5, h6) {margin-top: 54px;}
 .general-default-container br {display: none;}
 
 /* Default Thumb */
@@ -30,11 +30,12 @@
 
 /*-- media css starts here --*/
 
-@media only screen and (max-width:1023px) and (min-width:768px) {
-}
+
 
 
 @media only screen and (max-width:767px) and (min-width:200px) {
+    .hero-banner-main .hero-banner-text h1 {font-size: 2.222rem;}
+
 	.general-default-container {padding:80px 0 73px;}    
 	.default-thumb {margin:61px 0 61px 0; height:64.735vw;}  
 	.default-thumb figure img {height: 100%;}

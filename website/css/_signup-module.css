@@ -1,24 +1,24 @@
 .signup-module {clear: both; width: 100%; position: relative; z-index: 1;}
 .signup-module:after {background:var(--Tint-Pink); content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 100.5px; z-index: 1; display: block;}
 
-.signup-module .signup-main {background: var(--Sienna-Orange); padding:48px; position: relative; z-index: 2;}
-.signup-module .signup-wrap {justify-content: space-between; align-items: center; gap:3.3333333333333335%; z-index: 1;}
+.signup-module .signup-main {background: var(--Sienna-Orange); padding:49px 48px 48px 48px; position: relative; z-index: 2;}
+.signup-module .signup-wrap {justify-content: space-between; align-items: center; gap:11.8%; z-index: 1;}
 
-.signup-module .signup-lt {width:calc(100% - 47.66666666666667%); flex-grow: 1; display: flex; flex-wrap: wrap; gap:32px;}
+.signup-module .signup-lt {width:calc(100% - 60%); flex-grow: 1; display: flex; flex-wrap: wrap; gap:9px;}
 .signup-module .signup-lt .h5 {margin-bottom: 0; color: var(--white); flex:1;}
+.signup-module .signup-lt .sub-text {font-size: 0.778rem; display: block; line-height: normal; width: 100%;}
 
-.signup-module .signup-rt {width:44.333333333333336%; text-align: center; flex-grow: 1;}
+.signup-module .signup-rt {width:48.188405797101446%; text-align: center; flex-grow: 1;}
 
-.signup-module .signup-form .frm_forms .frm_form_fields input, .signup-module .signup-form .frm_forms .frm_form_fields input:focus, .signup-module .signup-form .frm_forms .frm_form_fields input:hover {font-size:1rem; font-weight: normal; line-height: 1.29; padding:8px 150px 10px 29px; background: var(--input); font-family: "Blackbird", sans-serif; color: var(--white)!important; min-height: 61px;}
+.signup-module .signup-form .frm_forms .frm_form_fields input, .signup-module .signup-form .frm_forms .frm_form_fields input:focus, .signup-module .signup-form .frm_forms .frm_form_fields input:hover {font-size:1rem; font-weight: normal; line-height: 1.29; padding:8px 140px 10px 20px; background: var(--input); font-family: "Blackbird", sans-serif; color: var(--Foreground)!important; min-height: 64px;}
 
 .signup-module .signup-form .frm_forms .frm_form_fields {position: relative;}
 .signup-module .signup-form .frm_forms .frm_form_fields .frm_form_field {margin: 0;}
 .signup-module .signup-form .frm_forms .form-field label {display: none}
 .signup-module .signup-form .frm_forms .frm_submit-btn {position: absolute; right: 4px; top: 4px; margin: 0; width: auto;}
-.signup-module .signup-form .frm_forms .frm_message {text-align: center; margin: 0 20px; line-height: 1.2; color: var(--white); font-family: "Blackbird", sans-serif;
-  font-weight: 600;}
+.signup-module .signup-form .frm_forms .frm_message {text-align: center; margin: 0 20px; line-height: 1.2; color: var(--white); font-family: "Blackbird", sans-serif;}
 .signup-module .signup-form .frm_forms .frm_message p {margin: 0; text-align: center; color: var(--white);}
-.signup-module .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {color:var(--white)!important; bottom: -22px;}
+.signup-module .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {color:var(--white)!important; bottom: -26px;}
 
 .signup-module ::-webkit-input-placeholder {opacity: 1!important; font-size: 1rem!important;}
 .signup-module:-moz-placeholder {opacity: 1!important; font-size: 1rem!important;}
@@ -26,33 +26,26 @@
 .signup-module :-ms-input-placeholder {opacity: 1!important; font-size: 1rem!important;}
 
 
-@media only screen and (max-width:1280px) and (min-width:1024px) {
-    .signup-module .signup-main {padding: 89px 30px 110px;} 
-    .signup-module .signup-lt {width: calc(100% - 50%);}
-}
-
-@media only screen and (max-width:1023px) and (min-width:200px) {
-.signup-module {min-height: inherit; padding: 80px 0 81px;}
-}
-
 @media only screen and (max-width:1023px) and (min-width:768px) {
-    .signup-module .signup-main {padding:40px 30px 80px;}
-    .signup-module .signup-wrap {gap: 40px; margin: 40px 0 0 0;}
+    .signup-module .signup-wrap {gap: 40px;}
     .signup-module .signup-lt {width: 100%;}
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {
-    .signup-module .background-bg picture img {object-position: center left;}
-    .signup-module .signup-main {padding:41px 30px 40px;}
-    .signup-module .signup-wrap {margin: 39px 0 0 0;}
-    .signup-module .signup-lt {width: 100%; gap: 19px;}
-    .signup-module .signup-lt .news-icon {width: 36px; height: 47px; margin-top: 8px;}
-    .signup-module .signup-rt {width: 100%; margin:41px 0 0 0;} 
-    .signup-module .signup-form .frm_forms .frm_form_fields .frm_form_field {margin: 0 0 10px 0;}
-    .signup-module .signup-form .frm_forms .frm_form_fields input, .signup-module .signup-form .frm_forms .frm_form_fields input:focus, .signup-module .signup-form .frm_forms .frm_form_fields input:hover {padding: 8px 29px 10px 29px;}
-    .signup-module .signup-form .frm_forms .frm_submit-btn {position: initial; width: 100%;}
-    .signup-module .signup-form .frm_forms .frm_submit-btn button {width: 100%;}
-    .signup-module .signup-form .disclaimer {position: initial; margin: 11px 0 0 0;}
+    .signup-module::after {height: 116px;}
+    .signup-module .signup-main {padding: 28px;}
+    .signup-module .signup-wrap {gap:25px;}
+    .signup-module .signup-lt {width: 100%; gap: 3px;}
+    .signup-module .signup-lt .sub-text {font-size: 0.667rem; line-height: 1.5;}
+    .signup-module .signup-rt {width: 100%;} 
+    
+    .signup-module ::-webkit-input-placeholder {font-size: 0.889rem!important;}
+    .signup-module:-moz-placeholder {font-size: 0.889rem!important;}
+    .signup-module ::-moz-placeholder {font-size: 0.889rem!important;}
+    .signup-module :-ms-input-placeholder {font-size: 0.889rem!important;}
+    
+    .signup-module .signup-form .frm_forms .frm_form_fields input, .signup-module .signup-form .frm_forms .frm_form_fields input:focus, .signup-module .signup-form .frm_forms .frm_form_fields input:hover {font-size: 0.889rem; padding:9px 70px 9px 12px;}
+    .signup-module .signup-form .frm_forms .frm_submit-btn button {font-size: 0!important; width: 56px; height: 56px; border-radius: 50%;}
+    .signup-module .signup-form .frm_forms .frm_submit-btn button:before {content:"\f1d8"; font-size: 1.111rem; font-weight: 400;  font-family: "Font Awesome 7 Sharp"; display: flex; justify-content: center;}
     .signup-module .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {bottom: 65px;}
-    .signup-module .signup-form .frm_forms .frm_message {max-width: 300px; margin: 0 auto;}
 }

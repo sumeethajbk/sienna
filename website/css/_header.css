@@ -128,8 +128,9 @@ ul.main_menu li.flex-menu > ul > li.hide-menu, ul.main_menu li > ul > li.hide-me
 
 @media only screen and (max-width:1023px) and (min-width:200px) {
 .main_header {transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out;}
-.main_header .header {position:relative; justify-content:space-between; min-height:70px; padding:9px 0 11px 0;}
-.main_header .logo {width:186px; height:46px;}
+.main_header .container-lg {padding: 0 24px;}
+.main_header .header {position:relative; justify-content:space-between; min-height:56px; padding:0;}
+.main_header .logo {width:107px;}
 
 .main_header .header .toggle_button {z-index:2; cursor:pointer; position:absolute; right:2px; width:26px; height:30px; display:block; top:50%; transform:translateY(-50%); margin: -1px 0 0 0;} 
 .main_header .header .toggle_button span.line{display:block; width:26px; height:2px; background-color:var(--Sienna-Orange); top:50%; position:absolute; transform:translateY(-50%); left:0; transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; right: 0; margin: auto;}
