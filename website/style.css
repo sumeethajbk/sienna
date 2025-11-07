@@ -184,6 +184,9 @@ section p a, section li a {position: relative;}
 span.location-btn-text{font-size: 1rem; color: var(--Foreground); font-weight: 700; line-height: 1.35; transition: all .5s ease; position: relative; opacity: 0; transform: translateX(-10px); transition: all 0.3s ease-in-out; visibility: hidden; width: 0; white-space: nowrap;}
 .circle-arrow-btn:hover span.location-btn-text{opacity: 1; transform: translateX(0); visibility: visible; width:auto;}
 
+.circle-arrow-btn.circle-orange span.fa-sharp{background: var(--Sienna-Orange); color: var(--white);}
+.circle-arrow-btn.circle-orange:hover span.fa-sharp{outline: 4px solid var(--button-outline);}
+
 /* Background Bg */
 .background-bg {top:0; left:0; right:0; bottom:0; width:100%; height:100%; position:absolute; z-index:-1; }
 .background-bg img {width:100%; height:100%; font-family:"object-fit:cover"; object-fit:cover; -o-object-fit:cover; object-position:50% 50%; -o-object-position:50% 50%;}
@@ -332,8 +335,8 @@ body ul.selectBox-dropdown-menu li.frm-select-placeholder/*, body ul.selectBox-d
 .frm_filed_wrapper .vertical_radio .frm_checkbox {margin: 0;}
 
 /* Input */
-.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: "Blackbird", sans-serif;  font-weight: 500; display: block; font-size: 0.875rem; line-height: 100%; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: var(--input) !important; color: var(--white); padding: 16px 16px 15px; width: 100%; box-shadow: none; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border-radius: 90px; border: 0 none!important;}
-body .frm_forms .frm_form_fields input:focus, body .frm_forms .frm_form_fields textarea:focus, body .frm_forms .frm_form_fields input:hover, body .frm_forms .frm_form_fields textarea:hover {box-shadow:none!important; color: var(--global)!important; border-color: var(--white)!important;}
+.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: "Blackbird", sans-serif;  font-weight: 700; display: block; font-size: 1rem; line-height: 1.35; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: var(--Tint-Pink) !important; color: var(--Foreground); padding: 16px 20px; width: 100%; box-shadow: none; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border-radius: 90px; border: 1px solid var(--Sienna-Orange);}
+body .frm_forms .frm_form_fields input:focus, body .frm_forms .frm_form_fields textarea:focus, body .frm_forms .frm_form_fields input:hover, body .frm_forms .frm_form_fields textarea:hover {box-shadow:none!important; color: var(--Foreground)!important; border-color: var(--Sienna-Orange)!important;}
 .frm_forms .frm_form_fields select {color: var(--global)!important;}
 
 .frm_forms .frm_form_fields textarea {min-height:150px; padding: 16px;}
