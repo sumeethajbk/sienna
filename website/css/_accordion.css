@@ -1,4 +1,4 @@
-.accordion-module {clear: both; width: 100%; padding:49px 0 41px;}
+.accordion-module {clear: both; width: 100%; padding:14px 0 40px;}
 .accordion-main .accordion:last-child {margin: 0;}
 
 .accordion-item, .accordion-item.active:hover {border-bottom: solid 1px var(--Dark-Gray);}
