@@ -499,6 +499,7 @@ a.prev.page-numbers.disabled{display: none;}
 
 
 @media only screen and (max-width:767px) and (min-width:200px) {  
+    body {font-size: 0.889rem; line-height: 1.5;}
     .readmore {font-size: 0.889rem; gap: 4px;}
     .readmore:after {font-size: 0.889rem; line-height: 1;}
     
