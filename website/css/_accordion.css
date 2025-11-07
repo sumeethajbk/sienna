@@ -1,67 +1,25 @@
+.accordion-module {clear: both; width: 100%; padding:49px 0 41px;}
+.accordion-main .accordion:last-child {margin: 0;}
 
-.accordion-header{padding: 18px 64px 18px 8px;  cursor: pointer; position: relative; } 
-.accordion-list{border-bottom: 1px solid var(--Dark-Gray);}
+.accordion-item, .accordion-item.active:hover {border-bottom: solid 1px var(--Dark-Gray);}
+.accordion-item:hover {border-color:var(--Sienna-Orange);}
+.accordion-item:hover a {color: var(--Foreground);}
+.accordion-item .accordion-heading { display: block; line-height: 1.5; font-size: 1rem; color: var(--Dark-Gray); text-decoration: none; font-weight:bold; padding:16px 56px 16px 8px; position: relative; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out;}
 
-.accordion-icon svg{top: 50%; left: 50%; transform: translate(-50%,-50%); transition: top 0.5s ease; position: absolute;}
-.accordion-header:hover .accordion-icon svg:first-child{top: calc(50% - 3px);}
-.accordion-header:hover .accordion-icon svg:last-child{top: calc(50% + 3px);}
-.accordion-header.open:hover .accordion-icon svg,
-.accordion-header.open .accordion-icon svg{top: calc(50% + 0px); transform: translate(-50%, -50%) rotate(180deg);}
+.accordion-item .accordion-heading::after {color: var(--Sienna-Orange); content: "\f078"; font-family: "Font Awesome 7 Pro"; font-style: normal; font-weight: 400; font-size: 1.333rem; line-height:1;  right: 8px; position: absolute; top:50%; transform: translateY(-50%); transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out;}
+.accordion-item.active .accordion-heading::after {transform: translateY(-50%) rotate(180deg);}
 
+.accordion-item {position: relative;}
+.accordion-item .content { display: none; padding:11px 20px 20px 20px; font-size: 0.778rem; line-height: 1.5; opacity: 0.75; color: var(--Dark-Gray); font-weight: normal;} 
+.accordion-item .content p {margin-bottom:14px;}
+.accordion-item .content p:last-child {margin-bottom: 0;}
+.accordion-item .content ul, .accordion-item .content ol {margin: 0 0 6px 21px!important;}
+.accordion-item .content ul li:before {display: block; content: ""; width: 3px; height: 3px; background: var(--Dark-Gray); left: -12px; top: 10px;}
+.accordion-item .content ul li, .accordion-item .content ol li {margin-bottom: 4px;}
+.accordion-item .content ol li:before {left: -15px; color: var(--Dark-Gray);}
+.accordion-item .content ul ~ ol {margin-top: 14px!important;}
 
-
-.accordion-icon{transition: var(--b-transition); position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 24px; height: 24px; background-color: var(--Teal);}
-.accordion-header.open .accordion-icon{background-color: var(--Umber);} 
-
-.accordion-header.open{color: var(--Accent);} 
-.accordion-header.open span.ui-plus { transform: rotate(45deg); } 
-.accordion-title{display: block; transition: transform 0.5s ease; color: var(--Dark-Gray); font-family: var(--heading-font);}
-
-.accordion-header .accordion-title::after {color: var(--Fuschia); content: "\f078"; font-family: "Font Awesome 7 Pro"; font-style: normal; font-weight: 400; font-size: 24px; line-height: 24px;  right: 9px; position: absolute; top: 50%; transform: translate(0, -50%);}
-.accordion-header.open .accordion-title::after { content: "\f077";}
-.accordion-header.lg .accordion-title::after{top: calc(50% - 2px); right: 0; font-size: 20px; line-height: 20px;}
-
-
-span.ui-plus { width: 24px; height: 24px; left: 27px; } 
-span.ui-plus::after, span.ui-plus::before { top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: var(--Blue); content: ""; display: block; position: absolute; z-index: -1; } 
-span.ui-plus::before { width: 24px; height: 2px; } 
-span.ui-plus::after { width: 2px; height: 24px; } 
-.accordion-content{ max-height: 0; transition: max-height 0.9s; overflow: hidden; } 
-.accordion-desc:not(.fs-20){ color: var(--Dark-Gray); line-height: 150%; font-size: 16px; font-weight: 300; font-family: var(--text-font); padding: 4px 12px 28px 22px; }
-.accordion-desc{padding: 0 0 32px;}
-.accordion-desc ul > li::before { top: 10px; left: -11px; width: 4px; height: 4px; } 
-.accordion-desc ol { margin: 0 0 28px 27px; }
-.accordion-desc ol > li::before { font-size: 14px; line-height: 14px; top: 3px; left: -17px; } 
-.accordion-wrap { padding: 90px 0 20px; } 
-.accordion-head { justify-content: space-between; gap: 20px; } 
-.accordion-head-lt h3 { margin-bottom: 0; font-size: 2.5rem; }
-
-
-
-/*-- media css starts here --*/
-@media only screen and (min-width: 1024px){
-    .accordion-main{padding: 10px 0 64px;}
-    .two-column-text .accordion-main{padding: 0;}
-    body.career-template-default .accordion-main{padding: 19px 0 25px;}
-    .application-main{margin-top: 40px;}
-
+/*-- media starts here --*/
+@media only screen and (max-width: 767px) and (min-width: 200px){
+	
 }
-@media only screen and (min-width: 760px){
-    .accordion-header.lg{padding: 24px 32px 31px 0;}
-}
-@media screen and (max-width: 1023px) and (min-width: 760px){
-    .accordion-main{padding: 40px 0 60px;}
-}
-@media screen and (max-width: 759px) and (min-width: 0px){
-    .project-case-study-main .accordion-main{padding: 12px 0 47px;}
-    .careers-post-article .accordion-main{padding: 31px 0 48px;}
-    .accordion-main{padding: 40px 0 57px;}
-    .accordion-header{padding: 16px 64px 16px 0; font-size: 14px; line-height: 21px; font-weight: 500; letter-spacing: 0;}
-    .accordion-header.lg{padding: 29px 64px 19px 0;}
-    .accordion-header span.ui-plus {left: 0; margin-bottom: 20px; display: block; position: relative;}
-    .accordion-desc{padding: 3px 0 22px;}
-    .accordion-wrap { padding: 50px 0 20px; }
-    .accordion-head-lt h3 {font-size: 2rem;}
-    .accordion-title.fs-20{font-size: 16px; line-height: 20px;}
-    .accordion-header .accordion-title::after{font-size: 20px; line-height: 20px;}
-} 

@@ -19,7 +19,7 @@
 <body class="page-template-ltc-province">
 <div id="main">
   <header id="main_header" class="main_header">
-    <div class="notification-bar">
+    <div class="notification-bar" style="display: none;">
       <div class="container-lg">
         <div class="notification-wrap flex">
           <div class="notification-left">
@@ -50,41 +50,27 @@
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Careers</a></li>
                 <li><a href="#">Investor Centre</a></li>
-                <li><a href="#">Contact</a> </li>
+                <li class="menu-button"><a href="#">Contact</a> </li>
               </ul>
             </nav>
             <div class="header-search"> <a href="#" class="search-btn"> <span class="custom_icon"> <em class="fa-sharp fa-regular fa-magnifying-glass"></em></span></a>
-            <div class="search_form">
-              <div class="search_form_container">
-                <form action="/" role="search" method="get" class="hdrsearch-form" name="global_search">
-                  <span class="icon_rel"> <span class="custom_icon"> <em class="fa-sharp fa-regular fa-magnifying-glass"></em></span>
-                  <input type="text" id="" class="search-field" placeholder="What can we help you find?" value="" name="search">
-                  </span> <span class="clear-btn">clear</span>
-                  <input type="submit" name="" value="">
-                  <input type="hidden" name="search_sienna" value="global_search">
-                </form>
+              <div class="search_form">
+                <div class="search_form_container">
+                  <form action="/" role="search" method="get" class="hdrsearch-form" name="global_search">
+                    <span class="icon_rel"> <span class="custom_icon"> <em class="fa-sharp fa-regular fa-magnifying-glass"></em></span>
+                    <input type="text" id="" class="search-field" placeholder="What can we help you find?" value="" name="search">
+                    </span> <span class="clear-btn"><em class="fa-light fa-xmark"></em></span>
+                    <input type="submit" name="" value="">
+                    <input type="hidden" name="search_sienna" value="global_search">
+                  </form>
+                </div>
               </div>
             </div>
-          </div>
             <!-- end of header search --> 
           </div>
         </div>
         <!-- end of header right -->
         <div class="toggle_button flex flex-center"><span class="line line1"></span> <span class="line line2"></span> <span class="line line3"></span></div>
-        <div class="header-search hide-in-desktop">
-          <div class="search-icon"><img src="images/search.svg" alt="Search"/></div>
-          <div class="search_form">
-            <div class="search_form_container">
-              <form role="search" method="get" class="hdrsearch-form" action="#">
-                <input type="search" id="search" class="search-field" placeholder="I’m looking for..." value="" name="search">
-                <div class="submit-wrapper">
-                  <input type="submit" name="" value="Search">
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <!-- end of header search --> 
       </div>
       <!-- end of header --> 
     </div>
@@ -92,6 +78,33 @@
   <!-- end of main header -->
   
   <main id="mainContent">
+    <section class="hero-banner-section pos-relative" style="background: var(--Tint-Green);">
+      <div class="container-lg">
+        <div class="hero-banner-main flex">
+          <div class="hero-banner-thumb">
+            <div class="hero-banner-img">
+              <picture class="object-fit" role="none">
+                <source srcset="images/ltc-province-banner@2x.jpg" media="(min-width: 768px)" />
+                <img src="images/ltc-province-banner-mob@2x.jpg" alt="LTC Banner" title="LTC Banner" /> </picture>
+            </div>
+            <!-- end of hero banner img --> 
+          </div>
+          <!-- end of hero banner thumb -->
+          <div class="hero-banner-text">
+            <div class="hero-banner-inner"> <span class="optional-text">Senior Living</span>
+              <h1>Long-Term &amp; Continuing Care in British Columbia</h1>
+              <p>Shadow device rectangle team shadow align stroke line share blur plugin content share polygon plugin layout link use boolean variant community text draft.</p>
+              <div class="btn-wrap"> <a href="#" class="button">Call to Action</a> <a href="#" class="readmore">Secondary CTA</a></div>
+              <!-- end of btn wrap --> 
+            </div>
+            <!-- end of hero banner inner --> 
+          </div>
+          
+          <!-- end of hero banner text --> 
+        </div>
+      </div>
+    </section>
+    <!-- end of hero banner section -->
     <section class="location-section">
         <div class="container">
             <div class="location-main flex">
@@ -312,14 +325,14 @@
                 <div class="features-sidebar">
                     <div class="features-sidebar-map">
                         <figure class="object-fit">
-                            <img src="images/british-columbia-map.svg" alt="british-columbia-map" title="british-columbia-map">
+                            <img src="images/british-columbia-map.svg" alt="Map Icon" title="Map Icon">
                         </figure>
                     </div>
                     <span class="optional-text">Living Options in British Columbia</span>
                     <h2 class="h4">Short sidebar header shows here on a few lines of text to intro the content on the right side.</h2>
                     <div class="features-sidebar-btn-wrap flex flex-vcenter">
                         <a href="#" class="button btn-orange">More</a>
-                        <a href="#" class="link-trail">Secondary CTA</a>
+                        <a href="#" class="readmore">Secondary CTA</a>
                     </div>
                 </div>
                 <div class="features-sidebar-lists flex pos-relative">
@@ -355,8 +368,8 @@
         <div class="container">
             <div class="resources-slider-main">
                 <div class="resources-slider-header flex flex-vcenter">
-                    <span class="optional-text">Resident & Family Resources</span>
-                    <h2 class="h3">Short headline for the Resident & Family Resources module appears here on a few lines of text.</h2>
+                    <span class="optional-text">Resident &amp; Family Resources</span>
+                    <h2 class="h3">Short headline for the Resident &amp; Family Resources module appears here on a few lines of text.</h2>
                 </div>
                 <div class="resources-slider-row">
                     <div class="resources-slider-item" style="background: var(--Tint-Blue);">
@@ -414,10 +427,158 @@
             </div>
         </div>
     </section>
-
+  <section class="signup-module">
+      <div class="container">
+        <div class="signup-main">
+          <div class="signup-wrap flex">
+            <div class="signup-lt">
+              <div class="h5">Short but persuasive headline aimed at driving email signups.</div>
+              <span class="sub-text">A short disclaimer about privacy can appear here if necessary.</span> </div>
+            <div class="signup-rt">
+              <div class="signup-form">
+                <div class="frm_forms  with_frm_style frm_style_formidable-style" id="frm_form_2_container">
+                  <form enctype="multipart/form-data" method="post" class="frm-show-form  frm_js_validate  frm_pro_form " id="form_news-letter" style="overflow-x: visible;">
+                    <div class="frm_form_fields ">
+                      <fieldset>
+                        <div class="frm_fields_container">
+                          <input type="hidden" name="frm_action" value="create">
+                          <input type="hidden" name="form_id" value="2">
+                          <input type="hidden" name="frm_hide_fields_2" id="frm_hide_fields_2" value="">
+                          <input type="hidden" name="form_key" value="news-letter">
+                          <input type="hidden" name="item_meta[0]" value="">
+                          <input type="hidden" id="frm_submit_entry_2" name="frm_submit_entry_2" value="2e42f749d2">
+                          <input type="hidden" name="_wp_http_referer" value="/">
+                          <div id="frm_field_8_container" class="frm_form_field form-field  frm_required_field frm_top_container frm_full">
+                            <label for="field_29yf4d2" id="field_29yf4d2_label" class="frm_primary_label">Email <span class="frm_required" aria-hidden="true">*</span> </label>
+                            <input type="email" id="field_29yf4d2" name="item_meta[8]" value="" placeholder="Your Email Address" data-reqmsg="Your Email Address" aria-required="true" data-invmsg="Your Email Address" aria-invalid="false">
+                          </div>
+                          <div id="frm_field_11_container" class="frm_form_field form-field  frm_submit-btn">
+                            <div class="frm_submit frm_flex">
+                              <button class="frm_button_submit frm_final_submit button btn-gray" type="submit" formnovalidate="formnovalidate">Submit</button>
+                            </div>
+                          </div>
+                          <input type="hidden" name="item_key" value="">
+                          <input name="frm_state" type="hidden" value="PpGFJHRAXVXy25JOrJu5y9FETI89xtIm8UhG7MdACFLUQJae/FYtwZIYbD27aGAQ">
+                        </div>
+                      </fieldset>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of signup --> 
   </main>
   <!-- end of mainContent -->
-
+<footer id="main_footer">
+    <div class="container">
+      <div class="footer pos-relative">
+        <div class="footer_top flex">
+          <div class="footer_lt">
+            <div class="footer-logo">
+              <figure role="none" class="object-fit"> <a href="#"> <img src="images/footer-logo.svg" alt="Sienna Senior Living Logo" title="Sienna Senior Living Logo"></a> </figure>
+            </div>
+            <!-- end of ftr logo --> 
+          </div>
+          <!-- end of footer_lt -->
+          
+          <div class="footer_rt">
+            <div class="h5">Short positioning statement community figma edit scale thumb nail boolean font clip fill shadow stroke bullet style text horizontal community layer scale boolean layout.</div>
+          </div>
+          <!-- end of footer rt --> 
+        </div>
+        <!-- end of footer_top -->
+        <div class="footer_top_mid flex">
+          <ul class="ftr_mid_menu" role="navigation">
+            <li><a href="#">Where to Begin</a></li>
+            <li><a href="#">Community Locator</a></li>
+            <li><a href="#">Resident &amp; Family Resources</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li class="ftr-menu-button"><a href="#">Contact Us</a> </li>
+          </ul>
+        </div>
+        <!-- end of footer_top_mid-->
+        <div class="footer_middle flex">
+          <div class="ftr-menu-wrap flex">
+            <div class="footer-menu footer1-of-3">
+              <ul class="menu-list">
+                <li class="menu-item-has-children" id="menu-item-101"><a href="#">Senior Living</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Long-Term &amp; Continuing Care</a>
+                      <ul class="sub-menu">
+                        <li><a href="#">Alberta</a></li>
+                        <li><a href="#">British Columbia</a></li>
+                        <li><a href="#">Ontario</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Retirement Living</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-menu footer1-of-3">
+              <ul class="menu-list">
+                <li class="menu-item-has-children" id="menu-item-102"><a href="#">Investor Centre</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Company Profile</a></li>
+                    <li><a href="#">Investor News</a></li>
+                    <li><a href="#">Impact Report</a></li>
+                    <li><a href="#">Management &amp; Governance</a></li>
+                    <li><a href="#">Reports &amp; Regulatory Filings</a></li>
+                    <li><a href="#">Events &amp; Presentations</a></li>
+                    <li><a href="#">Request Information</a></li>
+                    <li><a href="#">Investor FAQ</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-menu footer1-of-3">
+              <ul class="menu-list">
+                <li class="menu-item-has-children" id="menu-item-103"><a href="#">Company</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Sienna for Seniors Foundation</a></li>
+                    <li><a href="#">Partners &amp; Accreditations</a></li>
+                    <li><a href="#">Our Stories</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Environmental, Social &amp; Governance (ESG)</a></li>
+                    <li><a href="#">Scholarship</a></li>
+                    <li><a href="#">Careers</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end of footer_middle -->
+        
+        <div class="footer_btm flex">
+          <div class="ftr-btm-lt">
+            <div class="copy">
+              <p>Copyright &copy; 2025 Sienna Senior Living. All rights reserved.</p>
+            </div>
+          </div>
+          <!-- end of ftr-btm-lt -->
+          <div class="ftr-btm-rt">
+            <div class="ftr-btm-links">
+              <ul role="navigation">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Accessibility</a></li>
+              </ul>
+            </div>
+            <!-- end of ftr-btm-links --> 
+          </div>
+          <!-- end of ftr-btm-rt --> 
+        </div>
+        <!-- end of footer_btm --> 
+      </div>
+      <!-- end of footer --> 
+    </div>
+  </footer>
 </div>
 <!-- end of main --> 
 <script src="js/jquery-3.7.1.min.js"></script> 

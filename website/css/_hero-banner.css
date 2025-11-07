@@ -1,5 +1,5 @@
-.hero-banner-section {float: left; width: 100%; z-index: 1; position: relative; background: var(--Tint-Orange); padding: 88px 0 0 0;}
-.hero-banner-section .optional-text {color: var(--Foreground);}
+.hero-banner-section {float: left; width: 100%; z-index: 1; position: relative; background: var(--Tint-Orange); padding: 88px 0 0 0; margin: 0 0 40px 0;}
+.hero-banner-section .optional-text {color: var(--Foreground); opacity: 1;}
 .hero-banner-main {width: 100%; position: relative; gap:5.88235294117647%; flex-direction: row-reverse; min-height: 640px;}
 .hero-banner-main .hero-banner-thumb {width:47.05882352941176%; position: relative;}
 .hero-banner-main .hero-banner-thumb .hero-banner-img {bottom: -40px; position: absolute; width: 100%;}
@@ -9,14 +9,13 @@
 .hero-banner-main .hero-banner-text p {font-size: 1rem; color: var(--Dark-Gray); margin-bottom: 32px;}
 
 /*-- media starts here --*/
-
 @media only screen and (max-width:1280px) and (min-width:1024px) {
     .hero-banner-main .hero-banner-text {padding-left: 0;}
 }
 
 
 @media only screen and (max-width: 1023px) and (min-width: 200px){
-    .hero-banner-section {padding:72px 0 28px 0;}
+    .hero-banner-section {padding:72px 0 28px 0; margin: 0;}
     .hero-banner-section .container-lg {padding: 0 16px;}
     .hero-banner-main {flex-direction: column; gap:30px; min-height: inherit;}
     .hero-banner-main .hero-banner-thumb {width: 100%; min-height: inherit; height: 61.285vw; overflow: hidden;}

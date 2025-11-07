@@ -146,19 +146,19 @@ body {font-family: "Blackbird", sans-serif;  color:var(--body-text); font-size:â
 .container-sm {max-width: 960px; margin: 0 auto; width: 100%;}
 .btn {display:block;}
 .btn-wrap {width:100%; clear:both; font-size: 0; display: flex; flex-wrap: wrap; gap:20px; align-items: center;}
-.optional-text {font-size:1rem; color:var(--optional-txt); font-weight: bold; margin:0 0 18px 0; display:block; line-height: 1.2; width: 100%; font-family: "Blackbird",sans-serif;}
+.optional-text {font-size:1rem; color:var(--optional-txt); font-weight: bold; margin:0 0 18px 0; display:block; line-height: 1.2; width: 100%; font-family: "Blackbird",sans-serif; opacity: 0.5;}
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {color:var(--heading); text-decoration: none;}
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .h1 a:hover, .h2 a:hover, .h3 a:hover, .h4 a:hover, .h5 a:hover, .h6 a:hover {color:var(--blue);}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .h1 a:hover, .h2 a:hover, .h3 a:hover, .h4 a:hover, .h5 a:hover, .h6 a:hover {color:var(--Sienna-Orange);}
 
 
 .h1, .h2, .h3, .h4, .h5, .h6 {clear: both; margin: 0 0 23px; color: var(--heading); font-family: "Ivar Display", sans-serif; font-weight: bold;}
 .h1 {font-size: 4rem; line-height:1.2; margin-bottom: 20px;}
-.h2 {font-size: 3.556rem; line-height:1.2; margin-bottom: 31px;}
-.h3 {font-size: 2.667rem; line-height:1.2; margin-bottom: 30px;}
-.h4 {font-size: 2.222rem; line-height:1.2; margin-bottom: 30px;}
-.h5 {font-size: 1.778rem; line-height:1.2; margin-bottom:30px;}
-.h6 {font-size: 1.333rem; line-height:1.2; margin-bottom: 18px;}
+.h2 {font-size: 3.556rem; line-height:1.2; margin-bottom: 16px;}
+.h3 {font-size: 2.667rem; line-height:1.2; margin-bottom: 16px;}
+.h4 {font-size: 2.222rem; line-height:1.2; margin-bottom: 16px;}
+.h5 {font-size: 1.778rem; line-height:1.2; margin-bottom: 16px;}
+.h6 {font-size: 1.333rem; line-height:1.2; margin-bottom: 16px;}
 
 section ol:last-child, section ul:last-child {margin-bottom: 0!important;}
 section ol li:last-child, section ul li:last-child {margin-bottom: 0!important;}
@@ -175,6 +175,14 @@ section p a, section li a {position: relative;}
 .readmore:after {content: "\f178"; position: relative; display: inline-block; font-size:1rem; font-family: "Font Awesome 7 Sharp"; font-weight:400; line-height: 1.2; color: var(--Sienna-Orange); transform: translateX(0); transition: all 0.5s ease-in-out;}
 .readmore:hover {color: var(--black);}
 .readmore:hover:after {transform: translateX(4px);}
+
+/* CIrcle Button */
+.circle-arrow-btn{width: fit-content; gap:0;}
+.circle-arrow-btn:hover {gap:20px;}
+.circle-arrow-btn:hover span.fa-sharp{background: var(--Sienna-Orange); outline: 4px solid var(--button-outline); color: var(--white);}
+.circle-arrow-btn span.fa-sharp{width: 64px; height: 64px; background: var(--white); border-radius: 50%; font-size: 1.333rem; line-height: 1; color: var(--Sienna-Orange); display: flex; align-items: center; justify-content: center; transition: all .5s ease;}
+span.location-btn-text{font-size: 1rem; color: var(--Foreground); font-weight: 700; line-height: 1.35; transition: all .5s ease; position: relative; opacity: 0; transform: translateX(-10px); transition: all 0.3s ease-in-out; visibility: hidden; width: 0; white-space: nowrap;}
+.circle-arrow-btn:hover span.location-btn-text{opacity: 1; transform: translateX(0); visibility: visible; width:auto;}
 
 /* Background Bg */
 .background-bg {top:0; left:0; right:0; bottom:0; width:100%; height:100%; position:absolute; z-index:-1; }

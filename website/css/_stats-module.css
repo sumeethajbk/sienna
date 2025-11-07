@@ -1,0 +1,23 @@
+.stats-module {background: var(--Tint-Green);}
+.stats-wrap {gap:56px 4.666666666666667%; justify-content: space-between;}
+.stats-grid {width: 21.5%; flex-grow: 1;}
+.stats-grid .h6 {color: var(--Foreground);}
+.stats-grid p{font-size: 1rem; line-height: 1.5; color: var(--Dark-Gray); margin-bottom: 16px;}
+.stats-grid .number {font-size: 4rem; font-weight:bold; line-height: 0.8; color: var(--Sienna-Orange); font-family: "Ivar Display", sans-serif; display: flex; flex-wrap: wrap; width: 100%; margin:0 0 7px 0;}
+.stats-grid .number span {display: inline-block;}
+
+.features-icon {margin-bottom:16px; position: relative; width:auto; height: 48px; display: flex; align-items: center;}
+.features-cnt {clear: both;}
+
+@media only screen and (max-width:1023px) and (min-width:200px) {    
+    .stats-wrap {gap:40px;}
+}
+
+@media only screen and (max-width:1023px) and (min-width:768px) {
+    .stats-wrap {width: 47%;}
+}
+
+@media only screen and (max-width:767px) and (min-width:200px) {
+    
+    .stats-wrap{width: 100%; display: flex; gap: 15px; flex-wrap: wrap;} 
+}

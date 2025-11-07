@@ -1,0 +1,27 @@
+.cta-module {width: 100%; z-index: 1; position: relative; clear: both; background: var(--Tint-Green); padding: 40px 0 0 0;}
+.cta-module:after {background:var(--Tint-Green); content: ""; position: absolute; left: 0; bottom:-100%; width: 100%; height:100%; z-index: 1; display: block;}
+.cta-main {width: 100%; align-items:flex-end; gap:6.666666666666667%;}
+
+.cta-main .cta-text {padding:60px 0 100px 0; position: relative; width:46.666666666666664%; flex-grow: 1;}
+.cta-main .cta-text .h2 {color: var(--Sienna-Orange); margin-bottom: 24px;}
+.cta-main .cta-text p {font-size: 1.111rem; line-height: 1.5; color: var(--Dark-Gray); margin-bottom: 36px;}
+.cta-main .cta-thumb {max-width: 46.666666666666664%; width: 100%; margin-top: auto;}
+
+.cta-reverse .cta-main{flex-direction: row-reverse;}
+
+/*-- media starts here --*/
+@media only screen and (max-width: 1023px) and (min-width:768px){
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 200px){
+}
+@media only screen and (max-width:767px) and (min-width: 200px){
+    .cta-module {display: flex; flex-wrap: wrap; flex-direction: column-reverse; position: relative; padding: 32px 0;}
+    .cta-main {min-height: inherit;}
+    .cta-main .cta-text {max-width: 100%; padding:0; width: 100%; text-align: center;}
+    .cta-main .cta-text .h2 {margin-bottom: 15px;}
+    .cta-main .cta-text p {font-size: 1rem; margin-bottom: 31px;}
+    .cta-main .cta-thumb {max-width: 90.185%; margin: 0 auto;}
+    .cta-main .cta-thumb .btn-wrap {justify-content: center; flex-direction: column;}
+    .cta-main .cta-thumb .btn-wrap .button {width: 100%;}
+}

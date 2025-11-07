@@ -15,7 +15,7 @@
     --white-75: rgb(255 255 255 / 75%);
     --white-80: rgb(255 255 255 / 80%);
     --white-90: rgb(255 255 255 / 90%);
-    --optional-txt: rgba (68 68 68 / 50%);
+    --optional-txt: #444444;
     --heading: #2b2c2d;
     --body-text: #2b2c2d; 
     --anchor: #444444;

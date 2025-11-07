@@ -1,0 +1,24 @@
+.features-module-main {clear: both; width: 100%; padding: 79px 0 80px 0; position: relative; z-index: 1;}
+.features-module-section {background-color: var(--white); clear: both; width: 100%; position: relative; z-index: 1;}
+.features-module {gap:56px 4.666666666666667%; justify-content: space-between;}
+.features-grid {width: 21.5%; flex-grow: 1;}
+.features-grid .h6 {color: var(--Foreground);}
+.features-grid p{font-size: 1rem; line-height: 1.5; color: var(--Dark-Gray); margin-bottom: 16px;}
+
+.features-icon {margin-bottom:16px; position: relative; width:auto; height: 48px; display: flex; align-items: center;}
+.features-cnt {clear: both;}
+
+@media only screen and (max-width:1023px) and (min-width:200px) {    
+    .features-module {gap:40px;}
+}
+
+@media only screen and (max-width:1023px) and (min-width:768px) {
+    .features-grid {width: 47%;}
+}
+
+@media only screen and (max-width:767px) and (min-width:200px) {
+    
+    .features-grid {width: 100%; display: flex; gap: 15px; flex-wrap: wrap;} 
+    .features-icon {width: 63px; height: 63px;}
+    .features-cnt {flex:1;}
+}
