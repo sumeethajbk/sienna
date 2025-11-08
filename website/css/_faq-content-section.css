@@ -1,0 +1,10 @@
+
+.faq-content-title{gap: 12px; align-items: center; margin-bottom: 24px;}
+.faq-content-icon{width: 32px; height: 32px; }
+.faq-content-title h2{flex: 1; margin-bottom: 0;}
+
+@media screen  and (min-width: 1024px){
+    .faq-content-main{padding: 80px 0; gap: 80px;}
+    .faq-content-sidebar{flex: 0 0 228px; flex-grow: 1;}
+    .faq-content-question{flex: 0 0 calc(100% - 308px); flex-grow: 1;}
+}
