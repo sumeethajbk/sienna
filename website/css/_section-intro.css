@@ -1,6 +1,7 @@
-.intro-module {clear: both; width: 100%; padding: 79px 0 80px 0; position: relative; z-index: 1;}
+.intro-module {clear: both; width: 100%; padding:80px 0 80px 0; position: relative; z-index: 1;}
+.secwrapper {gap:65px;}
 .section-intro {clear: both; width:100%; position: relative;}
-.section-intro .h1 {color: var(--Sienna-Orange);}
-.section-intro .h3 {color: var(--Foreground); margin-bottom: 65px;}
-.section-intro .h4 {color: var(--Foreground); margin-bottom: 65px;}
+.section-intro .h1 {color: var(--Sienna-Orange); margin:0 0 40px;}
+.section-intro .h3 {color: var(--Foreground); margin: 0;}
+.section-intro .h4 {color: var(--Foreground); margin: 0;}
 .section-intro-main {position: relative; z-index: 1;}

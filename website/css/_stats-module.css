@@ -1,9 +1,9 @@
 .stats-module {background: var(--Tint-Green);}
-.stats-wrap {gap:56px 4.666666666666667%; justify-content: space-between;}
-.stats-grid {width: 21.5%; flex-grow: 1;}
+.stats-wrap {gap:48px 4%; justify-content: space-between;}
+.stats-grid {width:22%; flex-grow: 1;}
 .stats-grid .h6 {color: var(--Foreground);}
-.stats-grid p{font-size: 1rem; line-height: 1.5; color: var(--Dark-Gray); margin-bottom: 16px;}
-.stats-grid .number {font-size: 4rem; font-weight:bold; line-height: 0.8; color: var(--Sienna-Orange); font-family: "Ivar Display", sans-serif; display: flex; flex-wrap: wrap; width: 100%; margin:0 0 7px 0;}
+.stats-grid p{font-size: 1rem; line-height: 1.5; color: var(--Dark-Gray); margin-bottom: 17px;}
+.stats-grid .number {font-size: 4rem; font-weight:bold; line-height: 0.8; color: var(--Sienna-Orange); font-family: "Ivar Display", sans-serif; display: flex; flex-wrap: wrap; width: 100%; margin:0 0 8px 0;}
 .stats-grid .number span {display: inline-block;}
 
 .features-icon {margin-bottom:16px; position: relative; width:auto; height: 48px; display: flex; align-items: center;}
