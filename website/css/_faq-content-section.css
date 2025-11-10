@@ -1,4 +1,16 @@
 
+.faq-sidebar-question{padding-top: 32px; border-top: 1px solid var(--Sienna-Orange); margin-top: 32px;}
+ul.faq-content-category{margin: 0;}
+ul.faq-content-category li a{gap: 8px; font-size: 0.889rem; color: var(--Foreground); font-weight: 700; line-height: 1; }
+ul.faq-content-category li a:hover{color: var(--Sienna-Orange);}
+ul.faq-content-category li::before{display: none;}
+ul.faq-content-category li span.dot{width: 20px; height: 20px; border-radius: 50%; background: var(--white); position: relative;}
+ul.faq-content-category li span.dot::before{content: ""; top: 50%; left: 50%; position: absolute; transform: translate(-50% , -50%); width: 10px; height: 10px; display: block; border-radius: 50%; background: var(--Tint-Orange);}
+ul.faq-content-category li a.active span.dot{background: var(--Tint-Orange);}
+ul.faq-content-category li a.active span.dot::before{background: var(--Sienna-Orange);}
+
+.faq-content-question{gap: 48px;}
+.faq-content-item{width: 100%;}
 .faq-content-title{gap: 12px; align-items: center; margin-bottom: 24px;}
 .faq-content-icon{width: 32px; height: 32px; }
 .faq-content-title h2{flex: 1; margin-bottom: 0;}
@@ -7,4 +19,21 @@
     .faq-content-main{padding: 80px 0; gap: 80px;}
     .faq-content-sidebar{flex: 0 0 228px; flex-grow: 1;}
     .faq-content-question{flex: 0 0 calc(100% - 308px); flex-grow: 1;}
+
+    
+}
+
+@media screen  and (max-width: 767px) and (min-width: 200px){
+    .faq-content-main{padding: 28px 0; gap: 56px;}
+    .faq-content-sidebar, .faq-content-question{width: 100%;}
+    ul.faq-content-category{display: flex; flex-wrap: wrap; gap: 6px;}
+    ul.faq-content-category li{margin-bottom: 0;}
+    ul.faq-content-category li a{font-size: 0.778rem; line-height: 1.5; padding: 4px 8px; background: var(--Tint-Pink); border-radius: 60px; opacity: 0.75;}
+    ul.faq-content-category li a:hover{opacity: 1;}
+
+    .faq-sidebar-question{padding-top: 20px; margin-top: 20px; }
+    .faq-sidebar-question h2{font-size: 1rem; line-height: 1.2;}
+    .faq-content-icon{width: 20px; height: 20px;}
+    .faq-content-icon figure{display: flex;}
+    .faq-content-item .accordion:first-child .accordion-item .accordion-heading{padding-top: 0;}
 }

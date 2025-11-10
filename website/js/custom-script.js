@@ -169,6 +169,21 @@ jQuery(document).ready(function () {
     });
   }
 
+  
+  /* FAQ Active Link */
+  // make the first link active by default
+  $('ul.faq-content-category li:first-child a').addClass('active');
+
+  // handle click event
+  $('ul.faq-content-category li a').on('click', function() {
+    $('ul.faq-content-category li a').removeClass('active'); // remove from all
+    $(this).addClass('active'); // add to clicked one
+
+
+
+});
+
+
 
 
  

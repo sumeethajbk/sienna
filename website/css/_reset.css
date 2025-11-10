@@ -184,4 +184,6 @@ h6 {font-size: 1rem; line-height: 1.5; margin-bottom:5px;}
     table tbody tr td {padding: 14px 8px 11px;}
     
     blockquote {margin: 52px 0 47px;}
+
+    .divider-line{margin: 4px 0;}
 }
