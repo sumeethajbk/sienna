@@ -2,6 +2,19 @@
 .secwrapper {gap:65px;}
 .section-intro {clear: both; width:100%; position: relative;}
 .section-intro .h1 {color: var(--Sienna-Orange); margin:0 0 40px;}
+.section-intro .h1:last-of-type {margin: 0;}
 .section-intro .h3 {color: var(--Foreground); margin: 0;}
 .section-intro .h4 {color: var(--Foreground); margin: 0;}
 .section-intro-main {position: relative; z-index: 1;}
+
+
+@media only screen and (max-width:1023px) and (min-width:768px) {  
+    .intro-module {padding: 60px 0 60px 0;}
+    .section-intro .h1 {margin: 0 0 20px;}
+}
+
+@media only screen and (max-width:767px) and (min-width:200px) {  
+     .intro-module {padding: 28px 0 28px 0;}
+    .secwrapper {gap:40px;}
+    .section-intro .h1 {margin: 0 0 13px;}
+}

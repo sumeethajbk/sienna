@@ -1,0 +1,44 @@
+.repeater-section{clear: both; width: 100%; overflow: hidden;}
+.repeater-list {width: 100%; position: relative; z-index: 1;}
+.repeater-list:first-child .repeater-list-inner {padding-top: 80px;}
+.repeater-list:first-child:before {display: none;}
+.repeater-list:last-child .repeater-list-inner {padding-bottom: 80px;}
+.repeater-list-inner {justify-content: space-between; gap:10%; line-height: 1.5; font-size: 1rem; align-items: center; padding: 88px 0;}
+.repeater-list:before {background: var(--Foreground); opacity: 0.2; content: ""; display: block; max-width:calc(1344px - 64px); height: 1px; margin: 0 auto;}
+.repeater-list:nth-child(2n) .repeater-list-inner {flex-direction: row-reverse;}
+.repeater-list:nth-child(2n) .shadow {right: auto; left: -24px;}
+
+.repeater-text{flex: 1;}
+.repeater-text p {font-size: 1.111rem; line-height: 1.5; color: var(--Dark-Gray); margin-bottom: 32px;}
+.repeater-text p:last-child {margin-bottom: 0;}
+.repeater-img{max-width:540px; flex-grow: 1; max-height: 540px; height: 100%; width: 100%; position: relative; z-index: 1;}
+
+
+@media only screen and (max-width:1280px) {
+    .repeater-list:before {margin: 0 32px;}
+}
+
+@media only screen and (max-width: 1180px) and (min-width:1024px) {
+    .repeater-img {max-width: 440px; max-height: 440px;}
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 200px) {
+     .repeater-list-inner, .repeater-list:nth-child(2n) .repeater-list-inner {padding: 28px 0; gap:32px; align-items: flex-start; flex-direction: column;}
+}
+
+@media only screen and (max-width: 1023px) and (min-width:768px) {
+     .repeater-list:first-child .repeater-list-inner {padding-top: 60px;}
+     .repeater-list-inner, .repeater-list:nth-child(2n) .repeater-list-inner {padding:60px 0; gap:70px;}
+    .repeater-img {height:70vw;}
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px) {
+    .repeater-list-inner, .repeater-list:nth-child(2n) .repeater-list-inner {padding: 32px 0;}
+    .repeater-list:first-child .repeater-list-inner {padding-top:28px;}
+    .repeater-list:last-child .repeater-list-inner {padding-bottom: 28px;}
+   
+    
+    .repeater-list:nth-child(2n) .shadow {left: auto;}
+    .repeater-img {height: 83.59vw;}
+    .repeater-text p {font-size: 1rem; margin-bottom: 20px;}
+}

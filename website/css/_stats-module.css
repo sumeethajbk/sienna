@@ -6,18 +6,22 @@
 .stats-grid .number {font-size: 4rem; font-weight:bold; line-height: 0.8; color: var(--Sienna-Orange); font-family: "Ivar Display", sans-serif; display: flex; flex-wrap: wrap; width: 100%; margin:0 0 8px 0;}
 .stats-grid .number span {display: inline-block;}
 
-.features-icon {margin-bottom:16px; position: relative; width:auto; height: 48px; display: flex; align-items: center;}
-.features-cnt {clear: both;}
 
-@media only screen and (max-width:1023px) and (min-width:200px) {    
-    .stats-wrap {gap:40px;}
+
+@media only screen and (max-width:1160px) and (min-width:200px) {  
+    .stats-grid .number {font-size:2.667rem;}
 }
 
 @media only screen and (max-width:1023px) and (min-width:768px) {
-    .stats-wrap {width: 47%;}
+    .stats-wrap {gap:60px 40px;}
+    .stats-grid {width: 47%;}
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {
-    
-    .stats-wrap{width: 100%; display: flex; gap: 15px; flex-wrap: wrap;} 
+    .stats-module .secwrapper {gap: 61px;}
+    .stats-wrap{width: 100%; display: flex; gap:28px; flex-wrap: wrap;} 
+    .stats-grid {width: 100%;}
+    .stats-grid .number {margin: 0 0 2px 0;}
+    .stats-grid .h6 {margin-bottom: 12px;}
+    .stats-grid p {font-size: 0.889rem; margin-bottom: 16px;}
 }

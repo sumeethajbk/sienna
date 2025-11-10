@@ -19,9 +19,16 @@
 }
 
 @media only screen and (max-width:1023px) and (min-width:768px) {
+    .affiliates-module {padding: 60px 0;}
        .aff-grid {width: 48%;}
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {
+    .affiliates-module {padding: 28px 0;}
+    .affiliates-module .secwrapper {gap: 28px;}
+    .affiliates-module .section-intro .h1 {margin: 0 0 12px;}
     .aff-grid {padding: 20px; width: 100%;}
+    .aff-grid p {margin-bottom: 8px;}
+    .aff-thumb {margin-bottom:7px;}
+    
 }

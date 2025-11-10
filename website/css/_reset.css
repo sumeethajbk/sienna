@@ -8,11 +8,11 @@ a:hover, a:active {outline: 0;}
 a:hover {color: var(--anchor-hover);}
 h1, h2, h3, h4, h5, h6 {clear: both; margin: 0 0 20px; color: var(--heading); font-family: "Ivar Display", sans-serif; font-weight: bold;}
 h1 {font-size: 4rem; line-height:1.2; margin-bottom: 20px;}
-h2 {font-size: 3.556rem; line-height:1.2; margin-bottom: 31px;}
-h3 {font-size: 2.667rem; line-height:1.2; margin-bottom: 30px;}
-h4 {font-size: 2.222rem; line-height:1.2; margin-bottom: 30px;}
-h5 {font-size: 1.778rem; line-height:1.2; margin-bottom: 30px;}
-h6 {font-size: 1.333rem; line-height:1.2; margin-bottom: 18px;}
+h2 {font-size: 3.556rem; line-height:1.2; margin-bottom: 24px;}
+h3 {font-size: 2.667rem; line-height:1.2; margin-bottom: 16px;}
+h4 {font-size: 2.222rem; line-height:1.2; margin-bottom: 16px;}
+h5 {font-size: 1.778rem; line-height:1.2; margin-bottom: 16px;}
+h6 {font-size: 1.333rem; line-height:1.2; margin-bottom: 16px;}
 address {margin-bottom: 9px;}
 abbr[title] {border-bottom: 1px dotted #2b2b2b; cursor: help;}
 b, strong {font-weight: bold;}
@@ -75,7 +75,7 @@ tr:last-child td{border-bottom: 0;}
 
 caption, th, td {text-align: left;}
 del {color: #231f20;}
-hr {display: block; background:var(--black); height: 1px; width: 100%; vertical-align: middle; margin: 63px 0; border: 0 none; opacity: 0.5;}
+hr {display: block; background:var(--black); height: 1px; width: 100%; vertical-align: middle; margin:32px 0 33px; border: 0 none; opacity: 0.2;}
 ::selection {background-color: var(--Sienna-Orange); color: #fff;}
 ::-moz-selection {background-color: var(--Sienna-Orange); color: #fff;}
 
@@ -171,12 +171,13 @@ img.alignnone {margin:29px 0 23px; display: block; clear: both;}
 
 
 @media only screen and (max-width: 767px) and (min-width:200px) {
+hr {margin: 20px 0 20px;}
 h1 {font-size: 2.667rem; line-height:1.2; margin-bottom: 12px;}
-h2 {font-size: 2.222rem; line-height:1.2; margin-bottom: 16px;}
-h3 {font-size: 1.778rem; line-height:1.2; margin-bottom: 16px;}
-h4 {font-size: 1.333rem; line-height:1.2; margin-bottom: 16px;}
-h5 {font-size: 1.111rem; line-height:1.2; margin-bottom: 16px;}
-h6 {font-size: 0.667rem; line-height: 1.5; margin-bottom:16px;}
+h2 {font-size: 2.222rem; line-height:1.2; margin-bottom: 15px;}
+h3 {font-size: 1.778rem; line-height:1.2; margin-bottom: 15px;}
+h4 {font-size: 1.333rem; line-height:1.2; margin-bottom: 15px;}
+h5 {font-size: 1.111rem; line-height:1.2; margin-bottom: 15px;}
+h6 {font-size: 1rem; line-height: 1.5; margin-bottom:5px;}
     
     table thead tr th {font-size: 0.6rem;}
     th {padding: 8px 8px 8px;}

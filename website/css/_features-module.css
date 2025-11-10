@@ -6,19 +6,23 @@
 .features-grid p{font-size: 1rem; line-height: 1.5; color: var(--Dark-Gray); margin-bottom: 16px;}
 
 .features-icon {margin-bottom:16px; position: relative; width:auto; height: 48px; display: flex; align-items: center;}
+.features-icon img {width: 100%; height: 100%; max-height: 48px;}
 .features-cnt {clear: both;}
 
 @media only screen and (max-width:1023px) and (min-width:200px) {    
-    .features-module {gap:40px;}
+    .features-module {gap:32px;}
 }
 
 @media only screen and (max-width:1023px) and (min-width:768px) {
+    .features-module-main {padding: 60px 0;}
+    .features-module {gap:60px 40px;}
     .features-grid {width: 47%;}
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {
-    
-    .features-grid {width: 100%; display: flex; gap: 15px; flex-wrap: wrap;} 
-    .features-icon {width: 63px; height: 63px;}
-    .features-cnt {flex:1;}
+    .features-module-main {padding: 28px 0;}
+    .features-grid {width: 100%; display: flex; flex-wrap: wrap; flex-direction: column;} 
+    .features-grid p {font-size: 0.889rem; margin-bottom: 8px;}
+    .features-icon {height: 30px; margin-bottom: 6px;}
+    .features-icon img {width: 100%; height: 100%; max-height: 30px;}
 }
