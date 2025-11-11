@@ -1,11 +1,8 @@
 @import url("_hero-banner.css");
 @import url("_section-intro.css");
-
 @import url("_micro-cta-module.css");
-@import url("_register-module.css");
-@import url("_block-module.css");
-@import url("_single-cta-module.css");
-
+@import url("_single-testimonial-module.css");
+@import url("_fcam-module.css");
 @import url("_optional-cta-module.css");
 @import url("_repeater-section.css");
 @import url("_affiliates-module.css");
@@ -20,46 +17,54 @@
 
 .hero-banner-main .hero-banner-text h1 {font-size: 3.556rem;}
 
-.default-main{padding: 80px 0 55px; gap: 80px;}
+.default-main{padding: 80px 0 80px; gap:6.666666666666667%;}
 .default-article {flex: 1; }
-.default-article p span {font-size:1.333rem; line-height:1.5;}
+.default-article .w80 {margin: 25px 0 23px;}
+.default-article p span {font-size:1.333rem; line-height:1.5; margin-bottom: 23px; display: block;}
+
 
 /* Aside */
 .default-aside{flex: 0 0 335px;}
-.aside-block {background:var(--Tint-Orange); padding:24px;}
-.aside-block, .aside-block h5 {color:var(--White);}
+.aside-block {background:var(--Tint-Orange); padding:23px 24px 24px 24px;}
+.aside-block h5 {color:var(--Sienna-Orange); margin-bottom: 13px;}
+.aside-block p {margin-bottom: 24px; font-size: 0.889rem; line-height: 1.5;}
 
-
-ul.aside-links { margin: 0 0 40px; }
+.asidebar-nav .h5 {margin-bottom:16px; color: var(--Sienna-Orange);}
+.asidebar-nav hr {margin:0; background:var(--Sienna-Orange); opacity: 1;}
+ul.aside-links { margin: 0 0 40px;}
 ul.aside-links > li { margin: 0; }
-ul.aside-links > li > a { gap: 10px; border-bottom: 1px solid var(--Elevated); padding: 12px 0 12px; color: var(--Foreground); }
-ul.aside-links > li > a:hover{color: var(--Fuschia)}
+ul.aside-links > li > a {border-bottom: 1px solid var(--Tint-Blue); padding: 16px 0 16px; color: var(--black-60); font-weight: bold; font-size: 1rem; line-height: 1.5; width: 100%;}
+ul.aside-links > li > a:hover{color: var(--black);}
 ul.aside-links > li:before{display: none;}
 
 /* Default Thumb */
 .default-thumb {margin-top:79px; margin-bottom:81px; position: relative; clear: both; width: 100%;}
 .default-thumb figure img{height: 674px;}
 .default-thumb .fluid-width-wrapper {height: 100%;}
-.default-thumb-two {margin-top:81px; margin-bottom: 81px; position: relative; clear: both; width: 100%; min-height: 361px; display: flex; flex-wrap: wrap;}
-.default-thumb-two .fluid-width-wrapper {display: flex; flex-wrap: nowrap; gap:30px; align-items: stretch; width: 100%;}
-.default-thumb-two .default-thumb-flex {flex: 1; height: 100%; position: relative;}
-.default-thumb-two figure img{height:400px;}
 
 
 
 /*-- media css starts here --*/
 @media only screen and (max-width:1023px) and (min-width:200px) {
-.default-article {flex:100%;}
+    .default-main {gap:80px;}
+    .default-article {flex:100%;}
+    .default-aside {flex:100%;}
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {
     .hero-banner-main .hero-banner-text h1 {font-size: 2.222rem;}
+    
+    .default-main {padding: 28px 0; gap: 56px;}
+    .default-article p span {font-size: 1.111rem;}
+    .default-article .w80 {margin: 15px 0 16px;}
+    .default-article p span {font-size: 1.111rem; margin-bottom: 17px;}
+    .asidebar-nav .h5 {margin-bottom: 8px;}
+    .aside-block {padding: 16px;}
+    .aside-block h5 {margin-bottom: 6px;}
+    .aside-block p {font-size: 0.778rem; margin-bottom: 14px;}
+    
+    ul.aside-links > li > a {font-size: 0.889rem; gap: 4px; padding: 8px 0 8px;}
 
 	.default-thumb {margin:61px 0 61px 0; height:64.735vw;}  
 	.default-thumb figure img {height: 100%;}
-	.default-thumb-two {margin:60px 0 61px 0;}
-	.default-thumb-two img {height: 100%;}
-	.default-thumb-two .fluid-width-wrapper {flex-wrap: wrap;}
-	.default-thumb-two .default-thumb-flex {flex: 100%; height:60.39vw; width: 100%;}
-	.default-thumb-two figure img {height: 100%}
 }

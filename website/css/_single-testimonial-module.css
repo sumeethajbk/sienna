@@ -1,0 +1,31 @@
+.single-testimonial {clear: both; width: 100%; position: relative; margin:64px 0; background:var(--Tint-Pink); padding:40px;}
+.single-testimonial:before {content:""; background: url("../images/open-quote.svg") 0 0 no-repeat; display: block; position: relative; left: 0; top: 0; width: 42px; height:32px; margin: 0 0 20px 0;}
+
+.single-testimonial-lt {width: 100%; position: relative;}
+.single-testimonial-lt p {font-size: 1.333rem; line-height: 1.2; font-weight: bold; color: var(--Sienna-Orange); font-family: "Ivar Display", sans-serif;}
+
+
+.single-testimonial-rt {display: flex; flex-wrap: wrap; align-items: center; margin: 20px 0 0 0; gap:12px;}
+.single-testimonial-rt .single-testimonial-thumb {width:48px; height: 48px; position: relative; z-index: 1;}
+.single-testimonial-rt .single-testimonial-thumb img {border-radius: 50%;}
+.single-testimonial-rt .clients-info {width: calc(100% - 60px); display: flex; flex-wrap: wrap;}
+.single-testimonial-rt .author-name {display: inline-block; font-size: 1rem; line-height: 1.5; font-weight: bold; color: var(--Foreground);}
+.single-testimonial-rt .author-pos {display: inline-block; font-size:1rem; font-weight: 400; line-height: 1.5;}
+.single-testimonial-rt span:after {content: ""; background: var(--Sienna-Orange); opacity: 0.25; width: 1px; height: calc(100% - 3px); display: inline-block; vertical-align: middle; margin: 0 12px; position:relative; top: -2px;}
+.single-testimonial-rt span:last-child:after {display: none;}
+
+@media only screen and (max-width:1023px) and (min-width:200px) {
+}
+
+@media only screen and (max-width:1023px) and (min-width:768px) {
+
+}
+
+@media only screen and (max-width:767px) and (min-width:200px) {
+    .single-testimonial {padding: 24px; margin: 40px 0;}
+    .single-testimonial::before {width: 26px; height: 20px; background-size: 100%; margin: 0 0 11px 0;} 
+    .single-testimonial-lt p {font-size: 1rem; line-height: 1.2;}
+    .single-testimonial-rt .single-testimonial-thumb {width: 28px; height: 28px;}
+    .single-testimonial-rt .author-name, .single-testimonial-rt .author-pos {font-size: 0.889rem;}
+    .single-testimonial-rt {margin: 11px 0 0 0;}
+}

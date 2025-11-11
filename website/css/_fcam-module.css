@@ -1,0 +1,29 @@
+.fcam-module {width: 100%; z-index: 1; position: relative; clear: both; background: var(--white); padding: 80px 0;}
+.fcam-module:before {background: var(--Foreground); opacity: 0.2; content: ""; display: block; max-width:calc(1344px - 64px); height: 1px; margin: 8px auto 6px; position: relative; top: -80px;}
+.fcam-module .secwrapper {gap: 80px;}
+.fcam-module .section-intro .h1 {margin: 0 0 20px;}
+.fcam-wrap {width: 100%; gap:6.666666666666667%; flex-direction: row-reverse;}
+.fcam-thumb {width: 58.333333333333336%; flex-grow: 1;}
+.fcam-thumb .video-thumbnail > img {min-height: 393px; max-height: 393px;}
+.fcam-txt {width: 35%; color: var(--Dark-Gray); flex-grow: 1;}
+
+.hero-banner-section + .fcam-module:before {display: none;}
+
+/*-- media starts here --*/
+@media only screen and (max-width: 1280px){
+    .fcam-module::before {margin:4px 32px 4px;}
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 200px){
+    
+    .fcam-thumb, .fcam-txt {width: 100%;}
+}
+@media only screen and (max-width:767px) and (min-width: 200px){
+    .fcam-module {padding: 28px 0;}
+    .fcam-module::before {top:-28px;}
+    .fcam-module .section-intro .h1 {margin: 0 0 13px;}
+    .fcam-module .secwrapper {gap:56px;}
+    .fcam-wrap {flex-direction: column; gap:56px;}
+    .fcam-thumb .video-thumbnail > img {min-height: 182px; max-height: inherit; height: 46.9vw;}
+    
+}

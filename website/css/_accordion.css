@@ -1,4 +1,4 @@
-.accordion-module {clear: both; width: 100%; padding:14px 0 40px;}
+.accordion-module {clear: both; width: 100%; margin: 31px 0 64px 0;}
 .accordion-main .accordion:last-child {margin: 0;}
 
 .accordion-item, .accordion-item.active:hover {border-bottom: solid 1px var(--Dark-Gray);}
@@ -22,10 +22,10 @@
 
 /*-- media starts here --*/
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .accordion-module {padding: 0; margin-top: -3px;}
-.accordion-item .accordion-heading { line-height: 1.5; font-size:0.889rem; padding:16px 56px 16px 4px;}
+    .accordion-module {padding: 0; margin: 23px 0 40px 0;}
+    .accordion-item .accordion-heading { line-height: 1.5; font-size:0.889rem; padding:7px 56px 9px 4px;}
     .accordion-item .accordion-heading::after {right: 6px; font-size: 1.111rem;}
-    .accordion-item .content {font-size: 0.667rem; padding: 0 9px 9px 9px; margin: -4px 0 0 0;}
+    .accordion-item .content {font-size: 0.667rem; padding:4px 9px 9px 9px;}
     .accordion-item .content ul li::before {top:9px;}
     .accordion-item .content ul li, .accordion-item .content ol li {margin-bottom: 3px;}
 }
