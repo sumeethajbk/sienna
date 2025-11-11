@@ -1,0 +1,16 @@
+
+.contact-top-heading{font-size: 2.222rem; line-height: 1.2; font-family: 'Ivar Display'; font-weight: 700;}
+.contact-top-heading h1{color: var(--Sienna-Orange);}
+
+@media screen and (min-width: 1024px){
+    .contact-top-main{padding: 168px 0 40px;}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .contact-top-main{padding: 168px 0 40px;}
+    .contact-top-heading{font-size: 1.778rem; }
+    .contact-top-heading h1{font-size: 3.556rem; }
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .contact-top-main{padding: 84px 0 16px;}
+    .contact-top-heading{font-size: 1.333rem;}
+}

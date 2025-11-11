@@ -130,10 +130,10 @@ input[type="submit"]:hover {box-shadow: none; transform: none;}
 .submit-wrapper:hover input[type="submit"] {color: var(--blue);}
 
 
-::-webkit-input-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size:1rem!important; overflow: visible; font-weight: 700;}
-:-moz-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size:1rem!important; overflow: visible; font-weight: 700;}
-::-moz-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size:1rem!important; overflow: visible; font-weight: 700;}
-:-ms-input-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size:1rem!important; overflow: visible; font-weight: 700;}
+::-webkit-input-placeholder {color: var(--black-50)!important; font-family:"Blackbird", sans-serif; font-size:0.778rem!important; overflow: visible; font-weight: 400;}
+:-moz-placeholder {color: var(--black-50)!important; font-family:"Blackbird", sans-serif; font-size:0.778rem!important; overflow: visible; font-weight: 400;}
+::-moz-placeholder {color: var(--black-50)!important; font-family:"Blackbird", sans-serif; font-size:0.778rem!important; overflow: visible; font-weight: 400;}
+:-ms-input-placeholder {color: var(--black-50)!important; font-family:"Blackbird", sans-serif; font-size:0.778rem!important; overflow: visible; font-weight: 400;}
 
 
 embed, iframe, object, video {margin-bottom: 7px; max-width: 100%; border-radius: 0;}

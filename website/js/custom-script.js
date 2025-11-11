@@ -171,21 +171,55 @@ jQuery(document).ready(function () {
 
   
   /* FAQ Active Link */
-  // make the first link active by default
+  const headerHeight = $('.site-header').outerHeight() || 100; // adjust if needed
+
+  // make first link active by default
   $('ul.faq-content-category li:first-child a').addClass('active');
 
-  // handle click event
-  $('ul.faq-content-category li a').on('click', function() {
-    $('ul.faq-content-category li a').removeClass('active'); // remove from all
-    $(this).addClass('active'); // add to clicked one
+  // handle click
+  $('ul.faq-content-category li a').on('click', function(e) {
+    e.preventDefault();
+
+    // add/remove active class
+    $('ul.faq-content-category li a').removeClass('active');
+    $(this).addClass('active');
+
+    // scroll to the corresponding section smoothly, with offset
+    const target = $(this).attr('href');
+    if ($(target).length) {
+      const targetOffset = $(target).offset().top - headerHeight - 20;
+      $('html, body').animate({ scrollTop: targetOffset }, 400);
+    }
+  });
+
+      if (jQuery(window).width() <= 767) {
+
+      jQuery('.contact-filter-dropdown').on('click', function (event) {
+        event.preventDefault();
+        jQuery(this).toggleClass('open');
+        jQuery('ul.tab-list').slideToggle(500);
+      });
+
+      jQuery('ul.tab-list > li').on('click', function () {
+        jQuery('ul.tab-list').slideUp(500);
+        jQuery('.contact-filter-dropdown').removeClass('open');
+
+          let newText = jQuery(this).find('.tab-name').text();
+
+          // Update the dropdown's first span text
+          jQuery('.contact-filter-dropdown span:first').text(newText);
+
+          // Optionally handle active state
+          jQuery('ul.tab-list > li').removeClass('active');
+          jQuery(this).addClass('active');
+      });
+
+    }
+
+
 
 
 
 });
 
 
-
-
- 
-
-});
