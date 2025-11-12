@@ -1,0 +1,19 @@
+.notification-module-module {width: 100%; z-index: 1; position: relative; clear: both; overflow: hidden; padding:80px 0;}
+.notification-module-main {margin: 0 auto; width: 100%; flex-direction: row-reverse; background: var(--Tint-Green);}
+.notification-module-main .notification-module-text {clear: both; padding:34px 40px 36px 40px; position: relative; flex:1; display: flex; flex-wrap: wrap;}
+.notification-module-main .notification-module-text .h4 {color: var(--Foreground); margin-bottom:20px;}
+.notification-module-main .notification-module-text .notification-module-desc {margin: auto 0;}
+.notification-module-thumb {width:435px;}
+
+/*-- media starts here --*/
+@media only screen and (max-width:1023px) and (min-width:768px){
+    .notification-module-thumb {width: 320px}
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+	.notification-module-thumb {width: 100%;}
+    .notification-module-module {padding:38px 0 40px;}
+    .notification-module-main .notification-module-text {padding: 20px;}
+    .notification-module-main .notification-module-text .btn-wrap .button {width: auto;}
+    .notification-module-main .notification-module-text .h4 {margin-bottom: 11px;}
+}
