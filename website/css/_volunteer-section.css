@@ -1,0 +1,25 @@
+
+.volunterr-lt{font-size: 1.333rem; color: var(--Foreground); font-family: "Ivar Display", sans-serif; font-weight: 700;}
+.volunterr-lt h1{font-size: 2.667rem; color: var(--Sienna-Orange); margin-bottom: 20px;}
+.volunterr-rt{background: var(--Tint-Orange); padding: 32px 40px;}
+
+@media screen and (min-width: 1024px){
+    .volunteer-main{padding: 80px 0; gap: 80px;}
+    .volunterr-lt{flex: 0 0 335px; flex-grow: 1;}
+    .volunterr-rt{flex: 0 0 calc(100% - 415px); flex-grow: 1;}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .volunteer-main{padding: 48px 0; gap: 48px;}
+    .volunterr-lt, .volunterr-rt{width: 100%;}
+    .volunterr-lt{font-size: 1.333rem;}
+    .volunterr-lt h1{font-size: 2.222rem;}
+    .volunterr-rt{padding: 24px 28px;}
+}   
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .volunteer-main{padding: 28px 0; gap: 40px;}
+    .volunterr-lt, .volunterr-rt{width: 100%;}
+    .volunterr-lt{font-size: 1rem;}
+    .volunterr-lt h1{font-size: 1.778rem;}
+    .volunterr-rt{padding: 20px 24px;}
+}   
