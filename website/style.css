@@ -152,7 +152,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {co
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .h1 a:hover, .h2 a:hover, .h3 a:hover, .h4 a:hover, .h5 a:hover, .h6 a:hover {color:var(--Sienna-Orange);}
 
 
-.h1, .h2, .h3, .h4, .h5, .h6 {clear: both; margin: 0 0 23px; color: var(--heading); font-family: "Ivar Display", sans-serif; font-weight: bold;}
+.h1, .h2, .h3, .h4, .h5, .h6 {clear: both; margin: 0 0 23px; color: var(--Foreground); font-family: "Ivar Display", sans-serif; font-weight: bold;}
 .h1 {font-size: 4rem; line-height:1.2; margin-bottom: 20px;}
 .h2 {font-size: 3.556rem; line-height:1.2; margin-bottom: 16px;}
 .h3 {font-size: 2.667rem; line-height:1.2; margin-bottom: 16px;}
