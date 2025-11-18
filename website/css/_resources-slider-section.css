@@ -55,10 +55,6 @@ ul.resources-slider-category li a:hover {color: var(--Sienna-Orange);}
     ul.resources-slider-category{margin: 0 0 12px 0;}
     ul.resources-slider-category li{font-size: 0.778rem;}
     .resources-slider-text h2{margin-bottom: 12px; font-size: 1.111rem; line-height: 1.2;}
-    .resources-slider-row ul.slick-dots{margin: 0 auto; padding: 0; width: calc(100% - 100px); gap: 4px; min-height: 40px; align-items: center;}
-    .resources-slider-row ul.slick-dots li{margin: 0 !important;}
-    .resources-slider-row ul.slick-dots li button{width: 8px; height: 8px; background: var(--Tint-Blue); opacity: 1;}
-    .resources-slider-row ul.slick-dots li.slick-active button{width: 16px; background: var(--Sienna-Orange);}
     .resources-slider-row .slick-arrow{top: auto; width: 40px; height: 40px;}
     .resources-slider-row .slick-arrow span i{font-size: 20px; line-height: 20px;}
     .resources-slider-row .slick-arrow.slick-prev{right: auto; left: 0;}
