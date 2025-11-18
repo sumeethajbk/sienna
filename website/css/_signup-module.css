@@ -10,7 +10,7 @@
 
 .signup-module .signup-rt {width:48.188405797101446%; text-align: center; flex-grow: 1;}
 
-.signup-module .signup-form .frm_forms .frm_form_fields input, .signup-module .signup-form .frm_forms .frm_form_fields input:focus, .signup-module .signup-form .frm_forms .frm_form_fields input:hover {font-size:1rem; font-weight: normal; line-height: 1.29; padding:8px 140px 10px 20px; background: var(--input); font-family: "Blackbird", sans-serif; color: var(--Foreground)!important; min-height: 64px;}
+.signup-module .signup-form .frm_forms .frm_form_fields input, .signup-module .signup-form .frm_forms .frm_form_fields input:focus, .signup-module .signup-form .frm_forms .frm_form_fields input:hover {font-size:1rem; font-weight: normal; line-height: 1.29; padding:8px 140px 10px 20px; background: var(--input); font-family: "Blackbird", sans-serif; color: var(--Foreground)!important; min-height: 64px; border-radius: 32px;}
 
 .signup-module .signup-form .frm_forms .frm_form_fields {position: relative;}
 .signup-module .signup-form .frm_forms .frm_form_fields .frm_form_field {margin: 0;}
@@ -20,10 +20,10 @@
 .signup-module .signup-form .frm_forms .frm_message p {margin: 0; text-align: center; color: var(--white);}
 .signup-module .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {color:var(--white)!important; bottom: -26px;}
 
-.signup-module ::-webkit-input-placeholder {opacity: 1!important; font-size: 1rem!important;}
-.signup-module:-moz-placeholder {opacity: 1!important; font-size: 1rem!important;}
-.signup-module ::-moz-placeholder {opacity: 1!important; font-size: 1rem!important;}
-.signup-module :-ms-input-placeholder {opacity: 1!important; font-size: 1rem!important;}
+.signup-module ::-webkit-input-placeholder {opacity: 1!important; font-size: 1rem!important; color: var(--Foreground)!important;}
+.signup-module:-moz-placeholder {opacity: 1!important; font-size: 1rem!important;color: var(--Foreground)!important;}
+.signup-module ::-moz-placeholder {opacity: 1!important; font-size: 1rem!important;color: var(--Foreground)!important;}
+.signup-module :-ms-input-placeholder {opacity: 1!important; font-size: 1rem!important;color: var(--Foreground)!important;}
 
 
 @media only screen and (max-width:1023px) and (min-width:768px) {

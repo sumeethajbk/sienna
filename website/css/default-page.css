@@ -43,8 +43,13 @@ ul.aside-links > li:before{display: none;}
 .default-thumb .fluid-width-wrapper {height: 100%;}
 
 
+.resources-slider-section:before {background: var(--Foreground); opacity: 0.2; content: ""; display: block; max-width: calc(1344px - 64px); height: 1px; margin: 8px auto 7px; position: relative;}
 
 /*-- media css starts here --*/
+@media only screen and (max-width: 1280px){
+    .resources-slider-section:before {margin:8px 32px 7px;}
+}
+
 @media only screen and (max-width:1023px) and (min-width:200px) {
     .default-main {gap:80px;}
     .default-article {flex:100%;}
@@ -67,4 +72,6 @@ ul.aside-links > li:before{display: none;}
 
 	.default-thumb {margin:61px 0 61px 0; height:64.735vw;}  
 	.default-thumb figure img {height: 100%;}
+    
+    .resources-slider-section::before {margin: 4px 32px 4px;}
 }

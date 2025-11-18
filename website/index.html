@@ -19,7 +19,7 @@
 <body class="home">
 <div id="main">
   <header id="main_header" class="main_header">
-    <div class="notification-bar" style="display: none;">
+    <div class="notification-bar">
       <div class="container-lg">
         <div class="notification-wrap flex">
           <div class="notification-left">
@@ -37,7 +37,7 @@
         <div class="logo"><a href="#"> <img src="images/logo.svg" alt="Sienna Senior Living Logo" title="Sienna Senior Living Logo"></a></div>
         <div class="header_right mobile_menu flex">
           <div class="header-btm">
-            <nav class="navigation mobile_main_menu">
+            <nav class="navigation mobile_main_menu" role="navigation">
               <ul class="main_menu" role="navigation">
                 <li class="menu-item-has-children"><a href="#">Senior Living</a>
                   <ul class="sub-menu">
@@ -122,18 +122,17 @@
       </div>
     </section>
     <!-- end of notifications module -->
-    <section class="segments-module">
-      <div class="container">
-        <section class="segments-inner"> 
-            <span class="optional-text">Introduction Section</span>
+    <section class="segments-module flex">
+      <section class="segments-inner">
+        <div class="container"> <span class="optional-text">Experience and Impact</span>
           <div class="h3">Short headline for this content module appears right here on a few lines of text as needed to fit. This big message should be concise but impactful.</div>
-          <div class="segments-grid-wrapper">
+          <div class="segments-grid-wrapper flex">
             <div class="segments-grid">
               <div class="segments-thumb">
-                <figure class="object-fit"> <img src="images/notification-thumb@2x.jpg" alt="Notification Thumb" title="Notification Thumb"> </figure>
+                <figure class="object-fit" role="none"> <img src="images/long-term-thumb@2x.jpg" alt="Long-Term &amp Continuing Care" title="Long-Term &amp Continuing Care"> </figure>
               </div>
               <!-- end of segments thumb -->
-              <div class="segments-cnt">
+              <div class="segments-cnt" style="background: var(--Tint-Blue);">
                 <div class="h5">Long-Term &amp Continuing Care</div>
                 <p>Shadow device rectangle team shadow align stroke line share blur plugin content share polygon plugin layout link use boolean,</p>
                 <div class="btn-wrap"> <a href="" class="button">More</a><a href="" class="readmore">Secondary CTA</a> </div>
@@ -143,28 +142,65 @@
             <!-- end of segments grid -->
             <div class="segments-grid">
               <div class="segments-thumb">
-                <figure class="object-fit"> <img src="images/notification-thumb@2x.jpg" alt="Notification Thumb" title="Notification Thumb"> </figure>
+                <figure class="object-fit" role="none"> <img src="images/retirement-living-thumb@2x.jpg" alt="Retirement Living" title="Retirement Living"> </figure>
               </div>
               <!-- end of segments thumb -->
-              <div class="segments-cnt">
-                <div class="h5">Long-Term &amp Continuing Care</div>
+              <div class="segments-cnt" style="background: var(--Tint-Green);">
+                <div class="h5">Retirement Living</div>
                 <p>Shadow device rectangle team shadow align stroke line share blur plugin content share polygon plugin layout link use boolean,</p>
-                <div class="btn-wrap"> <a href="" class="button">More</a><a href="" class="readmore">Secondary CTA</a> </div>
+                <div class="btn-wrap"> <a href="" class="button">More</a><a href="" class="readmore">Visit Aspiralife.ca</a> </div>
               </div>
               <!-- end of segments cnt --> 
             </div>
             <!-- end of segments grid --> 
           </div>
           <!-- end of segments grid wrapper --> 
-        </section>
-        <!-- end of segments-inner --> 
-          <section class="take-quiz">
-              <div class="tq-lt"><div class="h5">Not sure what type of senior living suits your needs?</div></div>
-              <div class="tq-rt"><a href="" class="button">Take The Quiz</a></div>
-          </section><!-- end of take quiz -->
-      </div>
+        </div>
+      </section>
+      
+      <!-- end of segments-inner -->
+      <section class="take-quiz-module">
+        <div class="container">
+          <div class="take-quiz">
+            <div class="tq-lt">
+              <div class="h5">Not sure what type of senior living suits your needs?</div>
+            </div>
+            <div class="tq-rt"><a href="" class="button">Take The Quiz</a></div>
+          </div>
+          <!-- end of take quiz --> 
+        </div>
+      </section>
     </section>
     <!-- end fo segments module -->
+    <section class="affiliation-section">
+      <div class="container">
+          <div class="affiliation-title">
+        <div class="h6"> We are proud to be affiliated with and accredited by: </div></div>
+        <div class="affiliation-logos">
+          <div class="logo-item">
+            <figure> <img src="images/aca-logo@2x.png" alt="Accreditation Canada" title="Accreditation Canada"> </figure>
+          </div>
+          <div class="logo-item">
+            <figure> <img src="images/caltc-logo@2x.png" alt="Canadian Association for Long Term Care" title="Canadian Association for Long Term Care"> </figure>
+          </div>
+          <div class="logo-item">
+            <figure> <img src="images/oltca-logo@2x.png" alt="OLTCA" title="OLTCA"> </figure>
+          </div>
+          <div class="logo-item">
+            <figure> <img src="images/orca-logo@2x.png" alt="ORCA" title="ORCA"> </figure>
+          </div>
+          <div class="logo-item">
+            <figure> <img src="images/bccpa-logo@2x.png" alt="BC Care Providers Association" title="BC Care Providers Association"> </figure>
+          </div>
+          <div class="logo-item">
+            <figure> <img src="images/carf-logo@2x.png" alt="Carf Canada Accredited" title="Carf Canada Accredited"> </figure>
+          </div>
+          <div class="logo-item">
+            <figure> <img src="images/bcsla-logo@2x.png" alt="Senior Living Association" title="Senior Living Association"> </figure>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="repeater-section pos-relative">
       <div class="repeater-list">
         <div class="container">
@@ -208,7 +244,95 @@
       <!-- end of repeater list --> 
     </section>
     <!-- end of repeater section -->
-    
+    <section class="stories-slider-section">
+        <div class="container">
+            <div class="stories-slider-main">
+                <div class="stories-slider-header flex flex-vcenter">
+                    <span class="optional-text">Our Stories</span>
+                    <h2 class="h3">Short headline for the stories module appears here on as many lines of text as needed to fit.</h2>
+                </div>
+                <div class="stories-slider-row">
+                    <div class="stories-slider-item">
+                        <div class="stories-slider-image" style="background: var(--Tint-Orange);">
+                            <figure class="object-fit">
+                                <img src="images/our-stories-one@2x.png" alt="stories Image" title="stories Image">
+                            </figure>
+                        </div>
+                        <div class="stories-slider-text">                            
+                            <div class="h5"><a href="#">Concise title for a resource post  here on a few lines of text as needed to fit.</a></div>
+                            <a href="#" class="circle-arrow-btn flex flex-vcenter">
+                                <span class="fa-sharp fa-regular fa-arrow-right-long" style="background: var(--Tint-Orange);"></span>
+                                <span class="location-btn-text">Read the story</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="stories-slider-item">
+                        <div class="stories-slider-image" style="background: var(--Tint-Purple);">
+                            <figure class="object-fit">
+                                <img src="images/our-stories-two@2x.png" alt="stories Image" title="stories Image">
+                            </figure>
+                        </div>
+                        <div class="stories-slider-text">                            
+                            <div class="h5"><a href="#">Concise title for a resource post  here on a few lines of text as needed to fit.</a></div>
+                            <a href="#" class="circle-arrow-btn flex flex-vcenter">
+                                <span class="fa-sharp fa-regular fa-arrow-right-long" style="background: var(--Tint-Purple);"></span>
+                                <span class="location-btn-text">Read the story</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="stories-slider-item">
+                        <div class="stories-slider-image" style="background: var(--Tint-Blue);">
+                            <figure class="object-fit">
+                                <img src="images/our-stories-three@2x.png" alt="stories Image" title="stories Image">
+                            </figure>
+                        </div>
+                        <div class="stories-slider-text">                            
+                            <div class="h5"><a href="#">Concise title for a resource post  here on a few lines of text as needed to fit.</a></div>
+                            <a href="#" class="circle-arrow-btn flex flex-vcenter">
+                                <span class="fa-sharp fa-regular fa-arrow-right-long" style="background: var(--Tint-Blue);"></span>
+                                <span class="location-btn-text">Read the story</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="stories-slider-item">
+                        <div class="stories-slider-image" style="background: var(--Tint-Green);">
+                            <figure class="object-fit">
+                                <img src="images/our-stories-four@2x.png" alt="stories Image" title="stories Image">
+                            </figure>
+                        </div>
+                        <div class="stories-slider-text">                            
+                            <div class="h5"><a href="#">Concise title for a resource post  here on a few lines of text as needed to fit.</a></div>
+                            <a href="#" class="circle-arrow-btn flex flex-vcenter">
+                                <span class="fa-sharp fa-regular fa-arrow-right-long" style="background: var(--Tint-Green);"></span>
+                                <span class="location-btn-text">Read the story</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="stories-slider-item">
+                        <div class="stories-slider-image" style="background: var(--Tint-Pink);">
+                            <figure class="object-fit">
+                                <img src="images/our-stories-five@2x.png" alt="stories Image" title="stories Image">
+                            </figure>
+                        </div>
+                        <div class="stories-slider-text">                            
+                            <div class="h5"><a href="#">Concise title for a resource post  here on a few lines of text as needed to fit.</a></div>
+                            <a href="#" class="circle-arrow-btn flex flex-vcenter">
+                                <span class="fa-sharp fa-regular fa-arrow-right-long" style="background: var(--Tint-Pink);"></span>
+                                <span class="location-btn-text">Read the story</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="stories-slider-item more-stories">                       
+                        <div class="stories-slider-text">                            
+                            <div class="h5">Short paragraph of text highlighting that there are multitudes of happy folks enjoying life at Sienna Senior Living facilities and that you can read even more stories here.</div>
+                            <a href="#" class="button btn-white">Read More Stories</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      
     <section class="repeater-section pos-relative">
       <div class="repeater-list">
         <div class="container">

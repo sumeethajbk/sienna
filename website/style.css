@@ -138,7 +138,7 @@ Text Domain:Sienna Senior Living
 body {font-family: "Blackbird", sans-serif;  color:var(--body-text); font-size:⁨1rem; line-height:1.5; font-weight:400; font-style:normal; overflow-x:hidden; background:var(--white); height:100%; display:flex; flex-direction:column; -webkit-overflow-scrolling: touch; padding: 0;}
 #main {overflow:hidden; position:relative; float:left; width:100%; flex:1 0 auto;}
 #mainContent {clear:both; position:relative; float:left; width:100%; padding:0;}
-.spacetop #mainContent {padding:88px 0 0 0;}
+.space-top #mainContent {padding:88px 0 0 0;}
 .container {max-width:1200px; margin:0 auto; width:100%;}
 .container .container {padding: 0;}
 .container-lg {padding:0 40px 0 40px; max-width: 1440px; margin: 0 auto; width: 100%;}
@@ -152,7 +152,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {co
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .h1 a:hover, .h2 a:hover, .h3 a:hover, .h4 a:hover, .h5 a:hover, .h6 a:hover {color:var(--Sienna-Orange);}
 
 
-.h1, .h2, .h3, .h4, .h5, .h6 {clear: both; margin: 0 0 23px; color: var(--heading); font-family: "Ivar Display", sans-serif; font-weight: bold;}
+.h1, .h2, .h3, .h4, .h5, .h6 {clear: both; margin: 0 0 23px; color: var(--Foreground); font-family: "Ivar Display", sans-serif; font-weight: bold;}
 .h1 {font-size: 4rem; line-height:1.2; margin-bottom: 20px;}
 .h2 {font-size: 3.556rem; line-height:1.2; margin-bottom: 16px;}
 .h3 {font-size: 2.667rem; line-height:1.2; margin-bottom: 16px;}
@@ -179,7 +179,7 @@ section p a, section li a {position: relative;}
 
 /* CIrcle Button */
 .circle-arrow-btn{width: fit-content; gap:20px;}
-.circle-arrow-btn:hover span.fa-sharp{background: var(--Sienna-Orange); outline: 4px solid var(--button-outline); color: var(--white);}
+.circle-arrow-btn:hover span.fa-sharp{background: var(--Sienna-Orange)!important; outline: 4px solid var(--button-outline); color: var(--white);}
 .circle-arrow-btn span.fa-sharp{width: 64px; height: 64px; background: var(--white); border-radius: 50%; font-size: 1.333rem; line-height: 1; color: var(--Sienna-Orange); display: flex; align-items: center; justify-content: center; transition: all .5s ease; outline: 4px solid transparent;}
 span.location-btn-text{font-size: 1rem; color: var(--Foreground); font-weight: 700; line-height: 1.35; transition: all .5s ease; position: relative; opacity: 0; transform: translateX(-10px); transition: all 0.3s ease-in-out; visibility: hidden;}
 .circle-arrow-btn:hover span.location-btn-text{opacity: 1; transform: translateX(0); visibility: visible;}

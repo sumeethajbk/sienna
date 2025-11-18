@@ -1,0 +1,19 @@
+.affiliation-section {padding: 40px 0; text-align: center; clear: both; width: 100%;}
+.affiliation-title {display: flex; align-items: center; justify-content: center; gap: 13px; margin-bottom: 40px;}
+.affiliation-title::before,
+.affiliation-title::after {content: ""; flex: 1; height: 1px; background:var(--black-20);}
+.affiliation-title .h6 {margin: 0;}
+
+.affiliation-logos {display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap:50px; border-bottom: 1px solid var(--black-20); padding: 0 0 40px 0;}
+.affiliation-logos figure {margin: 0; padding: 0;}
+
+.affiliation-logos img {height:49px; width: auto; object-fit: contain;}
+
+
+@media only screen and (max-width:1023px) and (min-width:768px) {  
+   
+}
+
+@media only screen and (max-width:767px) and (min-width:200px) {  
+   
+}

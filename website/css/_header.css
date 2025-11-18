@@ -10,6 +10,7 @@
 
 /* Fixed Header */
 .main_header.fixed-header {-webkit-box-shadow: -1px 3px 17px -10px rgb(0 0 0 / .75); -moz-box-shadow: -1px 3px 17px -10px rgb(0 0 0 / .75); box-shadow: -1px 3px 17px -10px rgba(0, 0, 0, 0.75); background: var(--Tint-Orange);}
+.space-top .main_header {background: var(--Tint-Orange);}
 
 
 /* Notification Bar */
