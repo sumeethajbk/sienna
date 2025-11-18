@@ -1,0 +1,18 @@
+
+.reswrapper {gap:65px;}
+.resource-intro {clear: both; width:100%; position: relative;}
+.resource-intro h1 {color: var(--Sienna-Orange); margin:0 0 20px;}
+/* .resource-intro h1:last-of-type {margin: 0;} */
+.resource-intro .h3 {color: var(--Foreground); margin: 0;}
+.resource-intro .h4 {color: var(--Foreground); margin: 0;}
+.resource-intro-main {position: relative; z-index: 1;}
+
+
+@media only screen and (max-width:1023px) and (min-width:768px) {  
+    .resource-intro .h1 {margin: 0 0 20px;}
+}
+
+@media only screen and (max-width:767px) and (min-width:200px) {  
+    .reswrapper {gap:40px;}
+    .resource-intro .h1 {margin: 0 0 13px;}
+}
