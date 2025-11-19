@@ -108,6 +108,11 @@ button, .button  {display: inline-block; font-size:1.333rem; font-weight: 700; l
 button:hover, .button:hover {color: var(--white); background-color: var(--button); outline:4px solid var(--button-outline);}
 button:focus, .button:focus, button:active, .button:active {color: var(--white); background-color: var(--button); outline:4px solid var(--button-outline);}
 
+.btn-big {font-size: 1.556rem; outline-width: 8px; padding: 24px 28px;}
+.btn-big:hover {outline-width: 12px;}
+
+.outline-btn{outline-color:var(--button-outline);}
+
 .btn-white {background: var(--white); color: var(--button);}
 .btn-white:hover {background: var(--white); color: var(--button);}
 .btn-white:active, .btn-white:focus {background: var(--white); color: var(--button);}
@@ -140,7 +145,7 @@ input[type="submit"]:hover {box-shadow: none; transform: none;}
 :-ms-input-placeholder {color: var(--black-50)!important; font-family:"Blackbird", sans-serif; font-size:0.778rem!important; overflow: visible; font-weight: 400;}
 
 
-embed, iframe, object, video {margin-bottom: 7px; max-width: 100%; border-radius: 0;}
+embed, iframe, object, video {margin-bottom: 0; max-width:inherit; border-radius: 0;}
 p > embed, p > iframe, p > object, span > embed, span > iframe, span > object {margin-bottom: 0;}
 .alignleft {float: left;}
 .alignright {float: right;}
@@ -175,6 +180,7 @@ img.alignnone {margin:29px 0 23px; display: block; clear: both;}
 
 
 @media only screen and (max-width: 767px) and (min-width:200px) {
+    .btn-big {font-size: 1.333rem; padding: 16px 20px 16px 20px;}
     ul {margin: 14px 0 38px 14px;}
     ol {margin: 14px 0 39px 14px;}
 hr {margin: 20px 0 20px;}

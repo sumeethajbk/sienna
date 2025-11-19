@@ -1,6 +1,8 @@
 jQuery(document).ready(function () {
 
-  /* Sites and Facilities Slider */
+  
+
+  /* Our Stories Slider */
   function SitesSlider() {
     var $el = jQuery('.stories-slider-row'),
       w = jQuery(window).width(),
@@ -23,14 +25,14 @@ jQuery(document).ready(function () {
       $el.removeClass('few-story').slick({
         slidesToShow: 1,
         arrows: true,
-          dots:true,
+        dots: true,
         variableWidth: true,
         infinite: false,
         speed: 1000,
         draggable: true,
         swipeToSlide: true,
         touchThreshold: 100,
-         prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-left"></i></span></div>',
+        prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-left"></i></span></div>',
         nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-right"></i></span></div>',
       });
     } else {
@@ -41,7 +43,6 @@ jQuery(document).ready(function () {
   jQuery(window).on('resize', SitesSlider);
 
 
-
   jQuery('.resources-slider-row').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -50,6 +51,9 @@ jQuery(document).ready(function () {
     dots: false,
     variableWidth: true,
     infinite: false,
+    draggable: true,
+    swipeToSlide: true,
+    touchThreshold: 100,
     prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-left"></i></span></div>',
     nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-right"></i></span></div>',
     responsive: [{
@@ -74,10 +78,6 @@ jQuery(document).ready(function () {
     ]
 
   });
-
-
-
-
 
 
 });
