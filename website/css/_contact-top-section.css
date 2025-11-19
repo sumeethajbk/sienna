@@ -3,7 +3,7 @@
 .contact-top-heading h1{color: var(--Sienna-Orange);}
 
 @media screen and (min-width: 1024px){
-    .contact-top-main{padding: 168px 0 40px;}
+    .contact-top-main{padding: 80px 0 40px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .contact-top-main{padding: 168px 0 40px;}

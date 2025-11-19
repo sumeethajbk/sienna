@@ -1,0 +1,20 @@
+
+@import url("_locator-top-section.css");
+@import url("_location-section.css");
+@import url("_repeater-section.css");
+@import url("_signup-module.css");
+
+.repeater-list-inner{flex-direction: row-reverse; }
+
+@media screen and (min-width: 1024px) {
+    .location-main{padding: 40px 0;}
+    .repeater-list .shadow{right: auto; left: -24px; }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .location-main{padding: 48px 0 20px;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .location-main{padding: 16px 0;}
+    .repeater-list:first-child .repeater-list-inner{padding-top: 16px; }
+}

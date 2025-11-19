@@ -30,17 +30,13 @@ ul.resources-category li a:hover {color: var(--Sienna-Orange);}
 
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .resource-main{padding: 48px 0; gap: 32px;}
-    .resource-heading{gap: 16px;}
+    .resource-heading{gap: 20px;}
     .resource-title h2{font-size: 1.333rem; line-height: 1.2;}
     .resource-title h2 br{display: none;}
+    .resource-filters{gap: 10px; width: 100%;}
+    .resource-filter{gap: 10px;}
+    .resource-filter .btn-transparent{min-width: 159px;}
     .resource-sort{width: 100%; gap: 16px;}
-    .resource-city-dropdown, .resource-funding-dropdown{flex: 0 0 calc(50% - 8px);}
-    body .resource-city-dropdown .selectBox-dropdown,
-    body .resource-funding-dropdown .selectBox-dropdown{display: flex; justify-content: center; gap: 8px; font-size: 0.889rem;}
-    body .resource-city-dropdown .selectBox-dropdown .selectBox-label,
-    body .resource-funding-dropdown .selectBox-dropdown .selectBox-label{width: fit-content !important;}
-    body .resource-city-dropdown .selectBox-dropdown .selectBox-arrow,
-    body .resource-funding-dropdown .selectBox-dropdown .selectBox-arrow{position: relative; right: auto; font-size: 1.111rem;}
     .resource-lists{gap: 28px;}
     .resource-item{flex: 0 0 calc(50% - 14px);}
     .resource-details{padding: 24px; font-size: 0.889rem; line-height: 1.5;}
@@ -53,25 +49,22 @@ ul.resources-category li a:hover {color: var(--Sienna-Orange);}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .resource-main{padding: 28px 0; gap: 28px;}
-    .resource-heading{gap: 12px; }
-    .resource-title h2{font-size: 1.111rem; line-height: 1.2;}
-    .resource-sort{width: 100%; gap: 12px;}
-    .resource-city-dropdown, .resource-funding-dropdown{width: 100%;}
-    body .resource-city-dropdown .selectBox-dropdown,
-    body .resource-funding-dropdown .selectBox-dropdown{display: flex; justify-content: center; gap: 8px; font-size: 0.889rem;}
-    body .resource-city-dropdown .selectBox-dropdown .selectBox-label,
-    body .resource-funding-dropdown .selectBox-dropdown .selectBox-label{width: fit-content !important;}
-    body .resource-city-dropdown .selectBox-dropdown .selectBox-arrow,
-    body .resource-funding-dropdown .selectBox-dropdown .selectBox-arrow{position: relative; right: auto; font-size: 1.111rem;}
+    .resource-heading{gap: 16px; width: 100%;}
+    .resource-title { flex: 100%; }
+    .resource-title h2{font-size: 1rem; line-height: 1.2;}
+    .resource-filters{gap: 16px; width: 100%;}
+    .resource-filter{gap: 6px; width: 100%;}
+    .resource-filter .btn-transparent{min-width: 104px; padding: 7px 12px 8px; font-size: 0.889rem;}
+    .resource-sort-dropdown{width: 100%;}
     .resource-lists{gap: 24px;}
     .resource-item{width: 100%;}
-    .resource-image{height: 184px;}
+    .resource-image{height: 184px; width: 100%;}
     .resource-image img{min-height: 184px; max-height: 184px;}
     .resource-details{padding: 20px;}
-    .resource-details h2{font-size: 1.111rem; line-height: 1.2; }
+    .resource-details h2{font-size: 1.111rem; line-height: 1.2; margin-bottom: 12px;}
     .resource-details hr{margin: 8px 0;}
     .resource-details p{margin-bottom: 4px; font-size: 0.889rem;}
-    .resource-details ul{margin: 0 0 14px 0; gap: 4px; }
+    .resource-details ul{margin: 0 0 12px 0; gap: 4px; }
     .resource-details ul li,
     .resource-details ul li a{gap: 6px;}
     .resource-details ul li span.fa-sharp{font-size: 1rem;}

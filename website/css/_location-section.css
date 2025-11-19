@@ -20,6 +20,18 @@
 .location-details ul li span.fa-sharp{font-size: 1.111rem; line-height: 1.5; color: var(--Sienna-Orange); font-weight: 400;}
 .location-details ul li span{color: var(--Foreground); font-size: 1rem; font-weight: bold; line-height: 1.5; }
 
+.location-filter-main{gap: 20px; margin-bottom: 32px;}
+.locator-filter{gap: 20px; flex: 1;}
+.locator-filter > div{flex: 1;}
+.location-search-btn{flex: 0 0 56px;}
+.location-search-btn .circle-arrow-btn span.fa-sharp{width: 56px; height: 56px;}
+body .locator-postal-code-form .frm_forms .frm_form_fields .frm_form_field{margin-bottom: 0;}
+body .locator-postal-code-form .frm_forms .frm_form_fields input{background: var(--Tint-Orange); border-radius: 60px; border: 1.25px solid var(--Sienna-Orange); background-color: var(--Tint-Pink) !important; padding: 15px 60px 15px 20px; font-size: 1rem; line-height: 1.35; background-image: url('/images/keyboard-icon.svg'); background-position: calc(100% - 20px) calc(50% - 1px); background-repeat: no-repeat; background-size: 27px 24px;}
+body.page-template-locator ::-webkit-input-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size: 1rem!important; overflow: visible; font-weight: 700;}
+body.page-template-locator :-moz-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size: 1rem!important; overflow: visible; font-weight: 700;}
+body.page-template-locator ::-moz-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size: 1rem!important; overflow: visible; font-weight: 700;}
+body.page-template-locator :-ms-input-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size: 1rem!important; overflow: visible; font-weight: 700;}
+
 
 .location-show-btn{gap: 16px; }
 .location-line{margin: 0; flex: 1;}
@@ -31,6 +43,11 @@
     .location-image img{min-height: 210px; max-height: 210px;}
 }
 
+@media screen and (max-width: 1099px) and (min-width: 1024px){
+    .location-details{padding: 22px;}
+    .location-details .circle-arrow-btn{gap: 12px;}
+    .location-details .circle-arrow-btn span.fa-sharp{width: 54px; height: 54px;}
+}
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .location-main{padding: 48px 0; gap: 32px;}
     .location-heading{gap: 16px;}
@@ -53,6 +70,15 @@
     .location-details ul li{gap: 10px;}
     .location-details ul li span{font-size: 0.889rem;}
     .location-details ul li span.fa-sharp{font-size: 1rem;}
+
+    .location-filter-main{gap: 16px; margin-bottom: 4px; width: 100%;}
+    .locator-filter{gap: 16px; flex: 100%;}
+    .locator-filter > div{flex: 0 0 calc(50% - 8px);}
+    body .locator-filter .selectBox-dropdown{font-size: 0.889rem;}
+    body .locator-postal-code-form .frm_forms .frm_form_fields input{font-size: 0.889rem;}
+    .location-search-btn{flex: 100%;}
+    .location-search-btn .button{width: 100%;}
+
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .location-main{padding: 28px 0; gap: 28px;}
@@ -82,5 +108,13 @@
     .circle-arrow-btn span.fa-sharp{width: 40px; height: 40px; font-size: 1.111rem;}
     span.location-btn-text{font-size: 0.889rem;}
     .location-show-btn{gap: 8px;}
+
+    .location-filter-main{gap: 12px; margin-bottom: 4px; width: 100%;}
+    .locator-filter{gap: 12px; flex: 100%;}
+    .locator-filter > div{flex: 100%;}
+    body .locator-filter .selectBox-dropdown{font-size: 0.889rem;}
+    body .locator-postal-code-form .frm_forms .frm_form_fields input{font-size: 0.889rem;}
+    .location-search-btn{flex: 100%;}
+    .location-search-btn .button{width: 100%;}
     
 }
