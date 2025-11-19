@@ -26,7 +26,7 @@
 .location-search-btn{flex: 0 0 56px;}
 .location-search-btn .circle-arrow-btn span.fa-sharp{width: 56px; height: 56px;}
 body .locator-postal-code-form .frm_forms .frm_form_fields .frm_form_field{margin-bottom: 0;}
-body .locator-postal-code-form .frm_forms .frm_form_fields input{background: var(--Tint-Orange); border-radius: 60px; border: 1.25px solid var(--Sienna-Orange); background-color: var(--Tint-Pink) !important; padding: 15px 60px 15px 20px; font-size: 1rem; line-height: 1.35; background-image: url('/images/keyboard-icon.svg'); background-position: calc(100% - 20px) calc(50% - 1px); background-repeat: no-repeat; background-size: 27px 24px;}
+body .locator-postal-code-form .frm_forms .frm_form_fields input{background: var(--Tint-Orange); border-radius: 60px; border: 1.25px solid var(--Sienna-Orange); background-color: var(--Tint-Pink) !important; padding: 15px 60px 15px 20px; font-size: 1rem; line-height: 1.35; background-image: url('../images/keyboard-icon.svg'); background-position: calc(100% - 20px) calc(50% - 1px); background-repeat: no-repeat; background-size: 27px 24px;}
 body.page-template-locator ::-webkit-input-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size: 1rem!important; overflow: visible; font-weight: 700;}
 body.page-template-locator :-moz-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size: 1rem!important; overflow: visible; font-weight: 700;}
 body.page-template-locator ::-moz-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size: 1rem!important; overflow: visible; font-weight: 700;}
