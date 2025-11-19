@@ -7,10 +7,12 @@
 @import url("_repeater-section.css");
 @import url("_signup-module.css");
 
-
+.hero-banner-section {margin-bottom: 80px;}
+.hero-banner-main .hero-banner-thumb .hero-banner-img {bottom: -80px; min-height: 680px;}
 .hero-banner-main .hero-banner-thumb {width: 50%;}
-.hero-banner-main .hero-banner-text {width: calc(100% - 55.94%);}
-.hero-banner-main .hero-banner-text p {font-size: 1.111rem;}
+.hero-banner-main .hero-banner-text {width: calc(100% - 55.94%); padding: 70px 0 71px 40px;}
+.hero-banner-main .hero-banner-text h1 {margin-bottom: 23px;}
+.hero-banner-main .hero-banner-text p {font-size: 1.111rem; margin-bottom: 48px;}
 .hero-banner-section + .notification-module-module {padding-bottom: 0;}
 .affiliation-section + .repeater-section .repeater-list:first-child .repeater-list-inner {padding-top: 40px;}
 .affiliation-section + .repeater-section .repeater-list:first-child:before {display: none!important;}
@@ -19,10 +21,21 @@
 .repeater-list::before {display: block!important;}
 
 /*-- media css starts here --*/
+
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+    .hero-banner-main .hero-banner-text {padding-left: 0;}
+}
 @media only screen and (max-width:1023px) and (min-width:200px) {
-   
+    .hero-banner-section {padding: 56px 0 32px 0; margin-bottom: 0;}
+    .hero-banner-main .hero-banner-thumb {width: 100%;}
+    .hero-banner-main .hero-banner-text {width: 100%; padding: 0 12px;}
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {
-   
+    .hero-banner-main .hero-banner-text p {font-size: 1rem; margin-bottom: 28px;}
+    .hero-banner-main .hero-banner-text h1 u {text-underline-offset: 1px;}
+    .hero-banner-main .hero-banner-text h1 {margin-bottom: 16px;}
+    
+    .affiliation-section + .repeater-section .repeater-list:first-child .repeater-list-inner {padding-top: 16px;}
+    .affiliation-section + .repeater-section .repeater-list:last-child .repeater-list-inner {padding-bottom: 28px;}
 }

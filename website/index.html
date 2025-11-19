@@ -19,7 +19,7 @@
 <body class="home">
 <div id="main">
   <header id="main_header" class="main_header">
-    <div class="notification-bar">
+    <div class="notification-bar" style="display: none;">
       <div class="container-lg">
         <div class="notification-wrap flex">
           <div class="notification-left">
@@ -82,19 +82,22 @@
       <div class="container-lg">
         <div class="hero-banner-main flex">
           <div class="hero-banner-thumb">
-            <div class="hero-banner-img">
+            <div class="hero-banner-img home-banner-bg">
               <picture class="object-fit" role="none">
-                <source srcset="images/general-default-banner@2x.jpg" media="(min-width: 768px)" />
-                <img src="images/general-default-banner-mob@2x.jpg" alt="Default Banner" title="Default Banner" /> </picture>
+                <source srcset="images/home-banner@2x.jpg" media="(min-width: 768px)" />
+                <img src="images/home-banner-mob@2x.jpg" alt="Home Banner" title="Home Banner" /> </picture>
+            </div>
+            <div class="hero-banner-img home-banner-video">
+              <div data-vbg="https://vimeo.com/76979871"></div>
             </div>
             <!-- end of hero banner img --> 
           </div>
           <!-- end of hero banner thumb -->
           <div class="hero-banner-text">
             <div class="hero-banner-inner">
-              <h1>Short headline for special promo or big news here.</h1>
+              <h1>Short headline for special <u>promo</u> or big news here.</h1>
               <p>Rotate editor style frame draft variant bullet image link align. Fill arrange pencil object style connection mask bullet move. Italic prototype shadow shadow.</p>
-              <div class="btn-wrap"> <a href="#" class="button btn-big">Call to Action</a></div>
+              <div class="btn-wrap"> <a href="#" class="button btn-big outline-btn">Call to action</a></div>
               <!-- end of btn wrap --> 
             </div>
             <!-- end of hero banner inner --> 
@@ -127,12 +130,12 @@
         <div class="container"> <span class="optional-text">Experience and Impact</span>
           <div class="h3">Short headline for this content module appears right here on a few lines of text as needed to fit. This big message should be concise but impactful.</div>
           <div class="segments-grid-wrapper flex">
-            <div class="segments-grid">
+            <div class="segments-grid" style="background: var(--Tint-Blue);">
               <div class="segments-thumb">
                 <figure class="object-fit" role="none"> <img src="images/long-term-thumb@2x.jpg" alt="Long-Term &amp Continuing Care" title="Long-Term &amp Continuing Care"> </figure>
               </div>
               <!-- end of segments thumb -->
-              <div class="segments-cnt" style="background: var(--Tint-Blue);">
+              <div class="segments-cnt">
                 <div class="h5">Long-Term &amp Continuing Care</div>
                 <p>Shadow device rectangle team shadow align stroke line share blur plugin content share polygon plugin layout link use boolean,</p>
                 <div class="btn-wrap"> <a href="" class="button">More</a><a href="" class="readmore">Secondary CTA</a> </div>
@@ -140,12 +143,12 @@
               <!-- end of segments cnt --> 
             </div>
             <!-- end of segments grid -->
-            <div class="segments-grid">
+            <div class="segments-grid" style="background: var(--Tint-Green);">
               <div class="segments-thumb">
                 <figure class="object-fit" role="none"> <img src="images/retirement-living-thumb@2x.jpg" alt="Retirement Living" title="Retirement Living"> </figure>
               </div>
               <!-- end of segments thumb -->
-              <div class="segments-cnt" style="background: var(--Tint-Green);">
+              <div class="segments-cnt">
                 <div class="h5">Retirement Living</div>
                 <p>Shadow device rectangle team shadow align stroke line share blur plugin content share polygon plugin layout link use boolean,</p>
                 <div class="btn-wrap"> <a href="" class="button">More</a><a href="" class="readmore">Visit Aspiralife.ca</a> </div>
@@ -165,7 +168,7 @@
             <div class="tq-lt">
               <div class="h5">Not sure what type of senior living suits your needs?</div>
             </div>
-            <div class="tq-rt"><a href="" class="button">Take The Quiz</a></div>
+            <div class="tq-rt"><div class="btn-wrap"><a href="" class="button">Take The Quiz</a></div></div>
           </div>
           <!-- end of take quiz --> 
         </div>
@@ -174,8 +177,9 @@
     <!-- end fo segments module -->
     <section class="affiliation-section">
       <div class="container">
-          <div class="affiliation-title">
-        <div class="h6"> We are proud to be affiliated with and accredited by: </div></div>
+        <div class="affiliation-title">
+          <div class="h6"> We are proud to be affiliated with and accredited by: </div>
+        </div>
         <div class="affiliation-logos">
           <div class="logo-item">
             <figure> <img src="images/aca-logo@2x.png" alt="Accreditation Canada" title="Accreditation Canada"> </figure>
@@ -245,94 +249,61 @@
     </section>
     <!-- end of repeater section -->
     <section class="stories-slider-section">
-        <div class="container">
-            <div class="stories-slider-main">
-                <div class="stories-slider-header flex flex-vcenter">
-                    <span class="optional-text">Our Stories</span>
-                    <h2 class="h3">Short headline for the stories module appears here on as many lines of text as needed to fit.</h2>
-                </div>
-                <div class="stories-slider-row">
-                    <div class="stories-slider-item">
-                        <div class="stories-slider-image" style="background: var(--Tint-Orange);">
-                            <figure class="object-fit">
-                                <img src="images/our-stories-one@2x.png" alt="stories Image" title="stories Image">
-                            </figure>
-                        </div>
-                        <div class="stories-slider-text">                            
-                            <div class="h5"><a href="#">Concise title for a resource post  here on a few lines of text as needed to fit.</a></div>
-                            <a href="#" class="circle-arrow-btn flex flex-vcenter">
-                                <span class="fa-sharp fa-regular fa-arrow-right-long" style="background: var(--Tint-Orange);"></span>
-                                <span class="location-btn-text">Read the story</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="stories-slider-item">
-                        <div class="stories-slider-image" style="background: var(--Tint-Purple);">
-                            <figure class="object-fit">
-                                <img src="images/our-stories-two@2x.png" alt="stories Image" title="stories Image">
-                            </figure>
-                        </div>
-                        <div class="stories-slider-text">                            
-                            <div class="h5"><a href="#">Concise title for a resource post  here on a few lines of text as needed to fit.</a></div>
-                            <a href="#" class="circle-arrow-btn flex flex-vcenter">
-                                <span class="fa-sharp fa-regular fa-arrow-right-long" style="background: var(--Tint-Purple);"></span>
-                                <span class="location-btn-text">Read the story</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="stories-slider-item">
-                        <div class="stories-slider-image" style="background: var(--Tint-Blue);">
-                            <figure class="object-fit">
-                                <img src="images/our-stories-three@2x.png" alt="stories Image" title="stories Image">
-                            </figure>
-                        </div>
-                        <div class="stories-slider-text">                            
-                            <div class="h5"><a href="#">Concise title for a resource post  here on a few lines of text as needed to fit.</a></div>
-                            <a href="#" class="circle-arrow-btn flex flex-vcenter">
-                                <span class="fa-sharp fa-regular fa-arrow-right-long" style="background: var(--Tint-Blue);"></span>
-                                <span class="location-btn-text">Read the story</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="stories-slider-item">
-                        <div class="stories-slider-image" style="background: var(--Tint-Green);">
-                            <figure class="object-fit">
-                                <img src="images/our-stories-four@2x.png" alt="stories Image" title="stories Image">
-                            </figure>
-                        </div>
-                        <div class="stories-slider-text">                            
-                            <div class="h5"><a href="#">Concise title for a resource post  here on a few lines of text as needed to fit.</a></div>
-                            <a href="#" class="circle-arrow-btn flex flex-vcenter">
-                                <span class="fa-sharp fa-regular fa-arrow-right-long" style="background: var(--Tint-Green);"></span>
-                                <span class="location-btn-text">Read the story</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="stories-slider-item">
-                        <div class="stories-slider-image" style="background: var(--Tint-Pink);">
-                            <figure class="object-fit">
-                                <img src="images/our-stories-five@2x.png" alt="stories Image" title="stories Image">
-                            </figure>
-                        </div>
-                        <div class="stories-slider-text">                            
-                            <div class="h5"><a href="#">Concise title for a resource post  here on a few lines of text as needed to fit.</a></div>
-                            <a href="#" class="circle-arrow-btn flex flex-vcenter">
-                                <span class="fa-sharp fa-regular fa-arrow-right-long" style="background: var(--Tint-Pink);"></span>
-                                <span class="location-btn-text">Read the story</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="stories-slider-item more-stories">                       
-                        <div class="stories-slider-text">                            
-                            <div class="h5">Short paragraph of text highlighting that there are multitudes of happy folks enjoying life at Sienna Senior Living facilities and that you can read even more stories here.</div>
-                            <a href="#" class="button btn-white">Read More Stories</a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="stories-slider-main">
+          <div class="stories-slider-header flex flex-vcenter"> <span class="optional-text">Our Stories</span>
+            <h2 class="h3">Short headline for the stories module appears here on as many lines of text as needed to fit.</h2>
+          </div>
+          <div class="stories-slider-row">
+            <div class="stories-slider-item">
+              <div class="stories-slider-image" style="background: var(--Tint-Orange);">
+                <figure class="object-fit"> <img src="images/our-stories-one@2x.png" alt="stories Image" title="stories Image"> </figure>
+              </div>
+              <div class="stories-slider-text">
+                <div class="h5"><a href="#">Concise title for a resource post  here on a few lines of text as needed to fit.</a></div>
+                <a href="#" class="circle-arrow-btn flex flex-vcenter"> <span class="fa-sharp fa-regular fa-arrow-right-long" style="background: var(--Tint-Orange);"></span> <span class="location-btn-text">Read the story</span> </a> </div>
             </div>
+            <div class="stories-slider-item">
+              <div class="stories-slider-image" style="background: var(--Tint-Purple);">
+                <figure class="object-fit"> <img src="images/our-stories-two@2x.png" alt="stories Image" title="stories Image"> </figure>
+              </div>
+              <div class="stories-slider-text">
+                <div class="h5"><a href="#">Concise title for a resource post  here on a few lines of text as needed to fit.</a></div>
+                <a href="#" class="circle-arrow-btn flex flex-vcenter"> <span class="fa-sharp fa-regular fa-arrow-right-long" style="background: var(--Tint-Purple);"></span> <span class="location-btn-text">Read the story</span> </a> </div>
+            </div>
+            <div class="stories-slider-item">
+              <div class="stories-slider-image" style="background: var(--Tint-Blue);">
+                <figure class="object-fit"> <img src="images/our-stories-three@2x.png" alt="stories Image" title="stories Image"> </figure>
+              </div>
+              <div class="stories-slider-text">
+                <div class="h5"><a href="#">Concise title for a resource post  here on a few lines of text as needed to fit.</a></div>
+                <a href="#" class="circle-arrow-btn flex flex-vcenter"> <span class="fa-sharp fa-regular fa-arrow-right-long" style="background: var(--Tint-Blue);"></span> <span class="location-btn-text">Read the story</span> </a> </div>
+            </div>
+            <div class="stories-slider-item">
+              <div class="stories-slider-image" style="background: var(--Tint-Green);">
+                <figure class="object-fit"> <img src="images/our-stories-four@2x.png" alt="stories Image" title="stories Image"> </figure>
+              </div>
+              <div class="stories-slider-text">
+                <div class="h5"><a href="#">Concise title for a resource post  here on a few lines of text as needed to fit.</a></div>
+                <a href="#" class="circle-arrow-btn flex flex-vcenter"> <span class="fa-sharp fa-regular fa-arrow-right-long" style="background: var(--Tint-Green);"></span> <span class="location-btn-text">Read the story</span> </a> </div>
+            </div>
+            <div class="stories-slider-item">
+              <div class="stories-slider-image" style="background: var(--Tint-Pink);">
+                <figure class="object-fit"> <img src="images/our-stories-five@2x.png" alt="stories Image" title="stories Image"> </figure>
+              </div>
+              <div class="stories-slider-text">
+                <div class="h5"><a href="#">Concise title for a resource post  here on a few lines of text as needed to fit.</a></div>
+                <a href="#" class="circle-arrow-btn flex flex-vcenter"> <span class="fa-sharp fa-regular fa-arrow-right-long" style="background: var(--Tint-Pink);"></span> <span class="location-btn-text">Read the story</span> </a> </div>
+            </div>
+            <div class="stories-slider-item more-stories">
+              <div class="stories-slider-text">
+                <div class="h5">Short paragraph of text highlighting that there are multitudes of happy folks enjoying life at Sienna Senior Living facilities and that you can read even more stories here.</div>
+                <a href="#" class="button btn-white">Read More Stories</a> </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-      
     <section class="repeater-section pos-relative">
       <div class="repeater-list">
         <div class="container">
@@ -532,13 +503,11 @@
 </div>
 <!-- end of main --> 
 <script src="js/jquery-3.7.1.min.js"></script> 
-<script src="js/Counter.js"></script> 
-<script src="js/magnific-popup.min.js"></script> 
-<script src="js/custom-popup.js"></script> 
+<script src="js/jquery.youtube-background.min.js"></script> 
+<script src="js/iframe.js"></script> 
 <script src="js/slick.min.js"></script> 
 <script src="js/custom-slick.js"></script>
 <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
 <script src="js/custom-script.js"></script>
 </body>
 </html>

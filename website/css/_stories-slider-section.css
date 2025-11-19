@@ -15,6 +15,10 @@
 .stories-slider-item.more-stories .h5 {color: var(--white); margin-bottom: 32px;}
 .stories-slider-item.more-stories .h5:only-child {margin: 0;}
 
+@media only screen and (max-width:1280px) {
+    .stories-slider-section::before {margin: 0 32px;}
+}
+
 @media screen and (min-width: 1024px) {
     .stories-slider-main{padding: 86px 0;}
     .stories-slider-header{width: calc(100% - 204px); margin-bottom: 64px;}
@@ -25,11 +29,7 @@
     .stories-slider-main{padding: 80px 0;}
     .stories-slider-header{width: calc(100% - 154px); margin-bottom: 48px;}
     .stories-slider-item{width: 480px; margin: 0 28px 0 0;}
-    .stories-slider-image{height: 270px;}
-    .stories-slider-image{min-height: 270px; max-height: 270px;}
-    .stories-slider-text{padding: 20px;}
     
-    .stories-slider-text h2{margin-bottom: 16px; font-size: 1.333rem; line-height: 1.2;}
     .stories-slider-row .slick-arrow{width: 48px; height: 48px;}
     .stories-slider-row .slick-arrow span i{font-size: 20px; line-height: 20px;}
     .stories-slider-row .slick-arrow.slick-prev{right: 58px; left: auto;}
@@ -39,14 +39,11 @@
     .stories-slider-section::before {margin: 4px 32px 4px;}
     .stories-slider-main{padding: 28px 0;}
     .stories-slider-header{width: 100%; margin-bottom: 40px;}
-    .stories-slider-header .optional-text{margin: 0 0 12px 0; font-size: 0.889rem; line-height: 1;}
-    .stories-slider-header h2{font-size: 1.778rem; line-height: 1.2;}
-    .stories-slider-item{width: 316px; margin: 0 24px 40px 0;}
-    .stories-slider-image{height: 178px;}
-    .stories-slider-image{min-height: 178px; max-height: 178px;}
-    .stories-slider-text{padding: 20px;}
+    .stories-slider-item{width: 300px; margin: 0 24px 40px 0;}
+    .stories-slider-image{height:332px; padding-top: 24px; margin-bottom: 20px;}
+    
    
-    .stories-slider-text h2{margin-bottom: 12px; font-size: 1.111rem; line-height: 1.2;}
+    .stories-slider-text .h5 {margin-bottom: 16px;}
     
     .stories-slider-row .slick-arrow{top: auto; width: 40px; height: 40px;}
     .stories-slider-row .slick-arrow span i{font-size: 20px; line-height: 20px;}
