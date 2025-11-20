@@ -192,6 +192,28 @@ jQuery(document).ready(function () {
     }
   });
 
+  /* Journey Active Link */ 
+  const jheaderHeight = $('.site-header').outerHeight() || 100; // adjust if needed
+
+  // make first link active by default
+  $('ul.journey-step-title li:first-child a').addClass('active');
+
+  // handle click
+  $('ul.journey-step-title li a').on('click', function(e) {
+    e.preventDefault();
+
+    // add/remove active class
+    $('ul.journey-step-title li a').removeClass('active');
+    $(this).addClass('active');
+
+    // scroll to the corresponding section smoothly, with offset
+    const target = $(this).attr('href');
+    if ($(target).length) {
+      const targetOffset = $(target).offset().top - jheaderHeight - 20;
+      $('html, body').animate({ scrollTop: targetOffset }, 400);
+    }
+  });
+
       if (jQuery(window).width() <= 767) {
 
       jQuery('.contact-filter-dropdown').on('click', function (event) {
