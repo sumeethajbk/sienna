@@ -4,7 +4,7 @@
 .hero-banner-main .hero-banner-thumb {width:47.05882352941176%; position: relative;}
 .hero-banner-main .hero-banner-thumb .hero-banner-img {bottom: -40px; position: absolute; width: 100%; height: 100%; min-height: 640px;}
 
-.hero-banner-main .hero-banner-text {clear: both; width: calc(100% - 52.94%); padding:80px 0 40px 40px; display: flex; align-items: center; flex-wrap: wrap; flex-grow: 1; transition: all 0.5s ease-in-out;}
+.hero-banner-main .hero-banner-text {clear: both; width: calc(100% - 52.95%); padding:80px 0 40px 40px; display: flex; align-items: center; flex-wrap: wrap; flex-grow: 1; transition: all 0.5s ease-in-out;}
 .hero-banner-main .hero-banner-text h1 {color: var(--Sienna-Orange);}
 .hero-banner-main .hero-banner-text h1 u {text-decoration-color: var(--white); text-underline-position: from-font; text-underline-offset: 2px;}
 .hero-banner-main .hero-banner-text p {font-size: 1rem; color: var(--Dark-Gray); margin-bottom: 32px;}
