@@ -19,6 +19,7 @@
 }
 @media only screen and (max-width:767px) and (min-width: 200px){
     .introduction-module {padding: 28px 0;}
+    .introduction-module .section-intro .optional-text {margin: 0 0 12px 0;}
     .introduction-module .section-intro .h1 {margin: 0 0 13px;}
     .introduction-module .secwrapper {gap:56px;}
     .introduction-wrap {flex-direction: column; gap:56px;}

@@ -8,15 +8,21 @@
 
 .introduction-module {background: var(--Tint-Orange);}
 .affiliation-section + .repeater-section .repeater-list:first-child .repeater-list-inner {padding-top: 40px;}
+.affiliation-section + .repeater-section .repeater-list:last-child .repeater-list-inner {padding-bottom: 88px;}
+.segments-module:before {background: var(--Foreground); opacity: 0.2; content: ""; display: block; max-width:calc(1344px - 64px); height: 1px; margin: 0 auto; width: 100%; top: -80px; position: relative;}
+
 /*-- media css starts here --*/
 
-@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+@media only screen and (max-width:1280px) {
+    .segments-module:before {margin: 0 32px;}
 }
+
 @media only screen and (max-width:1023px) and (min-width:200px) {
    
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {
+    .segments-module:before {top: -36px;}
       .affiliation-section + .repeater-section .repeater-list:first-child .repeater-list-inner {padding-top: 16px;}
-
+      .affiliation-section + .repeater-section .repeater-list:last-child .repeater-list-inner {padding-bottom: 28px;}
 }

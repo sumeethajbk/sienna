@@ -8,23 +8,34 @@
 .slider-for .vision-slide {height: inherit!important;}
 
 /* Thumbnail */
-.vision-swrapper .slider-nav {width:132.1px; text-align: center; position: relative;}
+.vision-swrapper .slider-nav {width:132.1px; text-align: center; position: relative; height: 588.6px; overflow: hidden;}
 .vision-swrapper .slider-nav .thumbnail-image {width: 100%; height:132.1px}
 .vision-swrapper .slider-nav .thumb-slide {border:0 none; margin: 0 0 20px 0;}
 
-
 /*-- media css starts here --*/
-@media only screen and (min-width:1024px) {
+@media only screen and (max-width:1023px) and (min-width:200px) {
+    .slider-for {width: 100%;}
+    .slider-for .slick-track {height: 46.95vw;}
+    .vision-swrapper .slider-nav .thumbnail-image {height: 100%;}
+ 
+}
+@media only screen and (max-width:1023px) and (min-width:768px) {
+    .vision-module {padding: 80px 0 40px;}
+    .vision-swrapper .slider-nav {width: calc(100% + 32px); height: inherit; overflow: inherit;}
+    .vision-swrapper .slider-nav .slick-track {display: flex; flex-wrap: wrap;}
+    .vision-swrapper .slider-nav .thumb-slide {width: 161px; height: 161px; margin:0 20px 0 0;}
 }
 
-@media only screen and (max-width:1023px) and (min-width:200px) {
-    .vision-swrapper {padding: 35px 0 30px;}
-    .vision-swrapper .slider-nav {display: none;}
-    .vision-slide {padding: 0; width: 334px;}
-    .slider-for {width: 100%;}
-    .slider-for .slick-arrow.slick-disabled {display: none!important;}
-    .slider-for .slick-arrow.slick-next {right: 30px;}
-    .slider-for .slick-track {display: flex; gap:30px;}
-    .slider-banner-image {margin:0 0 58px 0; max-width: 75.1%;}
-    
+@media only screen and (max-width:767px) and (min-width:200px) {
+    .vision-module .section-intro {margin-bottom: 29px;}
+    .vision-module .section-intro .h2 {margin: 0 0 12px;}
+    .vision-module {padding: 28px 0;}
+    .vision-swrapper {gap:12px;}
+    .vision-swrapper .slider-nav {width: 100%; overflow: inherit; height: inherit;}
+    .vision-swrapper .slider-nav .slick-track:before {display: none;}
+    .vision-swrapper .slider-nav .slick-track {width: 100%!important; transform: none!important; display: flex; flex-wrap: wrap; gap:12px; justify-content: center;}
+    .vision-swrapper .slider-nav .thumb-slide {width: 157px; height: 157px; margin: 0;}
+}
+@media only screen and (max-width:389px) and (min-width:200px) {
+    .vision-swrapper .slider-nav .thumb-slide {width: 142px; height: 142px;}
 }
