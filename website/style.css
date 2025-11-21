@@ -467,7 +467,8 @@ a.prev.page-numbers.disabled{display: none;}
 }
 
 @media only screen and (max-width: 1023px) and (min-width:200px) {
-   
+       .space-top #mainContent {padding: 56px 0 0 0;}
+
 }
 
 

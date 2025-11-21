@@ -7,7 +7,7 @@
 .segments-thumb {clear: both; width: 100%; height: 384px; overflow: hidden;}
 .segments-cnt {padding: 32px;}
 .segments-cnt p {font-size: 1.333rem; color: var(--Dark-Gray); margin-bottom: 27px;}
-
+.segments-module:has(> .segments-inner:only-child) {gap: 0;}
 
 
 
