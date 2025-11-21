@@ -3,6 +3,8 @@
 .section-intro {clear: both; width:100%; position: relative;}
 .section-intro .h1 {color: var(--Sienna-Orange); margin:0 0 40px;}
 .section-intro .h1:last-of-type {margin: 0;}
+.section-intro .h2 {color: var(--Sienna-Orange); margin:0 0 20px;}
+.section-intro .h2:last-of-type {margin: 0;}
 .section-intro .h3 {color: var(--Foreground); margin: 0;}
 .section-intro .h4 {color: var(--Foreground); margin: 0;}
 .section-intro-main {position: relative; z-index: 1;}

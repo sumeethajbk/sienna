@@ -1,0 +1,30 @@
+.vision-module {clear: both; width: 100%; position: relative; background: var(--white); padding: 80px 0;}
+.vision-module .section-intro {margin-bottom: 48px;}
+.vision-swrapper {display: flex; flex-wrap: wrap; width: 100%; gap:20px;}
+
+.slider-for {width: calc(100% - 152.1px);}
+.slider-for .slick-track {display: flex; height: 588.6px;}
+.slider-for .slider-banner-image {width: 100%; height: 100%; position: relative;}
+.slider-for .vision-slide {height: inherit!important;}
+
+/* Thumbnail */
+.vision-swrapper .slider-nav {width:132.1px; text-align: center; position: relative;}
+.vision-swrapper .slider-nav .thumbnail-image {width: 100%; height:132.1px}
+.vision-swrapper .slider-nav .thumb-slide {border:0 none; margin: 0 0 20px 0;}
+
+
+/*-- media css starts here --*/
+@media only screen and (min-width:1024px) {
+}
+
+@media only screen and (max-width:1023px) and (min-width:200px) {
+    .vision-swrapper {padding: 35px 0 30px;}
+    .vision-swrapper .slider-nav {display: none;}
+    .vision-slide {padding: 0; width: 334px;}
+    .slider-for {width: 100%;}
+    .slider-for .slick-arrow.slick-disabled {display: none!important;}
+    .slider-for .slick-arrow.slick-next {right: 30px;}
+    .slider-for .slick-track {display: flex; gap:30px;}
+    .slider-banner-image {margin:0 0 58px 0; max-width: 75.1%;}
+    
+}

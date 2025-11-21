@@ -1,0 +1,22 @@
+@import url("_section-intro.css");
+@import url("_intromodule.css");
+@import url("_segments-module.css");
+@import url("_vision-module.css");
+@import url("_affiliates-logo-module.css");
+@import url("_repeater-section.css");
+@import url("_signup-module.css");
+
+.introduction-module {background: var(--Tint-Orange);}
+.affiliation-section + .repeater-section .repeater-list:first-child .repeater-list-inner {padding-top: 40px;}
+/*-- media css starts here --*/
+
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+}
+@media only screen and (max-width:1023px) and (min-width:200px) {
+   
+}
+
+@media only screen and (max-width:767px) and (min-width:200px) {
+      .affiliation-section + .repeater-section .repeater-list:first-child .repeater-list-inner {padding-top: 16px;}
+
+}

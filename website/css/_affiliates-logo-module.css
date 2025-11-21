@@ -19,4 +19,5 @@
     .affiliation-title {gap: 6px; margin-bottom: 24px;}
     .affiliation-title .h6 {max-width: 81.6%;}
     .affiliation-logos {gap:24px; padding: 0 0 24px 0;}
+    .affiliation-logos img {height: 53px;}
 }

@@ -1,8 +1,6 @@
 jQuery(document).ready(function () {
 
-  
-
-  /* Our Stories Slider */
+    /* Our Stories Slider */
   function SitesSlider() {
     var $el = jQuery('.stories-slider-row'),
       w = jQuery(window).width(),
@@ -42,6 +40,38 @@ jQuery(document).ready(function () {
   SitesSlider();
   jQuery(window).on('resize', SitesSlider);
 
+    
+/* About Slider */
+  jQuery('.slider-nav').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: false,
+    speed: 1000,
+    arrows: false,
+    vertical: true,
+    verticalSwiping: true,
+    swipeToSlide: true,
+    focusOnSelect: true,
+    asNavFor: '.slider-for',
+  }).on('setPosition', function () {
+    jQuery('.slider-nav .slick-list').css('height', '588.6px');
+  });
+  jQuery('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    speed: 1000,
+    fade: true,
+    focusOnSelect: true,
+    infinite: true,
+    asNavFor: '.slider-nav',
+    prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-left"></i></span></div>',
+    nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></div>',
+  });
+    
+    
+    
 
   jQuery('.resources-slider-row').slick({
     slidesToShow: 1,
