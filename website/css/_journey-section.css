@@ -1,0 +1,64 @@
+
+.journey-section{background: var(--Tint-Blue);}
+
+.journey-intro h2{color: var(--Sienna-Orange); margin-bottom: 20px;}
+.journey-intro .h4{margin-bottom: 0;}
+
+ul.journey-step-title{margin: 0;}
+ul.journey-step-title li{margin-bottom: 20px;}
+ul.journey-step-title li a{gap: 8px; font-size: 0.889rem; color: var(--Foreground); font-weight: 700; line-height: 1; }
+ul.journey-step-title li a:hover{color: var(--Sienna-Orange);}
+ul.journey-step-title li::before{display: none;}
+ul.journey-step-title li span.dot{width: 20px; height: 20px; border-radius: 50%; background: transparent; position: relative;}
+ul.journey-step-title li span.dot::before{content: ""; top: 50%; left: 50%; position: absolute; transform: translate(-50% , -50%); width: 10px; height: 10px; display: block; border-radius: 50%; background: var(--white);}
+ul.journey-step-title li a.active span.dot{background: var(--Sienna-Orange);}
+ul.journey-step-title li a.active span.dot::before{background: var(--white);}
+
+.journey-step-box{gap: 40px; padding: 24px; z-index: 1; margin-bottom: 48px;}
+.journey-step-box::before{content: ""; position: absolute; width: calc(100% - 48px); height: 100%; top: 0; left: 0; background: var(--white); z-index: -1;}
+.journey-step-content, .journey-step-image{flex: 1;}
+.journey-step-content-inner{padding: 24px; font-size: 0.889rem; line-height: 1.5; color: var(--Dark-Gray); }
+.journey-step-content-inner hr{margin: 20px 0;}
+.journey-step-content-inner ul{margin-top: 20px; margin-left: 24px;}
+.journey-step-content-inner ul > li::before{content: "\f058"; left: -24px; top: 0; }
+
+
+@media screen and (min-width: 1024px) {
+    .journey-main{padding: 80px 0; gap: 80px;}
+    .journey-step-main{gap: 80px;}
+    .journey-sidebar{flex: 0 0 228px; flex-grow: 1;}
+    .journey-content{flex: 0 0 calc(100% - 308px); flex-grow: 1;}
+    
+}
+@media screen and (max-width: 1199px) and (min-width: 1024px){
+    .journey-main{gap: 40px;}
+    .journey-step-box{gap: 20px; padding: 20px;}
+    .journey-step-content-inner{padding: 14px;}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .journey-main{padding: 48px 0; gap: 56px;}
+    .journey-content{width: 100%;}
+    .journey-step-box{gap: 28px; padding: 20px; margin-bottom: 32px;}
+    .journey-step-content, .journey-step-image{flex: 1;}
+    .journey-step-content-inner{padding: 20px; font-size: 0.778rem;}
+    .journey-step-content-inner h2{margin-bottom: 16px;}
+    .journey-step-content-inner hr{margin: 16px 0;}
+    .journey-step-content-inner p{margin-bottom: 16px;}
+    .journey-step-content-inner ul{margin-top: 16px;}
+    
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .journey-main{padding: 28px 0; gap: 56px;}
+    .journey-intro h2{margin-bottom: 12px; }
+    .journey-content{width: 100%;}
+    .journey-step-box{gap: 20px; padding: 16px; margin-bottom: 28px; flex-direction: column-reverse;}
+    .journey-step-box::before{content: ""; position: absolute; width: 100%; height: calc(100% - 28px); top: auto; bottom: 0;}
+    .journey-step-content, .journey-step-image{flex: 0 0 100%;}
+    .journey-step-content-inner{padding: 4px; font-size: 0.778rem;}
+    .journey-step-content-inner h2{margin-bottom: 12px;}
+    .journey-step-content-inner hr{margin: 12px 0;}
+    .journey-step-content-inner p{margin-bottom: 12px;}
+    .journey-step-content-inner ul{margin-top: 12px;}
+    .journey-step-content-inner ul > li{margin-bottom: 4px;}
+    
+}

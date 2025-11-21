@@ -4,17 +4,22 @@
 
 .faq-top-search{gap: 20px;}
 .faq-search-form{flex: 1;}
+body .faq-search-form .frm_forms .frm_form_fields input{background: var(--Tint-Orange); border-radius: 60px; border: 1.25px solid var(--Sienna-Orange); background-color: var(--Tint-Pink) !important; padding: 15px 20px; font-size: 1rem; line-height: 1.35; }
+body.page-template-faq ::-webkit-input-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size: 1rem!important; overflow: visible; font-weight: 700;}
+body.page-template-faq :-moz-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size: 1rem!important; overflow: visible; font-weight: 700;}
+body.page-template-faq ::-moz-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size: 1rem!important; overflow: visible; font-weight: 700;}
+body.page-template-faq :-ms-input-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size: 1rem!important; overflow: visible; font-weight: 700;}
 .faq-search-btn{flex: 0 0 56px;}
 
 .faq-search-form .frm_forms .frm_form_fields .frm_form_field{margin-bottom: 0;}
 .faq-search-btn .circle-arrow-btn span.fa-sharp{width: 56px; height: 56px;}
 
 @media screen and (min-width: 1024px){
-    .faq-top-main{max-width: 1200px; margin: 0 auto; padding: 168px 0 80px; gap: 64px;}
+    .faq-top-main{max-width: 1200px; margin: 0 auto; padding: 80px 0 80px; gap: 64px;}
 }
 
 @media screen and (max-width: 767px) and (min-width: 200px){
-    .faq-top-main{padding: 84px 0 28px; gap: 40px;}
+    .faq-top-main{padding: 28px 0; gap: 40px;}
     .faq-top-heading{font-size: 1.333rem; }
     .faq-top-heading span.optional-text{font-size: 0.889rem; line-height: 1; margin-bottom: 12px;}
     .faq-top-heading h1{font-size: 2.222rem;}

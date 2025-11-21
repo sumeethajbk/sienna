@@ -486,6 +486,10 @@ a.prev.page-numbers.disabled{display: none;}
     .shadow {right: -24px!important; left: auto!important;}
     
     .w-fit {width: fit-content;}
+
+    .slick-arrow{width: 48px; height: 48px;}
+    .slick-arrow span i{font-size: 20px; line-height: 20px;}
+    .slick-arrow.slick-prev{right: 58px; left: auto;}
     
 }
 
@@ -558,6 +562,10 @@ a.prev.page-numbers.disabled{display: none;}
     ul.slick-dots li{margin: 0 !important;}
     ul.slick-dots li button{width: 8px; height: 8px; background: var(--Tint-Blue); opacity: 1;}
     ul.slick-dots li.slick-active button{width: 16px; background: var(--Sienna-Orange);}
+
+    .slick-arrow{top: auto; width: 40px; height: 40px;}
+    .slick-arrow span i{font-size: 20px; line-height: 20px;}
+    .slick-arrow.slick-prev{right: auto; left: 0;}
     
 	
 

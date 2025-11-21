@@ -1,0 +1,21 @@
+
+.locator-top-heading{font-size: 2.222rem; line-height: 1.2; font-family: 'Ivar Display'; font-weight: 700;}
+.locator-top-heading h1{font-size: 3.556rem; color: var(--Sienna-Orange);}
+
+
+@media screen and (min-width: 1024px){
+    .locator-top-main{padding: 80px 0 24px;}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .locator-top-main{padding: 48px 0 20px;}
+    .locator-top-heading{font-size: 1.778rem;}
+    .locator-top-heading span.optional-text{font-size: 0.889rem; line-height: 1; margin-bottom: 16px;}
+    .locator-top-heading h1{font-size: 3.556rem; margin-bottom: 16px;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .locator-top-main{padding: 28px 0 24px;}
+    .locator-top-heading{font-size: 1.333rem; }
+    .locator-top-heading span.optional-text{font-size: 0.889rem; line-height: 1; margin-bottom: 12px;}
+    .locator-top-heading h1{font-size: 2.667rem;}
+}
