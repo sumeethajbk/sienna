@@ -10,10 +10,14 @@ ul.faq-content-category li a.active span.dot{background: var(--Tint-Orange);}
 ul.faq-content-category li a.active span.dot::before{background: var(--Sienna-Orange);}
 
 .faq-content-question{gap: 48px;}
+.faq-content-question.faq-no-gap{gap: 0;}
 .faq-content-item{width: 100%;}
 .faq-content-title{gap: 12px; align-items: center; margin-bottom: 24px;}
 .faq-content-icon{width: 32px; height: 32px; }
 .faq-content-title h2{flex: 1; margin-bottom: 0;}
+
+.search-results-faq{display: flex; flex-wrap: wrap; gap: 48px; }
+.search-results-faq > h2{margin-bottom: 0;}
 
 @media screen  and (min-width: 1024px){
     .faq-content-main{padding: 80px 0; gap: 80px;}
@@ -24,7 +28,7 @@ ul.faq-content-category li a.active span.dot::before{background: var(--Sienna-Or
 }
 
 @media screen  and (max-width: 767px) and (min-width: 200px){
-    .faq-content-main{padding: 28px 0; gap: 56px;}
+    .faq-content-main{padding: 28px 0 64px; gap: 56px;}
     .faq-content-sidebar, .faq-content-question{width: 100%;}
     ul.faq-content-category{display: flex; flex-wrap: wrap; gap: 6px;}
     ul.faq-content-category li{margin-bottom: 0;}
