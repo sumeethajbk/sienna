@@ -14,7 +14,7 @@
 <link rel="icon" type="image/vnd.microsoft.icon" sizes="512x512" href="images/web-app-manifest-512x512.png">
 <script src="https://kit.fontawesome.com/01565105f3.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
-<link rel="stylesheet" type="text/css" href="css/ltc-province-page.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="css/retirement-living-page.css" media="all"/>
 </head>
 <body class="page-template-retirement-living">
 <div id="main">
@@ -78,355 +78,111 @@
   <!-- end of main header -->
   
   <main id="mainContent">
-    <section class="hero-banner-section pos-relative" style="background: var(--Tint-Green);">
-      <div class="container-lg">
-        <div class="hero-banner-main flex">
-          <div class="hero-banner-thumb">
-            <div class="hero-banner-img">
-              <picture class="object-fit" role="none">
-                <source srcset="images/ltc-province-banner@2x.jpg" media="(min-width: 768px)" />
-                <img src="images/ltc-province-banner-mob@2x.jpg" alt="LTC Banner" title="LTC Banner" /> </picture>
+
+    <section class="repeater-section pos-relative">
+      <div class="repeater-list">
+        <div class="container">
+          <div class="repeater-list-inner flex">
+            <div class="repeater-img">
+              <figure class="object-fit" role="none"> <img src="images/repeater-thumb-one@2x.jpg" alt="Repeater Thumb"> </figure>
+              <div class="shadow pos-absolute" style="background: var(--Tint-Orange)"></div>
             </div>
-            <!-- end of hero banner img --> 
-          </div>
-          <!-- end of hero banner thumb -->
-          <div class="hero-banner-text">
-            <div class="hero-banner-inner"> <span class="optional-text">Senior Living</span>
-              <h1>Long-Term &amp; Continuing Care in British Columbia</h1>
-              <p>Shadow device rectangle team shadow align stroke line share blur plugin content share polygon plugin layout link use boolean variant community text draft.</p>
-              <div class="btn-wrap"> <a href="#" class="button">Call to Action</a> <a href="#" class="readmore">Secondary CTA</a></div>
-              <!-- end of btn wrap --> 
+            <!-- end of repeater img-->
+            <div class="repeater-text"> <span class="optional-text">Optional Eyebrow Text</span>
+              <div class="h3">Short headline for the repeater module.</div>
+              <hr class="w80">
+              <p>Rotate editor style frame draft variant bullet image link align. Fill arrange pencil object style connection mask bullet move. Italic prototype shadow shadow asset group bold font pen team create link.</p>
+              <div class="btn-wrap"><a href="#" class="button">More</a><a href="#" class="readmore">Secondary CTA</a></div>
             </div>
-            <!-- end of hero banner inner --> 
+            <!-- end of repeater text --> 
           </div>
-          
-          <!-- end of hero banner text --> 
+          <!-- end of repeater list inner --> 
         </div>
       </div>
-    </section>
-    <!-- end of hero banner section -->
-    <section class="location-section">
+      <!-- end of repeater list -->
+      <div class="repeater-list">
         <div class="container">
-            <div class="location-main flex">
-                <div class="location-heading flex flex-vcenter">
-                    <div class="location-title">
-                        <h2 class="h5">37 Long-Term  Care Locationsin <br> British Columbia</h2>
-                    </div>
-                    <div class="location-sort flex">
-                      <div class="location-city-dropdown">
-                        <select name="sort-city" id="sort-city">
-                          <option value="Sort by City" selected>Sort by City</option>
-                          <option value="Sort by City1">Sort by City1</option>
-                          <option value="Sort by City2">Sort by City2</option>
-                        </select>
-                      </div>
-                      <div class="location-funding-dropdown">
-                        <select name="sort-funding" id="sort-funding">
-                          <option value="Sort by Funding" selected>Sort by Funding</option>
-                          <option value="Sort by Funding1">Sort by Funding1</option>
-                          <option value="Sort by Funding2">Sort by Funding2</option>
-                        </select>
-                      </div>
-                    </div>
-                </div>
-                <div class="location-lists flex">
-                    <div class="location-item" style="background-color: var(--Tint-Orange);">
-                        <div class="location-image">
-                            <figure class="object-fit">
-                                <img src="images/location-thumb-one@2x.jpg" alt="Location Image" title="Location Image">
-                            </figure>
-                        </div>
-                        <div class="location-details">
-                            <h2 class="h5">Location Name Here on a Line or Two</h2>
-                            <hr class="line">
-                            <p>123 Somestreet AvenueCityname, Province M5M 5M5</p>
-                            <ul class="flex flex-vcenter">
-                                <li class="flex flex-vcenter"><span class="fa-sharp fa-regular fa-location-dot"></span><span>Cityname</span></li>
-                                <li><a href="tel:555-444-45454" class="flex flex-vcenter"><span class="fa-sharp fa-regular fa-mobile"></span><span>555-444-45454</span></a></li>
-                            </ul>
-                            <a href="#" class="circle-arrow-btn flex flex-vcenter">
-                                <span class="fa-sharp fa-regular fa-arrow-right-long"></span>
-                                <span class="location-btn-text">Explore This Location</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="location-item" style="background-color: var(--Tint-Pink);">
-                        <div class="location-image">
-                            <figure class="object-fit">
-                                <img src="images/location-thumb-one@2x.jpg" alt="Location Image" title="Location Image">
-                            </figure>
-                        </div>
-                        <div class="location-details">
-                            <h2 class="h5">Location Name Here on a Line or Two</h2>
-                            <hr class="line">
-                            <p>123 Somestreet AvenueCityname, Province M5M 5M5</p>
-                            <ul class="flex">
-                                <li class="flex flex-vcenter"><span class="fa-sharp fa-regular fa-location-dot"></span><span>Cityname</span></li>
-                                <li><a href="tel:555-444-45454" class="flex flex-vcenter"><span class="fa-sharp fa-regular fa-mobile"></span><span>555-444-45454</span></a></li>
-                            </ul>
-                            <a href="#" class="circle-arrow-btn flex flex-vcenter">
-                                <span class="fa-sharp fa-regular fa-arrow-right-long"></span>
-                                <span class="location-btn-text">Explore This Location</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="location-item" style="background-color: var(--Tint-Green);">
-                        <div class="location-image">
-                            <figure class="object-fit">
-                                <img src="images/location-thumb-one@2x.jpg" alt="Location Image" title="Location Image">
-                            </figure>
-                        </div>
-                        <div class="location-details">
-                            <h2 class="h5">Location Name Here on a Line or Two</h2>
-                            <hr class="line">
-                            <p>123 Somestreet AvenueCityname, Province M5M 5M5</p>
-                            <ul class="flex flex-vcenter">
-                                <li class="flex flex-vcenter"><span class="fa-sharp fa-regular fa-location-dot"></span><span>Cityname</span></li>
-                                <li><a href="tel:555-444-45454" class="flex flex-vcenter"><span class="fa-sharp fa-regular fa-mobile"></span><span>555-444-45454</span></a></li>
-                            </ul>
-                            <a href="#" class="circle-arrow-btn flex flex-vcenter">
-                                <span class="fa-sharp fa-regular fa-arrow-right-long"></span>
-                                <span class="location-btn-text">Explore This Location</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="location-item" style="background-color: var(--Tint-Blue);">
-                        <div class="location-image">
-                            <figure class="object-fit">
-                                <img src="images/location-thumb-one@2x.jpg" alt="Location Image" title="Location Image">
-                            </figure>
-                        </div>
-                        <div class="location-details">
-                            <h2 class="h5">Location Name Here on a Line or Two</h2>
-                            <hr class="line">
-                            <p>123 Somestreet AvenueCityname, Province M5M 5M5</p>
-                            <ul class="flex flex-vcenter">
-                                <li class="flex flex-vcenter"><span class="fa-sharp fa-regular fa-location-dot"></span><span>Cityname</span></li>
-                                <li><a href="tel:555-444-45454" class="flex flex-vcenter"><span class="fa-sharp fa-regular fa-mobile"></span><span>555-444-45454</span></a></li>
-                            </ul>
-                            <a href="#" class="circle-arrow-btn flex flex-vcenter">
-                                <span class="fa-sharp fa-regular fa-arrow-right-long"></span>
-                                <span class="location-btn-text">Explore This Location</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="location-item" style="background-color: var(--Tint-Purple);">
-                        <div class="location-image">
-                            <figure class="object-fit">
-                                <img src="images/location-thumb-one@2x.jpg" alt="Location Image" title="Location Image">
-                            </figure>
-                        </div>
-                        <div class="location-details">
-                            <h2 class="h5">Location Name Here on a Line or Two</h2>
-                            <hr class="line">
-                            <p>123 Somestreet AvenueCityname, Province M5M 5M5</p>
-                            <ul class="flex flex-vcenter">
-                                <li class="flex flex-vcenter"><span class="fa-sharp fa-regular fa-location-dot"></span><span>Cityname</span></li>
-                                <li><a href="tel:555-444-45454" class="flex flex-vcenter"><span class="fa-sharp fa-regular fa-mobile"></span><span>555-444-45454</span></a></li>
-                            </ul>
-                            <a href="#" class="circle-arrow-btn flex flex-vcenter">
-                                <span class="fa-sharp fa-regular fa-arrow-right-long"></span>
-                                <span class="location-btn-text">Explore This Location</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="location-item" style="background-color: var(--Tint-Orange);">
-                        <div class="location-image">
-                            <figure class="object-fit">
-                                <img src="images/location-thumb-one@2x.jpg" alt="Location Image" title="Location Image">
-                            </figure>
-                        </div>
-                        <div class="location-details">
-                            <h2 class="h5">Location Name Here on a Line or Two</h2>
-                            <hr class="line">
-                            <p>123 Somestreet AvenueCityname, Province M5M 5M5</p>
-                            <ul class="flex flex-vcenter">
-                                <li class="flex flex-vcenter"><span class="fa-sharp fa-regular fa-location-dot"></span><span>Cityname</span></li>
-                                <li><a href="tel:555-444-45454" class="flex flex-vcenter"><span class="fa-sharp fa-regular fa-mobile"></span><span>555-444-45454</span></a></li>
-                            </ul>
-                            <a href="#" class="circle-arrow-btn flex flex-vcenter">
-                                <span class="fa-sharp fa-regular fa-arrow-right-long"></span>
-                                <span class="location-btn-text">Explore This Location</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="location-item" style="background-color: var(--Tint-Pink);">
-                        <div class="location-image">
-                            <figure class="object-fit">
-                                <img src="images/location-thumb-one@2x.jpg" alt="Location Image" title="Location Image">
-                            </figure>
-                        </div>
-                        <div class="location-details">
-                            <h2 class="h5">Location Name Here on a Line or Two</h2>
-                            <hr class="line">
-                            <p>123 Somestreet AvenueCityname, Province M5M 5M5</p>
-                            <ul class="flex">
-                                <li class="flex flex-vcenter"><span class="fa-sharp fa-regular fa-location-dot"></span><span>Cityname</span></li>
-                                <li><a href="tel:555-444-45454" class="flex flex-vcenter"><span class="fa-sharp fa-regular fa-mobile"></span><span>555-444-45454</span></a></li>
-                            </ul>
-                            <a href="#" class="circle-arrow-btn flex flex-vcenter">
-                                <span class="fa-sharp fa-regular fa-arrow-right-long"></span>
-                                <span class="location-btn-text">Explore This Location</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="location-item" style="background-color: var(--Tint-Green);">
-                        <div class="location-image">
-                            <figure class="object-fit">
-                                <img src="images/location-thumb-one@2x.jpg" alt="Location Image" title="Location Image">
-                            </figure>
-                        </div>
-                        <div class="location-details">
-                            <h2 class="h5">Location Name Here on a Line or Two</h2>
-                            <hr class="line">
-                            <p>123 Somestreet AvenueCityname, Province M5M 5M5</p>
-                            <ul class="flex flex-vcenter">
-                                <li class="flex flex-vcenter"><span class="fa-sharp fa-regular fa-location-dot"></span><span>Cityname</span></li>
-                                <li><a href="tel:555-444-45454" class="flex flex-vcenter"><span class="fa-sharp fa-regular fa-mobile"></span><span>555-444-45454</span></a></li>
-                            </ul>
-                            <a href="#" class="circle-arrow-btn flex flex-vcenter">
-                                <span class="fa-sharp fa-regular fa-arrow-right-long"></span>
-                                <span class="location-btn-text">Explore This Location</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="location-item" style="background-color: var(--Tint-Blue);">
-                        <div class="location-image">
-                            <figure class="object-fit">
-                                <img src="images/location-thumb-one@2x.jpg" alt="Location Image" title="Location Image">
-                            </figure>
-                        </div>
-                        <div class="location-details">
-                            <h2 class="h5">Location Name Here on a Line or Two</h2>
-                            <hr class="line">
-                            <p>123 Somestreet AvenueCityname, Province M5M 5M5</p>
-                            <ul class="flex flex-vcenter">
-                                <li class="flex flex-vcenter"><span class="fa-sharp fa-regular fa-location-dot"></span><span>Cityname</span></li>
-                                <li><a href="tel:555-444-45454" class="flex flex-vcenter"><span class="fa-sharp fa-regular fa-mobile"></span><span>555-444-45454</span></a></li>
-                            </ul>
-                            <a href="#" class="circle-arrow-btn flex flex-vcenter">
-                                <span class="fa-sharp fa-regular fa-arrow-right-long"></span>
-                                <span class="location-btn-text">Explore This Location</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="location-show-btn flex flex-vcenter">
-                    <hr class="location-line">
-                    <a href="#" class="button">Show More Locations</a>
-                    <hr class="location-line">
-                </div>
+          <div class="repeater-list-inner flex">
+            <div class="repeater-img">
+              <figure class="object-fit" role="none"> <img src="images/repeater-thumb-one@2x.jpg" alt="Repeater Thumb"> </figure>
+              <div class="shadow pos-absolute" style="background: var(--Tint-Blue)"></div>
             </div>
+            <!-- end of repeater img-->
+            <div class="repeater-text"> <span class="optional-text">Optional Eyebrow Text</span>
+              <div class="h3">Short headline for the repeater module.</div>
+              <hr class="w80">
+              <p>Rotate editor style frame draft variant bullet image link align. Fill arrange pencil object style connection mask bullet move. Italic prototype shadow shadow asset group bold font pen team create link.</p>
+              <div class="btn-wrap"><a href="#" class="button">More</a><a href="#" class="readmore">Secondary CTA</a></div>
+            </div>
+            <!-- end of repeater text --> 
+          </div>
+          <!-- end of repeater list inner --> 
         </div>
-    </section>
-    <section class="features-sidebar-section">
+      </div>
+      <!-- end of repeater list --> 
+      <div class="repeater-list">
         <div class="container">
-            <div class="features-sidebar-main flex">
-                <div class="features-sidebar">
-                    <div class="features-sidebar-map">
-                        <figure class="object-fit">
-                            <img src="images/british-columbia-map.svg" alt="Map Icon" title="Map Icon">
-                        </figure>
-                    </div>
-                    <span class="optional-text">Living Options in British Columbia</span>
-                    <h2 class="h4">Short sidebar header shows here on a few lines of text to intro the content on the right side.</h2>
-                    <div class="features-sidebar-btn-wrap flex flex-vcenter">
-                        <a href="#" class="button btn-orange">More</a>
-                        <a href="#" class="readmore">Secondary CTA</a>
-                    </div>
-                </div>
-                <div class="features-sidebar-lists flex pos-relative">
-                    <div class="features-sidebar-item">
-                        <h2 class="h6">Subhead appears here</h2>
-                        <p>Object clip arrange boolean editor ellipse list subtract opacity library arrange undo component project. Arrange asset variant content image pixel blur invite clip rotate create edit rectangle selection object.</p>
-                    </div>
-                    <div class="features-sidebar-item">
-                        <h2 class="h6">Subhead appears here</h2>
-                        <p>Object clip arrange boolean editor ellipse list subtract opacity library arrange undo component project. Arrange asset variant content image pixel blur invite clip rotate create edit rectangle selection object.</p>
-                    </div>
-                    <div class="features-sidebar-item">
-                        <h2 class="h6">Subhead appears here</h2>
-                        <p>Object clip arrange boolean editor ellipse list subtract opacity library arrange undo component project. Arrange asset variant content image pixel blur invite clip rotate create edit rectangle selection object.</p>
-                    </div>
-                    <div class="features-sidebar-item">
-                        <h2 class="h6">Subhead appears here</h2>
-                        <p>Object clip arrange boolean editor ellipse list subtract opacity library arrange undo component project. Arrange asset variant content image pixel blur invite clip rotate create edit rectangle selection object.</p>
-                    </div>
-                    <div class="features-sidebar-item">
-                        <h2 class="h6">Subhead appears here</h2>
-                        <p>Object clip arrange boolean editor ellipse list subtract opacity library arrange undo component project. Arrange asset variant content image pixel blur invite clip rotate create edit rectangle selection object.</p>
-                    </div>
-                    <div class="features-sidebar-item">
-                        <h2 class="h6">Subhead appears here</h2>
-                        <p>Object clip arrange boolean editor ellipse list subtract opacity library arrange undo component project. Arrange asset variant content image pixel blur invite clip rotate create edit rectangle selection object.</p>
-                    </div>
-                </div>
+          <div class="repeater-list-inner flex">
+            <div class="repeater-img">
+              <figure class="object-fit" role="none"> <img src="images/repeater-thumb-one@2x.jpg" alt="Repeater Thumb"> </figure>
+              <div class="shadow pos-absolute" style="background: var(--Tint-Blue)"></div>
             </div>
+            <!-- end of repeater img-->
+            <div class="repeater-text"> <span class="optional-text">Optional Eyebrow Text</span>
+              <div class="h3">Short headline for the repeater module.</div>
+              <hr class="w80">
+              <p>Rotate editor style frame draft variant bullet image link align. Fill arrange pencil object style connection mask bullet move. Italic prototype shadow shadow asset group bold font pen team create link.</p>
+              <div class="btn-wrap"><a href="#" class="button">More</a><a href="#" class="readmore">Secondary CTA</a></div>
+            </div>
+            <!-- end of repeater text --> 
+          </div>
+          <!-- end of repeater list inner --> 
         </div>
-    </section>
-    <section class="resources-slider-section">
+      </div>
+      <!-- end of repeater list --> 
+      <div class="repeater-list">
         <div class="container">
-            <div class="resources-slider-main">
-                <div class="resources-slider-header flex flex-vcenter">
-                    <span class="optional-text">Resident &amp; Family Resources</span>
-                    <h2 class="h3">Short headline for the Resident &amp; Family Resources module appears here on a few lines of text.</h2>
-                </div>
-                <div class="resources-slider-row">
-                    <div class="resources-slider-item" style="background: var(--Tint-Blue);">
-                        <div class="resources-slider-image">
-                            <figure class="object-fit">
-                                <img src="images/resources-slide-one@2x.jpg" alt="Resources Image" title="Resources Image">
-                            </figure>
-                        </div>
-                        <div class="resources-slider-text">
-                            <ul class="resources-slider-category flex">
-                                <li>Category</li>
-                            </ul>
-                            <h2 class="h5">Concise title for a resource post  here on a few lines of text as needed to fit.</h2>
-                            <a href="#" class="circle-arrow-btn flex flex-vcenter">
-                                <span class="fa-sharp fa-regular fa-arrow-right-long"></span>
-                                <span class="location-btn-text">Explore This Location</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="resources-slider-item" style="background: var(--Tint-Green);">
-                        <div class="resources-slider-image">
-                            <figure class="object-fit">
-                                <img src="images/resources-slide-two@2x.jpg" alt="Resources Image" title="Resources Image">
-                            </figure>
-                        </div>
-                        <div class="resources-slider-text">
-                            <ul class="resources-slider-category flex">
-                                <li>Category</li>
-                            </ul>
-                            <h2 class="h5">Concise title for a resource post  here on a few lines of text as needed to fit.</h2>
-                            <a href="#" class="circle-arrow-btn flex flex-vcenter">
-                                <span class="fa-sharp fa-regular fa-arrow-right-long"></span>
-                                <span class="location-btn-text">Explore This Location</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="resources-slider-item" style="background: var(--Tint-Purple);">
-                        <div class="resources-slider-image">
-                            <figure class="object-fit">
-                                <img src="images/resources-slide-three@2x.jpg" alt="Resources Image" title="Resources Image">
-                            </figure>
-                        </div>
-                        <div class="resources-slider-text">
-                            <ul class="resources-slider-category flex">
-                                <li>Category</li>
-                            </ul>
-                            <h2 class="h5">Concise title for a resource post  here on a few lines of text as needed to fit.</h2>
-                            <a href="#" class="circle-arrow-btn flex flex-vcenter">
-                                <span class="fa-sharp fa-regular fa-arrow-right-long"></span>
-                                <span class="location-btn-text">Read</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+          <div class="repeater-list-inner flex">
+            <div class="repeater-img">
+              <figure class="object-fit" role="none"> <img src="images/repeater-thumb-one@2x.jpg" alt="Repeater Thumb"> </figure>
+              <div class="shadow pos-absolute" style="background: var(--Tint-Blue)"></div>
             </div>
+            <!-- end of repeater img-->
+            <div class="repeater-text"> <span class="optional-text">Optional Eyebrow Text</span>
+              <div class="h3">Short headline for the repeater module.</div>
+              <hr class="w80">
+              <p>Rotate editor style frame draft variant bullet image link align. Fill arrange pencil object style connection mask bullet move. Italic prototype shadow shadow asset group bold font pen team create link.</p>
+              <div class="btn-wrap"><a href="#" class="button">More</a><a href="#" class="readmore">Secondary CTA</a></div>
+            </div>
+            <!-- end of repeater text --> 
+          </div>
+          <!-- end of repeater list inner --> 
         </div>
+      </div>
+      <!-- end of repeater list --> 
+      <div class="repeater-list">
+        <div class="container">
+          <div class="repeater-list-inner flex">
+            <div class="repeater-img">
+              <figure class="object-fit" role="none"> <img src="images/repeater-thumb-one@2x.jpg" alt="Repeater Thumb"> </figure>
+              <div class="shadow pos-absolute" style="background: var(--Tint-Blue)"></div>
+            </div>
+            <!-- end of repeater img-->
+            <div class="repeater-text"> <span class="optional-text">Optional Eyebrow Text</span>
+              <div class="h3">Short headline for the repeater module.</div>
+              <hr class="w80">
+              <p>Rotate editor style frame draft variant bullet image link align. Fill arrange pencil object style connection mask bullet move. Italic prototype shadow shadow asset group bold font pen team create link.</p>
+              <div class="btn-wrap"><a href="#" class="button">More</a><a href="#" class="readmore">Secondary CTA</a></div>
+            </div>
+            <!-- end of repeater text --> 
+          </div>
+          <!-- end of repeater list inner --> 
+        </div>
+      </div>
+      <!-- end of repeater list --> 
     </section>
+    <!-- end of repeater section -->
+
   <section class="signup-module">
       <div class="container">
         <div class="signup-main">
