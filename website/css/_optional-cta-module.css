@@ -4,6 +4,8 @@
 .optional-cta-main .optional-cta-text {padding:40px 0 40px 40px; position: relative; width:47.05882352941176%; flex-grow: 1; margin: auto 0;}
 .optional-cta-main .optional-cta-text .h1 {color: var(--Sienna-Orange); margin-bottom: 24px;}
 .optional-cta-main .optional-cta-text p {font-size: 1.111rem; line-height: 1.5; color: var(--Dark-Gray); margin-bottom: 36px;}
+.optional-cta-main .optional-cta-text .optional-cta-logo{max-width: 295px; margin-bottom: 20px;}
+.optional-cta-main .optional-cta-text .optional-cta-logo img{max-width: 295px; max-height: 113px;}
 .optional-cta-main .optional-cta-thumb {max-width: 47.05882352941176%; width: 100%; min-height: 640px; max-height: 640px;}
 
 
@@ -32,5 +34,7 @@
     .optional-cta-main .optional-cta-text .h1 {font-size: 1.778rem; line-height: 1.2; margin-bottom: 12px;}
     .optional-cta-main .optional-cta-thumb {height: 83.6vw;}
     .optional-cta-main .optional-cta-text p {font-size: 1rem; margin-bottom:19px;}
+    .optional-cta-main .optional-cta-text .optional-cta-logo {max-width: 212px; margin: 0 auto 8px;}
+    .optional-cta-main .optional-cta-text .optional-cta-logo img{max-width: 212px; max-height: 81px;}
    
 }

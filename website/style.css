@@ -177,6 +177,8 @@ section p a, section li a {position: relative;}
 .readmore:hover {color: var(--black);}
 .readmore:hover:after {transform: translateX(4px);}
 
+.readmore.readmore-green:after{color: var(--Aspira-Green);}
+
 /* CIrcle Button */
 .circle-arrow-btn{width: fit-content; gap:20px;}
 .circle-arrow-btn:hover span.fa-sharp{background: var(--Sienna-Orange)!important; outline: 4px solid var(--button-outline); color: var(--white);}

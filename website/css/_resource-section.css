@@ -1,5 +1,6 @@
 
-.resource-lists{gap: 40px;}
+ul.resource_list{margin: 0;}
+.resource-lists, .resource_list{gap: 40px;}
 .resource-item{background-color: var(--Tint-Orange);}
 
 .resource-heading{gap: 24px;}
@@ -8,6 +9,7 @@
 .resource-filters{gap: 40px;}
 .resource-filter{flex: 1; gap: 12px;}
 .resource-filter .btn-transparent{min-width: 230px;}
+.resource-filter .button.active{background: var(--Sienna-Orange); color: var(--white);}
 .resource-sort-dropdown{width: fit-content;}
 
 .resource-details{padding: 32px;}
@@ -18,7 +20,7 @@ ul.resources-category li a {color: var(--Umber-3);}
 ul.resources-category li a:hover {color: var(--Sienna-Orange);}
 .resource-details h2{margin-bottom: 20px;}
 
-.resource-show-btn{gap: 16px; }
+.resource-show-btn{gap: 16px; margin-top: 48px;}
 .resource-line{margin: 0; flex: 1;}
 
 @media screen  and (min-width: 1024px){
@@ -37,7 +39,7 @@ ul.resources-category li a:hover {color: var(--Sienna-Orange);}
     .resource-filter{gap: 10px;}
     .resource-filter .btn-transparent{min-width: 159px;}
     .resource-sort{width: 100%; gap: 16px;}
-    .resource-lists{gap: 28px;}
+    .resource-lists, .resource_list{gap: 28px;}
     .resource-item{flex: 0 0 calc(50% - 14px);}
     .resource-details{padding: 24px; font-size: 0.889rem; line-height: 1.5;}
     .resource-details h2{font-size: 1.333rem;}
@@ -46,6 +48,7 @@ ul.resources-category li a:hover {color: var(--Sienna-Orange);}
     .resource-details ul li{gap: 10px;}
     .resource-details ul li span{font-size: 0.889rem;}
     .resource-details ul li span.fa-sharp{font-size: 1rem;}
+    .resource-show-btn{margin-top: 32px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .resource-main{padding: 28px 0; gap: 28px;}
@@ -56,7 +59,7 @@ ul.resources-category li a:hover {color: var(--Sienna-Orange);}
     .resource-filter{gap: 6px; width: 100%;}
     .resource-filter .btn-transparent{min-width: 104px; padding: 7px 12px 8px; font-size: 0.889rem;}
     .resource-sort-dropdown{width: 100%;}
-    .resource-lists{gap: 24px;}
+    .resource-lists, .resource_list{gap: 24px;}
     .resource-item{width: 100%;}
     .resource-image{height: 184px; width: 100%;}
     .resource-image img{min-height: 184px; max-height: 184px;}
@@ -71,6 +74,6 @@ ul.resources-category li a:hover {color: var(--Sienna-Orange);}
     .resource-details ul li span{font-size: 0.889rem;}
     .circle-arrow-btn span.fa-sharp{width: 40px; height: 40px; font-size: 1.111rem;}
     span.resource-btn-text{font-size: 0.889rem;}
-    .resource-show-btn{gap: 8px;}
+    .resource-show-btn{gap: 8px; margin-top: 28px;}
     
 }

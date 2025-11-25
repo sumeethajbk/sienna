@@ -117,6 +117,10 @@ button:focus, .button:focus, button:active, .button:active {color: var(--white);
 .btn-white:hover {background: var(--white); color: var(--button);}
 .btn-white:active, .btn-white:focus {background: var(--white); color: var(--button);}
 
+.btn-green {background: var(--Aspira-Green); color: var(--white);}
+.btn-green:hover {background: var(--Aspira-Green); color: var(--white);}
+.btn-green:active, .btn-white:focus {background: var(--Aspira-Green); color: var(--white);}
+
 .btn-transparent{background: var(--white); border: 1px solid var(--Sienna-Orange); color: var(--Foreground); font-size: 1rem; line-height: 1.35; padding: 15px 20px 15px 20px;}
 .btn-transparent:hover {background: var(--Sienna-Orange); color: var(--white);}
 .btn-white:active, .btn-white:focus {background: var(--Sienna-Orange); color: var(--white);}
