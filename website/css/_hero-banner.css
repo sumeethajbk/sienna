@@ -24,7 +24,7 @@
     .hero-banner-section .container-lg {padding: 0 16px;}
     .hero-banner-main {flex-direction: column; gap:32px; min-height: inherit;}
     .hero-banner-main .hero-banner-thumb {width: 100%; min-height: inherit; height: 61.285vw; overflow: hidden;}
-    .hero-banner-main .hero-banner-thumb .hero-banner-img {position: initial;}
+    .hero-banner-main .hero-banner-thumb .hero-banner-img {position: initial; min-height: inherit;}
     .hero-banner-main .hero-banner-text {width: 100%; padding: 0 16px; align-items: flex-start;}
 
 }
