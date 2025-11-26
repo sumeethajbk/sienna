@@ -30,6 +30,7 @@
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {    
+    .optional-cta-module + .affiliation-section {padding-top: 28px;}
     .affiliation-section + .repeater-section .repeater-list:first-child .repeater-list-inner {padding-top: 16px;}
     .affiliation-section + .repeater-section .repeater-list:last-child .repeater-list-inner {padding-bottom: 28px;}
 }
