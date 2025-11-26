@@ -16,6 +16,7 @@
 .signup-module .signup-form .frm_forms .frm_form_fields .frm_form_field {margin: 0;}
 .signup-module .signup-form .frm_forms .form-field label {display: none}
 .signup-module .signup-form .frm_forms .frm_submit-btn {position: absolute; right: 4px; top: 4px; margin: 0; width: auto;}
+body .signup-module .signup-form .frm_forms .frm_submit button{background: var(--Dark-Gray);}
 .signup-module .signup-form .frm_forms .frm_message {text-align: center; margin: 0 20px; line-height: 1.2; color: var(--white); font-family: "Blackbird", sans-serif;}
 .signup-module .signup-form .frm_forms .frm_message p {margin: 0; text-align: center; color: var(--white);}
 .signup-module .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {color:var(--white)!important; bottom: -26px;}
