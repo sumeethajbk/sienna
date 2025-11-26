@@ -12,7 +12,7 @@ Text Domain:Sienna Senior Living
 
 
 @import url("css/_colors.css");
-@import url("css/_reset.css?v=123");
+@import url("css/_reset.css?v=12345");
 @import url("css/_header.css");
 @import url("css/_footer.css");
 @import url("css/_cookiebar.css?v=123");
@@ -313,13 +313,13 @@ body ul.selectBox-dropdown-menu li.frm-select-placeholder/*, body ul.selectBox-d
 .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:checked:before { content: "\f00c"; font-family: "Font Awesome 7 Sharp"; display: block; height: 14px !important; left:50%; position: absolute !important; top: 50%; width: 14px !important; transform: translate(-50% , -50%); font-weight: 900; color: var(--white); font-size: 14px; clip-path: inherit; box-shadow: none; text-align: center; margin: 0; line-height: 14px;}
 .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:before {display: none; background-image: none!important;}
 .frm_forms.with_frm_style .frm_checkbox label {padding-left:44px; display:block; cursor: pointer; line-height: 1.5; font-size: 0.778rem !important; font-weight: 400 !important; position: relative;}
-.frm_forms.with_frm_style .frm_checkbox label span{text-decoration-line: underline; text-decoration-style: solid; text-decoration-skip-ink: auto; text-decoration-color: var(--Sienna-Orange); text-decoration-thickness: 8%; text-underline-offset: auto; text-underline-position: from-font;}
+.frm_forms.with_frm_style .frm_checkbox label a{color: var(--Foreground); text-decoration-line: underline; text-decoration-style: solid; text-decoration-skip-ink: auto; text-decoration-color: var(--Sienna-Orange); text-decoration-thickness: 8%; text-underline-offset: auto; text-underline-position: from-font;}
 .frm_forms.with_frm_style .frm_fields_container .frm_checkbox input[type="checkbox"]:not([disabled]):checked {background: var(--Sienna-Orange)!important;}
 .frm_forms.with_frm_style .frm_fields_container .frm_radio input[type="radio"]:not([disabled]):checked, .frm_forms.with_frm_style .frm_fields_container .frm_scale input[type="radio"]:not([disabled]):checked, .frm_forms.with_frm_style .frm_fields_container .frm_checkbox input[type="checkbox"]:not([disabled]):checked {border:0 none!important;}
 .frm_filed_wrapper .vertical_radio .frm_checkbox {margin: 0;}
 
 /* Input */
-.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: "Blackbird", sans-serif;  font-weight: 700; display: block; font-size: 0.778rem; line-height: 1.5; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: var(--white) !important; color: var(--Foreground); padding: 13px 12px; width: 100%; box-shadow: none; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border-radius: 0; border-bottom: 1px solid var(--Sienna-Orange);}
+.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: "Blackbird", sans-serif;  font-weight: 700; display: block; font-size: 0.778rem; line-height: 1.5; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: var(--white) !important; color: var(--Foreground); padding: 13px 12px; width: 100%; box-shadow: none; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border-radius: 0;  border: none !important; border-bottom: 1px solid var(--Sienna-Orange) !important;}
 body .frm_forms .frm_form_fields input:focus, body .frm_forms .frm_form_fields textarea:focus, body .frm_forms .frm_form_fields input:hover, body .frm_forms .frm_form_fields textarea:hover {box-shadow:none!important; color: var(--Foreground)!important; border-color: var(--Sienna-Orange)!important;}
 .frm_forms .frm_form_fields select {color: var(--global)!important;}
 

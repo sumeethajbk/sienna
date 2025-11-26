@@ -6,11 +6,11 @@
     .contact-top-main{padding: 80px 0 40px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
-    .contact-top-main{padding: 168px 0 40px;}
+    .contact-top-main{padding: 48px 0 40px;}
     .contact-top-heading{font-size: 1.778rem; }
     .contact-top-heading h1{font-size: 3.556rem; }
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
-    .contact-top-main{padding: 84px 0 16px;}
+    .contact-top-main{padding: 28px 0 16px;}
     .contact-top-heading{font-size: 1.333rem;}
 }
