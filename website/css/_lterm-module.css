@@ -17,17 +17,21 @@
 }
 
 @media only screen and (max-width:1023px) and (min-width:200px) {    
-    .lterm-module {gap:32px;}
+    .lterm-module {gap:40px;}
 }
 
 @media only screen and (max-width:1023px) and (min-width:768px) {
-    .lterm-module-main {padding: 60px 0;}
+    .long-term-module {padding: 60px 0;}
+    .long-term-module::before {top:-60px;}
     .lterm-module {gap:60px 40px;}
     .lterm-grid {width: 47%;}
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {
-    .lterm-module-main {padding: 28px 0;}
+    .long-term-module {padding: 28px 0;}
     .lterm-grid {width: 100%; display: flex; flex-wrap: wrap; flex-direction: column;} 
+    .lterm-icon {height: 184px; margin-bottom: 20px;}
     .lterm-grid p {font-size: 0.889rem; margin-bottom: 8px;}
+    .lterm-grid .h5::after {margin: 8px 0 7px; width: 56px;}
+    .long-term-module::before{top: -28px; margin: 4px 32px;} 
 }
