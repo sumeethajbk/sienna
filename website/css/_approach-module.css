@@ -1,0 +1,47 @@
+.approach-section{clear: both; width: 100%; overflow: hidden;}
+.approach-list {width: 100%; position: relative; z-index: 1;}
+.approach-list:first-child:before {display: none;}
+.approach-list-inner {justify-content: space-between; gap:10%; line-height: 1.5; font-size: 1rem; align-items: center; padding: 40px 0 88px;}
+.approach-list:before {background: var(--Foreground); opacity: 0.2; content: ""; display: block; max-width:calc(1344px - 64px); height: 1px; margin: 0 auto;}
+.approach-list:nth-child(2n) .approach-list-inner {flex-direction: row-reverse;}
+.approach-list:nth-child(2n) .shadow {right: auto; left: -24px;}
+
+.approach-text{flex: 1;}
+.approach-text .h3 {color: var(--Sienna-Orange);}
+/*
+.approach-text .h3:after {content: ""; width: 80px; height: 2px; background-color: var(--Sienna-Orange); display: block; margin: 32px 0 33px;}
+*/
+.approach-text p {font-size: 1.111rem; line-height: 1.5; color: var(--Foreground); margin-bottom: 32px;}
+.approach-text p:last-child {margin-bottom: 0;}
+.approach-img{max-width:560px; flex-grow: 1; max-height: 560px; height: 100%; width: 100%; position: relative; z-index: 1;}
+.approach-head {gap:16px; margin-bottom: 20px;}
+.approach-icon {width: 64px; height: 57px;}
+.approach-heading {font-weight: bold;}
+
+
+@media only screen and (max-width:1280px) {
+    .approach-list:before {margin: 0 32px;}
+}
+
+@media only screen and (max-width: 1180px) and (min-width:1024px) {
+    .approach-img {max-width: 440px; max-height: 440px;}
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 200px) {
+     .approach-list-inner, .approach-list:nth-child(2n) .approach-list-inner {padding: 28px 0; gap:32px; align-items: flex-start; flex-direction: column;}
+}
+
+@media only screen and (max-width: 1023px) and (min-width:768px) {
+     .approach-list-inner, .approach-list:nth-child(2n) .approach-list-inner {padding:60px 0; gap:70px;}
+    .approach-img {height:70vw;}
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px) {
+    .approach-list-inner, .approach-list:nth-child(2n) .approach-list-inner {padding: 32px 0;}
+   
+    .approach-list:nth-child(2n) .shadow {left: auto;}
+    .approach-img {height: 83.59vw;}
+    .approach-text p {font-size: 1rem; margin-bottom: 20px;}
+    
+    /*.approach-text .h3:after {width: 56px; margin: 20px 0 20px;}*/
+}

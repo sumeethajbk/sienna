@@ -1,6 +1,6 @@
 .resources-slider-section {clear: both; width: 100%;}
 
-.resources-slider-header .optional-text{font-size: 1rem; color: var(--black-50); margin: 0 0 20px 0; text-transform: capitalize;}
+.resources-slider-header .optional-text{margin: 0 0 20px 0; text-transform: capitalize;}
 .resources-slider-header h2{margin-bottom: 0;}
 .resources-slider-item{background: var(--Tint-Blue);}
 .resources-slider-image{height: 270px;}

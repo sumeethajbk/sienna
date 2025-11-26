@@ -1,0 +1,35 @@
+@import url("_collage-banner.css");
+@import url("_section-intro.css");
+@import url("_features-module.css");
+@import url("_lterm-module.css");
+@import url("_optional-cta-module.css");
+@import url("_resources-slider-section.css");
+@import url("_affiliates-logo-module.css");
+@import url("_approach-module.css");
+@import url("_repeater-section.css");
+@import url("_signup-module.css");
+
+.optional-cta-module + .affiliation-section {padding-top: 80px;}
+
+.affiliation-section + .repeater-section .repeater-list:first-child .repeater-list-inner {padding-top: 40px;}
+.affiliation-section + .repeater-section .repeater-list:first-child:before {display: none!important;}
+.affiliation-section + .repeater-section .repeater-list:last-child .repeater-list-inner {padding-bottom: 88px;}
+
+.repeater-list::before {display: block!important;}
+
+.resources-slider-section:before {background: var(--Foreground); opacity: 0.2; content: ""; display: block; max-width: calc(1344px - 64px); height: 1px; margin: 8px auto 7px; position: relative;}
+
+/*-- media css starts here --*/
+
+@media only screen and (max-width: 1280px){
+    .resources-slider-section:before {margin:8px 32px 7px;}
+}
+
+@media only screen and (max-width:1023px) and (min-width:200px) {
+   
+}
+
+@media only screen and (max-width:767px) and (min-width:200px) {    
+    .affiliation-section + .repeater-section .repeater-list:first-child .repeater-list-inner {padding-top: 16px;}
+    .affiliation-section + .repeater-section .repeater-list:last-child .repeater-list-inner {padding-bottom: 28px;}
+}

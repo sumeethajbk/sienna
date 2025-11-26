@@ -1,0 +1,28 @@
+.collage-banner {float: left; width: 100%; z-index: 1; position: relative; background: var(--Tint-Orange); padding: 168px 0 0 0; margin:0 0 120px 0;}
+.collage-banner h1 {color: var(--Sienna-Orange); font-size: 7.111rem; line-height: 1; width: 98%; margin-bottom: 40px;}
+.collage-row {justify-content: space-between; margin-bottom: -120px;}
+.collage-grid {width:48.529411764705884%; gap: 40px; display: flex; flex-wrap: wrap;}
+
+
+.photo-1-of-1 {width: 100%; position: relative; display: flex;}
+.photo-1-of-3 {display: flex; flex-wrap: nowrap; gap:40px; width: 100%;}
+.photo-1-of-3a {width: 100%; clear: both; position: relative;}
+.photo-txt {background: var(--white); padding:33px 40px 32px 40px; font-size: 1.333rem; line-height: 1.5; color: var(--Dark-Gray);}
+.photo-txt p {margin-bottom: 31px;}
+.photo-txt p:last-child {margin-bottom: 0;}
+
+@media only screen and (max-width:1023px) and (min-width:768px) {
+    .collage-banner {padding: 80px 0 0 0;}
+    .collage-banner h1 {font-size: 3.765rem;}  
+}
+
+@media only screen and (max-width:767px) and (min-width:200px) {
+    .collage-banner {padding: 84px 0 0 0; margin: 0 0 80px 0;}
+    .collage-banner h1 {font-size:3.111rem; line-height: 1; margin-bottom: 24px;}  
+    .collage-row {margin-bottom: -80px; gap:24px;}
+    .collage-grid {width: 100%; gap:24px;}
+    .collage-grid:nth-child(2) .photo-1-of-1 {flex:1;}
+    
+    .photo-txt {font-size: 1.111rem; padding: 20px 24px;}
+    .photo-txt p {margin-bottom: 18px;}
+}
