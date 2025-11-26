@@ -1,0 +1,7 @@
+@import url("_hero-banner.css");
+@import url("_signup-module.css");
+
+
+@media screen and (min-width: 1024px) {
+    .hero-banner-main .hero-banner-text h1{font-size: 3.556rem;}
+}

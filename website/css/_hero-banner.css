@@ -9,6 +9,10 @@
 .hero-banner-main .hero-banner-text h1 u {text-decoration-color: var(--white); text-underline-position: from-font; text-underline-offset: 2px;}
 .hero-banner-main .hero-banner-text p {font-size: 1rem; color: var(--Dark-Gray); margin-bottom: 32px;}
 
+.hero-banner-main .hero-banner-text .hero-banner-date-main{gap: 12px; margin-bottom: 20px;}
+.hero-banner-main .hero-banner-text .hero-banner-date-main span.fa-sharp{font-size: 0.889rem; line-height: 1.5; color: var(--Sienna-Orange);}
+.hero-banner-main .hero-banner-text .hero-banner-date-main span.hero-banner-date{font-size: 0.778rem; line-height: 1.5; font-weight: 700; }
+
 /*-- media starts here --*/
 @media only screen and (max-width:1280px) and (min-width:1024px) {
     .hero-banner-main .hero-banner-text {padding-left: 0;}

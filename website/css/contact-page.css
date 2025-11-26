@@ -1,7 +1,14 @@
 
 
-@import url("_contact-top-section.css");
+@import url("_contact-top-section.css?v00007");
 @import url("_contact-form-section.css");
 @import url("_signup-module.css");
 
-body .contact-form-main .frm_forms .frm_submit button{background-color: var(--button);}
+body .contact-form-main .frm_forms .frm_submit button,
+body .contact-form-main .frm_forms .frm_submit button:hover{background-color: var(--button);}
+
+
+@media screen and (max-width:767px) and (min-width:200px) {
+    body .contact-form-main .frm_forms .frm_submit button{width: 100%;}
+    
+}

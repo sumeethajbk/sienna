@@ -1,3 +1,12 @@
 
 @import url("_volunteer-section.css");
 @import url("_signup-module.css");
+
+body .volunteer-main .frm_forms .frm_submit button,
+body .volunteer-main .frm_forms .frm_submit button:hover{background-color: var(--button);}
+
+
+@media screen and (max-width:767px) and (min-width:200px) {
+    body .volunteer-main .frm_forms .frm_submit button{width: 100%;}
+    
+}
