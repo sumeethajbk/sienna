@@ -1,7 +1,17 @@
 @import url("_hero-banner.css");
+@import url("_ic-events-section.css");
+@import url("_sm-cta-section.css");
 @import url("_signup-module.css");
 
+.sm-cta-main{width: 100%; margin-top: 48px;}
 
 @media screen and (min-width: 1024px) {
     .hero-banner-main .hero-banner-text h1{font-size: 3.556rem;}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .sm-cta-main{margin-top: 32px; }
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .sm-cta-main{margin-top: 28px; }
 }

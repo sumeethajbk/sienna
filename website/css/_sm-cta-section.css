@@ -5,6 +5,9 @@
 .sm-cta-text .h4{color: var(--white); margin-bottom: 0;}
 .sm-cta-btn{width: fit-content;}
 
+.cta-green{background: var(--Tint-Green);}
+.cta-green .sm-cta-text .h4{color: var(--Foreground);}
+
 @media screen and (min-width: 1024px) {
     .sm-cta-main{width: calc(100% - 308px); margin-left: auto;}
 }

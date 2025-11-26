@@ -112,10 +112,257 @@
     <section class="ic-events-section">
         <div class="container">
             <div class="ic-events-main">
-                <div class="section-header text-center">
-                    <div class="h2">Upcoming Events</div>
+                <div class="ic-events-heading flex flex-vcenter">
+                    <div class="ic-events-title">
+                        <h2 class="h4">10 Events</h2>
+                    </div>
+                    <div class="ic-events-sort flex">
+                      <div class="events-category-dropdown">
+                        <select name="category" id="category">
+                          <option value="category" selected>category</option>
+                          <option value="category1">category1</option>
+                          <option value="category2">category2</option>
+                        </select>
+                      </div>
+                      <div class="events-sort-dropdown">
+                        <select name="sort" id="sort">
+                          <option value="Sort" selected>Sort</option>
+                          <option value="Sort1">Sort1</option>
+                          <option value="Sort2">Sort2</option>
+                        </select>
+                      </div>
+                      <div class="events-search">
+                        <div class="events-search-form">
+                            <form action="/" role="events-search" method="get" class="events-search-form" name="events-search-search">
+                            <input type="text" id="" class="events-search-field" placeholder="Search" value="" name="search">
+                            </form>
+                        </div>
+                      </div>
+                    </div>
                 </div>
-
+                <div class="ic-events-lists flex">
+                    <div class="ic-events-item flex">
+                        <div class="ic-events-inner">
+                            <div class="ic-events-category flex flex-vcenter">
+                                <div class="ic-events-icon">
+                                    <figure role="none" class="object-fit">
+                                        <img src="images/presentation-icon.svg" alt="Event Icon" title="Event Icon"> 
+                                    </figure>
+                                </div>
+                                <div class="ic-events-cat-txt flex">
+                                    <span>Annual Meetings</span>
+                                </div>
+                            </div>
+                            <h2 class="h6">Investor Presentation</h2>
+                            <p>Link layout outline comment font editor draft select arrange opacity. Ipsum flows arrow vector clip frame.</p>
+                            <ul class="ic-events-details">
+                                <li class="flex"><span class="fa-sharp fa-regular fa-calendar"></span><span>05/13/2024</span></li>
+                                <li class="flex"><span class="fa-sharp fa-regular fa-file"></span><span>Fact Sheet</span></li>
+                            </ul>
+                        </div>
+                        <div class="ic-events-btn">
+                            <a href="#" class="readmore download-icon">Download</a>
+                        </div>
+                    </div>
+                    <div class="ic-events-item flex">
+                        <div class="ic-events-inner">
+                            <div class="ic-events-category flex flex-vcenter">
+                                <div class="ic-events-icon">
+                                    <figure role="none" class="object-fit">
+                                        <img src="images/video-icon.svg" alt="Event Icon" title="Event Icon"> 
+                                    </figure>
+                                </div>
+                                <div class="ic-events-cat-txt flex">
+                                    <span>Media</span>
+                                </div>
+                            </div>
+                            <h2 class="h6">Senior Media Video </h2>
+                            <p>Opacity bullet scale blur horizontal. Ellipse blur project slice duplicate flows scale. Scrolling project.</p>
+                            <ul class="ic-events-details">
+                                <li class="flex"><span class="fa-sharp fa-regular fa-calendar"></span><span>05/13/2024</span></li>
+                                <li class="flex"><span class="fa-sharp fa-regular fa-video"></span><span>Video</span></li>
+                            </ul>
+                        </div>
+                        <div class="ic-events-btn">
+                            <a href="#" class="readmore play-icon">Watch</a>
+                        </div>
+                    </div>
+                    <div class="ic-events-item flex">
+                        <div class="ic-events-inner">
+                            <div class="ic-events-category flex flex-vcenter">
+                                <div class="ic-events-icon">
+                                    <figure role="none" class="object-fit">
+                                        <img src="images/meeting-icon.svg" alt="Event Icon" title="Event Icon"> 
+                                    </figure>
+                                </div>
+                                <div class="ic-events-cat-txt flex">
+                                    <span>Conference Calls</span>
+                                </div>
+                            </div>
+                            <h2 class="h6">Annual Meeting Review</h2>
+                            <p>Bold undo link bullet selection. Bullet figjam horizontal plugin background create subtract. Distribute flows.</p>
+                            <ul class="ic-events-details">
+                                <li class="flex"><span class="fa-sharp fa-regular fa-calendar"></span><span>05/13/2024</span></li>
+                                <li class="flex"><span class="fa-sharp fa-regular fa-waveform-lines"></span><span>Audio Recording</span></li>
+                            </ul>
+                        </div>
+                        <div class="ic-events-btn">
+                            <a href="#" class="readmore listen-icon">Listen</a>
+                        </div>
+                    </div>
+                    <div class="ic-events-item flex">
+                        <div class="ic-events-inner">
+                            <div class="ic-events-category flex flex-vcenter">
+                                <div class="ic-events-icon">
+                                    <figure role="none" class="object-fit">
+                                        <img src="images/results-icon.svg" alt="Event Icon" title="Event Icon"> 
+                                    </figure>
+                                </div>
+                                <div class="ic-events-cat-txt flex">
+                                    <span>Conference Calls</span>
+                                </div>
+                            </div>
+                            <h2 class="h6">Q1 Financial Results Conference Call and Slides</h2>
+                            <p>Style project library variant object layout. Distribute opacity effect style export library arrow layout. Auto.</p>
+                            <ul class="ic-events-details">
+                                <li class="flex"><span class="fa-sharp fa-regular fa-calendar"></span><span>05/13/2024</span></li>
+                                <li class="flex"><span class="fa-sharp fa-regular fa-waveform-lines"></span><span>Audio Recording</span></li>
+                            </ul>
+                        </div>
+                        <div class="ic-events-btn">
+                            <a href="#" class="readmore listen-icon">Listen</a>
+                        </div>
+                    </div>
+                    <div class="ic-events-item flex">
+                        <div class="ic-events-inner">
+                            <div class="ic-events-category flex flex-vcenter">
+                                <div class="ic-events-icon">
+                                    <figure role="none" class="object-fit">
+                                        <img src="images/meeting-icon.svg" alt="Event Icon" title="Event Icon"> 
+                                    </figure>
+                                </div>
+                                <div class="ic-events-cat-txt flex">
+                                    <span>Conference Calls</span>
+                                </div>
+                            </div>
+                            <h2 class="h6">Q3 Financial Results Conference Call and Slides</h2>
+                            <p>Flatten clip rotate pixel thumbnail inspect. Clip edit shadow rotate hand. Vector thumbnail polygon.</p>
+                            <ul class="ic-events-details">
+                                <li class="flex"><span class="fa-sharp fa-regular fa-calendar"></span><span>05/13/2024</span></li>
+                                <li class="flex"><span class="fa-sharp fa-regular fa-waveform-lines"></span><span>Audio Recording</span></li>
+                            </ul>
+                        </div>
+                        <div class="ic-events-btn">
+                            <a href="#" class="readmore listen-icon">Listen</a>
+                        </div>
+                    </div>
+                    <div class="ic-events-item flex">
+                        <div class="ic-events-inner">
+                            <div class="ic-events-category flex flex-vcenter">
+                                <div class="ic-events-icon">
+                                    <figure role="none" class="object-fit">
+                                        <img src="images/video-icon.svg" alt="Event Icon" title="Event Icon"> 
+                                    </figure>
+                                </div>
+                                <div class="ic-events-cat-txt flex">
+                                    <span>Media</span>
+                                </div>
+                            </div>
+                            <h2 class="h6">Senior Media Video </h2>
+                            <p>Bold scale undo scale prototype layout scale follower horizontal mask. Vector share pencil flows content ellipse create.</p>
+                            <ul class="ic-events-details">
+                                <li class="flex"><span class="fa-sharp fa-regular fa-calendar"></span><span>05/13/2024</span></li>
+                                <li class="flex"><span class="fa-sharp fa-regular fa-video"></span><span>Audio Recording</span></li>
+                            </ul>
+                        </div>
+                        <div class="ic-events-btn">
+                            <a href="#" class="readmore play-icon">Watch</a>
+                        </div>
+                    </div>
+                     <div class="ic-events-item flex">
+                        <div class="ic-events-inner">
+                            <div class="ic-events-category flex flex-vcenter">
+                                <div class="ic-events-icon">
+                                    <figure role="none" class="object-fit">
+                                        <img src="images/presentation-icon.svg" alt="Event Icon" title="Event Icon"> 
+                                    </figure>
+                                </div>
+                                <div class="ic-events-cat-txt flex">
+                                    <span>Presentations</span>
+                                </div>
+                            </div>
+                            <h2 class="h6">Investor Presentation</h2>
+                            <p>Asset slice font component select star image. Rotate component create stroke subtract bullet opacity.</p>
+                            <ul class="ic-events-details">
+                                <li class="flex"><span class="fa-sharp fa-regular fa-calendar"></span><span>05/13/2024</span></li>
+                                <li class="flex"><span class="fa-sharp fa-regular fa-file"></span><span>Presentation PDF</span></li>
+                            </ul>
+                        </div>
+                        <div class="ic-events-btn">
+                            <a href="#" class="readmore download-icon">Download</a>
+                        </div>
+                    </div>
+                    <div class="ic-events-item flex">
+                        <div class="ic-events-inner">
+                            <div class="ic-events-category flex flex-vcenter">
+                                <div class="ic-events-icon">
+                                    <figure role="none" class="object-fit">
+                                        <img src="images/video-icon.svg" alt="Event Icon" title="Event Icon"> 
+                                    </figure>
+                                </div>
+                                <div class="ic-events-cat-txt flex">
+                                    <span>Media</span>
+                                </div>
+                            </div>
+                            <h2 class="h6">Senior Media Video </h2>
+                            <p>Slice vector pencil union strike through pencil inspect image vector vector. Mask italic thumbnail.</p>
+                            <ul class="ic-events-details">
+                                <li class="flex"><span class="fa-sharp fa-regular fa-calendar"></span><span>05/13/2024</span></li>
+                                <li class="flex"><span class="fa-sharp fa-regular fa-video"></span><span>Video</span></li>
+                            </ul>
+                        </div>
+                        <div class="ic-events-btn">
+                            <a href="#" class="readmore listen-icon">Listen</a>
+                        </div>
+                    </div>
+                    <div class="ic-events-item flex">
+                        <div class="ic-events-inner">
+                            <div class="ic-events-category flex flex-vcenter">
+                                <div class="ic-events-icon">
+                                    <figure role="none" class="object-fit">
+                                        <img src="images/meeting-icon.svg" alt="Event Icon" title="Event Icon"> 
+                                    </figure>
+                                </div>
+                                <div class="ic-events-cat-txt flex">
+                                    <span>Annual Meetings</span>
+                                </div>
+                            </div>
+                            <h2 class="h6">Annual Meeting Review</h2>
+                            <p>Bold undo link bullet selection. Bullet figjam horizontal plugin background create subtract. Distribute flows.</p>
+                            <ul class="ic-events-details">
+                                <li class="flex"><span class="fa-sharp fa-regular fa-calendar"></span><span>05/13/2024</span></li>
+                                <li class="flex"><span class="fa-sharp fa-regular fa-waveform-lines"></span><span>Audio Recording</span></li>
+                            </ul>
+                        </div>
+                        <div class="ic-events-btn">
+                            <a href="#" class="readmore listen-icon">Listen</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ic-events-show-btn flex flex-vcenter">
+                    <hr class="ic-events-line">
+                    <a href="#" class="button">Show More Events</a>
+                    <hr class="ic-events-line">
+                </div>
+                <div class="sm-cta-main flex flex-vcenter cta-green">
+                    <div class="sm-cta-text">
+                        <div class="h4">Short call to action that can be toggled on or off.</div>
+                    </div>
+                    <div class="sm-cta-btn">
+                        <a href="#" class="button">Call to Action</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
