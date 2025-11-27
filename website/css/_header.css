@@ -59,7 +59,7 @@ a.search-btn .custom_icon {width: 100%; height: 100%; display: flex; justify-con
 
 .icon_rel { position:relative; display:block;}
 
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width:810px) {
 .main_header .header-btm {display:flex; flex-wrap:wrap; justify-content:flex-end; width:100%; align-items:center; transition:all 0.8s ease-in-out; -webkit-transition:all 0.8s ease-in-out; -moz-transition:all 0.8s ease-in-out; gap:20px;}
 .main_header .header_right {width:calc(100% - 150px); transition:all 0.8s ease-in-out; -webkit-transition:all 0.8s ease-in-out; -moz-transition:all 0.8s ease-in-out;}
   
@@ -127,7 +127,7 @@ ul.main_menu li.flex-menu > ul > li.hide-menu, ul.main_menu li > ul > li.hide-me
 
 
 
-@media only screen and (max-width:1023px) and (min-width:200px) {
+@media only screen and (max-width:809px) and (min-width:200px) {
 .main_header {transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out;}
 .main_header .container-lg {padding: 0 24px;}
 .main_header .header {position:relative; justify-content:space-between; min-height:56px; padding:0;}
