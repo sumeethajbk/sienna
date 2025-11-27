@@ -179,6 +179,10 @@ section p a, section li a {position: relative;}
 
 .readmore.readmore-green:after{color: var(--Aspira-Green);}
 
+.readmore.download-icon:after{content: "\f019";}
+.readmore.play-icon:after{content: "\f04b";}
+.readmore.listen-icon:after{content: "\f025";}
+
 /* CIrcle Button */
 .circle-arrow-btn{width: fit-content; gap:20px;}
 .circle-arrow-btn:hover span.fa-sharp{background: var(--Sienna-Orange)!important; outline: 4px solid var(--button-outline); color: var(--white);}

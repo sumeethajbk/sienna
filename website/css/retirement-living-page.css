@@ -1,8 +1,10 @@
 
+@import url("_collage-banner.css");
 @import url("_repeater-section.css");
 @import url("_optional-cta-module.css?v00999");
 @import url("_signup-module.css");
 
+.collage-banner{background: var(--Tint-Green);}
 
 .optional-cta-module{background: var(--Tint-Green);}
 .optional-cta-module::after{content: ""; height: 100%; width: 100%; bottom: -100%; background: var(--Tint-Green); position: absolute; display: block; left: 0; }
