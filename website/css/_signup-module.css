@@ -28,8 +28,10 @@ body .signup-module .signup-form .frm_forms .frm_submit button{background: var(-
 
 
 @media only screen and (max-width:1023px) and (min-width:768px) {
-    .signup-module .signup-wrap {gap: 40px;}
+    .signup-module .signup-main {padding: 32px;}
+    .signup-module .signup-wrap {gap: 30px;}
     .signup-module .signup-lt {width: 100%;}
+    .signup-module .signup-lt .sub-text {font-size: 0.667rem;}
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {
