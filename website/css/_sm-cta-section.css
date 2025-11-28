@@ -10,6 +10,9 @@
 .cta-orange{background: var(--Tint-Orange);}
 .cta-orange .sm-cta-text .h4{color: var(--Foreground);}
 
+.cta-purple {background: var(--Tint-Purple);}
+.cta-purple .sm-cta-text .h5{color: var(--Foreground); margin: 0;}
+
 @media screen and (min-width: 1024px) {
     /* .sm-cta-main{width: calc(100% - 308px); margin-left: auto;} */
 }

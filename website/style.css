@@ -162,7 +162,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .h1 a:ho
 
 section ol:last-child, section ul:last-child {margin-bottom: 0!important;}
 section ol li:last-child, section ul li:last-child {margin-bottom: 0!important;}
-section p a, section li a {position: relative;}
+section p a, section :not(div) ul li a  {position: relative; font-weight: bold; text-decoration-line: underline; text-decoration-style: solid; text-decoration-skip-ink: auto; text-decoration-color: var(--Sienna-Orange, #EF4629); text-decoration-thickness:2px; text-underline-offset: auto; text-underline-position: from-font;}
+section aside ul li a {all: unset; cursor: pointer;}
 
 .w80 {width: 80px; height: 2px; background-color: var(--Sienna-Orange); opacity: 1;}
 
@@ -243,19 +244,6 @@ body .mfp-close:after {display: none;}
 body .mfp-iframe-holder button.mfp-close::before{left:0;} 
 
 
-/* Cat Wrap */
-.cat-wrapper {clear: both; width: 100%; display: flex; flex-wrap: wrap; gap:11px; margin: 0 0 20px 0;}
-.cat-wrapper .cat-wrap {flex:1;}
-.cat-wrap {clear: both; width: 100%;}
-.cat-wrap ul {margin: 0; font-size: 0; line-height: normal; display: flex; flex-wrap: wrap; gap:5px; width: fit-content;}
-.cat-wrap ul li {position: relative; margin: 0; display: inline-block; font-size:0.789rem; font-family: 'Segoe UI This', sans-serif; color: var(--white); line-height: 1.2; padding:7px 23px 11px 22px; letter-spacing: -0.3px; text-align: center; z-index: 1;} 
-.cat-wrap ul li .catbg {display: block; opacity: 0.1; background: var(--blue); border-radius: 90px; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: -1; backdrop-filter: blur(28px);}
-.cat-wrap ul li:before {display: none;}
-
-.cat-wrap ul li a {display: inline-block; color: var(--white); padding:7px 23px 11px 22px; position: relative; z-index: 1;}
-.cat-wrap ul li a {margin:-7px -23px -11px -22px;}
-.cat-wrap ul li a:hover {opacity: 0.8;}
-
 /* Default Slick navigations */
 .slick-arrow{top:0;  right: 0; position: absolute; display: flex!important; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease-in-out; z-index: 2; line-height: normal; width: 64px; height: 64px; margin: auto; color: var(--white); background: var(--Sienna-Orange); bottom: 0; border-radius: 50%;}
 .slick-arrow:hover {outline: 4px solid var(--button-outline);}
@@ -299,7 +287,7 @@ body ul.selectBox-dropdown-menu li.frm-select-placeholder/*, body ul.selectBox-d
 .frm_forms .frm_form_fields .frm_form_field{margin-bottom:20px; position: relative; clear: both;}
 .frm_forms .frm_form_fields .frm_form_field.frm_full {clear:both; width: 100%;}
 
-.frm_forms .frm_form_fields .frm_form_field label, .frm_forms .frm_form_fields .frm_form_field div.frm_primary_label { font-size: 0.889rem !important; line-height: 1.5; text-indent: inherit; font-weight: 700 !important; color: var(--Foreground); font-family: "Blackbird", sans-serif!important; margin-bottom: 4px; padding: 0;}
+.frm_forms .frm_form_fields .frm_form_field label, .frm_forms .frm_form_fields .frm_form_field div.frm_primary_label { font-size: 0.889rem !important; line-height: 1.5; text-indent: inherit; font-weight: 700 !important; color: var(--Foreground); font-family: "Blackbird", sans-serif!important; margin-bottom: 4px; padding: 0; display: block;}
 /* .frm_forms .frm_form_fields .frm_form_field label .frm_required {display: none;} */
 /* .frm_forms .frm_form_fields .frm_form_field label.frm_primary_label{display: none;} */
 
@@ -457,6 +445,21 @@ a.prev.page-numbers.disabled{display: none;}
 .shadow {background: var(--Tint-Orange); width: 100%; height: 100%; bottom:-24px; display: block; right: -24px; z-index: -1;}
 .shadow.tp-rt {top: -24px; bottom: inherit;}
 
+/* Aside */
+.default-aside{flex: 0 0 335px;}
+.aside-block {background:var(--Tint-Orange); padding:20px; width: 100%;}
+.aside-block h5 {color:var(--Sienna-Orange); margin-bottom: 13px;}
+.aside-blocks-wrap {display: flex; flex-wrap: wrap; width: 100%; gap:20px; padding-top: 4px;}
+.aside-blocks-main {padding: 8px 0 0 0;}
+
+.asidebar-nav .h5 {margin-bottom:16px; color: var(--Sienna-Orange);}
+.asidebar-nav hr {margin:0; background:var(--Sienna-Orange); opacity: 1;}
+ul.aside-links { margin: 0 0 40px;}
+ul.aside-links > li { margin: 0; }
+ul.aside-links > li > a {border-bottom: 1px solid var(--Tint-Blue); padding: 16px 0 16px; color: var(--black-60); font-weight: bold; font-size: 1rem; line-height: 1.5; width: 100%;}
+ul.aside-links > li > a:hover{color: var(--black);}
+ul.aside-links > li:before{display: none;}
+
 /*-- media css starts here --*/
 @media only screen and (min-width:1024px) {
     .hide-in-desktop {display:none;}
@@ -496,14 +499,8 @@ a.prev.page-numbers.disabled{display: none;}
 
     .slick-arrow{width: 48px; height: 48px;}
     .slick-arrow span i{font-size: 20px; line-height: 20px;}
-    .slick-arrow.slick-prev{right: 58px; left: auto;}
-    
-    
-    
+    .slick-arrow.slick-prev{right: 58px; left: auto;} 
 }
-
-
-
 
 @media only screen and (max-width:767px) and (min-width:200px) {  
     body {font-size: 0.889rem; line-height: 1.5;}
@@ -576,6 +573,12 @@ a.prev.page-numbers.disabled{display: none;}
     .slick-arrow span i{font-size: 20px; line-height: 20px;}
     .slick-arrow.slick-prev{right: auto; left: 0;}
     
+    .asidebar-nav .h5 {margin-bottom: 8px;}
+    .aside-block {padding: 16px;}
+    .aside-block h5 {margin-bottom: 6px;}
+    .aside-block p {font-size: 0.778rem; margin-bottom: 14px;}
+    
+    ul.aside-links > li > a {font-size: 0.889rem; gap: 4px; padding: 8px 0 8px;}
 	
 
 }

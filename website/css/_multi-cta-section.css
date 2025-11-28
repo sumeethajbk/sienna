@@ -1,11 +1,14 @@
 
 .multi-cta-thumb{width: 100%;}
 .multi-cta-text{width: 100%; padding: 32px; color: var(--Dark-Gray);}
+.multi-cta-main.wrap-four .multi-cta-text {padding: 32px 40px 32px 32px;}
 
 @media screen and (min-width: 1024px) {
     .multi-cta-main{margin: 40px 0; gap: 20px;}
     .multi-cta-item{flex: 0 0 calc(33.333% - 14px); flex-grow: 1;}
     .multi-cta-item:nth-child(2n){flex-direction: column-reverse;}
+    
+    .multi-cta-main.wrap-four .multi-cta-item{flex: 0 0 calc(22.569444444444446% - 14px); flex-grow: 1;}
     
 }
 
