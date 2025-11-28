@@ -7,8 +7,11 @@
 .cta-green{background: var(--Tint-Green);}
 .cta-green .sm-cta-text .h4{color: var(--Foreground);}
 
+.cta-orange{background: var(--Tint-Orange);}
+.cta-orange .sm-cta-text .h4{color: var(--Foreground);}
+
 @media screen and (min-width: 1024px) {
-    .sm-cta-main{width: calc(100% - 308px); margin-left: auto;}
+    /* .sm-cta-main{width: calc(100% - 308px); margin-left: auto;} */
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .sm-cta-main{padding: 24px; gap: 24px;}

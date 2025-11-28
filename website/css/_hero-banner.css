@@ -13,6 +13,9 @@
 .hero-banner-main .hero-banner-text .hero-banner-date-main span.fa-sharp{font-size: 0.889rem; line-height: 1.5; color: var(--Sienna-Orange);}
 .hero-banner-main .hero-banner-text .hero-banner-date-main span.hero-banner-date{font-size: 0.778rem; line-height: 1.5; font-weight: 700; }
 
+.hero-banner-main .hero-banner-text .hero-banner-category{gap: 20px; margin-bottom: 20px;}
+.hero-banner-main .hero-banner-text .hero-banner-category span{font-size: 0.889rem; line-height: 1.5; display: inline-block; font-weight: 700; color: var(--black-75); padding: 8px 16px; background: var(--white); border-radius: 60px; }
+
 /*-- media starts here --*/
 @media only screen and (max-width:1280px) and (min-width:1024px) {
     .hero-banner-main .hero-banner-text {padding-left: 0;}
@@ -35,5 +38,10 @@
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .hero-banner-main .hero-banner-text h1 {font-size: 2.222rem;}
     .hero-banner-main .hero-banner-text p {font-size: 0.889rem; line-height: 1.5; margin-bottom: 18px;}
+
+    .hero-banner-main .hero-banner-text .hero-banner-date-main{gap: 6px; margin-bottom: 12px; }
+
+    .hero-banner-main .hero-banner-text .hero-banner-category{gap: 12px; margin-bottom: 12px;}
+    .hero-banner-main .hero-banner-text .hero-banner-category span{ font-size: 0.778rem; padding: 4px 8px;}
 
 }
