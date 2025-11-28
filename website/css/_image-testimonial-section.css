@@ -1,0 +1,30 @@
+
+.image-testimonial-main{background: var(--Tint-Green);}
+.image-testimonial-text{padding: 40px;}
+.image-testimonial-text p{font-size: 1.778rem; line-height: 1.2; color: var(--Sienna-Orange); font-weight: 700; font-family: "Ivar Display", sans-serif; }
+.image-testimonial-text::before{content: ""; background: url("../images/open-quote.svg") 0 0 no-repeat; display: block; position: relative; left: 0; top: 0; width: 42px; height: 32px; margin: 0 0 20px 0; }
+
+.image-testimonial-info{gap: 25px; }
+.image-testimonial-info span{display: inline-block; font-size: 1rem; line-height: 1.5; font-weight: 400; color: var(--Foreground);}
+.image-testimonial-info span.testimonial-author-name{font-weight: bold;}
+.image-testimonial-info span:after{content: ""; background: var(--Sienna-Orange); opacity: 0.25; width: 1px; height: calc(100% - 3px); display: inline-block; vertical-align: middle; right: -12px; position:relative; top: -2px;}
+.image-testimonial-info span:last-child:after{display: none;}
+
+@media screen and (min-width: 1024px) {
+    .image-testimonial-main{margin-bottom: 64px;}
+    .image-testimonial-thumb{flex: 0 0 407px;}
+    .image-testimonial-text{flex: 1;}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .image-testimonial-main{margin: 40px 0;}
+    .image-testimonial-thumb, .image-testimonial-text{width: 100%;}
+    
+}
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .image-testimonial-text{padding: 24px; }
+    .image-testimonial-text::before{width: 26px; height: 20px; margin: 0 0 12px 0; background-size: contain; }
+    .image-testimonial-text p {margin-bottom: 12px; font-size: 1.111rem; }
+    .image-testimonial-info span{font-size: 0.889rem;}
+    
+}
