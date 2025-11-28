@@ -1,5 +1,4 @@
-
-
+.sm-cta-main.bigg {width: 100%; padding: 32px}
 .sm-cta-main{background: var(--Sienna-Orange); padding: 36px 32px; gap: 32px; width: 100%;}
 .sm-cta-text{flex: 1;}
 .sm-cta-text .h4{color: var(--white); margin-bottom: 0;}
