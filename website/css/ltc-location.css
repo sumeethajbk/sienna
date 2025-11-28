@@ -1,16 +1,9 @@
 @import url("_hero-banner.css");
 @import url("_section-intro.css");
-@import url("_micro-cta-module.css");
-@import url("_single-testimonial-module.css");
-@import url("_fcam-module.css");
+@import url("_photo-gallery-module.css");
+@import url("_testimonial-module.css");
 @import url("_optional-cta-module.css");
-@import url("_repeater-section.css");
-@import url("_affiliates-module.css");
-@import url("_accordion.css");
 @import url("_features-sidebar-section.css");
-@import url("_section-intro.css");
-@import url("_features-module.css");
-@import url("_stats-module.css");
 @import url("_resources-slider-section.css");
 @import url("_cta-module.css");
 @import url("_links-module.css");
@@ -18,10 +11,8 @@
 
 .hero-banner-main .hero-banner-text h1 {font-size: 3.556rem;}
 
-.default-main{padding: 80px 0 80px; gap:6.666666666666667%;}
+.default-main{padding: 80px 0 80px; gap:6.666666666666667%; flex-direction: row-reverse;}
 .default-article {flex: 1; }
-.default-article .w80 {margin: 25px 0 23px;}
-.default-article p span {font-size:1.333rem; line-height:1.5; margin-bottom: 23px; display: block;}
 
 
 /* Aside */
@@ -42,8 +33,26 @@ ul.aside-links > li:before{display: none;}
 /* Community Form */
 .community-form {clear: both; width: 100%; position: relative; background: var(--Tint-Orange); padding: 80px 0;}
 .community-form-inner {width: 100%; gap:6.666666666666667%;}
-.community-form-lt {width: 335px;}
+.community-form-lt {width: 335px; display: flex; flex-wrap: wrap; gap:91px;}
 .community-form-lt:only-child {width: 100%;}
+.community-form-lt .optional-text {color: var(--Foreground); opacity: 1;}
+.community-form-lt .h3 {color: var(--Sienna-Orange); margin-bottom: 20px;}
+
+.profile-details {width: 100%; clear: both; margin-top: auto;}
+.profile {clear: both; display: flex; flex-wrap: wrap; align-items: center; gap:16px;}
+.profile figure {width: 80px; height: 80px;}
+.profile figure img {border-radius: 50%;}
+.profile .info {width: calc(100% - 96px);}
+.profile .title {color: var(--Sienna-Orange); font-size: 0.889rem; font-weight: bold; line-height: 1.25;}
+.profile .name {font-weight: bold; font-size: 1.111rem; line-height: 1.2; margin-top: 3px;}
+.contact-list {width: 100%; clear: both; border-top: 1px solid var(--white); margin: 12px 0 0 0; border-radius: 1px; padding: 12px 0 0 0;}
+.contact-list ul {margin: 0;}
+.contact-list ul li {margin: 0; font-size: 0.889rem; line-height: 1.5; color: var(--Coal);}
+.contact-list ul li:before {display: none;}
+.contact-list ul li a, .contact-list ul li{gap: 12px;}
+.contact-list ul li a:hover span{color: var(--Sienna-Orange);}
+.contact-list ul li span.fa-sharp{font-size:1rem; line-height: 27px; max-width: 20px; color: var(--Sienna-Orange);}
+
 .community-form-rt {flex:1;}
 .community-form-rt .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"], .community-form-rt .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input[type="checkbox"] {width: 24px!important; height: 24px!important;}
 .community-form-rt .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:checked::before {font-size: 0.778rem; font-weight: normal;}
@@ -53,14 +62,22 @@ ul.aside-links > li:before{display: none;}
 
 
 /*-- media css starts here --*/
-@media only screen and (max-width: 1280px){
-}
-
 @media only screen and (max-width:1023px) and (min-width:200px) {
     .default-main {gap:80px;}
     .default-article {flex:100%;}
     .default-aside {flex:100%;}
+    
+    .community-form-lt {width: 100%;}
+    .community-form-rt {flex:100%; display: flex; flex-wrap: wrap;}
+
 }
+
+@media only screen and (max-width: 1023px) and (min-width:768px) {
+    .community-form {padding: 48px 0;}
+    .community-form-inner {gap:64px;}
+    .community-form-rt {gap: 64px;}
+}
+
 
 @media only screen and (max-width:767px) and (min-width:200px) {
     .hero-banner-main .hero-banner-text h1 {font-size: 2.222rem;}
@@ -75,6 +92,9 @@ ul.aside-links > li:before{display: none;}
     .aside-block p {font-size: 0.778rem; margin-bottom: 14px;}
     
     ul.aside-links > li > a {font-size: 0.889rem; gap: 4px; padding: 8px 0 8px;}
+    
+        .community-form-inner {gap:56px;}
+    .community-form-rt {gap: 56px;}
 
     
 }
