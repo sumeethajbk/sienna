@@ -1,5 +1,4 @@
-
-
+.sm-cta-main.bigg {width: 100%; padding: 32px}
 .sm-cta-main{background: var(--Sienna-Orange); padding: 36px 32px; gap: 32px; width: 100%;}
 .sm-cta-text{flex: 1;}
 .sm-cta-text .h4{color: var(--white); margin-bottom: 0;}
@@ -11,15 +10,19 @@
 .cta-orange{background: var(--Tint-Orange);}
 .cta-orange .sm-cta-text .h4{color: var(--Foreground);}
 
+.cta-purple {background: var(--Tint-Purple);}
+.cta-purple .sm-cta-text .h5{color: var(--Foreground); margin: 0;}
+
 @media screen and (min-width: 1024px) {
     /* .sm-cta-main{width: calc(100% - 308px); margin-left: auto;} */
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
-    .sm-cta-main{padding: 24px; gap: 24px;}
+    .sm-cta-main, .sm-cta-main.bigg{padding: 24px; gap: 24px;}
     .sm-cta-text .h4{font-size: 1.778rem; }
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
-    .sm-cta-main{padding: 20px; gap: 20px;}
+    .sm-cta-main, .sm-cta-main.bigg{padding: 20px; gap: 20px;}
+    .sm-cta-main.bigg{margin: 15px 0 0 0;}
     .sm-cta-text, .sm-cta-btn{flex: 0 0 100%;}
     .sm-cta-btn .button{width: 100%;}
 }

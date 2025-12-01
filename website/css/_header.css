@@ -103,7 +103,7 @@ ul.main_menu > li > ul > li > a:hover, ul.main_menu > li > ul > li.current-menu-
 ul.main_menu > li.single-menu > ul > li > ul li {border: 0 none; margin: 0 0 18px 0;}
 ul.main_menu > li.single-menu > ul > li > ul li:last-child {margin: 0;}
 ul.main_menu > li.single-menu > ul > li > ul li a {color: var(--white); font-size: 0.842rem; padding: 0;}
-    ul.main_menu > li.single-menu > ul > li > ul li a:hover {color: var(--anchor);}
+ul.main_menu > li.single-menu > ul > li > ul li a:hover {color: var(--anchor);}
 ul.main_menu > li.single-menu > ul > li.menu-item-has-children {position: initial;}
 ul.main_menu > li.single-menu > ul > li.menu-item-has-children span {position: absolute; right: -25px; top: 0; bottom: 0; margin: auto;}
 ul.main_menu > li.single-menu > ul > li.menu-item-has-children:hover span:before {content: ""; position: absolute; right:0; top: 0; bottom: 0; width: 5px; height: 10px; background: var(--Sienna-Orange-dark); clip-path: polygon(100% 0, 0 50%, 100% 100%); margin: auto;}
@@ -125,7 +125,19 @@ nav.navigation.active:before {content: "";position: absolute; left: 0; backgroun
 ul.main_menu li.flex-menu > ul > li.hide-menu, ul.main_menu li > ul > li.hide-menu {display: none!important;}
 }
 
-
+@media only screen and (max-width:1023px) and (min-width:810px) {
+    .main_header .header {padding: 12px 0;}
+    .main_header .container-lg {padding: 0 28px;}
+    .main_header .logo {width: 107px; height: auto;}
+    .main_header .header_right {width: calc(100% - 107px);}
+    .main_header .header-btm {gap:16px;}
+    ul.main_menu > li {margin: 0 0 0 24px;}
+    ul.main_menu > li > a {font-size: 0.889rem; line-height: 1;}
+    ul.main_menu > li.menu-button a {padding: 11px 10px 11px 10px;}
+    .header-search {height: 40px; width: 40px;}
+    a.search-btn {font-size: 1rem;}
+    
+}
 
 @media only screen and (max-width:809px) and (min-width:200px) {
 .main_header {transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out;}
