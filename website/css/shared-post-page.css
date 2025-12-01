@@ -1,10 +1,10 @@
-@import url("_hero-banner.css");
-@import url("default-page.css");
-@import url("_sm-cta-section.css");
-@import url("_multi-cta-section.css");
-@import url("_image-testimonial-section.css");
-@import url("_resources-slider-section.css");
-@import url("_signup-module.css");
+@import url("_hero-banner.css?v=1012");
+@import url("default-page.css?v=101");
+@import url("_sm-cta-section.css?v=101");
+@import url("_multi-cta-section.css?v=101");
+@import url("_image-testimonial-section.css?v=101");
+@import url("_resources-slider-section.css?v=101");
+@import url("_signup-module.css?v=101");
 
 
 .fluid-width-wrapper{max-width: 1040px;}
