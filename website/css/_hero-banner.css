@@ -16,26 +16,43 @@
 .hero-banner-main .hero-banner-text .hero-banner-category{gap: 20px; margin-bottom: 20px;}
 .hero-banner-main .hero-banner-text .hero-banner-category span{font-size: 0.889rem; line-height: 1.5; display: inline-block; font-weight: 700; color: var(--black-75); padding: 8px 16px; background: var(--white); border-radius: 60px; }
 
+.hero-banner-section.no-banner-img .hero-banner-main {min-height: inherit;}
+
 /*-- media starts here --*/
 @media only screen and (max-width:1280px) and (min-width:1024px) {
-    .hero-banner-main .hero-banner-text {padding-left: 0;}
+    .hero-banner-section {margin:0 0 32px 0;}
+    .hero-banner-main {gap:5.3%; min-height: 576px;}
+    .hero-banner-main .hero-banner-text {padding: 62px 0 32px 32px;}
+    .hero-banner-main .hero-banner-thumb {width: 47.369%;}
+    .hero-banner-main .hero-banner-thumb .hero-banner-img {bottom: -32px; min-height: 576px;}
 }
 
 
-@media only screen and (max-width: 1023px) and (min-width: 200px){
-    .hero-banner-section {padding:56px 0 28px 0; margin: 0;}
-    .hero-banner-section .container-lg {padding: 0 16px;}
+@media only screen and (max-width: 1023px) and (min-width: 200px){    
+    .hero-banner-section {margin-bottom: 0;}
     .hero-banner-main {flex-direction: column; gap:32px; min-height: inherit;}
     .hero-banner-main .hero-banner-thumb {width: 100%; min-height: inherit; height: 61.285vw; overflow: hidden;}
     .hero-banner-main .hero-banner-thumb .hero-banner-img {position: initial; min-height: inherit;}
     .hero-banner-main .hero-banner-text {width: 100%; padding: 0 16px; align-items: flex-start;}
 
 }
+
 @media only screen and (max-width: 1023px) and (min-width:768px){
-        .hero-banner-section {padding:72px 0 60px 0;}
+    .hero-banner-section {padding:72px 0 48px 0;}
+    .hero-banner-section .container-lg {padding: 0 24px;}
+    .hero-banner-main .hero-banner-thumb {height: 52.965vw;}
+    .hero-banner-main .hero-banner-text {padding: 0 24px}
+    .hero-banner-main {gap:24px;}
+    
+}
+
+@media only screen and (max-width:809px) and (min-width:768px){
+.hero-banner-section {padding:56px 0 48px 0; margin: 0;}
 }
 
 @media only screen and (max-width: 767px) and (min-width: 200px){
+    .hero-banner-section {padding:56px 0 28px 0; margin: 0;}
+    .hero-banner-section .container-lg {padding: 0 16px;}
     .hero-banner-main .hero-banner-text h1 {font-size: 2.222rem;}
     .hero-banner-main .hero-banner-text p {font-size: 0.889rem; line-height: 1.5; margin-bottom: 18px;}
 

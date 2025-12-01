@@ -29,4 +29,7 @@
     .multi-cta-text h2{margin-bottom: 8px;}
     .multi-cta-text p{margin-bottom: 8px;}
     
+    .multi-cta-section .container-lg {padding: 0 16px;}
+    .multi-cta-main.wrap-four .multi-cta-text {padding: 20px;}
+    
 }

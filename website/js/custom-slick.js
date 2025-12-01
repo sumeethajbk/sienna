@@ -94,16 +94,6 @@ jQuery(document).ready(function () {
     swipeToSlide: true,
     focusOnSelect: true,
     asNavFor: '.room-for',
-    responsive: [{
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        vertical: false,
-        verticalSwiping: false,
-        variableWidth: true,
-      }
-    }]
   });
   jQuery('.room-for').slick({
     slidesToShow: 1,
@@ -116,6 +106,17 @@ jQuery(document).ready(function () {
     asNavFor: '.room-nav',
     prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-left"></i></span></div>',
     nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></div>',
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          adaptiveHeight: true,
+          arrows: true,
+          dots: true
+        }
+      }
+    ]
   });
   /* End of room Slider */
 
@@ -132,6 +133,17 @@ jQuery(document).ready(function () {
     touchThreshold: 100,
     prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-left"></i></span></div>',
     nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-right"></i></span></div>',
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          adaptiveHeight: true,
+          arrows: true,
+          dots: true
+        }
+      }
+    ]
   });
 
   /* Photo Gallery */
@@ -152,19 +164,11 @@ jQuery(document).ready(function () {
     responsive: [{
         breakpoint: 768,
         settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          adaptiveHeight: true,
+          arrows: true,
+          dots: true
         }
       }
     ]

@@ -39,10 +39,6 @@ Text Domain:Sienna Senior Living
   55%  { opacity: 1; transform: translate(0, 0) scale(1); }
 }
 
-@keyframes trailLoop {
-    0% { transform: translateX(0); opacity: 1; }
-    100% { transform: translateX(10px); opacity: 0;}
-}
 
 @font-face {
     font-family: 'Ivar Display';
@@ -167,10 +163,6 @@ section aside ul li a {all: unset; cursor: pointer;}
 
 .w80 {width: 80px; height: 2px; background-color: var(--Sienna-Orange); opacity: 1;}
 
-/* Optional Link */
-.link-trail {font-weight: bold; color: var(--black-60); font-size:1rem; position: relative; display: inline-flex; align-items: center; gap:8px; transition: color 0.3s ease; font-family:"Blackbird", sans-serif; line-height: normal;}
-.link-trail::after {content: "\f178"; font-family: "Font Awesome 7 Sharp"; font-weight:300; display: inline-block; font-size: 14.5px; line-height: normal; color: var(--Sienna-Orange);}
-.link-trail:hover::before {content: "\f178"; font-family: "Font Awesome 7 Sharp"; font-weight:300; position: absolute; right: 0; opacity: 0; animation: trailLoop 0.6s infinite; font-size: 14.5px;}
 
 /* Read More */
 .readmore {position: relative; display: inline-flex; font-size:1rem; gap:8px; line-height: 1.5; align-items: center; font-weight: bold; color: var(--black-60);}
@@ -218,7 +210,7 @@ img.mobile {display:none;}
 
 /* Video/video popup */
 .video-wrap {margin:64px 0 64px 0; position: relative; clear: both; overflow: hidden; z-index: 1;}
-.video-wrap .video-thumbnail > img {min-height:441px;}
+.video-wrap .video-thumbnail > img {height:441px;}
 
 .video-thumbnail{position: relative;}
 .video-thumbnail.video_post {position: relative;width: 100%; }
@@ -451,6 +443,7 @@ a.prev.page-numbers.disabled{display: none;}
 .aside-block h5 {color:var(--Sienna-Orange); margin-bottom: 13px;}
 .aside-blocks-wrap {display: flex; flex-wrap: wrap; width: 100%; gap:20px; padding-top: 4px;}
 .aside-blocks-main {padding: 8px 0 0 0;}
+.aside-blocks-main  .h5 {color:var(--Sienna-Orange);}
 
 .asidebar-nav .h5 {margin-bottom:16px; color: var(--Sienna-Orange);}
 .asidebar-nav hr {margin:0; background:var(--Sienna-Orange); opacity: 1;}
@@ -476,18 +469,29 @@ ul.aside-links > li:before{display: none;}
 }
 
 @media only screen and (max-width: 1023px) and (min-width:200px) {
-       .space-top #mainContent {padding: 56px 0 0 0;}
+    .space-top #mainContent {padding: 56px 0 0 0;}
+    body {font-size: 0.889rem; line-height: 1.5;}
+    
+
+    .aside-block {padding: 16px;}
+    ul.aside-links > li > a {font-size: 0.889rem; gap: 4px; padding: 12px 0 12px;}
 
 }
 
 
 @media only screen and (max-width:1023px) and (min-width:768px) {
     .h1 {font-size:3.556rem;}
-    .h5 {font-size: 1.333rem;}
+    .h3, h3 {font-size: 2.222rem;}
+    .h4, h4 {font-size: 1.778rem;}
+    .h5, h5 {font-size: 1.333rem;}
+    .h6, h6 {font-size: 1.111rem;}
     .hide-in-tab, .hide-in-tablet {display:none;}
         
     .heading {padding: 0 0 32px;}
     
+    .optional-text {font-size: 0.889rem; margin: 0 0 14px 0;}
+    
+    .frm_forms .frm_form_fields .frm_form_field label, .frm_forms .frm_form_fields .frm_form_field div.frm_primary_label {font-size: 0.778rem!important;}
     .frm_forms .frm_form_fields .frm_form_field {margin-bottom: 16px;}
     .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {bottom: -16px;}
     .frm_first {margin-right: 16px;}
@@ -500,10 +504,24 @@ ul.aside-links > li:before{display: none;}
     .slick-arrow{width: 48px; height: 48px;}
     .slick-arrow span i{font-size: 20px; line-height: 20px;}
     .slick-arrow.slick-prev{right: 58px; left: auto;} 
+    
+    .aside-blocks-wrap {gap:16px; padding-top: 0;}
+    .asidebar-nav .h5 {margin-bottom: 12px;}
+    .aside-blocks-main {padding: 48px 0 0 0;}
+    
+    .fixed-social-icons {padding: 16px;}
+    .sharethis-inline-share-buttons .st-btn::after {font-size: 1.333rem;}
+    .sharethis-inline-share-buttons .st-btn[data-network="sharethis"]::after {font-size: 2.222rem;}
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {  
-    body {font-size: 0.889rem; line-height: 1.5;}
+    ::-webkit-input-placeholder {font-size:0.667rem!important;}
+    :-moz-placeholder {font-size:0.667rem!important;}
+    ::-moz-placeholder {font-size:0.667rem!important;}
+    :-ms-input-placeholder {font-size:0.667rem!important;}
+    
+    
+    
     .readmore {font-size: 0.889rem; gap: 4px;}
     .readmore:after {font-size: 0.889rem; line-height: 1;}
     
@@ -525,7 +543,7 @@ ul.aside-links > li:before{display: none;}
     .hide-in-mobile {display:none;}    
     
     .video-thumbnail iframe{min-height: 197px!important;}    
-    .video-wrap .video-thumbnail > img {min-height: 183px;}
+    .video-wrap .video-thumbnail > img {height: 183px;}
     .video-wrap {margin: 40px 0;}
 
     body .mfp-image-holder .mfp-close, body .mfp-iframe-holder .mfp-close {right: 0px;}
@@ -534,7 +552,7 @@ ul.aside-links > li:before{display: none;}
     .default_form .frm_forms .frm_filed_wrapper .frm_html_container {width: 100%;}
     .frm_half {width: 100%;}
     .frm_forms .frm_filed_wrapper {gap:20px; margin-top: 16px;}
-    .frm_forms .frm_form_fields .frm_form_field {margin-bottom: 12px;}
+    .frm_forms .frm_form_fields .frm_form_field {margin-bottom: 13px;}
     .frm_forms .frm_form_fields .frm_form_field label{font-size: 0.778rem !important;}
     .frm_forms .frm_filed_wrapper .frm_form_field {width: 100%; margin: 0;}
     .frm_forms .frm_filed_wrapper .frm_form_field label{font-size: 0.667rem !important;}
@@ -542,7 +560,14 @@ ul.aside-links > li:before{display: none;}
     .frm_forms .frm_filed_wrapper .frm_form_field .button {width: 100%;}
     .frm_forms .frm_filed_wrapper .frm_html_container {text-align: center;}
     .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {bottom: -12px; line-height: 1!important;}
-   
+   .frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-size: 0.667rem; padding: 14px 6px 15px;}
+    .frm_forms .frm_form_fields textarea {padding: 6px;}
+    .frm_forms .frm_form_fields .selectBox-dropdown {font-size: 0.667rem; padding: 14px 38px 14px 6px !important;}
+    .frm_forms .frm_form_fields textarea {height: 135px;}
+    
+    body .selectBox-dropdown .selectBox-arrow {right: 6px;}
+    body ul.selectBox-dropdown-menu li a {font-size: 0.667rem; padding: 5px 6px;}
+    
     .btn-wrap {gap:12px;}
     .btn-center {margin: 40px 0 0 0;}
     .btn-text {text-align: center;}
@@ -574,11 +599,16 @@ ul.aside-links > li:before{display: none;}
     .slick-arrow.slick-prev{right: auto; left: 0;}
     
     .asidebar-nav .h5 {margin-bottom: 8px;}
-    .aside-block {padding: 16px;}
+    .aside-block {padding: 12px;}
     .aside-block h5 {margin-bottom: 6px;}
     .aside-block p {font-size: 0.778rem; margin-bottom: 14px;}
-    
     ul.aside-links > li > a {font-size: 0.889rem; gap: 4px; padding: 8px 0 8px;}
+    .aside-blocks-main {padding: 27px 0 0 0;}
+    .aside-blocks-wrap {padding: 0; gap: 12px;}
+    .aside-blocks-main .h5 {margin-bottom: 11px;}
+    
+    
+
 	
 
 }

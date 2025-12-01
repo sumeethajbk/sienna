@@ -16,22 +16,30 @@
     .links-module:before {margin: 0 32px;}
 }
 
-@media only screen and (max-width:1023px) and (min-width:200px) {    
-    .ld-module {gap:40px;}
+@media only screen and (max-width:1280px) and (min-width:1024px) {  
+    .links-module::before {top: -64px;}
+    .links-module {padding: 64px 0;}
+}
+
+@media only screen and (max-width:1023px) and (min-width:200px) {
+.ld-grid {width: 100%; display: flex; flex-wrap: wrap; flex-direction: column;} 
+    .ld-grid p {font-size: 0.889rem; margin-bottom: 11px;}
 }
 
 @media only screen and (max-width:1023px) and (min-width:768px) {
-    .links-module {padding: 60px 0;}
-    .links-module::before {top:-60px;}
-    .ld-module {gap:60px 40px;}
-    .ld-grid {width: 47%;}
+    .links-module {padding:48px 0;}
+    .links-module::before {top:-48px;}
+    .ld-module {gap:62px;}
+    .ld-icon {height: 375.7px; margin-bottom: 24px;}
+    .ld-grid .h5::after {margin: 12px 0 12px;}
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {
     .links-module {padding: 28px 0;}
-    .ld-grid {width: 100%; display: flex; flex-wrap: wrap; flex-direction: column;} 
+    .ld-module {gap: 56px;}
     .ld-icon {height: 184px; margin-bottom: 20px;}
-    .ld-grid p {font-size: 0.889rem; margin-bottom: 8px;}
+    
     .ld-grid .h5::after {margin: 8px 0 7px; width: 56px;}
     .links-module::before{top: -28px; margin: 4px 32px;} 
+    .links-module .secwrapper {gap: 38px;}
 }

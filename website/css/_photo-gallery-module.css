@@ -34,5 +34,5 @@
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {
-
+    .photo-gallery-header {width: 100%;}
 }
