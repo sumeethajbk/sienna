@@ -2,15 +2,17 @@
 .search-results-lt{background: var(--Tint-Pink); padding: 32px;}
 .search-results-lt h1{color: var(--Sienna-Orange); }
 .search-results-lt hr{margin: 24px 0; background: var(--Sienna-Orange); opacity: 1; }
-.results-content-main{gap: 10px; margin-bottom: 16px;}
+.results-content-main{gap: 10px; margin-bottom: 16px; cursor: pointer;}
+.results-content-main.open span.fa-chevron-down{transform: rotate(180deg);}
 span.results-content-title{font-size: 1rem; line-height: 1.5; display: block; font-weight: 700; flex: 1;}
-.results-content-main span.fa-chevron-down{font-size: 1.333rem; width: fit-content; color: var(--Sienna-Orange); line-height: 1; }
-form.results-content-form label{position: relative; width: 100%; display: block; font-size: 0.778rem; line-height: 1.5; padding-left: 24px; margin-bottom: 8px; }
+.results-content-main span.fa-chevron-down{font-size: 1.333rem; width: fit-content; color: var(--Sienna-Orange); line-height: 1; transition: all .5s ease;}
+form.results-content-form label{position: relative; width: 100%; display: block; font-size: 0.778rem; line-height: 1.5; padding-left: 24px; margin-bottom: 8px; cursor: pointer;}
 form.results-content-form label input{position: absolute; top: 2px; left: 0; width: 16px; height: 16px; background: var(--Sienna-Orange); border-radius: 2px; border: none; }
 
-.topic-filters-main{gap: 10px; margin-bottom: 16px;}
+.topic-filters-main{gap: 10px; margin-bottom: 16px; cursor: pointer;}
+.topic-filters-main.open span.fa-chevron-down{transform: rotate(180deg);}
 span.topic-filters-title{font-size: 1rem; line-height: 1.5; display: block; font-weight: 700; flex: 1;}
-.topic-filters-main span.fa-chevron-down{font-size: 1.333rem; width: fit-content; color: var(--Sienna-Orange); line-height: 1; }
+.topic-filters-main span.fa-chevron-down{font-size: 1.333rem; width: fit-content; color: var(--Sienna-Orange); line-height: 1; transition: all .5s ease;}
 
 .topic-filters-dropdown ul{margin: 0; gap: 8px;}
 .topic-filters-dropdown ul > li::before{display: none;}
@@ -18,8 +20,43 @@ span.topic-filters-title{font-size: 1rem; line-height: 1.5; display: block; font
 .topic-filters-dropdown ul > li a{font-size: 0.778rem; line-height: 1.5; padding: 4px 8px; background: var(--white); border-radius: 16px;}
 
 
+.search-results-heading{margin-bottom: 48px;}
+.search-results-heading h2{margin-bottom: 0;}
+
+.search-results-item{gap: 48px; align-items: flex-start;}
+.search-results-content{flex: 1;}
+.search-results-content h2{font-size: 1.111rem; line-height: 1.5; margin-bottom: 8px; font-family: "Blackbird", sans-serif;}
+.search-results-content h2 a{color: var(--Umber-3); text-decoration-line: underline; text-decoration-style: solid; text-decoration-skip-ink: auto; text-decoration-color: var(--Sienna-Orange); text-decoration-thickness: auto; text-underline-offset: auto; text-underline-position: from-font;}
+.search-results-content p{display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; text-overflow: ellipsis; overflow: hidden; font-size: 0.778rem; line-height: 1.5; }
+.search-results-image{width: 80px;}
+.search-results-image img{width: 80px;}
+
+.search-results-btn{gap: 16px; margin-top: 48px;}
+hr.search-result-line{margin: 0; flex: 1;}
+
+
 @media screen and (min-width: 1024px) {
-    .search-results-main{padding: 80px 0; gap: 80px;}
+    .search-results-main{padding: 80px 0; gap: 80px; align-items: flex-start;}
     .search-results-lt{flex: 0 0 350px; flex-grow: 1;}
     .search-results-rt{flex: 0 0 calc(100% - 430px); flex-grow: 1;}
+
+    .search-results-row{gap: 48px;}
+    
+}
+
+
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .search-results-main{padding: 48px 0; gap: 40px; }
+    .search-results-row{gap: 40px; }
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .search-results-main{padding: 28px 0; gap: 40px; }
+    .search-results-lt{padding: 20px; width: 100%;}
+    .search-results-rt{width: 100%;}
+    .search-results-heading{margin-bottom: 28px; }
+    .search-results-row{gap: 28px; }
+    .search-results-item{gap: 10px;}
+    .search-results-content h2{font-size: 1rem;}
+    .search-results-btn{margin-top: 28px; }
+
 }

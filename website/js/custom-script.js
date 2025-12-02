@@ -217,6 +217,18 @@ jQuery(document).ready(function () {
 
     }
 
+    jQuery('.results-content-main').on('click', function (event) {
+      event.preventDefault();
+      jQuery(this).toggleClass('open');
+      jQuery('.results-content-dropdown').slideToggle(500);
+    });
+
+    jQuery('.topic-filters-main').on('click', function (event) {
+      event.preventDefault();
+      jQuery(this).toggleClass('open');
+      jQuery('.topic-filters-dropdown').slideToggle(500);
+    });
+
 
 
 

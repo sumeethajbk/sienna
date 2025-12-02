@@ -217,5 +217,51 @@ jQuery(document).ready(function () {
 
   });
 
+  jQuery('.team-carousel-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    speed: 1000,
+    dots: false,
+    variableWidth: true,
+    infinite: false,
+    draggable: true,
+    swipeToSlide: true,
+    touchThreshold: 100,
+    prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-left"></i></span></div>',
+    nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-right"></i></span></div>',
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: true,
+          adaptiveHeight: true,
+        }
+      },
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: true,
+          adaptiveHeight: true,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          adaptiveHeight: true,
+          arrows: true,
+          dots: true
+        }
+      }
+    ]
+
+  });
+
 
 });

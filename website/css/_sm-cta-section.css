@@ -2,6 +2,7 @@
 .sm-cta-main{background: var(--Sienna-Orange); padding: 36px 32px; gap: 32px; width: 100%;}
 .sm-cta-text{flex: 1;}
 .sm-cta-text .h4{color: var(--white); margin-bottom: 0;}
+.sm-cta-text .h5{ margin-bottom: 0;}
 .sm-cta-btn{width: fit-content;}
 
 .cta-green{background: var(--Tint-Green);}
@@ -23,6 +24,7 @@
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .sm-cta-main, .sm-cta-main.bigg{padding: 20px; gap: 20px;}
     .sm-cta-main.bigg{margin: 15px 0 0 0;}
+    .sm-cta-text, .sm-cta-btn{flex: 0 0 100%;}
     .sm-cta-text, .sm-cta-btn{flex: 0 0 100%;}
     .sm-cta-btn .button{width: 100%;}
 }
