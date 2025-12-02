@@ -138,11 +138,11 @@
     .default-main {padding: 64px 0;}
     .default-article .video-wrap .video-thumbnail > img {height:423px;}
     
-    
-    .location-intro-lt {padding: 24px 0 0 0;}
+    .location-intro-main {gap:5%;}
+    .location-intro-lt {padding:32px 0 0 32px; gap: 85px;}
     .location-intro-rt .default-form {padding: 32px;}
     .location-intro-rt {gap:32px; width: 47.39%;}
-    .location-intro-lt .h4 {font-size: 1.778rem;}
+    .location-intro-lt .h4 {font-size: 1.778rem; margin: 0 0 62px 0;}
     
     
 }
@@ -203,10 +203,18 @@
     .default-article ul {margin:10px 0 39px 25px;}
     .default-article ul li:before {font-size: 0.889rem; left: -25px;}
     
+    .location-intro-main {gap:48px;}
     .location-intro {padding: 48px 0;}
+    .location-intro-lt {gap:24px;}
+    .location-intro-lt .h4 {margin: 0 0 24px 0;}
+    .location-intro-lt .download-brouchure {padding: 16px;}
+    .location-intro-lt .download-brouchure .h6 {font-size: 1.333rem;}
+    .location-intro-lt .download-brouchure .h6 a {gap:10px;}
+    .location-intro-lt .download-brouchure .fa-sharp { font-size: 2.222rem;}
     .location-intro-rt .default-form{padding: 24px;}
     .location-intro-rt .default-form .h4 {font-size: 1.778rem; margin-bottom: 24px;}
     .location-intro-rt {gap:24px;}
+    .location-intro-rt .community-form .frm_forms .frm_filed_wrapper {padding-top: 8px;}
 
 }
 

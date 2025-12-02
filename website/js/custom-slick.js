@@ -162,13 +162,20 @@ jQuery(document).ready(function () {
     centerMode: true,
     centerPadding: '0',
     responsive: [{
+        breakpoint: 1023,
+        settings: {
+        }
+      },
+        {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
           adaptiveHeight: true,
           arrows: true,
-          dots: true
+          dots: true,
+          centerMode: false,
+          fade:true,
         }
       }
     ]
