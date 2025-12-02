@@ -181,6 +181,7 @@ img.alignnone {margin:29px 0 23px; display: block; clear: both;}
 
 /* divider line */
 .divider-line{width: 100%; max-width: 1280px; margin: 0 auto; height: 1px; background: var(--Foreground); margin: 8px 0; opacity: .2; }
+.divider-line-full{width: 100%; max-width: 100%;}
 
 
 @media only screen and (max-width: 767px) and (min-width:200px) {
