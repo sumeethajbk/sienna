@@ -1,0 +1,102 @@
+@import url("default-page.css");
+
+.hero-banner-main .hero-banner-text h1 {max-width: 460px;}
+
+/* Stock Quote */
+.stock-quote {clear: both; width: 100%; position: relative; background: var(--Tint-Blue); padding: 80px 0;}
+.stock-quote-inner {align-items: center; gap:6.666666666666667%;}
+.stock-quote-lt {width: 27.916666666666668%;}
+.stock-quote-lt:only-child {flex:1;}
+.stock-quote-lt .h3:after {content: ""; width: 80px; height: 2px; background-color: var(--Sienna-Orange); display: block; margin:31px 0 31px;}
+.stock-quote-lt p {font-size: 1.111rem; color: var(--Dark-Gray);}
+.stock-quote-lt .readmore {margin-top: 16px;}
+
+.stock-quote-rt {flex: 1;}
+.stock-quote-thumb {width: 100%; clear: both;}
+.stock-quote-thumb img {border-radius: 12px; box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.15);}
+
+
+/* Analyst Coverage */
+.analyst-coverage {clear: both; width: 100%; position: relative; background: var(--white); padding: 80px 0;}
+.analyst-coverage-inner {gap:6.666666666666667%;}
+.analyst-coverage-lt {width: 27.916666666666668%;}
+.analyst-coverage-lt:only-child {flex:1;}
+.analyst-coverage-lt .h3:after {content: ""; width: 80px; height: 2px; background-color: var(--Sienna-Orange); display: block; margin:31px 0 31px;}
+.analyst-coverage-lt p {font-size: 1.111rem; color: var(--Dark-Gray);}
+.analyst-coverage-lt .readmore {margin-top: 16px;}
+
+.analyst-coverage-rt {flex: 1;}
+.analyst-coverage-grids {gap:24px 2.9299363057324843%;}
+.ac-grid {width:31.299363057324843%; padding: 19px 20px 19px 20px; border: solid 1px var(--Tint-Blue);}
+.ac-grid .h6 {margin-bottom: 8px;}
+.ac-grid .ac-name {font-size: 1.111rem; color: var(--Dark-Gray);}
+.ac-grid ul{margin:16px 0 0 0;}
+.ac-grid ul li::before{display: none;}
+.ac-grid ul li{margin-bottom:3px;}
+.ac-grid ul li a, .ac-grid ul li{gap: 12px;}
+.ac-grid ul li a:hover span{color: var(--Sienna-Orange);}
+.ac-grid ul li span.fa-sharp{font-size: 18px; line-height: 27px; max-width: 20px; color: var(--Sienna-Orange);}
+.ac-grid ul li span{font-size: 0.889rem; line-height: 1.5; color: var(--Coal); flex: 1;}
+
+
+/* Large Reports Module */
+.large-reports-module {clear: both; width: 100%; padding: 80px 0; background: var(--Tint-Orange); position: relative;}
+.large-reports-module .heading {margin: 0 0 48px 0;}
+.lr-module-grid {padding: 20px; background: var(--white); gap:2%;}
+.lr-txt {padding: 24px; flex: 1; font-size: 0.778rem;}
+.lr-txt ul {margin: 0; display: flex; flex-wrap: wrap; gap:16px;}
+.lr-txt ul li:before {display: none;}
+.lr-txt ul li {display: flex; flex-wrap: wrap; gap:8px; color: var(--Coal);}
+.lr-txt ul li .fa-sharp {color: var(--Sienna-Orange); opacity: 1;}
+.lr-txt ul li span {opacity: 0.75;}
+.lr-thumb {width: 47.333333333333336%;}
+
+.default-section h4:after {content: ""; width: 80px; height: 2px; background-color: var(--Sienna-Orange); display: block; margin:24px 0 24px;}
+.micro-cta-thumb {width: 274px;}
+.cta-module {background: var(--Tint-Blue);}
+
+@media screen  and (min-width: 1024px){}
+
+@media screen and (max-width: 1280px) and (min-width: 1024px){}
+
+@media screen and (max-width: 1023px) and (min-width:200px){
+    .stock-quote-inner {flex-direction: column-reverse; align-items: flex-start;}
+    .stock-quote-lt {width: 100%;}
+    
+    .analyst-coverage-lt {width: 100%;}
+
+}
+
+@media screen and (max-width: 1023px) and (min-width:768px){
+    .stock-quote {padding: 48px 0;}
+    .stock-quote-inner {gap:64px;}
+    
+    .analyst-coverage {padding: 48px 0;}
+    .analyst-coverage-inner {gap:64px;}
+    
+}
+
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .stock-quote {padding: 28px 0;}
+    .stock-quote-inner {gap:28px;}
+    .stock-quote-lt .h3::after {width: 56px; margin: 19px 0 20px 0;}
+    .stock-quote-lt p {font-size: 1rem;}
+    .stock-quote-lt .readmore {margin-top: 4px;}
+    
+    .analyst-coverage {padding: 28px 0;}
+    .analyst-coverage-inner {gap:28px;}
+    .analyst-coverage-lt .h3::after {width: 56px; margin: 19px 0 20px 0;}
+    .analyst-coverage-lt p {font-size: 1rem;}
+    .analyst-coverage-lt .readmore {margin-top: 4px;}
+    .analyst-coverage-grids {gap:16px;}
+    .ac-grid {width: 100%; padding:9px 12px 7px 12px;}
+    .ac-grid .h6 {margin-bottom: 3px;}
+    .ac-grid .ac-name {font-size: 1rem; line-height: 1.2;}
+    .ac-grid ul {display: flex; flex-wrap: wrap; gap:16px; margin: 9px 0 0 0;}
+    .ac-grid ul li span.fa-sharp {font-size: 0.889rem;}
+    .ac-grid ul li span {font-size: 0.778rem;}
+    .ac-grid ul li a {gap:6px;}
+    
+    .micro-cta-thumb {width: 100%;}
+    
+}
