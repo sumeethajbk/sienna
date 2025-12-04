@@ -182,7 +182,7 @@ jQuery(document).ready(function () {
   });
 
   jQuery('.resources-slider-row').slick({
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
     speed: 1000,
@@ -194,8 +194,18 @@ jQuery(document).ready(function () {
     touchThreshold: 100,
     prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-left"></i></span></div>',
     nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-right"></i></span></div>',
-    responsive: [{
-        breakpoint: 1024,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: true,
+          adaptiveHeight: true,
+        }
+      },
+      {
+        breakpoint: 1023,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -204,7 +214,7 @@ jQuery(document).ready(function () {
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
