@@ -30,6 +30,7 @@ body.page-template-ic-events :-ms-input-placeholder {color: var(--Foreground)!im
 .ic-events-show-btn{gap: 16px; margin-top: 48px;}
 .ic-events-line{margin: 0; flex: 1;}
 
+.ic-events-lists{margin: 0;}
 
 @media screen and (min-width: 1024px) {
   .ic-events-main{padding: 80px 0;}
