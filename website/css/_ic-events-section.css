@@ -5,6 +5,7 @@
 .ic-events-title{flex: 1;}
 .ic-events-title h2{margin-bottom: 0;}
 .ic-events-sort{width: fit-content; gap: 20px;}
+.ic-events-sort form{display: flex; flex-wrap: wrap; gap: 20px;}
 body .events-search-form input{background: var(--Tint-Orange); border-radius: 60px; border: 1.25px solid var(--Sienna-Orange); background-color: var(--Tint-Pink) !important; padding: 15px 60px 15px 20px; font-size: 1rem; line-height: 1.35; background-image: url('../images/search-icon.svg'); background-position: calc(100% - 20px) calc(50% - 1px); background-repeat: no-repeat; background-size: 27px 24px;}
 body.page-template-ic-events ::-webkit-input-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size: 1rem!important; overflow: visible; font-weight: 700;}
 body.page-template-ic-events :-moz-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size: 1rem!important; overflow: visible; font-weight: 700;}
@@ -29,6 +30,7 @@ body.page-template-ic-events :-ms-input-placeholder {color: var(--Foreground)!im
 .ic-events-show-btn{gap: 16px; margin-top: 48px;}
 .ic-events-line{margin: 0; flex: 1;}
 
+.ic-events-lists{margin: 0;}
 
 @media screen and (min-width: 1024px) {
   .ic-events-main{padding: 80px 0;}
@@ -43,6 +45,7 @@ body.page-template-ic-events :-ms-input-placeholder {color: var(--Foreground)!im
   .ic-events-heading{margin-bottom: 32px;}
   .ic-events-title h2{font-size: 1.778rem; }
   .ic-events-sort{gap: 16px;}
+  .ic-events-sort form{gap: 16px;}
   body .ic-events-sort .selectBox-dropdown{min-width: 148px;}
   body .events-search-form input{width: 148px;}
   .ic-events-lists{gap: 40px;}
@@ -58,6 +61,8 @@ body.page-template-ic-events :-ms-input-placeholder {color: var(--Foreground)!im
   .ic-events-title{width: 100%;}
   .ic-events-sort{width: 100%; gap: 10px;}
   .ic-events-sort > div{width: 100%;}
+  .ic-events-sort form{width: 100%; gap: 10px; display: flex; flex-wrap: wrap; }
+  .ic-events-sort form > div{width: 100%;}
   .ic-events-lists{gap: 40px;}
   .ic-events-item{width: 100%; padding: 20px;}
   .ic-events-inner{margin-bottom: 8px;}

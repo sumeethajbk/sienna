@@ -1,0 +1,33 @@
+
+.board-commite-title{flex: 1;}
+.board-commite-title .h4{margin: 0;}
+.board-commite-btn{width: fit-content;}
+
+.board-commite-item .h6{color: var(--Sienna-Orange); margin-bottom: 12px; }
+.board-commite-item ul{margin-top: 12px;}
+.board-commite-item ul li{font-size: 0.889rem; line-height: 1.5; margin-bottom: 12px;}
+.board-commite-item ul li i{color: var(--Dark-Gray); display: block;}
+
+
+@media screen and (min-width: 1024px) {
+    .board-commite-main{padding: 40px 0 80px;}
+    .board-commite-heading{margin-bottom: 48px;}
+    .board-commite-list{gap: 40px;}
+    .board-commite-item{flex: 0 0 calc(25% - 30px); flex-grow: 1;}
+    
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .board-commite-main{padding: 48px 0;}
+    .board-commite-heading{margin-bottom: 32px; width: 100%;}
+    .board-commite-list{gap: 28px; width: 100%;}
+    .board-commite-item{flex: 0 0 calc(50% - 14px);}
+}
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .board-commite-main{padding: 16px 0 28px;}
+    .board-commite-heading{margin-bottom: 28px; width: 100%;}
+    .board-commite-list{gap: 24px; width: 100%; margin-bottom: 28px;}
+    .board-commite-item{width: 100%;}
+    .board-commite-item .h6{margin-bottom: 6px; line-height: 1.2;}
+    .board-commite-item ul{margin-top: 6px; }
+    .board-commite-item ul li{margin-bottom: 6px; font-size: 0.778rem;}
+}

@@ -2,7 +2,9 @@
 
 .team-carousel-txt-pos{bottom: 0; height: auto; left: 0; padding: 48px 24px 24px; width: 100%; position: absolute; transition: all .5s ease-in-out; background: linear-gradient(0deg, #000 -0.05%, rgba(0, 0, 0, 0.00) 100%);}
 .team-carousel-name{flex: 1;}
-.team-carousel-name .h6{color: var(--white); margin-bottom: 0;}
+.team-carousel-name .h6{margin-bottom: 0;}
+.team-carousel-name .h6 a{color: var(--white);}
+.team-carousel-name .h6 a:hover{color: var(--Sienna-Orange);}
 .team-carousel-name span{font-size: 0.889rem; color: var(--white); opacity: 0.64; line-height: 1.5; display: block;}
 .team-carousel-arrow{width: 32px; height: 32px; }
 .team-carousel-arrow span{font-size: 1.778rem; line-height: 1; color: var(--Sienna-Orange); width: 32px;}
