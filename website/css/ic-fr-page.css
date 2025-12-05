@@ -331,7 +331,6 @@
         margin-left: auto;
     }
 
-    /* Icon (+ or ×) */
     .dividend-table tr::before {
         content: "\f055";
         position: absolute;
