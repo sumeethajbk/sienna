@@ -8,6 +8,7 @@ span.results-content-title{font-size: 1rem; line-height: 1.5; display: block; fo
 .results-content-main span.fa-chevron-down{font-size: 1.333rem; width: fit-content; color: var(--Sienna-Orange); line-height: 1; transition: all .5s ease;}
 form.results-content-form label{position: relative; width: 100%; display: block; font-size: 0.778rem; line-height: 1.5; padding-left: 24px; margin-bottom: 8px; cursor: pointer;}
 form.results-content-form label input{position: absolute; top: 2px; left: 0; width: 16px; height: 16px; background: var(--Sienna-Orange); border-radius: 2px; border: none; }
+form.results-content-form label input[type="checkbox"]:checked::before { content: "\f00c"; font-family: "Font Awesome 7 Sharp"; display: block; height: 8px !important; left: 50%; position: absolute !important; top: 50%; width: 8px !important; transform: translate(-50% , -50%); font-weight: 900; color: var(--white); font-size: 8px; clip-path: inherit; box-shadow: none; text-align: center; margin: 0; line-height: 8px; }
 
 .topic-filters-main{gap: 10px; margin-bottom: 16px; cursor: pointer;}
 .topic-filters-main.open span.fa-chevron-down{transform: rotate(180deg);}
@@ -18,6 +19,7 @@ span.topic-filters-title{font-size: 1rem; line-height: 1.5; display: block; font
 .topic-filters-dropdown ul > li::before{display: none;}
 .topic-filters-dropdown ul > li{margin-bottom: 0;}
 .topic-filters-dropdown ul > li a{font-size: 0.778rem; line-height: 1.5; padding: 4px 8px; background: var(--white); border-radius: 16px;}
+.topic-filters-dropdown ul > li a:hover, .topic-filters-dropdown ul > li a.active{background: var(--Sienna-Orange); color: var(--white);}
 
 
 .search-results-heading{margin-bottom: 48px;}

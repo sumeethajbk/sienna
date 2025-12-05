@@ -153,24 +153,24 @@ jQuery(document).ready(function () {
 
   
   /* FAQ Active Link */
-  const headerHeight = $('.site-header').outerHeight() || 100; // adjust if needed
+  const headerHeight = jQuery('.site-header').outerHeight() || 100; // adjust if needed
 
   // make first link active by default
-  $('ul.faq-content-category li:first-child a').addClass('active');
+  jQuery('ul.faq-content-category li:first-child a').addClass('active');
 
   // handle click
-  $('ul.faq-content-category li a').on('click', function(e) {
+  jQuery('ul.faq-content-category li a').on('click', function(e) {
     e.preventDefault();
 
     // add/remove active class
-    $('ul.faq-content-category li a').removeClass('active');
-    $(this).addClass('active');
+    jQuery('ul.faq-content-category li a').removeClass('active');
+    jQuery(this).addClass('active');
 
     // scroll to the corresponding section smoothly, with offset
-    const target = $(this).attr('href');
-    if ($(target).length) {
-      const targetOffset = $(target).offset().top - headerHeight - 20;
-      $('html, body').animate({ scrollTop: targetOffset }, 400);
+    const target = jQuery(this).attr('href');
+    if (jQuery(target).length) {
+      const targetOffset = jQuery(target).offset().top - headerHeight - 20;
+      jQuery('html, body').animate({ scrollTop: targetOffset }, 400);
     }
   });
 
@@ -213,7 +213,7 @@ jQuery(document).ready(function () {
 
 
 
-jQuery(".more-yrs>a").on("click", function(e){
+  jQuery(".more-yrs>a").on("click", function(e){
     e.preventDefault();
     jQuery(this).parent().toggleClass("open").find(".more-menu").slideToggle(150);
   });
@@ -229,6 +229,7 @@ jQuery(".more-yrs>a").on("click", function(e){
       jQuery(".more-yrs").removeClass("open").find(".more-menu").slideUp(150);
     }
   });
+
 
 });
 

@@ -59,6 +59,8 @@ a.search-btn .custom_icon {width: 100%; height: 100%; display: flex; justify-con
 
 .icon_rel { position:relative; display:block;}
 
+ul.main_menu li.flex-menu > ul > li.flex-cta-menu li.sub-menu-li-hide > a span.menu-text{display: none;}
+
 @media only screen and (min-width:810px) {
 .main_header .header-btm {display:flex; flex-wrap:wrap; justify-content:flex-end; width:100%; transition:all 0.8s ease-in-out; -webkit-transition:all 0.8s ease-in-out; -moz-transition:all 0.8s ease-in-out; gap:20px;}
 .main_header .header_right {width:calc(100% - 150px); transition:all 0.8s ease-in-out; -webkit-transition:all 0.8s ease-in-out; -moz-transition:all 0.8s ease-in-out; margin: 4px 0 0 0;}
