@@ -218,6 +218,7 @@ jQuery(".more-yrs>a").on("click", function(e){
     jQuery(this).parent().toggleClass("open").find(".more-menu").slideToggle(150);
   });
 
+<<<<<<< HEAD
   jQuery(".more-menu a").on("click", function(e){
     e.preventDefault();
     jQuery(".more-yrs>a").contents().first()[0].textContent = jQuery(this).text() + " ";
@@ -230,6 +231,8 @@ jQuery(".more-yrs>a").on("click", function(e){
     }
   });
 
+=======
+>>>>>>> 04b1a2d72c5d18c0d7b0a5321cae4b54bc5681a8
 });
 
 
