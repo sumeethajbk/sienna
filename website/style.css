@@ -176,6 +176,14 @@ section aside ul li a {all: unset; cursor: pointer;}
 .readmore.play-icon:after{content: "\f04b";}
 .readmore.listen-icon:after{content: "\f025";}
 
+/* More */
+.more {position: relative; display: inline-flex; font-size:1rem; gap:8px; line-height: 1.5; align-items: center; font-weight: bold; color: var(--black-60);}
+.more:after {content: "\f078"; position: relative; display: inline-block; font-size:1rem; font-family: "Font Awesome 7 Sharp"; font-weight:400; line-height: 1.2; color: var(--Sienna-Orange); transform: translateX(0) rotate(0deg); transition: all 0.5s ease-in-out;}
+.more:hover {color: var(--black);}
+.more:hover:after {transform:translateX(4px) rotate(-90deg);}
+
+.btn-text {width: 100%; clear: both; position: relative; margin: 48px 0 0 0;}
+
 /* CIrcle Button */
 .circle-arrow-btn{width: fit-content; gap:20px;}
 .circle-arrow-btn:hover span.fa-sharp{background: var(--Sienna-Orange)!important; outline: 4px solid var(--button-outline); color: var(--white);}
@@ -465,6 +473,10 @@ ul.aside-links > li:before{display: none;}
     .heading-rt {width: 41.019%;}
     .heading-rt .form-field .selectBox-dropdown .selectBox-arrow {font-size: 1.111rem; right: 12px;}
     .heading-rt .form-field .selectBox-dropdown {font-size:0.889rem; padding: 11px 40px 12px 16px; min-width: inherit;}
+    
+    .btn-text {margin: 32px 0 0 0;}
+    .more {font-size: 0.889rem;}
+    .more::after {font-size: 0.889rem;}
 
 }
 
@@ -560,7 +572,7 @@ ul.aside-links > li:before{display: none;}
     
     .btn-wrap {gap:12px;}
     .btn-center {margin: 40px 0 0 0;}
-    .btn-text {text-align: center;}
+    .btn-text {margin: 28px 0 0 0;}
     
     .fluid-width {margin-bottom: 20px; width: 100%!important; left: 0; margin-left: 0;}
     

@@ -2,6 +2,17 @@
 
 .hero-banner-main .hero-banner-text h1 {max-width: 460px;}
 
+/* Dividend Module */
+.dividend-module {clear: both; width: 100%; position: relative; background: var(--Tint-Pink); padding: 80px 0;}
+.dividend-module .secwrapper {gap:32px;}
+.dividend-module .accordion-module {margin: 0;}
+.dividend-module .accordion-item .accordion-heading {font-size: 1.778rem; font-family: "Ivar Display", sans-serif; padding: 11px 56px 11px 8px;}
+.dividend-module .accordion-item.active .accordion-heading {color: var(--Foreground);}
+.dividend-module .accordion-item .accordion-heading::after {font-size: 1.778rem;}
+.dividend-module .accordion-item .content {padding: 0 8px 15px 8px; opacity: 1;}
+.dividend-module .accordion-item .content table {margin: 0;}
+.dividend-module .btn-text {margin: 16px 0 0 0;}
+
 /* Stock Quote */
 .stock-quote {clear: both; width: 100%; position: relative; background: var(--Tint-Blue); padding: 80px 0;}
 .stock-quote-inner {align-items: center; gap:6.666666666666667%;}
@@ -17,7 +28,7 @@
 
 
 /* Analyst Coverage */
-.analyst-coverage {clear: both; width: 100%; position: relative; background: var(--white); padding: 80px 0;}
+.analyst-coverage {clear: both; width: 100%; position: relative; background: var(--white); padding: 80px 0; margin-bottom: 0;}
 .analyst-coverage-inner {gap:6.666666666666667%;}
 .analyst-coverage-lt {width: 27.916666666666668%;}
 .analyst-coverage-lt:only-child {flex:1;}
@@ -42,14 +53,99 @@
 /* Large Reports Module */
 .large-reports-module {clear: both; width: 100%; padding: 80px 0; background: var(--Tint-Orange); position: relative;}
 .large-reports-module .heading {margin: 0 0 48px 0;}
-.lr-module-grid {padding: 20px; background: var(--white); gap:2%;}
-.lr-txt {padding: 24px; flex: 1; font-size: 0.778rem;}
+
+.lr-module-main {display: flex; flex-wrap: wrap; gap:32px 2.666666666666667%; width: 100%;}
+.lr-module-grid:first-of-type {width: 100%; margin-bottom: 16px;}
+.lr-module-grid:first-of-type .lr-txt{padding: 23px 24px 24px; flex: 1;}
+.lr-module-grid {padding: 20px; background: var(--white); gap:2%; width: 48.66666666666667%; align-items: center;}
+
+.lr-txt {padding: 0; flex: 1; font-size: 0.778rem; color: var(--Dark-Gray);}
+.lr-txt p {margin-bottom: 12px;}
+.lr-txt .h5 {margin-bottom: 8px;}
+.lr-txt .h5 a {color: var(--Foreground);}
+.lr-txt .h5 a:hover {color: var(--Sienna-Orange);}
+
+.lr-module-grid:not(:first-of-type) .lr-txt .h5 {font-size: 1rem; font-family: "Blackbird", sans-serif; line-height: 1.5;}
+
 .lr-txt ul {margin: 0; display: flex; flex-wrap: wrap; gap:16px;}
 .lr-txt ul li:before {display: none;}
-.lr-txt ul li {display: flex; flex-wrap: wrap; gap:8px; color: var(--Coal);}
+.lr-txt ul li {display: flex; flex-wrap: wrap; gap:8px; color: var(--Coal); margin: 0; align-items: center;}
 .lr-txt ul li .fa-sharp {color: var(--Sienna-Orange); opacity: 1;}
 .lr-txt ul li span {opacity: 0.75;}
-.lr-thumb {width: 47.333333333333336%;}
+.lr-txt .btn-wrap {margin: 35px 0 0 0;}
+.lr-thumb {width:48.966%;}
+
+
+/* Regulatory Filings Module */
+.regulatory-filings-module {clear: both; width: 100%; padding: 80px 0; background: var(--Tint-Pink); position: relative;}
+.regulatory-filings-module .heading {margin: 0 0 48px 0;}
+.regulatory-filings-main {display: flex; flex-wrap: wrap; gap:32px 2.666666666666667%; width: 100%;}
+.regulatory-filings-grid {padding: 24px; background: var(--white); gap:4.10958904109589%; width: 48.66666666666667%; position: relative;}
+
+.rf-lt {display: flex; flex-wrap:wrap; gap:24px; width: calc(100% - 88px);}
+.rf-txt {flex: 1; font-size: 0.778rem; color: var(--Dark-Gray);}
+.rf-txt p {margin-bottom: 16px;}
+.rf-txt .h6 {margin-bottom: 11px; font-family: "Blackbird", sans-serif; font-size: 1rem;}
+.rf-txt .h6 a {color: var(--Foreground);}
+.rf-txt .h6 a:hover {color: var(--Sienna-Orange);}
+
+.rf-txt ul {margin: 0; display: flex; flex-wrap: wrap; gap:16px;}
+.rf-txt ul li:before {display: none;}
+.rf-txt ul li {display: flex; flex-wrap: wrap; gap:8px; color: var(--Coal); margin: 0; align-items: center;}
+.rf-txt ul li .fa-sharp {color: var(--Sienna-Orange); opacity: 1;}
+.rf-txt ul li span {opacity: 0.75;}
+
+.rf-thumb {width:88px; height: 114px;}
+.rf-thumb figure {border: solid 1px rgba(0, 0, 0, 0.1);}
+
+.rf-download {width: 64px; text-align: center;}
+.rf-download a {background: var(--Tint-Pink); color: var(--Sienna-Orange); display: flex; width:64px; height:64px; border-radius: 50%; justify-content: center; align-items: center; font-size: 1.333rem; font-weight: normal;}
+.rf-download a:hover span {animation: bounceTopToBottom 1.5s infinite;}
+
+
+/* Financial Results Module */
+.financial-results-module {clear: both; width: 100%; padding: 80px 0; background: var(--Tint-Purple); position: relative;}
+.financial-results-module .heading {margin: 0 0 48px 0;}
+.financial-results-module .heading .heading-rt {width: fit-content;}
+.financial-results-main {display: flex; flex-wrap: wrap; gap:32px 2.666666666666667%; width: 100%;}
+.financial-results-grid {padding: 24px; background: var(--white); gap:4.10958904109589%; width: 48.66666666666667%; position: relative;}
+
+.fr-lt {display: flex; flex-wrap:wrap; gap:24px; width: calc(100% - 88px);}
+.fr-txt {flex: 1; font-size: 0.778rem; color: var(--Dark-Gray);}
+.fr-txt p {margin-bottom: 16px;}
+.fr-txt .h6 {margin-bottom: 11px; font-family: "Blackbird", sans-serif; font-size: 1rem;}
+.fr-txt .h6 a {color: var(--Foreground);}
+.fr-txt .h6 a:hover {color: var(--Sienna-Orange);}
+
+.fr-txt ul {margin: 0; display: flex; flex-wrap: wrap; gap:16px;}
+.fr-txt ul li:before {display: none;}
+.fr-txt ul li {display: flex; flex-wrap: wrap; gap:8px; color: var(--Coal); margin: 0; align-items: center;}
+.fr-txt ul li .fa-sharp {color: var(--Sienna-Orange); opacity: 1;}
+.fr-txt ul li span {opacity: 0.75;}
+
+.fr-thumb {width:88px; height: 114px;}
+.fr-thumb figure {border: solid 1px rgba(0, 0, 0, 0.1);}
+
+.fr-download {width: 64px; text-align: center;}
+.fr-download a {background: var(--Tint-Purple); color: var(--Sienna-Orange); display: flex; width:64px; height:64px; border-radius: 50%; justify-content: center; align-items: center; font-size: 1.333rem; font-weight: normal;}
+.fr-download a:hover span {animation: bounceTopToBottom 1.5s infinite;}
+
+.fr-filter ul li {margin: 0;}
+.fr-filter ul li:before{display: none;}
+.year-filter {display: flex; gap:12px; margin: 0; flex-wrap: wrap;}
+.year-filter > li > a {display: block; padding: 15px 20px; border-radius:60px; border:1.3px solid var(--Sienna-Orange); background: transparent; color:Var(--Foreground); text-decoration: none; font-size: 1rem; font-weight: bold; line-height: 1.35; transition: all 0.5s ease-in-out; min-width: 127.5px; text-align: center;}
+.year-filter > li > a:hover, .year-filter > li.active > a {background: var(--Sienna-Orange); color: var(--white);}
+
+.year-filter .more-yrs {z-index: 1;}
+.year-filter .more-yrs > a:hover:after {color: var(--white);}
+.year-filter .more-yrs > a:after {content: "\f078"; position: absolute; right:16px; top: 50%; transform: translateY(-50%) rotate(0deg); font-size: 1.333rem; font-family: 'Font Awesome 7 Sharp'; color: var(--Sienna-Orange); transition: all .5s ease-in-out; transform-origin: 50% 50%; font-weight: normal;}
+.year-filter .more-yrs.open > a:after{transform: translateY(-50%) rotate(180deg);}
+.year-filter .more-yrs > a {text-align:left;}
+.year-filter .more-menu {list-style: none; margin: 0;position: absolute; top: 100%; left: 0; width:100%; background: var(--white); border: 1px solid var(--Sienna-Orange);  border-radius: 12px; display: none; box-shadow: 0 4px 15px rgba(0,0,0,0.1); z-index: 10; text-align: left;}
+.year-filter .more-menu li a {padding:10px 20px; display: block; font-size: 1rem; color:Var(--Foreground); text-decoration: none; text-align: left;}
+.year-filter .more-menu li a:hover {background: var(--Tint-Pink);}
+.year-filter .more-menu li:first-child a {border-top-left-radius: 12px; border-top-right-radius: 12px;}
+.year-filter .more-menu li:last-child a {border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;}
 
 .default-section h4:after {content: ""; width: 80px; height: 2px; background-color: var(--Sienna-Orange); display: block; margin:24px 0 24px;}
 .micro-cta-thumb {width: 274px;}
@@ -57,13 +153,52 @@
 
 @media screen  and (min-width: 1024px){}
 
-@media screen and (max-width: 1280px) and (min-width: 1024px){}
+@media screen and (max-width: 1280px) and (min-width: 1024px){
+    .large-reports-module {padding: 64px 0;}
+    
+    .regulatory-filings-module {padding: 64px 0;}
+    .regulatory-filings-main {gap: 32px 2.5%;}
+    .regulatory-filings-grid {width: 31.66%;}
+    .rf-thumb {width: 100.5px; height: 130px;}
+    .rf-lt {gap:24px; width: 100%;}
+    .rf-txt {flex:100%;}
+    .rf-download  {position: absolute; right: 24px;}
+    
+ 
+    .fr-txt ul {flex-direction: column;}
+    
+}
 
 @media screen and (max-width: 1023px) and (min-width:200px){
     .stock-quote-inner {flex-direction: column-reverse; align-items: flex-start;}
     .stock-quote-lt {width: 100%;}
     
     .analyst-coverage-lt {width: 100%;}
+    
+    .lr-module-grid {width: 100%; padding: 16px; gap:2.680965147453083%;}
+    .lr-module-grid:first-of-type {flex-direction: column-reverse; gap: 20px; align-items: flex-start; margin: 0;}
+    .lr-module-grid:first-of-type .lr-thumb {width:100%;}
+    .lr-module-grid:first-of-type .lr-txt {padding: 20px;}    
+    .lr-txt {font-size: 0.667rem;}
+    .lr-txt ul {gap:12px;}
+    
+    .lr-module-grid:not(:first-of-type) .lr-txt .h5 {font-size: 0.889rem;}
+    
+    .rf-txt .h6 {font-size: 0.889rem; margin-bottom: 2px;}
+    .rf-txt {font-size: 0.667rem;}
+    .rf-txt p {margin-bottom: 13px;}
+    .rf-txt ul {gap:12px;}
+    
+    .fr-txt .h6 {font-size: 0.889rem; margin-bottom: 2px;}
+    .fr-txt {font-size: 0.667rem;}
+    .fr-txt p {margin-bottom: 13px;}
+    .fr-txt ul {gap:12px;}
+    
+    .year-filter > li > a {font-size: 0.889rem; padding: 11px 20px; min-width: 107px;}
+    .year-filter .more-yrs > a {padding:11px 37px 11px 20px;}
+    .year-filter .more-yrs > a::after {font-size: 1.111rem;}
+    .year-filter .more-menu li a {font-size: 0.889rem;}
+    
 
 }
 
@@ -73,6 +208,31 @@
     
     .analyst-coverage {padding: 48px 0;}
     .analyst-coverage-inner {gap:64px;}
+    
+    .large-reports-module {padding: 48px 0;}
+    .large-reports-module .heading {margin: 0 0 32px 0;}
+    .lr-txt .h5 {margin-bottom: 6px;}
+    .lr-txt .btn-wrap {margin: 32px 0 0 0;}
+    
+    .regulatory-filings-module {padding: 48px 0;}
+    .regulatory-filings-module .heading {margin: 0 0 32px 0;}
+    .regulatory-filings-grid {width: 100%; padding: 20px; gap:2.680965147453083%;}
+    .rf-lt {width: calc(100% - 68px); gap: 20px; align-items: center;}
+    .rf-thumb {width: 76px; height: 99px;}
+    .rf-txt .h5 {margin-bottom: 6px;}
+    .rf-download  {width: 48px;}
+    .rf-download a {width: 48px; height: 48px; font-size: 1.111rem;}
+    
+    .financial-results-main {gap:24px;}
+    .financial-results-module {padding: 48px 0;}
+    .financial-results-module .heading {margin: 0 0 32px 0; gap:32px;}
+    .financial-results-grid {width: 100%; padding: 20px; gap:2.680965147453083%;}
+    .fr-lt {width: calc(100% - 68px); gap: 20px; align-items: center;}
+    .fr-thumb {width: 76px; height: 99px;}
+    .fr-txt .h5 {margin-bottom: 6px;}
+    .fr-download  {width: 48px;}
+    .fr-download a {width: 48px; height: 48px; font-size: 1.111rem;}
+    
     
 }
 
@@ -97,6 +257,104 @@
     .ac-grid ul li span {font-size: 0.778rem;}
     .ac-grid ul li a {gap:6px;}
     
-    .micro-cta-thumb {width: 100%;}
+    
+    .large-reports-module .heading {margin: 0 0 27px 0;}
+    .large-reports-module .heading .heading-rt {display: none;}
+    .large-reports-module {padding: 28px 0;}
+    .lr-module-main {flex-direction: column; gap:28px;}
+    .lr-module-grid {flex-direction: column-reverse; gap:16px; padding: 12px;}
+    .lr-thumb {width: 100%;}
+    .lr-txt .h5 {margin-bottom: 4px;}
+    .lr-txt p {margin-bottom: 7px;}
+    .lr-txt ul li {gap: 4px;}
+    .lr-txt ul {gap:8px;}
+    .lr-txt .btn-wrap {margin: 28px 0 0 0;}
+    
+    .lr-module-grid:first-of-type {gap:16px;}
+    .lr-module-grid:first-of-type .lr-txt {padding: 16px;}
+    
+    
+    .regulatory-filings-module {padding: 28px 0;}
+    .regulatory-filings-module .heading {margin: 0 0 27px 0;}
+    .regulatory-filings-module .heading .heading-rt {display: none;}
+    .regulatory-filings-grid {width: 100%; padding: 16px;}
+    .rf-thumb {width: 100.5px; height: 130px;}
+    .rf-lt {gap:16px; width: 100%;}
+    .rf-txt {flex:100%;}
+    .rf-txt p {margin-bottom: 8px;}
+    .rf-download  {width: 40px; position: absolute; right: 16px;}
+    .rf-download a {width: 40px; height: 40px; font-size: 1.111rem;}
+    .rf-txt ul {gap:8px;}
+    .rf-txt ul li {gap:4px;}
+    
+    .financial-results-module {padding: 28px 0;}
+    .financial-results-module .heading {margin: 0 0 28px 0; gap: 24px;}
+    .financial-results-main {gap:20px;}
+    .financial-results-grid {width: 100%; padding: 16px;}
+    .fr-thumb {width: 100.5px; height: 130px;}
+    .fr-lt {gap:16px; width: 100%;}
+    .fr-txt {flex:100%;}
+    .fr-txt p {margin-bottom: 8px;}
+    .fr-download  {width: 40px; position: absolute; right: 16px;}
+    .fr-download a {width: 40px; height: 40px; font-size: 1.111rem;}
+    .fr-txt ul {gap:8px;}
+    .fr-txt ul li {gap:4px;}
+    
+    .year-filter {gap:6px;}
+    .year-filter > li > a {min-width: 104px; padding: 16px 20px;}
+    .year-filter .more-yrs > a {padding: 16px 37px 16px 20px}
+    
+    
+    .micro-cta-thumb {width: 100%;}    
+}
+
+/* MOBILE ONLY */
+@media (max-width: 767px) {
+    .dividend-module .accordion-item .accordion-heading {font-size: 1.111rem; padding: 12px 36px 4px 8px;}
+    .dividend-module .accordion-item .accordion-heading::after {font-size: 1.111rem;}
+    .dividend-table thead {display: none;}
+    .dividend-table tr {display: block; border-bottom: 1px solid #eee; position: relative;}
+    .dividend-table td:first-child {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 12px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .dividend-table tr td:nth-child(even){border-radius: 2px; background-color: rgba(255, 255, 255, 0.5);}
+
+    .dividend-table td:first-child::after {
+        content: attr(data-amount);
+        font-weight: 600;
+        color: #000;
+        margin-left: auto;
+    }
+
+    /* Icon (+ or ×) */
+    .dividend-table tr::before {
+        content: "\f055";
+        position: absolute;
+        right: 12px;
+        top: 16px;
+        font-size: 0.889rem;
+        color:var(--Sienna-Orange);
+        font-family: "Font Awesome 7 Sharp"; font-weight:900; line-height: 1;
+    }
+    .dividend-table tr.open::before {
+        content: "\f057";
+    }
+
+    .dividend-table td:not(:first-child) {display: none; padding: 6px; font-size: 0.778rem; opacity: 0.75;}
+    .dividend-table td:not(:first-child)::before {content: attr(data-th); display: block;}
+    
+    
+}
+
+
+
+
+@media screen and (max-width:389px) and (min-width: 200px){
+    .year-filter > li > a {min-width: 99px; padding: 16px;}
     
 }

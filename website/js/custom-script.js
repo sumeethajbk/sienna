@@ -149,25 +149,7 @@ jQuery(document).ready(function () {
     jQuery("body").addClass(match[0]);
   }
 
-  
 
-  /* News Filter Toggle */
-  if (jQuery(window).width() <= 767) {
-    jQuery(document).on('click', '.heading_mobile_menu', function (e) {
-      //e.preventDefault();
-      jQuery(this).toggleClass('active');
-      jQuery('.news-search').toggleClass('inactive', jQuery(this).hasClass('active'));
-      jQuery('.news-filter-inner ul').slideToggle();
-    }).on('click', '.news-filter-inner ul li a', function (e) {
-      //e.preventDefault();
-      jQuery('.heading_mobile_menu').contents().filter(function () {
-        return this.nodeType === 3;
-      }).first().replaceWith(jQuery(this).text());
-      jQuery('.heading_mobile_menu').removeClass('active');
-      jQuery('.news-search').toggleClass('inactive');
-      jQuery('.news-filter-inner ul').slideUp();
-    });
-  }
 
   
   /* FAQ Active Link */
@@ -231,8 +213,43 @@ jQuery(document).ready(function () {
 
 
 
+jQuery(".more-yrs>a").on("click", function(e){
+    e.preventDefault();
+    jQuery(this).parent().toggleClass("open").find(".more-menu").slideToggle(150);
+  });
 
+  jQuery(".more-menu a").on("click", function(e){
+    e.preventDefault();
+    jQuery(".more-yrs>a").contents().first()[0].textContent = jQuery(this).text() + " ";
+    jQuery(".more-yrs").removeClass("open").find(".more-menu").slideUp(150);
+  });
+
+  jQuery(document).on("click", function(e){
+    if(!jQuery(e.target).closest(".more-yrs").length){
+      jQuery(".more-yrs").removeClass("open").find(".more-menu").slideUp(150);
+    }
+  });
 
 });
+
+
+jQuery(function($){
+    $(".dividend-table tbody tr").each(function(){
+        var amount = $(this).find("td:last-child").text().trim();
+        $(this).find("td:first-child").attr("data-amount", amount);
+    });
+
+    $(".dividend-table").on("click", "td:first-child", function(){
+        var row = $(this).closest("tr");
+        $(".dividend-table tr").not(row).removeClass("open")
+            .find("td:not(:first-child)").slideUp();
+
+        row.toggleClass("open");
+        row.find("td:not(:first-child)").slideToggle();
+    });
+
+});
+
+
 
 

@@ -71,12 +71,13 @@ textarea {overflow: auto; vertical-align: top; min-height: 128px; border-radius:
 
 /*-- table --*/
 table, th, td {border:0 none; letter-spacing: normal;}
-table {border-collapse: separate; border-spacing: 0; border: solid 1px rgba(0, 0, 0, 0.1); margin:32px 0 27px 0; width: 100%; background: rgba(255, 255, 255, 0.60); backdrop-filter: blur(7px); border-top: 0 none;}
+table {border-collapse: separate; border-spacing: 0; border:0 none; margin:32px 0 27px 0; width: 100%; background:transparent;}
 table tbody img {margin: 0 auto!important;}
-table thead tr th {color: var(--white); font-size: 0.684rem; background: var(--Sienna-Orange); text-transform: uppercase; font-family: "Blackbird",sans-serif; line-height: 1.69;}
-table tbody tr td{padding:14px 16px 11px; font-size:0.947rem; border-bottom: solid 1px rgba(0, 0, 0, 0.1); line-height: 1.67;}
+table thead tr th {font-size: 0.778rem; text-transform: uppercase; letter-spacing: 1.4px; line-height: 1.5; font-weight: bold; border-bottom: 1px solid var(--Sienna-Orange); color: var(--black-50);}
+table tbody tr td{padding:8px 16px 8px; font-size: 0.889rem; border-bottom: solid 1px rgba(0, 0, 0, 0.2); line-height: 1.5;}
+table tbody tr td:first-child {min-width: 165px;}
 th {border-width: 0; padding:8px 16px 8px;}
-td {border-width: 0; padding:14px 16px 11px; color: var(--Foreground);}
+td {border-width: 0; color: var(--black);}
 tr:last-child td{border-bottom: 0;}
 /*-- table --*/
 
@@ -125,9 +126,6 @@ button:focus, .button:focus, button:active, .button:active {color: var(--white);
 .btn-gray:hover {background: var(--Foreground); color: var(--white);}
 .btn-gray:active, .btn-gray:focus {background: var(--Dark-Gray); color: var(--white);}
 
-.arrow-btn {position: relative; display: flex; flex-wrap: wrap; gap:9px; min-width: inherit; font-size: 1rem; align-items: center; font-weight: 700; padding: 9px 20px 10px; justify-content: center;}
-.arrow-btn:after {content: "\f061"; position: relative; display: inline-block; font-family: "Font Awesome 7 Sharp";}
-.arrow-btn:hover:after {animation: bounceAlpha 1.4s ease-in-out infinite;}
 
 input[type="submit"] {background-image: url("../images/search-icon.svg") !important; background-repeat: no-repeat !important; position: absolute; right:16px; top:0; bottom: 0; padding: 0 !important; width:25px; height: 25px; margin: auto; background-color: transparent !important; border: 0 none; border-radius: 0; z-index: 1; box-shadow: none !important; transform: none !important; min-width: inherit; background-size: 100%;}
 input[type="submit"]:hover {box-shadow: none; transform: none;}
