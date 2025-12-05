@@ -235,19 +235,17 @@ jQuery(document).ready(function () {
 
 
 jQuery(function($){
-    $(".dividend-table tbody tr").each(function(){
-        var amount = $(this).find("td:last-child").text().trim();
-        $(this).find("td:first-child").attr("data-amount", amount);
-    });
+$(".dividend-table tbody tr").each(function(){
+    $(this).find("td:first-child").attr("data-amount", $(this).find("td:last-child").text().trim());
+});
 
-    $(".dividend-table").on("click", "td:first-child", function(){
-        var row = $(this).closest("tr");
-        $(".dividend-table tr").not(row).removeClass("open")
-            .find("td:not(:first-child)").slideUp();
+$(".dividend-table").on("click", "td:first-child", function(){
+    var row = $(this).closest("tr");
+    $(".dividend-table tr").not(row).removeClass("open");
+    row.toggleClass("open");
+});
 
-        row.toggleClass("open");
-        row.find("td:not(:first-child)").slideToggle();
-    });
+
 
 });
 

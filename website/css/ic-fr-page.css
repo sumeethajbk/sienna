@@ -306,51 +306,56 @@
     
     
     .micro-cta-thumb {width: 100%;}    
-}
-
-/* MOBILE ONLY */
-@media (max-width: 767px) {
-    .dividend-module .accordion-item .accordion-heading {font-size: 1.111rem; padding: 12px 36px 4px 8px;}
+    
+/*
+    .dividend-module {padding: 28px 0;}
+    .dividend-module .accordion-item .accordion-heading {font-size: 1.111rem; padding: 12px 36px 4px 4px;}
     .dividend-module .accordion-item .accordion-heading::after {font-size: 1.111rem;}
+    .dividend-module .accordion-item .content {padding: 0 4px 7px 4px;}
     .dividend-table thead {display: none;}
-    .dividend-table tr {display: block; border-bottom: 1px solid #eee; position: relative;}
-    .dividend-table td:first-child {
-        display: flex !important;
-        justify-content: space-between;
-        align-items: center;
-        padding: 14px 12px;
-        font-weight: 700;
-        cursor: pointer;
-    }
+    .dividend-table tbody {border-top: 1px solid var(--Sienna-Orange); display: block;}
+    .dividend-table tr {display: block; position: relative;}
+    .dividend-table tr.open {padding:0 8px 4px; border-bottom: solid 1px rgba(0, 0, 0, 0.2);}
+    .dividend-table tr.open td {border: 0 none; display: flex; justify-content: space-between;}
+    .dividend-table tr.open td:first-child {padding-left: 0;}
+    .dividend-table td:first-child {display: flex !important; justify-content: space-between; align-items: center; padding:8px 33px 8px 8px; cursor: pointer;}
     .dividend-table tr td:nth-child(even){border-radius: 2px; background-color: rgba(255, 255, 255, 0.5);}
 
-    .dividend-table td:first-child::after {
-        content: attr(data-amount);
-        font-weight: 600;
-        color: #000;
-        margin-left: auto;
-    }
+    .dividend-table td:first-child::after {content: attr(data-amount); color:var(--Foreground); margin-left: auto;}
 
-    .dividend-table tr::before {
-        content: "\f055";
-        position: absolute;
-        right: 12px;
-        top: 16px;
-        font-size: 0.889rem;
-        color:var(--Sienna-Orange);
-        font-family: "Font Awesome 7 Sharp"; font-weight:900; line-height: 1;
-    }
-    .dividend-table tr.open::before {
-        content: "\f057";
-    }
+    .dividend-table tr::before {content: "\f055"; position: absolute; right: 8px; top:13px; font-size: 0.889rem; color:var(--Sienna-Orange); font-family: "Font Awesome 7 Pro"; font-weight:900; line-height: 1;}
+    .dividend-table tr.open::before {content: "\f057";}
 
-    .dividend-table td:not(:first-child) {display: none; padding: 6px; font-size: 0.778rem; opacity: 0.75;}
-    .dividend-table td:not(:first-child)::before {content: attr(data-th); display: block;}
-    
+    .dividend-table td:not(:first-child) {display: none; padding: 6px; font-size: 0.778rem; opacity: 0.75; border: 0 none;}
+    .dividend-table td:not(:first-child)::before {content: attr(data-th); display: block; width: 50%;}
+*/
+ 
+.dividend-module {padding: 28px 0;}
+.dividend-module .accordion-item .accordion-heading {font-size: 1.111rem; padding: 12px 36px 4px 4px;}
+.dividend-module .accordion-item .accordion-heading::after {font-size: 1.111rem;}
+.dividend-module .accordion-item .content {padding: 0 4px 7px 4px;}
+
+.dividend-table thead {display: none;}
+.dividend-table tbody {border-top: 1px solid var(--Sienna-Orange); display: block;}
+.dividend-table tr {display: block; position: relative; transition: all .25s ease;}
+.dividend-table td {display: flex; justify-content: space-between; transition: all .25s ease;}
+.dividend-table td:first-child {display: flex !important; justify-content: space-between; align-items: center; padding: 8px 33px 8px 8px; cursor: pointer;}
+
+.dividend-table tr td:nth-child(even){border-radius: 2px; background-color: rgba(255, 255, 255, 0.5);}
+.dividend-table td:first-child::after {content: attr(data-amount); color: var(--Foreground); margin-left: auto;}
+.dividend-table tr::before {content: "\f055"; position: absolute; right: 8px; top: 13px; font-size: 0.889rem; color: var(--Sienna-Orange); font-family: "Font Awesome 7 Pro"; font-weight: 900; line-height: 1;}
+.dividend-table tr.open::before {content: "\f057";}
+
+.dividend-table td:not(:first-child) {overflow: hidden; max-height: 0; opacity: 0; padding: 0 6px; font-size: 0.778rem; border: 0 none; transition: all .25s ease;}
+.dividend-table td:not(:first-child)::before {content: attr(data-th); display: block; width: 50%; margin-bottom: 3px;}
+
+.dividend-table tr.open td:not(:first-child) {max-height: 999px; opacity: 1; padding: 6px;}
+.dividend-table tr.open {padding: 0 8px 4px; border-bottom: solid 1px rgba(0, 0, 0, 0.2);}
+.dividend-table tr.open td:first-child {padding-left: 0;}
+
+    .dividend-module .btn-text {margin: 0;}
     
 }
-
-
 
 
 @media screen and (max-width:389px) and (min-width: 200px){
