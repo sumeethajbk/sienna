@@ -75,6 +75,7 @@ jQuery(document).ready(function () {
       const $a = jQuery(this),
         $li = $a.parent(),
         $sub = $a.next("ul.sub-menu");
+        console.log($sub);
       $li.siblings()
         .removeClass("sib")
         .find("> a").removeClass("active").next("ul.sub-menu").slideUp(300);
