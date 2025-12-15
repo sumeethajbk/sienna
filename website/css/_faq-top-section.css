@@ -19,11 +19,16 @@ body.page-template-faq .faq-search-form input:-ms-input-placeholder {color: var(
     .faq-top-main{max-width: 1200px; margin: 0 auto; padding: 80px 0 80px; gap: 64px;}
 }
 
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .faq-top-main{padding: 48px 0; gap: 48px;}
+    .faq-top-search{gap: 16px;}
+}
+
 @media screen and (max-width: 767px) and (min-width: 200px){
     .faq-top-main{padding: 28px 0; gap: 40px;}
     .faq-top-heading{font-size: 1.333rem; }
     .faq-top-heading span.optional-text{font-size: 0.889rem; line-height: 1; margin-bottom: 12px;}
     .faq-top-heading h1{font-size: 2.222rem;}
     .faq-top-search{gap: 12px;}
-    .faq-search-form input{font-size: 0.889rem; line-height: 1.35;}
+    .faq-search-form input{font-size: 0.889rem; line-height: 1.35; text-overflow: ellipsis;}
 }

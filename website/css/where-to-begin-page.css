@@ -2,7 +2,7 @@
 @import url("_hero-banner.css?v=55555");
 @import url("_features-module.css");
 @import url("_section-intro.css");
-@import url("_journey-section.css?v=555556");
+@import url("_journey-section.css?v=5005647000");
 @import url("_sm-cta-section.css?v=555550000");
 @import url("_cta-module.css");
 @import url("_signup-module.css");
@@ -15,4 +15,5 @@ body.page-template-where-to-begin #main{overflow: inherit;}
 
 @media screen and (min-width: 1024px) {
     .sm-cta-main{width: calc(100% - 308px); margin-left: auto;}
+    .hero-banner-main .hero-banner-text h1{font-size: 3.556rem;}
 }

@@ -36,7 +36,7 @@ ul.journey-step-title li a.current span.dot::before{background: var(--white);}
     
 }
 @media screen and (max-width: 1199px) and (min-width: 1024px){
-    .journey-main{gap: 40px;}
+    /* .journey-main{gap: 40px;} */
     .journey-step-box{gap: 20px; padding: 20px;}
     .journey-step-content-inner{padding: 14px;}
 }
@@ -65,7 +65,8 @@ ul.journey-step-title li a.current span.dot::before{background: var(--white);}
     .journey-step-content-inner h2{margin-bottom: 12px;}
     .journey-step-content-inner hr{margin: 12px 0;}
     .journey-step-content-inner p{margin-bottom: 12px;}
-    .journey-step-content-inner ul{margin-top: 12px;}
+    .journey-step-content-inner ul{margin-top: 12px; margin-left: 18px;}
     .journey-step-content-inner ul > li{margin-bottom: 4px;}
+    .journey-step-content-inner ul > li::before{left: -18px; font-size: 0.779rem;}
     
 }

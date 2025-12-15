@@ -111,7 +111,7 @@ button:focus, .button:focus, button:active, .button:active {color: var(--white);
 .outline-btn{outline-color:var(--button-outline);}
 
 .btn-white {background: var(--white); color: var(--button);}
-.btn-white:hover {background: var(--white); color: var(--button);}
+.btn-white:hover {background: var(--white); color: var(--button); outline:4px solid var(--white-30);}
 .btn-white:active, .btn-white:focus {background: var(--white); color: var(--button);}
 
 .btn-green {background: var(--Aspira-Green); color: var(--white);}
