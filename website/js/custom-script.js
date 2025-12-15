@@ -246,6 +246,27 @@ $(".dividend-table").on("click", "td:first-child", function(){
     row.toggleClass("open");
 });
 
+ jQuery('.tq-rt .button').on('click', function (e) {
+      e.preventDefault();
+      $(".overlay_main_sec").addClass("active");
+  });
+   
+  jQuery('.overlay-close-btn').on('click', function (e) {
+      e.preventDefault();
+      $(".overlay_main_sec").removeClass("active");
+  });
+
+  jQuery('#quiz-step-1 .quiz-option-btn .button').on('click', function (e) {
+      e.preventDefault();
+      $("#quiz-step-2").css("display", "block");
+      $("#quiz-step-1").css("display", "none");
+  });
+
+  jQuery('#quiz-step-2 .quiz-option-btn .button').on('click', function (e) {
+      e.preventDefault();
+      $("#quiz-step-3").css("display", "block");
+      $("#quiz-step-1, #quiz-step-2").css("display", "none");
+  });
 
 
 });

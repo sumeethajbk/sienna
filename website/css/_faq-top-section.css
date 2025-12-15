@@ -5,10 +5,10 @@
 .faq-top-search{gap: 20px;}
 .faq-search-form{flex: 1;}
 body .faq-search-form input{background: var(--Tint-Orange); border-radius: 60px; border: 1.25px solid var(--Sienna-Orange); background-color: var(--Tint-Pink) !important; padding: 15px 20px; font-size: 1rem; line-height: 1.35; }
-body.page-template-faq ::-webkit-input-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size: 1rem!important; overflow: visible; font-weight: 700;}
-body.page-template-faq :-moz-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size: 1rem!important; overflow: visible; font-weight: 700;}
-body.page-template-faq ::-moz-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size: 1rem!important; overflow: visible; font-weight: 700;}
-body.page-template-faq :-ms-input-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size: 1rem!important; overflow: visible; font-weight: 700;}
+body.page-template-faq .faq-search-form input::-webkit-input-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size: 1rem!important; overflow: visible; font-weight: 700;}
+body.page-template-faq .faq-search-form input:-moz-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size: 1rem!important; overflow: visible; font-weight: 700;}
+body.page-template-faq .faq-search-form input::-moz-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size: 1rem!important; overflow: visible; font-weight: 700;}
+body.page-template-faq .faq-search-form input:-ms-input-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size: 1rem!important; overflow: visible; font-weight: 700;}
 .faq-search-btn{flex: 0 0 56px;}
 
 .faq-search-form .frm_forms .frm_form_fields .frm_form_field{margin-bottom: 0;}

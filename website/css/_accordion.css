@@ -6,6 +6,7 @@
 .accordion-item:hover a {color: var(--Foreground);}
 
 .accordion-item .accordion-heading { display: block; line-height: 1.5; font-size: 1rem; color: var(--Dark-Gray); text-decoration: none; font-weight:bold; padding:16px 56px 16px 8px; position: relative; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out;}
+.accordion-item.active .accordion-heading{color: var(--Foreground);}
 
 .accordion-item .accordion-heading::after {color: var(--Sienna-Orange); content: "\f078"; font-family: "Font Awesome 7 Pro"; font-style: normal; font-weight: 400; font-size: 1.333rem; line-height:1;  right: 8px; position: absolute; top:50%; transform: translateY(-50%); transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out;}
 .accordion-item.active .accordion-heading::after {transform: translateY(-50%) rotate(180deg);}
