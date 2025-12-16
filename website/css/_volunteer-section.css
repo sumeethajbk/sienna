@@ -1,5 +1,5 @@
 
-.volunterr-lt{font-size: 1.333rem; color: var(--Foreground); font-family: "Ivar Display", sans-serif; font-weight: 700;}
+.volunterr-lt{font-size: 1.333rem; color: var(--Foreground); font-family: "Ivar Display", sans-serif; font-weight: 700; line-height: 1.2;}
 .volunterr-lt h1{font-size: 2.667rem; color: var(--Sienna-Orange); margin-bottom: 20px;}
 .volunterr-rt{background: var(--Tint-Orange); padding: 32px 40px;}
 
