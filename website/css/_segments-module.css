@@ -8,7 +8,7 @@
 .segments-cnt {padding: 32px;}
 .segments-cnt p {font-size: 1.333rem; color: var(--Dark-Gray); margin-bottom: 27px;}
 .segments-module:has(> .segments-inner:only-child) {gap: 0;}
-
+.segments-module .segments-inner .h3:last-child {margin-bottom: 0;}
 
 
 @media only screen and (max-width:1023px) and (min-width:200px) {  

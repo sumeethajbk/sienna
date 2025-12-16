@@ -556,7 +556,7 @@ ul.quiz-page-navigation > li:first-child:before{display: none;}
     .frm_first {margin-right: 16px;}
     .frm_half {width: calc(50% - 8px);}
     
-    .shadow {right: -24px!important; left: auto!important;}
+    .shadow {left: -24px!important; right: auto!important;}
     
     .w-fit {width: fit-content;}
 
@@ -600,7 +600,7 @@ ul.quiz-page-navigation > li:first-child:before{display: none;}
     .readmore:after {font-size: 0.889rem; line-height: 1;}
     
     .play-btn {width: 67px; height: 67px;}
-    .play-btn span.play-btn-wrap {width: 32px; height: 32px;}
+    .play-btn span.play-btn-wrap {width: 32px; height: 32px; position: relative; top: -2px;}
     
     .fluid-width-wrapper {padding: 0;}
     blockquote {padding: 31px 30px 33px 30px;}
