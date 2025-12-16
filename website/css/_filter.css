@@ -5,7 +5,7 @@
 .filter-cat ul li a {font-size: 0.889rem; font-weight: bold; display: inline-block; line-height: 1; padding:11px 16px 11px 15px; border-radius: 60px; border: 1.25px solid transparent; background: var(--Tint-Pink);}
 .filter-cat ul li a:after {display: none;}
 .filter-cat ul li a:hover {border: 1.25px solid var(--Sienna-Orange);}
-.filter-cat ul li.active a {background: var(--Umber-3); color: var(--white); border: 1.25px solid var(--Umber-3);}
+.filter-cat ul li a.active {background: var(--Umber-3); color: var(--white); border: 1.25px solid var(--Umber-3);}
 .filter-cat ul li.toggle-list {display: none;}
 
 @media only screen and (max-width: 1023px) and (min-width: 200px){

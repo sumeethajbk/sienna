@@ -121,22 +121,38 @@ jQuery(document).ready(function () {
 
 
   /* Form */
+    jQuery('.frm_form_field input, .frm_form_field textarea').on('input', function () {
+    var inputLength = jQuery(this).val().length;
+    if (inputLength > 0) {
+      jQuery(this).addClass('input-has-value')
+    } else {
+      jQuery(this).removeClass('input-has-value')
+    }
+  });
+  jQuery('.frm_form_field input, .frm_form_field textarea').on('blur', function () {
+    var inputValue = jQuery(this).val();
+    if (parseFloat(inputValue) > 0 && inputValue.trim() !== '') {
+      jQuery(this).addClass('highlight')
+    } else {
+      jQuery(this).removeClass('highlight')
+    }
+  });
   jQuery(".frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea").on('focus', function () {
     jQuery(this).siblings(".frm_form_field").addClass("input-has-value");
     jQuery(this).parent(".frm_form_field ").removeClass("frm_blank_field");
-
-    jQuery(this).siblings(".frm_error").hide();
+    jQuery(this).siblings("label.frm_primary_label").addClass("label-top");
+    jQuery(this).siblings(".frm_error").hide()
   }).on('blur', function () {
     if (!jQuery(this).val()) {
       jQuery(this).siblings(".frm_form_field").removeClass("input-has-value");
       jQuery(this).siblings(".frm_error").show();
       jQuery(this).parent(".frm_form_field ").addClass("frm_blank_field");
-
+      jQuery(this).siblings("label.frm_primary_label").removeClass("label-top")
     } else {
       jQuery(this).siblings(".frm_form_field").addClass("input-has-value");
       jQuery(this).parent(".frm_form_field ").removeClass("frm_blank_field");
-
-      jQuery(this).siblings(".frm_error").hide();
+      jQuery(this).siblings("label.frm_primary_label").addClass("label-top");
+      jQuery(this).siblings(".frm_error").hide()
     }
   });
 

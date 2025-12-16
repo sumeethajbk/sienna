@@ -19,7 +19,7 @@
 body .signup-module .signup-form .frm_forms .frm_submit button{background: var(--Dark-Gray);}
 .signup-module .signup-form .frm_forms .frm_message {text-align: center; margin: 0 20px; line-height: 1.2; color: var(--white); font-family: "Blackbird", sans-serif;}
 .signup-module .signup-form .frm_forms .frm_message p {margin: 0; text-align: center; color: var(--white);}
-.signup-module .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {color:var(--white)!important; bottom: -26px;}
+.signup-module .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {color:var(--white)!important;}
 
 .signup-module ::-webkit-input-placeholder {opacity: 1!important; font-size: 1rem!important; color: var(--Foreground)!important;}
 .signup-module:-moz-placeholder {opacity: 1!important; font-size: 1rem!important;color: var(--Foreground)!important;}
@@ -50,5 +50,5 @@ body .signup-module .signup-form .frm_forms .frm_submit button{background: var(-
     .signup-module .signup-form .frm_forms .frm_form_fields input, .signup-module .signup-form .frm_forms .frm_form_fields input:focus, .signup-module .signup-form .frm_forms .frm_form_fields input:hover {font-size: 0.889rem; padding:9px 70px 9px 12px;}
     .signup-module .signup-form .frm_forms .frm_submit-btn button {font-size: 0!important; width: 56px; height: 56px; border-radius: 50%;}
     .signup-module .signup-form .frm_forms .frm_submit-btn button:before {content:"\f1d8"; font-size: 1.111rem; font-weight: 400;  font-family: "Font Awesome 7 Sharp"; display: flex; justify-content: center;}
-    .signup-module .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {bottom: 65px;}
+
 }

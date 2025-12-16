@@ -36,7 +36,7 @@
 
 .storiesl-main {gap:48px;}
 .storiesl-section {clear: both; width: 100%; padding: 80px 0;}
-.storiesl-lists {gap:40px 3.3333333333333335%;}
+.storiesl-lists {gap:40px 3.3333333333333335%; margin: 0;}
 .storiesl-image {height: 373.3px; overflow: hidden; clear: both; width: 100%;}
 .storiesl-item {width: 31.10833333333333%;}
 .storiesl-details {padding: 33px 32px 32px 32px; clear: both; width: 100%;}

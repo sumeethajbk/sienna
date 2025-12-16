@@ -1,6 +1,8 @@
 .collage-banner {float: left; width: 100%; z-index: 1; position: relative; background: var(--Tint-Orange); padding: 168px 0 0 0; margin:0 0 120px 0;}
 .collage-banner h1 {color: var(--Sienna-Orange); font-size: 7.111rem; line-height: 1; width: 98%; margin-bottom: 40px;}
+.collage-banner:not(:has(.collage-row)) {margin-bottom: 0; padding-bottom: 80px;}
 .collage-row {justify-content: space-between; margin-bottom: -120px; gap: 2.941176470588235%;}
+.collage-row .collage-grid:only-child .photo-1-of-1 {flex:1;}
 .collage-grid {width:48.529411764705884%; gap: 40px; display: flex; flex-wrap: wrap; flex-grow: 1;}
 
 
@@ -10,6 +12,10 @@
 .photo-txt {background: var(--white); padding:33px 40px 32px 40px; font-size: 1.333rem; line-height: 1.5; color: var(--Dark-Gray);}
 .photo-txt p {margin-bottom: 31px;}
 .photo-txt p:last-child {margin-bottom: 0;}
+
+@media only screen and (max-width:1023px) and (min-width:200px) {
+.collage-banner:not(:has(.collage-row)) {margin-bottom: 0; padding-bottom: 20px;}
+}
 
 @media only screen and (max-width:1023px) and (min-width:768px) {
     .collage-banner {padding: 80px 0 0 0;}
