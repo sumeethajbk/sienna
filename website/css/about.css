@@ -7,9 +7,14 @@
 @import url("_signup-module.css");
 
 .introduction-module {background: var(--Tint-Orange);}
+.introduction-module + .affiliation-section {padding-top: 80px;}
+.vision-module + .repeater-section .repeater-list:first-child .repeater-list-inner {padding-top: 0;}
 .affiliation-section + .repeater-section .repeater-list:first-child .repeater-list-inner {padding-top: 40px;}
 .affiliation-section + .repeater-section .repeater-list:last-child .repeater-list-inner {padding-bottom: 88px;}
+.affiliation-section:has(+ .segments-module) {padding-bottom: 0;}
+.affiliation-section + .segments-module:before {display: none;}
 .segments-module:before {background: var(--Foreground); opacity: 0.2; content: ""; display: block; max-width:calc(1344px - 64px); height: 1px; margin: 0 auto; width: 100%; top: -80px; position: relative;}
+
 
 /*-- media css starts here --*/
 
