@@ -302,11 +302,12 @@ body ul.selectBox-dropdown-menu li.frm-select-placeholder/*, body ul.selectBox-d
 
 /* Checkbox */
 .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"], 
-.frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input[type="checkbox"] {position: absolute; left: 0; width: 32px!important; height: 32px!important; cursor: pointer;  outline: none!important; padding: 0 !important; background: var(--Sienna-Orange)!important; border:0 none!important; top: -1px; border-radius: 0 !important;}
+.frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input[type="checkbox"] {position: absolute; left: 0; width: 32px!important; height: 32px!important; cursor: pointer;  outline: none!important; padding: 0 !important; background: var(--Sienna-Orange)!important; border:0 none!important; top: 50%; transform: translateY(-50%); border-radius: 0 !important;}
 .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:checked:before { content: "\f00c"; font-family: "Font Awesome 7 Sharp"; display: block; height: 14px !important; left:50%; position: absolute !important; top: 50%; width: 14px !important; transform: translate(-50% , -50%); font-weight: 900; color: var(--white); font-size: 14px; clip-path: inherit; box-shadow: none; text-align: center; margin: 0; line-height: 14px;}
 .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:before {display: none; background-image: none!important;}
 .frm_forms.with_frm_style .frm_checkbox label {padding-left:44px; display:block; cursor: pointer; line-height: 1.5; font-size: 0.778rem !important; font-weight: 400 !important; position: relative;}
 .frm_forms.with_frm_style .frm_checkbox label a{color: var(--Foreground); text-decoration-line: underline; text-decoration-style: solid; text-decoration-skip-ink: auto; text-decoration-color: var(--Sienna-Orange); text-decoration-thickness: 8%; text-underline-offset: auto; text-underline-position: from-font;}
+.frm_forms.with_frm_style .frm_checkbox label a:hover{color: var(--Sienna-Orange);}
 .frm_forms.with_frm_style .frm_fields_container .frm_checkbox input[type="checkbox"]:not([disabled]):checked {background: var(--Sienna-Orange)!important;}
 .frm_forms.with_frm_style .frm_fields_container .frm_radio input[type="radio"]:not([disabled]):checked, .frm_forms.with_frm_style .frm_fields_container .frm_scale input[type="radio"]:not([disabled]):checked, .frm_forms.with_frm_style .frm_fields_container .frm_checkbox input[type="checkbox"]:not([disabled]):checked {border:0 none!important;}
 .frm_filed_wrapper .vertical_radio .frm_checkbox {margin: 0;}
@@ -638,6 +639,8 @@ ul.quiz-page-navigation > li:first-child:before{display: none;}
     .frm_forms .frm_form_fields textarea {padding: 6px;}
     .frm_forms .frm_form_fields .selectBox-dropdown {font-size: 0.667rem; padding: 14px 38px 14px 6px !important;}
     .frm_forms .frm_form_fields textarea {height: 135px;}
+    .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"], 
+.frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input[type="checkbox"] {top: 0; transform: none;}
     
     body .selectBox-dropdown .selectBox-arrow {right: 6px;}
     body ul.selectBox-dropdown-menu li a {font-size: 0.667rem; padding: 5px 6px;}

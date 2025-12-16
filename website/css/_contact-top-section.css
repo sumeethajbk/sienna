@@ -13,4 +13,5 @@
 @media screen and (max-width: 767px) and (min-width: 200px){
     .contact-top-main{padding: 28px 0 16px;}
     .contact-top-heading{font-size: 1.333rem;}
+    .contact-top-heading h1{font-size: 2.667rem;}
 }
