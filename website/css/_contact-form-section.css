@@ -6,7 +6,7 @@ ul.tab-list li::before{display: none;}
 .tab{padding: 12px; cursor: pointer; display: block; font-weight: 700; font-size: 1.111rem; line-height: 1.2; font-family: "Ivar Display", sans-serif; text-align: left; color: var(--Foreground);}
 .tab[aria-selected="true"]{color: var(--Sienna-Orange);}
 ul.tab-list li:has(.tab[aria-selected="true"]) { border: none; background: var(--Tint-Orange);}
-.tab-name{ max-width: 148px; margin: 0 auto; display: block;}
+.tab-name{ max-width: 140px; margin: 0 auto; display: block;}
 .panel{padding: 32px 40px 35px; background: var(--Tint-Orange);}
 .tab-hidden{display: none; }
 
