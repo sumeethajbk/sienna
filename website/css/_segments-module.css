@@ -3,10 +3,11 @@
 .segments-module .optional-text {color: var(--Foreground);}
 .segments-module .h3 {color: var(--Foreground); margin-bottom: 50px;}
 .segments-grid-wrapper {gap:48px 4%;}
-.segments-grid {width: 48%; flex-grow: 1; background: var(--Tint-Blue);}
+.segments-grid {width: 48%; flex-grow: 1; background: var(--Tint-Blue); display: flex; flex-direction: column; justify-content: space-between;}
 .segments-thumb {clear: both; width: 100%; height: 384px; overflow: hidden;}
-.segments-cnt {padding: 32px;}
+.segments-cnt {padding: 32px; display: flex; flex-direction: column; flex-grow: 1;}
 .segments-cnt p {font-size: 1.333rem; color: var(--Dark-Gray); margin-bottom: 27px;}
+.segments-cnt .btn-wrap {margin-top: auto;}
 .segments-module:has(> .segments-inner:only-child) {gap: 0;}
 .segments-module .segments-inner .h3:last-child {margin-bottom: 0;}
 

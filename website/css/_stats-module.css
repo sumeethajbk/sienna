@@ -1,4 +1,6 @@
 .stats-module {background: var(--Tint-Green);}
+.stats-module .secwrapper {gap:88px;}
+.stats-module .h1 {margin: 0 0 20px;}
 .stats-wrap {gap:48px 4%; justify-content: space-between;}
 .stats-grid {width:22%; flex-grow: 1;}
 .stats-grid .h6 {color: var(--Foreground);}
@@ -15,10 +17,12 @@
 @media only screen and (max-width:1023px) and (min-width:768px) {
     .stats-wrap {gap:60px 40px;}
     .stats-grid {width: 47%;}
+    .stats-module .secwrapper {gap:48px;}
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {
     .stats-module .secwrapper {gap: 61px;}
+    .stats-module .h1 {margin: 0 0 13px;}
     .stats-wrap{width: 100%; display: flex; gap:28px; flex-wrap: wrap;} 
     .stats-grid {width: 100%;}
     .stats-grid .number {margin: 0 0 2px 0; font-size:2.667rem;}

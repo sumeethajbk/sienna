@@ -10,9 +10,13 @@
 
 /*-- media starts here --*/
 @media only screen and (max-width: 1023px) and (min-width:768px){
-    .cta-main {gap:4%;}
-    .cta-main .cta-text {padding: 30px 0 70px 0;}
-    .cta-main .cta-text .h2 {font-size: 3rem;}
+    .cta-module {padding: 0;}
+    .cta-main {gap:3.2171581769436997%;}
+    .cta-main .cta-text {padding: 48px 0 48px 0;}
+    .cta-main .cta-text .h2 {font-size: 3rem; margin-bottom: 21px;}
+    .cta-main .cta-text p {font-size: 1rem; margin-bottom: 30px;}
+    .cta-main .cta-thumb {max-width: 42.093%;}
+    .cta-main .cta-thumb figure {width: 444px;}
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 200px){
@@ -22,7 +26,8 @@
     .cta-main .cta-text {max-width: 100%; padding:0; width: 100%; text-align: center;}
     .cta-main .cta-text .h2 {margin-bottom: 15px;}
     .cta-main .cta-text p {font-size: 1rem; margin-bottom: 31px;}
-    .cta-main .cta-thumb {max-width: 90.185%; margin: 0 auto;}
+    .cta-main .cta-thumb {max-width: 100%;}
+    .cta-main .cta-thumb figure {width: 90.185%; margin: 0 auto;}
     .cta-main .cta-thumb .btn-wrap {justify-content: center; flex-direction: column;}
     .cta-main .cta-thumb .btn-wrap .button {width: 100%;}
 }

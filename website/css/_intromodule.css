@@ -1,7 +1,7 @@
 .introduction-module {width: 100%; z-index: 1; position: relative; clear: both; background: var(--white); padding: 79px 0 79px;}
 .introduction-module .secwrapper {gap: 80px;}
 .introduction-module .section-intro .h1 {margin: 0 0 20px;}
-.introduction-wrap {width: 100%; gap:6.666666666666667%; flex-direction: row-reverse;}
+.introduction-wrap {width: 100%; gap:6.666666666666667%; flex-direction: row-reverse; align-items: center;}
 .introduction-thumb {width: 58.333333333333336%; flex-grow: 1;}
 .introduction-thumb .video-thumbnail > img, .introduction-thumb .static-thumbnail > img {min-height: 393px; max-height: 393px;}
 .introduction-txt {width: 35%; color: var(--Dark-Gray); flex-grow: 1;}
