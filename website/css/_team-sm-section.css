@@ -21,6 +21,13 @@ span.team-sm-role{font-size: 0.889rem; display: block; line-height: 1.5; opacity
     .team-sm-item{flex: 0 0 calc(33.333% - 27px); gap: 24px;}
 }
 
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .team-sm-item{gap: 12px; }
+    .team-sm-img{width: 100px;}
+    .team-sm-email a span.fa-at{font-size: .8rem; width: 15px; }
+    .team-sm-email a span.team-sm-email-name{font-size: .8rem;}
+
+}
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .team-sm-main{padding: 48px 0;}
     .team-sm-heading{margin-bottom: 32px; width: 100%;}

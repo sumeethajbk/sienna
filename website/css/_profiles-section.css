@@ -5,6 +5,7 @@
 .profiles-details span{font-size: 1.333rem; line-height: 1.5; display: block;}
 .profiles-btn-wrap{gap: 16px; margin-bottom: 32px;}
 .profiles-group ul{margin-top: 16px;}
+.profiles-group ul li{font-size: 0.889rem; line-height: 1.5; margin-bottom: 16px;}
 
 .profiles-rt-content{margin-bottom: 40px;}
 .profiles-rt-content h2{margin-bottom: 40px;}
