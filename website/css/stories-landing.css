@@ -26,7 +26,7 @@
 .stories-news-top-rt-inner {gap:24px; display: flex; flex-direction: column; width: 100%;}
 .stories-news-top-rt-inner .stories-news-post {height: inherit;}
 .stories-news-top-rt-inner .stories-news-post .stories-news-thumb {width: 104px; height: 104px; margin-bottom: auto;}
-.stories-news-top-rt .stories-news-txt {width: calc(100% - 128px); display: flex; flex-wrap: wrap; max-width: 100%; align-items: flex-start; padding: 0;}
+.stories-news-top-rt .stories-news-txt {width: calc(100% - 128px); display: flex; flex-wrap: wrap; max-width: 100%; align-items: flex-start; padding: 3px 0;}
 .stories-news-top-rt .stories-news-txt .h6 {font-size: 1rem; line-height: 1.25; margin: 0;}
 .stories-news-top-rt .stories-news-txt .readmore {font-size: 0.778rem; font-weight: normal; color: var(--Foreground); margin: 8px 0 0 0; gap:9px;}
 .stories-news-top-rt .stories-news-txt .readmore::after {font-size: 0.778rem; content: "\f061";}
@@ -36,7 +36,7 @@
 
 .storiesl-main {gap:48px;}
 .storiesl-section {clear: both; width: 100%; padding: 80px 0;}
-.storiesl-lists {gap:40px 3.3333333333333335%; margin: 0;}
+.storiesl-lists {gap:40px 3.3333333333333335%; margin: 0 0 48px 0;}
 .storiesl-image {height: 373.3px; overflow: hidden; clear: both; width: 100%;}
 .storiesl-item {width: 31.10833333333333%;}
 .storiesl-details {padding: 33px 32px 32px 32px; clear: both; width: 100%;}
@@ -49,7 +49,11 @@
 .storiesl-head {width: 100%; clear: both;}
 
 
+
 @media screen  and (min-width: 1024px){
+    .storiesl-head .heading-lt {flex: initial; width: fit-content;}
+    .storiesl-head .heading-rt {width: fit-content; flex:1;}
+    .storiesl-head .heading-rt .heading-form {max-width: 562px;}
     .stories-news-top-lt .stories-news-txt h2 {font-size: 1.778rem;}
 }
 
@@ -92,7 +96,11 @@
     .storiesl-main {gap:32px;}
     
     .circle-arrow-btn span.fa-sharp {width: 48px; height: 48px; font-size: 1.111rem;}    
-    
+    .storiesl-lists:has(> .no-stories) {margin: 0;}
+    .storiesl-head .heading-lt {flex: initial; width: fit-content;}
+    .storiesl-head .heading-rt {width: fit-content; flex:1;}
+    .storiesl-head .heading-rt .heading-form {max-width: 430px;}
+    .storiesl-head .heading-rt .form-field {width: 47%;}
     
 }
 
@@ -120,5 +128,6 @@
     .storiesl-section {padding: 28px 0;}
     
     .storiesl-main {gap:28px;}
+    .storiesl-lists:has(> .no-stories) {margin-bottom: 10px;}
     
 }

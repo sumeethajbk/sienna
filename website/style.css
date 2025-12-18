@@ -365,8 +365,8 @@ body .frm_style_formidable-style.with_frm_style input.frm_other_input:not(.frm_o
 .heading-rt{  display: flex; justify-content: flex-end; width: 46.666666666666664%;}
 .heading-rt .heading-form {width: 100%;}
 .heading-rt:only-child {justify-content: flex-start;}
-.heading-rt form {justify-content: flex-end; width: 100%; display: flex; gap:20px;}
-.heading-rt .form-field {position: relative; flex:1;}
+.heading-rt form {justify-content: flex-end; width: 100%; display: flex; flex-wrap: wrap;}
+.heading-rt .form-field {position: relative; width: 48%; margin-left: 20px; display: inline-block;}
 .heading-rt .form-field:first-child {margin-left: 0}
 .heading-rt .form-field .selectBox-dropdown .selectBox-arrow {font-size: 1.333rem; right: 15px;}
 body ul.selectBox-dropdown-menu {border-radius: 10px !important;}
@@ -494,6 +494,8 @@ ul.quiz-page-navigation > li:first-child:before{display: none;}
 .quiz-content-main .location-details ul li span.fa-sharp{font-size: 1.111rem; line-height: 1.5; color: var(--Sienna-Orange); font-weight: 400;}
 .quiz-content-main .location-details ul li span{color: var(--Foreground); font-size: 1rem; font-weight: bold; line-height: 1.5; }
 .quiz-content-main .location-details .circle-arrow-btn span.fa-sharp{background: var(--Tint-Orange);}
+
+.load_more_events, .search-wrap {clear: both; width: 100%;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width:1024px) {
