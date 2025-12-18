@@ -143,6 +143,7 @@ body {font-family: "Blackbird", sans-serif;  color:var(--body-text); font-size:â
 .btn {display:block;}
 .btn-wrap {width:100%; clear:both; font-size: 0; display: flex; flex-wrap: wrap; gap:20px; align-items: center;}
 .optional-text {font-size:1rem; color:var(--optional-txt); font-weight: bold; margin:0 0 18px 0; display:block; line-height: 1.2; width: 100%; font-family: "Blackbird",sans-serif; opacity: 0.5;}
+p:empty {display: none;}
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {color:var(--heading); text-decoration: none;}
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .h1 a:hover, .h2 a:hover, .h3 a:hover, .h4 a:hover, .h5 a:hover, .h6 a:hover {color:var(--Sienna-Orange);}
