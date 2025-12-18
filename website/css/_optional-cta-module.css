@@ -34,7 +34,7 @@
     .optional-cta-main .optional-cta-text .h1 {font-size: 1.778rem; line-height: 1.2; margin-bottom: 12px;}
     .optional-cta-main .optional-cta-thumb {height: 83.6vw;}
     .optional-cta-main .optional-cta-text p {font-size: 1rem; margin-bottom:19px;}
-    .optional-cta-main .optional-cta-text .optional-cta-logo {max-width: 212px; margin: 0 auto 8px;}
+    .optional-cta-main .optional-cta-text .optional-cta-logo {max-width: 212px; margin: 0 auto 12px;}
     .optional-cta-main .optional-cta-text .optional-cta-logo img{max-width: 212px; max-height: 81px;}
    
 }

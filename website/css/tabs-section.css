@@ -112,4 +112,5 @@
     .tab-pos-link { margin-top: 16px; }
 
     .tab-text{min-height: 87px; padding: 28px 16px 16px;}
+    .tab-head::after {bottom: 6px; }
 }
