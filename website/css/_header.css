@@ -82,7 +82,7 @@ ul.main_menu > li.menu-item-has-children > a:hover,
 ul.main_menu > li.current_page_item>a, 
 ul.main_menu > li > a:hover, 
 ul.main_menu > li.current_page_item a > span, 
-ul.main_menu > li.current_page_ancestor li.current-page-ancestor a > span {color:var(--Foreground);}
+ul.main_menu > li.current_page_ancestor li.current-page-ancestor a > span {color:var(--Sienna-Orange);}
 ul.main_menu > li.menu-item-has-children > a::after {height: 4px; bottom: 0;}
     
 ul.main_menu > li.menu-button a {background: var(--white); border-radius:60px; padding:11px 14px 10px 14px; border: 2px solid transparent;  outline:4px solid transparent;}
@@ -203,12 +203,16 @@ ul.main_menu li.flex-menu > ul > li.hide-menu, ul.main_menu li > ul > li.hide-me
 .mobile_menu ul.main_menu > li:last-child{border: none;}
 .mobile_menu ul.main_menu > li.menu-button{padding: 24px;}
 .mobile_menu ul.main_menu > li.menu-button a{display: inline-block; font-size: 1.333rem; font-weight: 700; line-height: 100%; vertical-align: middle; cursor: pointer; border: 0 none; background-color: var(--button); position: relative; transition: all .35s ease-in-out; -webkit-transition: all .35s ease-in-out; -moz-transition: all .35s ease-in-out; text-align: center; color: var(--white); font-family: "Blackbird", sans-serif; text-decoration: none; overflow: hidden; z-index: 1; border-radius: 300px; outline: 4px solid transparent; outline-color: transparent; outline-width: 4px; box-sizing: border-box; padding: 16px 20px 16px 20px; width: 100%;}
-.mobile_menu ul.main_menu > li.menu-item-has-children > a::after{top: 50%; transform: translateY(-50%); right: 21px; font-size: 1.111rem; content: "\f078"; font-weight: 900; font-family: "Font Awesome 7 Sharp"; display: block; position: absolute; color: var(--Sienna-Orange); }
+.mobile_menu ul.main_menu > li.menu-item-has-children > a::after{top: 50%; transform: translateY(-50%); right: 21px; font-size: 1.111rem; content: "\f078"; font-weight: 900; font-family: "Font Awesome 7 Sharp"; display: block; position: absolute; color: var(--Sienna-Orange); transition: all .5s ease;}
+.mobile_menu ul.main_menu > li.menu-item-has-children > a.active::after{transform: translateY(-50%) rotate(-180deg); color: var(--Umber);}
+.mobile_menu ul.main_menu > li.separate-menu-link > a::after{top: 50%; transform: translateY(-50%); right: 21px; font-size: 1.111rem; content: "\f08e"; font-weight: 900; font-family: "Font Awesome 7 Sharp"; display: block; position: absolute; color: var(--Sienna-Orange); transition: all .5s ease;}
 
 /* .mobile_menu ul.main_menu li:before {display: none;}  */
 
 .mobile_menu ul.main_menu > li > a {transition-duration: .8s;}
 .mobile_menu ul.main_menu > li > a {display:block; position: relative; box-sizing: border-box; color:var(--Foreground); font-weight: 700; font-size: 1rem;  line-height: 1; padding: 18px 24px;} 
+.mobile_menu ul.main_menu > li:not(.menu-button) > a:hover{color: var(--Sienna-Orange); }
+
 
 .mobile_menu ul.main_menu > li:first-child>a {border: 0 none;}
 
@@ -250,6 +254,8 @@ ul.main_menu li.flex-menu.cta-flex-menu > ul > li.menu-cta .cta-brand-icon {disp
     ul.main_menu li.flex-menu > ul > li ul {margin:5px 0 0 0;}    
     ul.main_menu li.flex-menu > ul > li ul li {width: 100%; margin-bottom: 16px;}
     ul.main_menu li.flex-menu > ul > li ul li:last-child{margin-bottom: 0;}
+    ul.main_menu li.flex-menu > ul > li ul li.menu-quiz-icon span{font-family: "Blackbird",sans-serif; font-size: 1rem; line-height: 1.5; color: var(--Sienna-Orange);}
+    ul.main_menu li.flex-menu > ul > li ul li.menu-quiz-icon::after{top: 50%; transform: translateY(-50%); right: 0; font-size: 1.333rem; content: "\f059"; font-weight: 400; font-family: "Font Awesome 7 Sharp"; display: block; position: absolute; color: var(--Sienna-Orange); transition: all .5s ease; }
     ul.main_menu li.flex-menu > ul > li ul li::before{display: none;}
     ul.main_menu li.flex-menu > ul > li ul li, ul.main_menu li.flex-menu > ul > li ul li:nth-child(2) {border-top: 1px solid rgba(255, 255, 255, 0.1)!important;}
     ul.main_menu li.flex-menu > ul > li ul li a .menu-text {padding: 14px 20px 10px;}
@@ -279,6 +285,11 @@ ul.main_menu li.flex-menu.cta-flex-menu > ul > li.menu-cta .cta-brand-icon {disp
 html.no-scroll {overflow:hidden;}
 
 .main_header .header .toggle_button, .main_header ul li:before {display: block;}
+
+
+  
+
+
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {
