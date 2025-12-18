@@ -73,8 +73,8 @@
 
 
 .room-slider-module .figcaption {background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(4px); padding: 24px 32px; position: absolute; bottom: 40px; left: 40px; max-width: 1136px; font-size: 0.889rem; line-height: 1.5; color: var(--Foreground); width: calc(100% - 304px);}
-.room-slider-module .figcaption-head {display: flex; flex-wrap: wrap; margin: 0 0 12px 0;}
-.room-slider-module .figcaption-head .h5 {margin: 0; padding-right: 16px;}
+.room-slider-module .figcaption-head {display: flex; flex-wrap: wrap; margin: 0 0 12px 0; align-items: center;}
+.room-slider-module .figcaption-head .h5 {margin: 0; padding-right: 16px; width: fit-content;}
 .download-floor {font-size: 1rem; width: fit-content; border-left: 1px solid var(--Sienna-Orange); display: flex; align-items: center;
   flex-wrap: wrap; padding: 0 0 0 16px;}
 .download-floor a {color: var(--black-60); font-weight: bold;}
@@ -119,7 +119,7 @@
 .contact-list ul li span.fa-sharp{font-size:1rem; line-height: 27px; max-width: 20px; color: var(--Sienna-Orange);}
 
 .community-form-rt {flex:1;}
-.community-form .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"], .community-form .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input[type="checkbox"] {width: 24px!important; height: 24px!important; top: 0; bottom: 0; margin: auto;}
+.community-form .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"], .community-form .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input[type="checkbox"] {width: 24px!important; height: 24px!important; margin: auto;}
 .community-form .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:checked::before {font-size: 0.778rem; font-weight: normal;}
 .community-form .frm_forms.with_frm_style .frm_checkbox label {padding-left: 32px; font-size: 0.889rem!important; margin: 0;}
 .community-form .frm_forms .frm_filed_wrapper {padding-top: 4px;}
