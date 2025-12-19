@@ -75,8 +75,7 @@
 .room-slider-module .figcaption {background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(4px); padding: 24px 32px; position: absolute; bottom: 40px; left: 40px; max-width: 1136px; font-size: 0.889rem; line-height: 1.5; color: var(--Foreground); width: calc(100% - 304px);}
 .room-slider-module .figcaption-head {display: flex; flex-wrap: wrap; margin: 0 0 12px 0; align-items: center;}
 .room-slider-module .figcaption-head .h5 {margin: 0; padding-right: 16px; width: fit-content;}
-.download-floor {font-size: 1rem; width: fit-content; border-left: 1px solid var(--Sienna-Orange); display: flex; align-items: center;
-  flex-wrap: wrap; padding: 0 0 0 16px;}
+.download-floor {font-size: 1rem; width: fit-content; border-left: 1px solid var(--Sienna-Orange); padding: 0 0 0 16px;}
 .download-floor a {color: var(--black-60); font-weight: bold;}
 .download-floor a:hover {color: var(--anchor-hover)}
 .download-floor a:after {content: "\f019"; position: relative; display: inline-block; font-size:1rem; font-family: "Font Awesome 7 Sharp"; font-weight:400; line-height: 1.2; color: var(--Sienna-Orange); margin:0 0 0 9px; animation: bounceTopToBottom 2s ease-out infinite;}
@@ -124,7 +123,8 @@
 .community-form .frm_forms.with_frm_style .frm_checkbox label {padding-left: 32px; font-size: 0.889rem!important; margin: 0;}
 .community-form .frm_forms .frm_filed_wrapper {padding-top: 4px;}
 
-
+body .location-intro-main .frm_forms .frm_submit button, body .location-intro-main .frm_forms .frm_submit button:hover{background-color: var(--Sienna-Orange);}
+body .community-form-inner .frm_forms .frm_submit button, body .community-form-inner .frm_forms .frm_submit button:hover{background-color: var(--Sienna-Orange);}
 
 /*-- media css starts here --*/
 @media only screen and (max-width: 1280px) and (min-width:1024px) {
