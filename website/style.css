@@ -412,7 +412,7 @@ position: relative; z-index: 1; text-decoration: none; background-color:transpar
 .sharethis-inline-share-buttons .st-btn[data-network=sharethis] span {display: block!important; font-size: 1.778rem; color: var(--Foreground)!important; line-height: 1.2; font-family: "Ivar Display", sans-serif; font-weight: bold!important; padding: 0!important; letter-spacing: normal!important; text-align: left;}
 
 .sharethis-inline-share-buttons .st-btn:hover {opacity: 1 !important; top: 0!important; color: var(--Foreground);}
-.sharethis-inline-share-buttons .st-btn[data-network=sharethis]:hover {color: var(--Sienna-Orange);}
+.sharethis-inline-share-buttons .st-btn[data-network=sharethis]:hover {color: var(--Foreground);}
 .sharethis-inline-share-buttons .st-btn span, .sharethis-inline-share-buttons .st-btn img {display: none!important;}
 .at4-visually-hidden {display: none;}
 
@@ -496,6 +496,8 @@ ul.quiz-page-navigation > li:first-child:before{display: none;}
 .quiz-content-main .location-details .circle-arrow-btn span.fa-sharp{background: var(--Tint-Orange);}
 
 .load_more_events, .search-wrap {clear: both; width: 100%;}
+
+p:empty{display: none;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width:1024px) {
