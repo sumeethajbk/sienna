@@ -1,6 +1,7 @@
 @import url("default-page.css");
 
 .hero-banner-main .hero-banner-text h1 {max-width: 460px;}
+.features-module-main + .default-section .default-main {padding-top: 0;} 
 
 /* Dividend Module */
 .dividend-module {clear: both; width: 100%; position: relative; background: var(--Tint-Pink); padding: 80px 0;}
@@ -35,6 +36,7 @@
 .analyst-coverage-lt .h3:after {content: ""; width: 80px; height: 2px; background-color: var(--Sienna-Orange); display: block; margin:31px 0 31px;}
 .analyst-coverage-lt p {font-size: 1.111rem; color: var(--Dark-Gray);}
 .analyst-coverage-lt .readmore {margin-top: 16px;}
+.analyst-coverage + .default-section .default-main {padding-top: 0;}
 
 .analyst-coverage-rt {flex: 1;}
 .analyst-coverage-grids {gap:24px 2.9299363057324843%;}
@@ -137,7 +139,7 @@
 .year-filter > li > a:hover, .year-filter > li.active > a {background: var(--Sienna-Orange); color: var(--white);}
 
 .year-filter .more-yrs {z-index: 1;}
-.year-filter .more-yrs > a:hover:after {color: var(--white);}
+.year-filter .more-yrs > a:hover:after, .year-filter .more-yrs.active a:after {color: var(--white);}
 .year-filter .more-yrs > a:after {content: "\f078"; position: absolute; right:16px; top: 50%; transform: translateY(-50%) rotate(0deg); font-size: 1.333rem; font-family: 'Font Awesome 7 Sharp'; color: var(--Sienna-Orange); transition: all .5s ease-in-out; transform-origin: 50% 50%; font-weight: normal;}
 .year-filter .more-yrs.open > a:after{transform: translateY(-50%) rotate(180deg);}
 .year-filter .more-yrs > a {text-align:left;}
@@ -147,9 +149,12 @@
 .year-filter .more-menu li:first-child a {border-top-left-radius: 12px; border-top-right-radius: 12px;}
 .year-filter .more-menu li:last-child a {border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;}
 
+.default-section + .default-section .default-main {padding-top: 0;}
 .default-section h4:after {content: ""; width: 80px; height: 2px; background-color: var(--Sienna-Orange); display: block; margin:24px 0 24px;}
+.micro-cta-main .micro-cta-text .h5 {font-size: 2.222rem; line-height: 1.2;}
 .micro-cta-thumb {width: 274px;}
 .cta-module {background: var(--Tint-Blue);}
+br {display: none;}
 
 @media screen  and (min-width: 1024px){}
 
