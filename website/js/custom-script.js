@@ -137,7 +137,7 @@ jQuery(document).ready(function () {
       jQuery(this).removeClass('highlight')
     }
   });
-  jQuery(".frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea").on('focus', function () {
+  jQuery(".frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea").on(function () {
     jQuery(this).siblings(".frm_form_field").addClass("input-has-value");
     jQuery(this).parent(".frm_form_field ").removeClass("frm_blank_field");
     jQuery(this).siblings("label.frm_primary_label").addClass("label-top");
