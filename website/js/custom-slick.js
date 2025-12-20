@@ -8,7 +8,7 @@ jQuery(document).ready(function () {
     if ($el.hasClass('slick-initialized')) $el.slick('unslick');
     if (w > 767 && count > 2) {
       $el.removeClass('few-story').slick({
-        slidesToShow: 1,
+        slidesToShow: 2,
         arrows: true,
         variableWidth: true,
         infinite: false,

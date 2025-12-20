@@ -359,7 +359,7 @@ body .frm_style_formidable-style.with_frm_style input.frm_other_input:not(.frm_o
 /*-- common form css ends here --*/
 
 /* Heading */
-.heading {clear: both; idth: 100%; justify-content: space-between; align-items: center; display: flex; gap:10px;}
+.heading {clear: both; idth: 100%; justify-content: space-between; align-items: center; display: flex; gap:20px;}
 .heading-lt {flex:1; transition: all .3s ease-in-out;}
 .heading-lt :is(h1, h2, h3, h4, h5, h6) {margin-bottom: 0;}
 .heading-rt{  display: flex; justify-content: flex-end; width: 46.666666666666664%;}
