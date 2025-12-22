@@ -30,5 +30,6 @@
     .cta-main .cta-thumb figure {width: 90.185%; margin: 0 auto;}
     .cta-main .cta-thumb .btn-wrap {justify-content: center; flex-direction: column;}
     .cta-main .cta-thumb .btn-wrap .button {width: 100%;}
-    .no-cta-img .btn-wrap {display: block !important;}
+    .no-cta-img .btn-wrap {display: flex !important; flex-direction: column; width: 100%;}
+    .no-cta-img .btn-wrap .button{width: 100%;}
 }
