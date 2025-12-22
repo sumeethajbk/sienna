@@ -2,7 +2,7 @@
 .affiliation-title {display: flex; align-items: center; justify-content: center; gap: 13px; margin-bottom: 40px;}
 .affiliation-title::before,
 .affiliation-title::after {content: ""; flex: 1; height: 1px; background:var(--black-20);}
-.affiliation-title .h6 {margin: 0; line-height: 1.2;}
+.affiliation-title .h6 {margin: 0; line-height: 1.2; width: fit-content;}
 
 .affiliation-logos {display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap:50px; border-bottom: 1px solid var(--black-20); padding: 0 0 40px 0;}
 .affiliation-logos figure {margin: 0; padding: 0;}
