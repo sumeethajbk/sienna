@@ -1,7 +1,7 @@
 
 ul.resource_list{margin: 0;}
 .resource-lists, .resource_list{gap: 40px;}
-.resource-item{background-color: var(--Tint-Orange);}
+.resource-item{background-color: var(--Tint-Orange); display: flex; flex-direction: column;}
 
 .resource-heading{gap: 24px;}
 .resource-title{flex: 1; }
@@ -12,13 +12,14 @@ ul.resource_list{margin: 0;}
 .resource-filter .button.active{background: var(--Sienna-Orange); color: var(--white);}
 .resource-sort-dropdown{width: fit-content;}
 
-.resource-details{padding: 32px;}
+.resource-details{padding: 32px; display: flex; flex-direction: column; height: 100%; flex-wrap: wrap;}
 ul.resources-category{margin: 0 0 20px 0; gap: 10px;}
 ul.resources-category li{font-size: 0.889rem; line-height: 1.5; color: var(--Umber-3); font-weight: bold; padding-left: 9px; border-left: 1px solid var(--Sienna-Orange); margin-bottom: 0;}
 ul.resources-category li::before{display: none;}
 ul.resources-category li a {color: var(--Umber-3);}
 ul.resources-category li a:hover {color: var(--Sienna-Orange);}
 .resource-details h2{margin-bottom: 20px;}
+.resource-details .circle-arrow-btn{margin-top: auto;}
 
 .resource-show-btn{gap: 16px; margin-top: 48px;}
 .resource-line{margin: 0; flex: 1;}
