@@ -16,7 +16,7 @@ ul.resource_list{margin: 0;}
 ul.resources-category{margin: 0 0 20px 0; gap: 10px;}
 ul.resources-category li{font-size: 0.889rem; line-height: 1.5; color: var(--Umber-3); font-weight: bold; padding-left: 9px; border-left: 1px solid var(--Sienna-Orange); margin-bottom: 0;}
 ul.resources-category li::before{display: none;}
-ul.resources-category li a {color: var(--Umber-3);}
+ul.resources-category li a {color: var(--Umber-3); text-decoration: none;}
 ul.resources-category li a:hover {color: var(--Sienna-Orange);}
 .resource-details h2{margin-bottom: 20px;}
 .resource-details .circle-arrow-btn{margin-top: auto;}

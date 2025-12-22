@@ -14,4 +14,9 @@
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .sm-cta-main{margin-top: 28px; }
+    /* .hero-banner-section{padding: 16px 0 28px 0;} */
+
+    body.page-template-ic-events .selectBox-dropdown .selectBox-arrow{right: 25px; }
+    body.page-template-ic-events ul.selectBox-dropdown-menu{padding: 10px 0; }
+    body.page-template-ic-events ul.selectBox-dropdown-menu li a{font-size: .889rem; padding: 4px 12px; }
 }

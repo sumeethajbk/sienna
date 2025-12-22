@@ -14,6 +14,7 @@
     .volunterr-lt, .volunterr-rt{width: 100%;}
     .volunterr-lt{font-size: 1.333rem;}
     .volunterr-lt h1{font-size: 2.222rem;}
+    .volunterr-lt h1 br{display: none;}
     .volunterr-rt{padding: 24px 28px;}
 }   
 @media screen and (max-width: 767px) and (min-width: 200px){
@@ -21,5 +22,6 @@
     .volunterr-lt, .volunterr-rt{width: 100%;}
     .volunterr-lt{font-size: 1rem;}
     .volunterr-lt h1{font-size: 1.778rem;}
+    .volunterr-lt h1 br{display: none;}
     .volunterr-rt{padding: 20px 24px;}
 }   

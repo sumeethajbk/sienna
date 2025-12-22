@@ -499,6 +499,8 @@ ul.quiz-page-navigation > li:first-child:before{display: none;}
 
 p:empty{display: none;}
 
+.page-not-found-main{padding: 80px 0;}
+
 /*-- media css starts here --*/
 @media only screen and (min-width:1024px) {
     .hide-in-desktop {display:none;}
@@ -546,6 +548,7 @@ p:empty{display: none;}
 
 
 @media only screen and (max-width:1023px) and (min-width:768px) {
+     h1 {font-size: 3.111rem;}
     .h1 {font-size:3.556rem;}
     .h3, h3 {font-size: 2.222rem;}
     .h4, h4 {font-size: 1.778rem;}
@@ -592,6 +595,8 @@ p:empty{display: none;}
     .quiz-content-main .location-details ul li{gap: 10px;}
     .quiz-content-main .location-details ul li span{font-size: 0.889rem;}
     .quiz-content-main .location-details ul li span.fa-sharp{font-size: 1rem;}
+
+    .page-not-found-main{padding: 48px 0;}
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {  
@@ -725,6 +730,8 @@ p:empty{display: none;}
     .quiz-content-main .location-details ul li a{gap: 6px;}
     .quiz-content-main .location-details ul li span.fa-sharp{font-size: 1rem;}
     .quiz-content-main .location-details ul li span{font-size: 0.889rem;}
+
+    .page-not-found-main{padding: 20px 0;}
 
 }
 @media only screen and (max-width:413px) {  

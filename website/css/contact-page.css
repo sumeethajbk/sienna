@@ -6,6 +6,7 @@
 
 body .contact-form-main .frm_forms .frm_submit button,
 body .contact-form-main .frm_forms .frm_submit button:hover{background-color: var(--button);}
+body .frm_forms.with_frm_style .frm_checkbox label{cursor: auto;}
 
 
 @media screen and (max-width:767px) and (min-width:200px) {
