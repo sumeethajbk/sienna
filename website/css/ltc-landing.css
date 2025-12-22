@@ -10,6 +10,9 @@
 @import url("_signup-module.css");
 
 .optional-cta-module + .affiliation-section {padding-top: 80px;}
+.optional-cta-module + .approach-section .approach-list-inner  {padding-top: 100px;}
+.optional-cta-module + .repeater-section .repeater-list:first-child .repeater-list-inner {padding-top: 80px;}
+.optional-cta-module + .repeater-section .repeater-list:first-child:before {display: none!important;}
 
 .affiliation-section + .repeater-section .repeater-list:first-child .repeater-list-inner {padding-top: 40px;}
 .affiliation-section + .repeater-section .repeater-list:first-child:before {display: none!important;}
@@ -25,12 +28,13 @@
     .resources-slider-section:before {margin:8px 32px 7px;}
 }
 
-@media only screen and (max-width:1023px) and (min-width:200px) {
-   
+@media only screen and (max-width:1023px) and (min-width:768px) {
+    .optional-cta-module + .approach-section .approach-list-inner {padding-top: 80px;}
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {    
     .optional-cta-module + .affiliation-section {padding-top: 28px;}
+    .optional-cta-module + .approach-section .approach-list-inner {padding-top: 32px;}
     .affiliation-section + .repeater-section .repeater-list:first-child .repeater-list-inner {padding-top: 16px;}
     .affiliation-section + .repeater-section .repeater-list:last-child .repeater-list-inner {padding-bottom: 28px;}
 }
