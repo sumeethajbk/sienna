@@ -1,6 +1,6 @@
 
-.location-lists{gap: 40px;}
-.location-item{background-color: var(--Tint-Orange);}
+.location-lists{gap: 40px; margin: 0;}
+.location-item{background-color: var(--Tint-Orange); display: flex; flex-direction: column;}
 
 .location-heading{gap: 20px;}
 .location-title{flex: 1; }
@@ -8,17 +8,19 @@
 .location-sort{width: fit-content; gap: 20px;}
 
 
-.location-details{padding: 32px; color: var(--anchor);}
+.location-details{padding: 32px; color: var(--anchor); display: flex; flex-direction: column; height: 100%; flex-wrap: wrap}
 .location-details h2{margin-bottom: 0;}
 .location-details hr{background: var(--Sienna-Orange); margin: 16px 0;}
 .location-details p{margin-bottom: 8px;}
 .location-details ul{margin: 0 0 28px 0; gap: 8px;}
 .location-details ul li::before{display: none;}
 .location-details ul li{gap: 12px; margin-bottom: 0;}
-.location-details ul li a{gap: 12px;}
+.location-details ul li a{gap: 12px; text-decoration: none;}
 .location-details ul li a:hover span{color: var(--Sienna-Orange);}
 .location-details ul li span.fa-sharp{font-size: 1.111rem; line-height: 1.5; color: var(--Sienna-Orange); font-weight: 400;}
 .location-details ul li span{color: var(--Foreground); font-size: 1rem; font-weight: bold; line-height: 1.5; }
+.location-details-inner{margin-bottom: 20px;}
+.location-details .circle-arrow-btn{margin-top: auto;}
 
 .location-filter-main{gap: 20px; margin-bottom: 32px;}
 .locator-filter{gap: 20px; flex: 1;}
@@ -33,8 +35,10 @@ body.page-template-locator ::-moz-placeholder {color: var(--Foreground)!importan
 body.page-template-locator :-ms-input-placeholder {color: var(--Foreground)!important; font-family:"Blackbird", sans-serif; font-size: 1rem!important; overflow: visible; font-weight: 700;}
 
 
-.location-show-btn{gap: 16px; }
+.location-show-btn{gap: 16px; margin-top: 48px;}
 .location-line{margin: 0; flex: 1;}
+
+.load_more_locations{width: 100%;}
 
 @media screen  and (min-width: 1024px){
     .location-main{padding: 80px 0; gap: 48px;}
@@ -71,6 +75,7 @@ body.page-template-locator :-ms-input-placeholder {color: var(--Foreground)!impo
     .location-details ul li span{font-size: 0.889rem;}
     .location-details ul li span.fa-sharp{font-size: 1rem;}
 
+
     .location-filter-main{gap: 16px; margin-bottom: 4px; width: 100%;}
     .locator-filter{gap: 16px; flex: 100%;}
     .locator-filter > div{flex: 0 0 calc(50% - 8px);}
@@ -78,6 +83,8 @@ body.page-template-locator :-ms-input-placeholder {color: var(--Foreground)!impo
     body .locator-postal-code-form .frm_forms .frm_form_fields input{font-size: 0.889rem;}
     .location-search-btn{flex: 100%;}
     .location-search-btn .button{width: 100%;}
+
+    .location-show-btn{gap: 12px; margin-top: 32px;}
 
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
@@ -107,7 +114,7 @@ body.page-template-locator :-ms-input-placeholder {color: var(--Foreground)!impo
     .location-details ul li span{font-size: 0.889rem;}
     .circle-arrow-btn span.fa-sharp{width: 40px; height: 40px; font-size: 1.111rem;}
     span.location-btn-text{font-size: 0.889rem;}
-    .location-show-btn{gap: 8px;}
+    .location-show-btn{gap: 8px; margin-top: 28px;}
 
     .location-filter-main{gap: 12px; margin-bottom: 4px; width: 100%;}
     .locator-filter{gap: 12px; flex: 100%;}
