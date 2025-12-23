@@ -18,8 +18,11 @@
 .affiliation-section + .repeater-section .repeater-list:first-child .repeater-list-inner {padding-top: 40px;}
 .affiliation-section + .repeater-section .repeater-list:first-child:before {display: none!important;}
 .affiliation-section + .repeater-section .repeater-list:last-child .repeater-list-inner {padding-bottom: 88px;}
-
+.affiliation-section + .stories-slider-section .stories-slider-main {padding-top: 50px;}
+.affiliation-section + .stories-slider-section::before {display: none;}
 .repeater-list::before {display: block!important;}
+.segments-module:has(> .segments-inner:only-child) + .affiliation-section {padding-top: 0;}
+
 
 /*-- media css starts here --*/
 
@@ -29,9 +32,19 @@
 @media only screen and (max-width:1023px) and (min-width:200px) {
     .hero-banner-section {padding: 56px 0 32px 0; margin-bottom: 0;}
     .hero-banner-main .hero-banner-thumb {width: 100%;}
+    .hero-banner-main .hero-banner-thumb .hero-banner-img {min-height: inherit;}
     .hero-banner-main .hero-banner-text {width: 100%; padding: 0 12px;}
+    
 }
-
+@media only screen and (max-width:1023px) and (min-width:768px) {
+    .hero-banner-section {padding: 56px 0 48px 0;}
+    .hero-banner-main {gap: 47px;}
+    .hero-banner-main .hero-banner-text h1 {margin-bottom: 19px;}
+    .hero-banner-main .hero-banner-text p {font-size: 1rem; margin-bottom: 32px;}
+    .hero-banner-main .hero-banner-thumb {height: 66.15vw;}
+    .affiliation-section + .stories-slider-main:not(:has(.stories-slider-header)) .stories-slider-row .slick-arrow  {top: -69px;}
+    
+}
 @media only screen and (max-width:767px) and (min-width:200px) {
     .hero-banner-main .hero-banner-text p {font-size: 1rem; margin-bottom: 28px;}
     .hero-banner-main .hero-banner-text h1 u {text-underline-offset: 1px;}
@@ -39,4 +52,6 @@
     
     .affiliation-section + .repeater-section .repeater-list:first-child .repeater-list-inner {padding-top: 16px;}
     .affiliation-section + .repeater-section .repeater-list:last-child .repeater-list-inner {padding-bottom: 28px;}
+    
+    .affiliation-section + .stories-slider-section .stories-slider-main {padding-top: 28px;}
 }

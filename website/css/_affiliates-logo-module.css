@@ -11,6 +11,8 @@
 
 
 @media only screen and (max-width:1023px) and (min-width:768px) {  
+    .affiliation-title {margin-bottom: 23px;}
+    .affiliation-logos {padding: 0 0 28px 0;}
    
 }
 
