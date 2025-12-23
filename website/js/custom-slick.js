@@ -120,31 +120,33 @@ jQuery(document).ready(function () {
   });
   /* End of room Slider */
 
-  /* Testimonial Slider */
-  jQuery('.testimonial-swrap').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    speed: 1000,
-    dots: false,
-    infinite: false,
-    draggable: true,
-    swipeToSlide: true,
-    touchThreshold: 100,
-    prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-left"></i></span></div>',
-    nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-right"></i></span></div>',
-      responsive: [{
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          adaptiveHeight: true,
-          arrows: true,
-          dots: true
+  /* Testimonial Slider */  
+  var slider = jQuery('.testimonial-swrap');
+
+  if (slider.children().length > 1) {
+    slider.slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      speed: 1000,
+      dots: false,
+      adaptiveHeight: true,
+      infinite: false,
+      draggable: true,
+      swipeToSlide: true,
+      touchThreshold: 100,
+      prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-left"></i></span></div>',
+      nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-right"></i></span></div>',
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            dots: true
+          }
         }
-      }
-    ]
-  });
+      ]
+    });
+  }
 
   /* Photo Gallery */
   jQuery('.photo-swrap').slick({

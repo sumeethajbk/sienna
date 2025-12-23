@@ -17,8 +17,9 @@
 
 .hero-banner-main .hero-banner-text h1 {font-size: 3.556rem;}
 
-.default-main{padding: 80px 0 80px; gap:6.666666666666667%;}
-.default-article {flex: 1; }
+.default-main{padding: 80px 0 80px; gap:80px;}
+.default-article {flex: 1;}
+.default-article > h3:after {content: ""; width: 80px; height: 2px; background-color: var(--Sienna-Orange); display: block; margin:23px 0 28px;}
 .default-article .w80 {margin: 25px 0 23px;}
 .default-article p span {font-size:1.333rem; line-height:1.5; margin-bottom: 23px; display: block;}
 
@@ -50,6 +51,10 @@ ul.aside-links > li:before{display: none;}
     .resources-slider-section:before {margin:8px 32px 7px;}
 }
 
+@media only screen and (max-width:1024px) and (min-width:1279px) {
+    .default-main {gap:40px;}
+}
+
 @media only screen and (max-width:1023px) and (min-width:200px) {
     .default-main {gap:80px;}
     .default-article {flex:100%;}
@@ -63,6 +68,7 @@ ul.aside-links > li:before{display: none;}
     
     .default-main {padding: 28px 0; gap: 56px;}
     .default-article p span {font-size: 1.111rem;}
+    .default-article > h3:after {margin: 15px 0 18px; width: 56px;}
     .default-article .w80 {margin: 15px 0 16px;}
     .default-article p span {font-size: 1.111rem; margin-bottom: 17px;}
     .asidebar-nav .h5 {margin-bottom: 8px;}
