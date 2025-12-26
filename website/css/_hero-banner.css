@@ -52,7 +52,7 @@
 }
 
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .hero-banner-section {padding:56px 0 28px 0; margin: 0;}
+    .hero-banner-section {padding: 72px 0 28px 0; margin: 0;}
     .hero-banner-section .container-lg {padding: 0 16px;}
     .hero-banner-main .hero-banner-text h1 {font-size: 2.222rem;}
     .hero-banner-main .hero-banner-text p {font-size: 0.889rem; line-height: 1.5; margin-bottom: 18px;}

@@ -4,3 +4,10 @@
 @import url("_resource-module.css");
 @import url("_resource-section.css?v20000043");
 @import url("_signup-module.css");
+
+
+
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    body .selectBox-dropdown .selectBox-arrow{right: 16px; }
+    body ul.selectBox-dropdown-menu li a{padding: 5px 12px;}
+}

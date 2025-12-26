@@ -1,5 +1,11 @@
-@import url("_hero-banner.css");
+@import url("_hero-banner.css?v000011");
 @import url("_location-section.css?v00001122233444");
-@import url("_features-sidebar-section.css");
-@import url("_resources-slider-section.css?v000011");
+@import url("_features-sidebar-section.css?v000044");
+@import url("_resources-slider-section.css?v0000114344");
 @import url("_signup-module.css");
+
+
+
+@media screen and (min-width: 1024px) {
+    .hero-banner-main .hero-banner-text h1{font-size: 3.556rem;}
+}

@@ -30,5 +30,11 @@ body.page-template-faq .faq-search-form input:-ms-input-placeholder {color: var(
     .faq-top-heading span.optional-text{font-size: 0.889rem; line-height: 1; margin-bottom: 12px;}
     .faq-top-heading h1{font-size: 2.222rem;}
     .faq-top-search{gap: 12px;}
-    body .faq-search-form input{font-size: 0.889rem; line-height: 1.35; text-overflow: ellipsis; padding: 15px 30px 15px 20px;}
+    body .faq-search-form input{font-size: 0.889rem; line-height: 1.35; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; padding: 15px 30px 15px 20px;}
+    body.page-template-faq .faq-search-form input::placeholder{white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    body.page-template-faq .faq-search-form input::-webkit-input-placeholder {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+    body.page-template-faq .faq-search-form input:-moz-placeholder {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+    body.page-template-faq .faq-search-form input::-moz-placeholder {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+    body.page-template-faq .faq-search-form input:-ms-input-placeholder {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
 }

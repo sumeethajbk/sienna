@@ -200,7 +200,7 @@ jQuery(document).ready(function () {
         jQuery('nav.tab-nav').slideToggle(500);
       });
 
-      jQuery('nav.tab-nav > li').on('click', function () {
+      jQuery('nav.tab-nav > li a').on('click', function () {
         jQuery('nav.tab-nav').slideUp(500);
         jQuery('.contact-filter-dropdown').removeClass('open');
 
@@ -210,7 +210,7 @@ jQuery(document).ready(function () {
           jQuery('.contact-filter-dropdown span:first').text(newText);
 
           // Optionally handle active state
-          jQuery('nav.tab-nav > li').removeClass('active');
+          jQuery('nav.tab-nav > li a').removeClass('active');
           jQuery(this).addClass('active');
       });
 
