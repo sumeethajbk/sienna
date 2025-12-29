@@ -19,6 +19,8 @@ nav.tab-nav li:has(.tab[aria-selected="true"]){border-color: var(--Tint-Orange);
 .contact-form-detais ul li span.fa-sharp{font-size: 18px; line-height: 27px; max-width: 20px; color: var(--Sienna-Orange);}
 .contact-form-detais ul li span{font-size: 0.889rem; line-height: 1.5; color: var(--Coal); flex: 1;}
 
+.tab-pane-container section.panel:not(:first-child){display: none}
+
 
 @media screen and (min-width: 1024px) {
     .contact-form-main{gap: 80px; padding: 40px 0 80px;}

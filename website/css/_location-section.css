@@ -10,7 +10,7 @@
 
 .location-details{padding: 32px; color: var(--anchor); display: flex; flex-direction: column; height: 100%; flex-wrap: wrap}
 .location-details h2{margin-bottom: 0;}
-.location-details hr{background: var(--Sienna-Orange); margin: 16px 0;}
+.location-details hr{background: var(--Sienna-Orange); margin: 16px 0; opacity: 1;}
 .location-details p{margin-bottom: 8px;}
 .location-details ul{margin: 0 0 28px 0; gap: 8px;}
 .location-details ul li::before{display: none;}

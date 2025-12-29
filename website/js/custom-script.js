@@ -165,9 +165,6 @@ jQuery(document).ready(function () {
   if (match) {
     jQuery("body").addClass(match[0]);
   }
-
-
-
   
   /* FAQ Active Link */
   const headerHeight = jQuery('.site-header').outerHeight() || 100; // adjust if needed
@@ -192,29 +189,7 @@ jQuery(document).ready(function () {
   });
 
 
-      if (jQuery(window).width() <= 767) {
-
-      jQuery('.contact-filter-dropdown').on('click', function (event) {
-        event.preventDefault();
-        jQuery(this).toggleClass('open');
-        jQuery('nav.tab-nav').slideToggle(500);
-      });
-
-      jQuery('nav.tab-nav > li a').on('click', function () {
-        jQuery('nav.tab-nav').slideUp(500);
-        jQuery('.contact-filter-dropdown').removeClass('open');
-
-          let newText = jQuery(this).find('.tab-name').text();
-
-          // Update the dropdown's first span text
-          jQuery('.contact-filter-dropdown span:first').text(newText);
-
-          // Optionally handle active state
-          jQuery('nav.tab-nav > li a').removeClass('active');
-          jQuery(this).addClass('active');
-      });
-
-    }
+      
 
     jQuery('.results-content-main').on('click', function (event) {
       event.preventDefault();

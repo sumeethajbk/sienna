@@ -156,13 +156,14 @@
 
 .default-section + .default-section .default-main {padding-top: 0;}
 .default-section h4:after {content: ""; width: 80px; height: 2px; background-color: var(--Sienna-Orange); display: block; margin:24px 0 24px;}
-.micro-cta-main .micro-cta-text .h5 {font-size: 2.222rem; line-height: 1.2;}
+
 .micro-cta-thumb {width: 274px;}
 .cta-module {background: var(--Tint-Blue);}
 br {display: none;}
 
 @media screen  and (min-width: 1024px){
-    .features-module-main {padding-top: 119px;}    
+    .features-module-main {padding-top: 119px;}  
+    .micro-cta-main .micro-cta-text .h5 {font-size: 2.222rem; line-height: 1.2;}  
 }
 
 @media screen and (max-width: 1280px) and (min-width: 1024px){
