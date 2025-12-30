@@ -613,7 +613,7 @@ p:empty{display: none;}
     .readmore:after {font-size: 0.889rem; line-height: 1; top: 1px;}
     
     .play-btn {width: 67px; height: 67px;}
-    .play-btn span.play-btn-wrap {width: 32px; height: 32px; position: relative; top: -2px;}
+    .play-btn span.play-btn-wrap {width: 32px; height: 32px; position: relative;}
     
     .fluid-width-wrapper {padding: 0;}
     blockquote {padding: 31px 30px 33px 30px;}

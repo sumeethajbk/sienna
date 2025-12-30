@@ -82,8 +82,8 @@ ul.main_menu > li.current-menu-ancestor>a,
 ul.main_menu > li.menu-item-has-children > a:hover, 
 ul.main_menu > li.current_page_item>a, 
 ul.main_menu > li > a:hover, 
-ul.main_menu > li.current_page_item a, 
-ul.main_menu > li.current_page_ancestor li.current-page-ancestor a {color:var(--Sienna-Orange);}
+ul.main_menu > li.current_page_item a > span, 
+ul.main_menu > li.current_page_ancestor li.current-page-ancestor a > span {color:var(--Sienna-Orange);}
 ul.main_menu > li.menu-item-has-children > a::after {height: 4px; bottom: 0;}
     
 ul.main_menu > li.menu-button a {background: var(--white); border-radius:60px; padding:11px 14px 10px 14px; border: 2px solid transparent;  outline:4px solid transparent;}
@@ -98,7 +98,7 @@ ul.main_menu > li:hover > ul {opacity: 1; visibility: visible;}
 ul.main_menu > li > ul > li {margin-bottom:12px;}
 ul.main_menu > li > ul > li:last-child {margin-bottom:0;}
 ul.main_menu > li > ul > li a {color:var(--Foreground); line-height:1.5; display: block; position: relative;}
-ul.main_menu > li > ul > li a:hover, ul.main_menu > li > ul > li.current-menu-item > a, ul.main_menu > li > ul > li.current-menu-ancestor > a, ul.main_menu > li > ul > li.current-menu-ancestor > a {color:var(--anchor-hover);}
+ul.main_menu > li > ul > li a:hover, ul.main_menu > li > ul > li.current-menu-item a {color:var(--anchor-hover);}
 
     
 ul.main_menu > li > ul ul {margin:8px 0 0 14px; font-size: 0.778rem; font-weight: normal;}
@@ -190,7 +190,7 @@ ul.main_menu li.flex-menu > ul > li.hide-menu, ul.main_menu li > ul > li.hide-me
 
 
     
-.main_header .header_right.mobile_menu {display: block; padding:0; width: 100%; height:auto; top:56px; right:-100%; bottom: 0; position: fixed; overflow-y: auto; -webkit-overflow-scrolling: touch; transition: .5s ease-in-out; -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; z-index:1; margin: 0; overflow-x: hidden; background: var(--Sienna-Orange-dark);}
+.main_header .header_right.mobile_menu {display: block; padding:0; width: 100%; height:auto; top:70px; right:-100%; bottom: 0; position: fixed; overflow-y: auto; -webkit-overflow-scrolling: touch; transition: .5s ease-in-out; -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; z-index:1; margin: 0; overflow-x: hidden; background: var(--Sienna-Orange-dark);}
 .main_header .header_right.navOpen {right: 0;}
 
 .mobile_menu {width: 100%; display: block;} 
@@ -282,20 +282,12 @@ ul.main_menu li.flex-menu.cta-flex-menu > ul > li.menu-cta .cta-brand-icon {disp
     ul.main_menu li.investor-sub-menu > ul > li > a {color: var(--Foreground); line-height: 1.5; display: inline-block; font-size: 0.889rem; font-weight: 700;}
     ul.main_menu li.investor-sub-menu > ul > li > a:hover{color: var(--Sienna-Orange);}
 
-    
     ul.main_menu li.investor-sub-menu > ul > li ul li ul li a{font-size: 0.889rem; font-weight: 700; line-height: 1.5; display: inline-block; color: var(--Foreground);}
-
-    ul.main_menu li.about-sub-menu > ul {background: var(--Tint-Orange); margin: -5px 0 0 0; padding: 24px 0;}
-    ul.main_menu li.about-sub-menu > ul > li {padding: 0 24px; margin-bottom: 16px;}
-    ul.main_menu li.about-sub-menu > ul > li:last-child {margin-bottom: 0;}
-    ul.main_menu li.about-sub-menu > ul > li > a {color: var(--Foreground); line-height: 1.5; display: inline-block; font-size: 0.889rem; font-weight: 700;}
-    ul.main_menu li.about-sub-menu > ul > li > a:hover{color: var(--Sienna-Orange)}
     
 html.no-scroll {overflow:hidden;}
 
 .main_header .header .toggle_button, .main_header ul li:before {display: block;}
 
-.header-search{display: none;}
 
   
 

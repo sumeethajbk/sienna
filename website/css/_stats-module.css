@@ -5,7 +5,7 @@
 .stats-grid {width:22%; flex-grow: 1;}
 .stats-grid .h6 {color: var(--Foreground);}
 .stats-grid p{font-size: 1rem; line-height: 1.5; color: var(--Dark-Gray); margin-bottom: 17px;}
-.stats-grid .number {font-size: 4rem; font-weight:bold; line-height: 0.8; color: var(--Sienna-Orange); font-family: "Ivar Display", sans-serif; display: flex; flex-wrap: wrap; width: 100%; margin:0 0 8px 0;}
+.stats-grid .number {font-size: 4rem; font-weight:bold; line-height: 0.8; color: var(--Sienna-Orange); font-family: "Ivar Display", sans-serif; display: flex; flex-wrap: wrap; width: 100%; margin:0 0 8px 0; min-height: 57.6px;}
 .stats-grid .number span {display: inline-block;}
 
 
@@ -25,7 +25,7 @@
     .stats-module .h1 {margin: 0 0 13px;}
     .stats-wrap{width: 100%; display: flex; gap:28px; flex-wrap: wrap;} 
     .stats-grid {width: 100%;}
-    .stats-grid .number {margin: 0 0 2px 0; font-size:2.667rem;}
+    .stats-grid .number {margin: 0 0 2px 0; font-size:2.667rem; min-height: 38.4px;}
     .stats-grid .h6 {margin-bottom: 12px;}
     .stats-grid p {font-size: 0.889rem; margin-bottom: 16px;}
 }
