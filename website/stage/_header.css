@@ -40,7 +40,7 @@ a.search-btn .custom_icon {width: 100%; height: 100%; display: flex; justify-con
 .search_form.form-active {transform: translateY(0); -webkit-transform: translateY(0); -moz-transform: translateY(0); opacity: 1;}
 .search_form .hdrsearch-form {position: relative;}
 .search_form input[type="submit"] {display: none;}
-.search_form input.search-field {font-size: 1.111rem; padding:19px 50px 18px 79px; border-radius:32px; background: var(--white); width: 100%; color: var(--Foreground); font-weight: 400;}
+.search_form input.search-field {font-size: 1.111rem; padding:19px 50px 18px 79px; border-radius:32px; background: var(--white); width: 100%; height: 64px; color: var(--Foreground); font-weight: 400;}
 .search_form .clear-btn{ top: 0; bottom: 0; right:16px; position: absolute; height: 100%; cursor: pointer; font-size: 1rem; opacity: 0.5; display: flex; align-items: center;} 
 .search_form .clear-btn:hover{opacity: 0.75;}
 
@@ -52,7 +52,7 @@ a.search-btn .custom_icon {width: 100%; height: 100%; display: flex; justify-con
 
 
 .search_form_container {box-shadow: 0 0 0 6px rgba(239, 70, 41, 0.25); position:relative; max-width:760px; margin: 0 auto; width: 100%; border: 1px solid var(--Sienna-Orange); border-radius: 32px;}
-.search_form_container .custom_icon {position: absolute; width: 56px; height: 56px;	left:3px; top: 4.5px; display: flex; align-items: center; font-size:1.333rem; color:var(--white); background: var(--Sienna-Orange); border-radius: 50%; outline:4px solid transparent; justify-content: center;}
+.search_form_container .custom_icon {position: absolute; width: 56px; height: 56px;	left: 4px; top: 50%; transform: translateY(-50%); display: flex; align-items: center; font-size:1.333rem; color:var(--white); background: var(--Sienna-Orange); border-radius: 50%; outline:4px solid transparent; justify-content: center;}
 .search_form_container .close-search { position:absolute; right:0; display: flex; align-items: center; border-radius: 4px;  background-color:rgb(188, 43, 11); width:34px; height:34px; top:0; bottom:0; margin:auto; cursor:pointer;}
 .search_form_container .close-search img { margin:0 auto;}
 .search_form_container .close-search:hover {background-color: #000;}
@@ -72,6 +72,7 @@ ul.main_menu > li {margin:0 0 0 33px; display:inline-block; line-height: normal;
 ul.main_menu > li:first-child {margin-left:0;}
 ul.main_menu > li > a {font-size:1rem; font-weight: 700; display:inline-block; position:relative; color:var(--Foreground); padding: 0 0 32px 0;}
 ul.main_menu > li > a:hover {color:var(--Foreground);}
+ul.main_menu > li:first-child > a {pointer-events: none;}
 ul.main_menu > li >a::after {content: ''; position: absolute; display: block; margin: auto; height:1px; width: 0; bottom:32px; transition: width .5s ease, background-color .5s ease; left:0; transform: translate(0, 0);}
 ul.main_menu > li >a:hover:after {width: 100%; background: var(--Sienna-Orange);}
 ul.main_menu > li.current-menu-item>a, 
@@ -81,8 +82,8 @@ ul.main_menu > li.current-menu-ancestor>a,
 ul.main_menu > li.menu-item-has-children > a:hover, 
 ul.main_menu > li.current_page_item>a, 
 ul.main_menu > li > a:hover, 
-ul.main_menu > li.current_page_item a, 
-ul.main_menu > li.current_page_ancestor li.current-page-ancestor a {color:var(--Sienna-Orange);}
+ul.main_menu > li.current_page_item a > span, 
+ul.main_menu > li.current_page_ancestor li.current-page-ancestor a > span {color:var(--Sienna-Orange);}
 ul.main_menu > li.menu-item-has-children > a::after {height: 4px; bottom: 0;}
     
 ul.main_menu > li.menu-button a {background: var(--white); border-radius:60px; padding:11px 14px 10px 14px; border: 2px solid transparent;  outline:4px solid transparent;}
@@ -90,14 +91,14 @@ ul.main_menu > li.menu-button a:hover {border: 2px solid var(--Sienna-Orange);  
 ul.main_menu > li.menu-button a:hover:after {display: none;}
 
 /* Submenu Level 2*/  
-ul.main_menu > li > ul {margin:0; padding:32px; min-width:335px; top:100%; position:absolute; left:50%; transform: translateX(-50%); text-align:left;  width:100%; opacity:0; visibility:hidden; background:var(--white); transition: visibility .3s ease,opacity .3s ease,transform .3s ease; text-transform: capitalize; font-size: 0.889rem; font-weight: bold;}
+ul.main_menu > li > ul {margin:0; padding:32px; min-width:335px; top:100%; position:absolute; left:50%; transform: translateX(-50%); text-align:left;  width:100%; opacity:0; visibility:hidden; background:var(--white); transition: visibility .3s ease,opacity .3s ease,transform .3s ease; text-transform: capitalize; font-size: 0.889rem; font-weight: bold; box-shadow: -1px 3px 17px -10px rgba(0, 0, 0, 0.75);}
 
 
 ul.main_menu > li:hover > ul {opacity: 1; visibility: visible;}
 ul.main_menu > li > ul > li {margin-bottom:12px;}
 ul.main_menu > li > ul > li:last-child {margin-bottom:0;}
 ul.main_menu > li > ul > li a {color:var(--Foreground); line-height:1.5; display: block; position: relative;}
-ul.main_menu > li > ul > li a:hover, ul.main_menu > li > ul > li.current-menu-item > a, ul.main_menu > li > ul > li.current-menu-ancestor > a, ul.main_menu > li > ul > li.current-menu-ancestor > a {color:var(--anchor-hover);}
+ul.main_menu > li > ul > li a:hover, ul.main_menu > li > ul > li.current-menu-item a {color:var(--anchor-hover);}
 
     
 ul.main_menu > li > ul ul {margin:8px 0 0 14px; font-size: 0.778rem; font-weight: normal;}
@@ -274,6 +275,7 @@ ul.main_menu li.flex-menu.cta-flex-menu > ul > li.menu-cta .cta-brand-icon {disp
     ul.main_menu li.investor-sub-menu > ul > li ul li {width: 100%; margin-bottom: 16px;}
     ul.main_menu li.investor-sub-menu > ul > li ul li:last-child{margin-bottom: 0;}
     ul.main_menu li.investor-sub-menu > ul > li ul li, ul.main_menu li.flex-menu > ul > li ul li:nth-child(2) {border-top: 1px solid rgba(255, 255, 255, 0.1)!important;}
+    ul.main_menu li.investor-sub-menu > ul > li ul li::before{top: 0;}
     ul.main_menu li.investor-sub-menu > ul > li ul li a .menu-text {padding: 14px 20px 10px;}
     ul.main_menu li.investor-sub-menu > ul > li ul li a .menu-text span {color: var(--white);}
     ul.main_menu li.investor-sub-menu > ul > li ul li a .menu-text p {color: var(--white-60); margin-top: 1px;}
