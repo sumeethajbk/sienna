@@ -2,14 +2,19 @@
 .amenities-module-section {background-color: var(--white); clear: both; width: 100%; position: relative; z-index: 1; padding: 15px 0 0 0;}
 .amenities-module {gap:56px 4.666666666666667%;}
 .amenities-grid {width:16.266666666666666%;}
-.amenities-grid .h6 {color: var(--Foreground);}
+.amenities-grid .h6 {color: var(--Foreground); margin-bottom: 0;}
 
 .amenities-icon {margin-bottom:15px; position: relative; width:auto; height: 48px; display: flex; align-items: center;}
 .amenities-icon img {width: 100%; height: 100%; max-height: 48px;}
 
+@media only screen and (min-width:1024px) { 
+    .amenities-grid{display: flex; flex-direction: column; flex-wrap: wrap;}
+    .amenities-grid .h6{min-height: 57px; margin-top: auto;}
+}
 @media only screen and (max-width:1280px) and (min-width:1024px) {    
     .amenities-module-main {padding: 42px 0 64px 0;}
     .amenities-module {gap: 40px 4.666666666666667%;}
+
 }
 
 @media only screen and (max-width:1023px) and (min-width:200px) {    
@@ -18,10 +23,13 @@
 
 @media only screen and (max-width:1023px) and (min-width:768px) {
     .amenities-module-main {padding:48px 0;}
-    .amenities-module {gap:26px 40px;}
+    .amenities-module {gap:40px;}
     .amenities-grid {width:29.5%;}
     .amenities-icon {height: 40px;}
     .amenities-icon img {max-height: 40px;}
+
+    .amenities-grid{display: flex; flex-direction: column; flex-wrap: wrap;}
+    .amenities-grid .h6{min-height: 48px; margin-top: auto;}
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {

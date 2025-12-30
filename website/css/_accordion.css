@@ -16,7 +16,7 @@
 .accordion-item .content p {margin-bottom:14px;}
 .accordion-item .content p:last-child {margin-bottom: 0;}
 .accordion-item .content ul, .accordion-item .content ol {margin: 0 0 6px 21px!important;}
-.accordion-item .content ul li:before {display: block; content: ""; width: 3px; height: 3px; background: var(--Dark-Gray); left: -12px; top: 10px;}
+.accordion-item .content ul li:before {display: block; content: ""; width: 3px; height: 3px; background: var(--Dark-Gray); left: -12px; top: 9px;}
 .accordion-item .content ul li, .accordion-item .content ol li {margin-bottom: 4px;}
 .accordion-item .content ol li:before {left: -15px; color: var(--Dark-Gray);}
 .accordion-item .content ul ~ ol {margin-top: 14px!important;}

@@ -1,6 +1,6 @@
 @import url("_hero-banner.css?v000011");
 @import url("_section-intro.css");
-@import url("_amenities-module.css");
+@import url("_amenities-module.css?v000013334");
 @import url("_sm-cta-section.css?v00001");
 @import url("_multi-cta-section.css");
 @import url("_photo-gallery-module.css");
@@ -9,7 +9,7 @@
 @import url("_features-sidebar-section.css");
 @import url("_resources-slider-section.css?v000011");
 @import url("_cta-module.css?v990");
-@import url("_links-module.css");
+@import url("_links-module.css?v990");
 @import url("_signup-module.css");
 
 .hero-banner-main .hero-banner-text h1 {font-size: 3.556rem;}

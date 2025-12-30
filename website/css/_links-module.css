@@ -2,7 +2,7 @@
 .links-module:before {background: var(--Foreground); opacity: 0.2; content: ""; display: block; max-width:calc(1344px - 64px); height: 1px; margin:9px auto 6px auto; top:-80px; position: relative;}
 
 .ld-module {gap:64px 5.333333333333334%; justify-content: space-between;}
-.ld-grid {width: 29.775000000000002%; flex-grow: 1;}
+.ld-grid {width: 29.775000000000002%; flex-grow: 1; display: flex; flex-wrap: wrap; flex-direction: column;}
 .ld-grid:only-child {flex-grow: initial;}
 .ld-grid .h5 {color: var(--Foreground); position: relative; margin-bottom: 0;}
 .ld-grid .h5:after {content: ""; width: 80px; height: 2px; background-color: var(--Sienna-Orange); display: block; margin:16px 0 15px;}
@@ -10,7 +10,7 @@
 .ld-grid p{font-size: 1rem; line-height: 1.5; color: var(--Dark-Gray); margin-bottom: 16px;}
 
 .ld-icon {margin-bottom:32px; position: relative; width:100%; height:195.6px; overflow: hidden;}
-.ld-cnt {clear: both;}
+.ld-cnt {clear: both; margin-top: auto;}
 
 @media only screen and (max-width:1280px) {
     .links-module:before {margin: 0 32px;}
@@ -22,7 +22,7 @@
 }
 
 @media only screen and (max-width:1023px) and (min-width:200px) {
-.ld-grid {width: 100%; display: flex; flex-wrap: wrap; flex-direction: column;} 
+.ld-grid {width: 100%; } 
     .ld-grid p {font-size: 0.889rem; margin-bottom: 11px;}
 }
 
