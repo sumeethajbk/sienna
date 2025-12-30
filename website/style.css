@@ -13,7 +13,7 @@ Text Domain:Sienna Senior Living
 
 @import url("css/_colors.css?v=122222333");
 @import url("css/_reset.css?v=122222");
-@import url("css/_header.css?v=22234567");
+@import url("css/_header.css?v=22855559999");
 @import url("css/_footer.css");
 @import url("css/_cookiebar.css?v=123218");
 
@@ -288,6 +288,7 @@ body ul.selectBox-dropdown-menu li.frm-select-placeholder/*, body ul.selectBox-d
 .frm_forms .frm_form_fields fieldset {margin:0; padding:0; border:0;}
 .frm_forms .frm_form_fields .frm_form_field{margin-bottom:20px; position: relative; clear: both;}
 .frm_forms .frm_form_fields .frm_form_field.frm_full {clear:both; width: 100%;}
+.frm_style_formidable-style.with_frm_style .frm_submit button:active, .frm_style_formidable-style.with_frm_style .frm_submit button:focus{background: var(--Sienna-Orange);}
 
 .frm_forms .frm_form_fields .frm_form_field label, .frm_forms .frm_form_fields .frm_form_field div.frm_primary_label { font-size: 0.889rem !important; line-height: 1.5; text-indent: inherit; font-weight: 700 !important; color: var(--Foreground); font-family: "Blackbird", sans-serif!important; margin-bottom: 4px; padding: 0; display: block;}
 /* .frm_forms .frm_form_fields .frm_form_field label .frm_required {display: none;} */
@@ -608,7 +609,7 @@ p:empty{display: none;}
     .calender {gap:6px; margin: 0 0 12px 0;}
     
     .readmore {font-size: 0.889rem; gap: 4px;}
-    .readmore:after {font-size: 0.889rem; line-height: 1;}
+    .readmore:after {font-size: 0.889rem; line-height: 1; top: 1px;}
     
     .play-btn {width: 67px; height: 67px;}
     .play-btn span.play-btn-wrap {width: 32px; height: 32px; position: relative;}

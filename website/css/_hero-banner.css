@@ -52,14 +52,15 @@
 }
 
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .hero-banner-section {padding:56px 0 28px 0; margin: 0;}
+    .hero-banner-section {padding: 72px 0 28px 0; margin: 0;}
     .hero-banner-section .container-lg {padding: 0 16px;}
     .hero-banner-main .hero-banner-text h1 {font-size: 2.222rem;}
     .hero-banner-main .hero-banner-text p {font-size: 0.889rem; line-height: 1.5; margin-bottom: 18px;}
+    .hero-banner-main .hero-banner-text p:last-child {margin-bottom: 0;}
 
     .hero-banner-main .hero-banner-text .hero-banner-date-main{gap: 6px; margin-bottom: 12px; }
 
     .hero-banner-main .hero-banner-text .hero-banner-category{gap: 12px; margin-bottom: 12px;}
-    .hero-banner-main .hero-banner-text .hero-banner-category span{ font-size: 0.778rem; padding: 4px 8px;}
+    .hero-banner-main .hero-banner-text .hero-banner-category a{ font-size: 0.778rem; padding: 4px 8px;}
 
 }

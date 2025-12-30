@@ -1,14 +1,13 @@
 
 
-ul.tab-list{padding: 0; margin: 0; gap: 12px;}
-ul.tab-list li{margin-bottom: 0; flex: 1; border: 1px solid var(--Sienna-Orange); border-bottom: none; border-radius: 8px 8px 0 0; overflow: hidden;}
-ul.tab-list li::before{display: none;}
+nav.tab-nav{padding: 0; margin: 0; gap: 12px;}
+nav.tab-nav li{margin-bottom: 0; flex: 1; border: 1px solid var(--Sienna-Orange); border-bottom: none; border-radius: 8px 8px 0 0; overflow: hidden;}
+nav.tab-nav li::before{display: none;}
 .tab{padding: 12px; cursor: pointer; display: block; font-weight: 700; font-size: 1.111rem; line-height: 1.2; font-family: "Ivar Display", sans-serif; text-align: left; color: var(--Foreground);}
 .tab[aria-selected="true"]{color: var(--Sienna-Orange);}
-ul.tab-list li:has(.tab[aria-selected="true"]) { border: none; background: var(--Tint-Orange);}
+nav.tab-nav li:has(.tab[aria-selected="true"]){border-color: var(--Tint-Orange); background: var(--Tint-Orange);}
 .tab-name{ max-width: 140px; margin: 0 auto; display: block;}
 .panel{padding: 32px 40px 35px; background: var(--Tint-Orange);}
-.tab-hidden{display: none; }
 
 .contact-form-detais:not(:last-child){padding-bottom: 20px; border-bottom: 1px solid var(--black-20); margin-bottom: 20px; }
 .contact-form-detais h2{font-size: 1.111rem; line-height: 1.2; margin-bottom: 8px;}
@@ -19,6 +18,8 @@ ul.tab-list li:has(.tab[aria-selected="true"]) { border: none; background: var(-
 .contact-form-detais ul li a:hover span{color: var(--Sienna-Orange);}
 .contact-form-detais ul li span.fa-sharp{font-size: 18px; line-height: 27px; max-width: 20px; color: var(--Sienna-Orange);}
 .contact-form-detais ul li span{font-size: 0.889rem; line-height: 1.5; color: var(--Coal); flex: 1;}
+
+.tab-pane-container section.panel:not(:first-child){display: none}
 
 
 @media screen and (min-width: 1024px) {
@@ -38,10 +39,10 @@ ul.tab-list li:has(.tab[aria-selected="true"]) { border: none; background: var(-
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .contact-form-main{gap: 56px; padding: 16px 0 28px;}
     .contact-form-lt{background: var(--Tint-Orange); padding: 20px 24px; width: 100%;}
-    ul.tab-list{gap: 0; border: 1px solid var(--Sienna-Orange); background: var(--white); border-radius: 20px; overflow: hidden; display: none;}
-    ul.tab-list li{flex: 100%; border: none; border-radius: 0;}
-    ul.tab-list li:hover{background: var(--Tint-Orange);}
-    ul.tab-list li:hover span{color: var(--Sienna-Orange);}
+    nav.tab-nav{gap: 0; border: 1px solid var(--Sienna-Orange); background: var(--white); border-radius: 20px; overflow: hidden; display: none;}
+    nav.tab-nav li{flex: 100%; border: none; border-radius: 0;}
+    nav.tab-nav li:hover{background: var(--Tint-Orange);}
+    nav.tab-nav li:hover span{color: var(--Sienna-Orange);}
     .tab{font-size: 0.889rem; line-height: 1.35; font-family:"Blackbird", sans-serif;}
     .tab-name{max-width: 100%;}
     span.contact-filter-dropdown{background: var(--white); padding: 16px 16px 16px 20px; gap: 8px; cursor: pointer; border: 1.25px solid var(--Sienna-Orange); border-radius: 60px;}

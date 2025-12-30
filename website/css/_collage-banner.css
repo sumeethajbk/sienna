@@ -22,6 +22,7 @@
     .collage-banner h1 {font-size: 3.765rem;}  
 }
 
+
 @media only screen and (max-width:767px) and (min-width:200px) {
     .collage-banner {padding: 84px 0 0 0; margin: 0 0 80px 0;}
     .collage-banner h1 {font-size:3.111rem; line-height: 1; margin-bottom: 24px;}  
@@ -31,4 +32,8 @@
     
     .photo-txt {font-size: 1.111rem; padding: 20px 24px;}
     .photo-txt p {margin-bottom: 18px;}
+}
+
+@media only screen and (max-width:389px) and (min-width:200px) {
+    .collage-banner h1{font-size: 3rem;}
 }

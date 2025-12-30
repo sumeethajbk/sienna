@@ -5,6 +5,8 @@
 .notification-module-main .notification-module-text .notification-module-desc {margin: auto 0;}
 .notification-module-thumb {width:435px;}
 
+.hero-banner-section + .notification-module-module.no_segment { padding-bottom: 50px; }
+
 /*-- media starts here --*/
 @media only screen and (max-width:1023px) and (min-width:768px){
     .notification-module-thumb {width: 320px}

@@ -55,6 +55,9 @@ body.page-template-ic-events :-ms-input-placeholder {color: var(--Foreground)!im
   .ic-events-show-btn{gap: 12px; margin-top: 32px;}
 }
 
+@media screen and (max-width: 819px) and (min-width: 768px){
+  .events-category-dropdown , .events-sort-dropdown{max-width: 180px;}
+}
 @media screen and (max-width: 767px) and (min-width: 200px){
   .ic-events-main{padding: 28px 0;}
   .ic-events-heading{gap: 15px; margin-bottom: 28px; }

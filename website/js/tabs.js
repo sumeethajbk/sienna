@@ -5,6 +5,8 @@ var $tabs = jQuery('#demoTabs .tab');
 
 
 function activateTab($tab) {
+    console.log('Activating tab:', $tab);
+    // $tab.preventDefault();
 // deactivate all
 $tabs.attr('aria-selected', 'false').attr('tabindex', '-1');
 // hide all panels

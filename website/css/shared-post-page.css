@@ -1,4 +1,4 @@
-@import url("_hero-banner.css?v=1012");
+@import url("_hero-banner.css?v000011");
 @import url("default-page.css?v=101");
 @import url("_sm-cta-section.css?v00001");
 @import url("_multi-cta-section.css?v=1014444");
@@ -14,12 +14,25 @@
 
 .multi-cta-main{margin: 64px 0;}
 
+.default-article .h3{margin-bottom: 24px; }
 
+
+
+
+
+@media screen and (min-width: 1024px) {
+    body.single-post .hero-banner-main .hero-banner-text{padding-top: 112px;}
+    body.single-post .micro-cta-thumb{width: 274px;}
+    body.single-post .micro-cta-main .micro-cta-text .h5{font-size: 2.222rem;}
+}
 
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .sm-cta-main{margin: 40px 0;}
     .sm-cta-text .h4{font-size: 1.111rem;}
 
     .multi-cta-main{margin: 40px 0;}
-    
+
+    .default-article .h3{margin-bottom: 16px; }
+    .hero-banner-main .hero-banner-text .hero-banner-category a{ font-size: 0.778rem; padding: 4px 8px;}
+    .image-testimonial-section{margin-bottom: 40px; }
 }
