@@ -12,10 +12,11 @@ jQuery(document).ready(function () {
         arrows: true,
         variableWidth: true,
         infinite: false,
-        speed: 1000,
+        speed: 600,
+        swipe: true,
         draggable: true,
         swipeToSlide: true,
-        touchThreshold: 100,
+        touchThreshold: 10,
         prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-left"></i></span></div>',
         nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-right"></i></span></div>',
       });
@@ -26,10 +27,11 @@ jQuery(document).ready(function () {
         dots: true,
         variableWidth: true,
         infinite: false,
-        speed: 1000,
+        speed: 600,
+        swipe: true,
         draggable: true,
         swipeToSlide: true,
-        touchThreshold: 100,
+        touchThreshold: 10,
         prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-left"></i></span></div>',
         nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-right"></i></span></div>',
       });
@@ -79,9 +81,9 @@ jQuery(document).ready(function () {
     nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></div>',
   });
   /* End of About Slider */
-    
-    
-     /* Room Slider */
+
+
+  /* Room Slider */
   jQuery('.room-nav').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -106,21 +108,20 @@ jQuery(document).ready(function () {
     asNavFor: '.room-nav',
     prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-left"></i></span></div>',
     nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></div>',
-      responsive: [{
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          adaptiveHeight: true,
-          arrows: true,
-          dots: true
-        }
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        arrows: true,
+        dots: true
       }
-    ]
+    }]
   });
   /* End of room Slider */
 
-  /* Testimonial Slider */  
+  /* Testimonial Slider */
   var slider = jQuery('.testimonial-swrap');
 
   if (slider.children().length > 1) {
@@ -137,14 +138,12 @@ jQuery(document).ready(function () {
       touchThreshold: 100,
       prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-left"></i></span></div>',
       nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-right"></i></span></div>',
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            dots: true
-          }
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          dots: true
         }
-      ]
+      }]
     });
   }
 
@@ -165,10 +164,9 @@ jQuery(document).ready(function () {
     centerPadding: '0',
     responsive: [{
         breakpoint: 1023,
-        settings: {
-        }
+        settings: {}
       },
-        {
+      {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
@@ -177,7 +175,7 @@ jQuery(document).ready(function () {
           arrows: true,
           dots: true,
           centerMode: false,
-          fade:true,
+          fade: true,
         }
       }
     ]
@@ -196,8 +194,7 @@ jQuery(document).ready(function () {
     touchThreshold: 100,
     prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-left"></i></span></div>',
     nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-right"></i></span></div>',
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1200,
         settings: {
           slidesToShow: 1,
@@ -242,8 +239,7 @@ jQuery(document).ready(function () {
     touchThreshold: 100,
     prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-left"></i></span></div>',
     nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-solid fa-chevron-right"></i></span></div>',
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1200,
         settings: {
           slidesToShow: 2,
