@@ -1,4 +1,4 @@
-@import url("_hero-banner.css?v000011");
+@import url("_hero-banner.css?v000011333");
 @import url("_notification-module.css?v00001122");
 @import url("_segments-module.css");
 @import url("_take-quiz.css");
@@ -39,7 +39,7 @@
     
 }
 @media only screen and (max-width:1023px) and (min-width:768px) {
-    .hero-banner-section {padding: 56px 0 48px 0;}
+    .hero-banner-section {padding: 66px 0 48px 0;}
     .hero-banner-main {gap: 47px;}
     .hero-banner-main .hero-banner-text h1 {margin-bottom: 19px;}
     .hero-banner-main .hero-banner-text p {font-size: 1rem; margin-bottom: 32px;}

@@ -25,20 +25,16 @@ body.page-template-faq .faq-search-form input:-ms-input-placeholder {color: var(
 }
 
 @media screen and (max-width: 767px) and (min-width: 200px){
-    .faq-top-main{padding: 28px 0; gap: 40px;}
+    .faq-top-main{padding: 28px 0 28px; gap: 40px;}
     .faq-top-heading{font-size: 1.333rem; }
     .faq-top-heading span.optional-text{font-size: 0.889rem; line-height: 1; margin-bottom: 12px;}
     .faq-top-heading h1{font-size: 2.222rem;}
     .faq-top-search{gap: 12px;}
-    body .faq-search-form input{font-size: 0.889rem; line-height: 1.35; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; padding: 16px 30px 16px 20px;}
+    body .faq-search-form input{font-size: 0.889rem; line-height: 1.35; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; padding: 16px 20px 16px 20px;}
     body.page-template-faq .faq-search-form input::placeholder{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;  font-size: 0.889rem!important;}
     body.page-template-faq .faq-search-form input::-webkit-input-placeholder {white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 0.889rem!important;}
     body.page-template-faq .faq-search-form input:-moz-placeholder {white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 0.889rem!important;}
     body.page-template-faq .faq-search-form input::-moz-placeholder {white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 0.889rem!important;}
     body.page-template-faq .faq-search-form input:-ms-input-placeholder {white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 0.889rem!important;}
 
-}
-
-@media screen and (max-width: 379px) and (min-width: 200px){
-    body .faq-search-form input{ padding: 16px 20px 16px 20px; }
 }

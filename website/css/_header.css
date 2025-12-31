@@ -158,10 +158,10 @@ ul.main_menu li.flex-menu > ul > li.hide-menu, ul.main_menu li > ul > li.hide-me
     .main_header .header {padding: 12px 0;}
     .main_header .container-lg {padding: 0 28px;}
     .main_header .logo {width: 107px; height: auto;}
-    .main_header .header_right {width: calc(100% - 107px);}
+    .main_header .header_right {width: calc(100% - 107px); margin: 0;}
     .main_header .header-btm {gap:16px;}
     ul.main_menu > li {margin: 0 0 0 24px;}
-    ul.main_menu > li > a {font-size: 0.889rem; line-height: 1;}
+    ul.main_menu > li > a {font-size: 0.889rem; line-height: 1; padding: 0 0 9px 0;}
     ul.main_menu > li.menu-button a {padding: 11px 10px 11px 10px;}
     .header-search {height: 40px; width: 40px;}
     a.search-btn {font-size: 1rem;}

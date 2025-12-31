@@ -19,7 +19,8 @@
 
 @media only screen and (max-width:1023px) and (min-width:768px) {
     .collage-banner {padding: 80px 0 0 0;}
-    .collage-banner h1 {font-size: 3.765rem;}  
+    .collage-banner h1 {font-size: 3.765rem;} 
+    .photo-txt {padding: 20px 24px;} 
 }
 
 

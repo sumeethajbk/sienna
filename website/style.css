@@ -12,8 +12,8 @@ Text Domain:Sienna Senior Living
 
 
 @import url("css/_colors.css?v=122222333");
-@import url("css/_reset.css?v=1222223");
-@import url("css/_header.css?v=22800000777");
+@import url("css/_reset.css?v=1222223444");
+@import url("css/_header.css?v=22800000777999");
 @import url("css/_footer.css?v=10000033");
 @import url("css/_cookiebar.css?v=123218");
 
@@ -159,7 +159,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .h1 a:ho
 
 section ol:last-child, section ul:last-child {margin-bottom: 0!important;}
 section ol li:last-child, section ul li:last-child {margin-bottom: 0!important;}
-section p a, section :not(div) ul li a  {position: relative; font-weight: bold; text-decoration-line: underline; text-decoration-style: solid; text-decoration-skip-ink: auto; text-decoration-color: var(--Sienna-Orange, #EF4629); text-decoration-thickness:2px; text-underline-offset: auto; text-underline-position: from-font;}
+section p > a, section :not(div) ul li a, section :not(div) ol li a, section .accordion ul li a, section .accordion ol li a {position: relative; font-weight: bold; text-decoration-line: underline; text-decoration-style: solid; text-decoration-skip-ink: auto; text-decoration-color: var(--Sienna-Orange, #EF4629); text-decoration-thickness:2px; text-underline-offset: auto; text-underline-position: from-font;}
 section aside ul li a {all: unset; cursor: pointer;}
 
 .w80 {width: 80px; height: 2px; background-color: var(--Sienna-Orange); opacity: 1;}
@@ -167,7 +167,7 @@ section aside ul li a {all: unset; cursor: pointer;}
 
 /* Read More */
 .readmore {position: relative; display: inline-flex; font-size:1rem; gap:8px; line-height: 1.5; align-items: center; font-weight: bold; color: var(--black-60);}
-.readmore:after {content: "\f178"; position: relative; display: inline-block; font-size:1rem; font-family: "Font Awesome 7 Sharp"; font-weight:400; line-height: 1.2; color: var(--Sienna-Orange); transform: translateX(0); transition: all 0.5s ease-in-out;}
+.readmore:after {content: "\f178"; position: relative; display: inline-block; font-size:1rem; font-family: "Font Awesome 7 Sharp"; font-weight:400; line-height: 1.2; color: var(--Sienna-Orange); transform: translateX(0); transition: all 0.5s ease-in-out; top: 1px;}
 .readmore:hover {color: var(--black);}
 .readmore:hover:after {transform: translateX(4px);}
 
@@ -414,7 +414,7 @@ position: relative; z-index: 1; text-decoration: none; background-color:transpar
 .sharethis-inline-share-buttons .st-btn[data-network=sharethis] span {display: block!important; font-size: 1.778rem; color: var(--Foreground)!important; line-height: 1.2; font-family: "Ivar Display", sans-serif; font-weight: bold!important; padding: 0!important; letter-spacing: normal!important; text-align: left;}
 
 .sharethis-inline-share-buttons .st-btn:hover {opacity: 1 !important; top: 0!important; color: var(--Foreground);}
-.sharethis-inline-share-buttons .st-btn[data-network=sharethis]:hover {color: var(--Foreground);}
+.sharethis-inline-share-buttons .st-btn[data-network=sharethis]{pointer-events: none;}
 .sharethis-inline-share-buttons .st-btn span, .sharethis-inline-share-buttons .st-btn img {display: none!important;}
 .at4-visually-hidden {display: none;}
 
