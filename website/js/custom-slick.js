@@ -6,9 +6,9 @@ jQuery(document).ready(function () {
       w = jQuery(window).width(),
       count = $el.children().length;
     if ($el.hasClass('slick-initialized')) $el.slick('unslick');
-    if (w > 767 && count > 2) {
+    if (w > 767 && count > 1) {
       $el.removeClass('few-story').slick({
-        slidesToShow: 2,
+        slidesToShow: 1,
         arrows: true,
         variableWidth: true,
         infinite: false,

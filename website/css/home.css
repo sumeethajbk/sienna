@@ -3,13 +3,14 @@
 @import url("_segments-module.css");
 @import url("_take-quiz.css");
 @import url("_affiliates-logo-module.css");
-@import url("_stories-slider-section.css");
+@import url("_stories-slider-section.css?v88801122");
 @import url("_repeater-section.css");
 @import url("_signup-module.css");
 
 .hero-banner-section {margin-bottom: 80px;}
 .hero-banner-main .hero-banner-thumb .hero-banner-img {bottom: -80px; min-height: 680px;}
-.hero-banner-main .hero-banner-thumb .hero-banner-img.home-banner-video iframe {width: 100%; height: 100%;}
+.hero-banner-main .hero-banner-thumb .hero-banner-img.home-banner-video iframe,
+.hero-banner-main .hero-banner-thumb .hero-banner-img.home-banner-video video{width: 100%; height: 100%; object-fit: cover; display: block;}
 .hero-banner-main .hero-banner-thumb {width: 50%;}
 .hero-banner-main .hero-banner-text {width: calc(100% - 55.94%); padding: 70px 0 71px 40px;}
 .hero-banner-main .hero-banner-text h1 {margin-bottom: 23px;}
@@ -28,6 +29,7 @@
 
 @media only screen and (max-width: 1280px) and (min-width: 1024px) {
     .hero-banner-main .hero-banner-text {padding-left: 0;}
+    .hero-banner-main .hero-banner-text h1{line-height: 1;}
 }
 @media only screen and (max-width:1023px) and (min-width:200px) {
     .hero-banner-section {padding: 56px 0 32px 0; margin-bottom: 0;}

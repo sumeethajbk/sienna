@@ -47,6 +47,8 @@
     
    
     .stories-slider-text .h5 {margin-bottom: 16px;}
+
+    .stories-slider-item.more-stories .stories-slider-text .button{font-size: 1rem;}
     
     .stories-slider-row .slick-arrow{top: auto; width: 40px; height: 40px;}
     .stories-slider-row .slick-arrow span i{font-size: 20px; line-height: 20px;}
