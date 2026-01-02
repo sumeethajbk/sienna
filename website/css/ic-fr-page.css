@@ -87,7 +87,7 @@
 .regulatory-filings-module .heading {margin: 0 0 48px 0;}
 .regulatory-filings-main {display: flex; flex-wrap: wrap; gap:32px 2.666666666666667%; width: 100%;}
 .regulatory-filings-grid {padding: 24px; background: var(--white); gap:4.10958904109589%; width: 48.66666666666667%; position: relative;}
-.regulatory-filings-main:has(> .regulatory-filings-grid:nth-child(2)) > .regulatory-filings-grid {flex-grow: 1;}
+
 
 .rf-lt {display: flex; flex-wrap:wrap; gap:24px; width: calc(100% - 88px);}
 .rf-txt {flex: 1; font-size: 0.778rem; color: var(--Dark-Gray);}
@@ -180,6 +180,7 @@ br {display: none;}
     
  
     .fr-txt ul {flex-direction: column;}
+    .stock-quote-lt {width: 34.917%;}
     
 }
 
@@ -209,6 +210,7 @@ br {display: none;}
     .fr-txt p {margin-bottom: 13px;}
     .fr-txt ul {gap:12px;}
     
+    .financial-results-module .heading .heading-rt {width: 100%; justify-content: flex-start;}
     .year-filter > li > a {font-size: 0.889rem; padding: 11px 20px; min-width: 107px;}
     .year-filter .more-yrs > a {padding:11px 37px 11px 20px;}
     .year-filter .more-yrs > a::after {font-size: 1.111rem;}
@@ -279,6 +281,7 @@ br {display: none;}
     .lr-module-main {flex-direction: column; gap:28px;}
     .lr-module-grid {flex-direction: column-reverse; gap:16px; padding: 12px;}
     .lr-thumb {width: 100%;}
+    .lr-txt {width: 100%;}
     .lr-txt .h5 {margin-bottom: 4px;}
     .lr-txt p {margin-bottom: 7px;}
     .lr-txt ul li {gap: 4px;}
