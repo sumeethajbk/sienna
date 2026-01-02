@@ -39,7 +39,7 @@ ul > li:before {content:"\e7d1"; display: block; position: absolute; top: 0; lef
 li > ul {margin: 25px 0 26px 40px;}
 ol {counter-reset: section; list-style: none; margin:23px 0 62px 20px;}
 ol > li {counter-increment: li; position: relative; margin-bottom:9px;}
-ol > li:before {counter-increment: section; content: counter(section, decimal) " "; left: -17px; position: absolute; color: var(--Sienna-Orange); font-size: 0.889rem; font-weight: bold; line-height: 1.5; top: 2px;}
+ol > li:before {counter-increment: section; content: counter(section, decimal) " "; left: -17px; position: absolute; color: var(--Sienna-Orange); font-size: 0.889rem; font-weight: bold; line-height: 1.5; top: -1px;}
 li > ol {margin: 25px 0 26px 40px;}
 img {-ms-interpolation-mode: bicubic; border: 0; vertical-align: middle; max-width: 100%; height: auto;}
 figure {margin: 0;}

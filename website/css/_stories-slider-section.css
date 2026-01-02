@@ -1,6 +1,6 @@
 .stories-slider-section {clear: both; width: 100%; position: relative; z-index: 1;}
 .stories-slider-section:before {background: var(--Foreground); opacity: 0.2; content: ""; display: block; max-width:calc(1344px - 64px); height: 1px; margin: 0 auto;}
-.stories-slider-row {display: flex; flex-wrap: wrap; width: 100%;}
+.stories-slider-row {display: block; width: 100%;}
 .stories-slider-header h2{margin-bottom: 0;}
 .stories-slider-item{background: var(--white); height: inherit!important;}
 .stories-slider-image{height: 532px; /*padding-top: 40px;*/ margin-bottom: 32px;}

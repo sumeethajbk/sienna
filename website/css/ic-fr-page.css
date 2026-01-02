@@ -184,6 +184,7 @@ br {display: none;}
 }
 
 @media screen and (max-width: 1023px) and (min-width:200px){
+    .hero-banner-main .hero-banner-text h1 {max-width: 100%;}
     .stock-quote-inner {flex-direction: column-reverse; align-items: flex-start;}
     .stock-quote-lt {width: 100%;}
     
@@ -230,7 +231,7 @@ br {display: none;}
     
     .regulatory-filings-module {padding: 48px 0;}
     .regulatory-filings-module .heading {margin: 0 0 32px 0;}
-    .regulatory-filings-grid {width: 100%; padding: 20px; gap:2.680965147453083%;}
+    .regulatory-filings-grid {width: 100%; padding: 20px; gap:20px;}
     .rf-lt {width: calc(100% - 68px); gap: 20px; align-items: center;}
     .rf-thumb {width: 76px; height: 99px;}
     .rf-txt .h5 {margin-bottom: 6px;}
@@ -240,7 +241,7 @@ br {display: none;}
     .financial-results-main {gap:24px;}
     .financial-results-module {padding: 48px 0;}
     .financial-results-module .heading {margin: 0 0 32px 0; gap:32px;}
-    .financial-results-grid {width: 100%; padding: 20px; gap:2.680965147453083%;}
+    .financial-results-grid {width: 100%; padding: 20px; gap:20px;}
     .fr-lt {width: calc(100% - 68px); gap: 20px; align-items: center;}
     .fr-thumb {width: 76px; height: 99px;}
     .fr-txt .h5 {margin-bottom: 6px;}

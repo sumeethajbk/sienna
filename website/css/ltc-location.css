@@ -3,7 +3,7 @@
 @import url("_amenities-module.css?v000013334");
 @import url("_sm-cta-section.css?v00001");
 @import url("_multi-cta-section.css");
-@import url("_photo-gallery-module.css");
+@import url("_photo-gallery-module.css?v000011");
 @import url("_testimonial-module.css");
 @import url("_optional-cta-module.css");
 @import url("_features-sidebar-section.css");
@@ -86,7 +86,7 @@
 .room-slider.room-nav {margin-left: auto; width: 160px; position: absolute; top: 50%; transform: translateY(-50%); z-index: 1; right: 40px; height: 800px; padding: 28px 0;}
 .room-slider.room-nav .slick-list, .room-slider.room-nav .slick-track {height: 100%!important;}
 
-.room-slider.room-nav .room-nav-slide {border-radius: 80px; background: rgba(255, 237, 217, 0.85);backdrop-filter: blur(4px); width: 160px; height: 160px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; text-align: center; margin: 13px 0;}
+.room-slider.room-nav .room-nav-slide {border-radius: 80px; background: rgba(255, 237, 217, 0.85);backdrop-filter: blur(4px); width: 160px; height: 160px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; text-align: center; margin: 13px 0; cursor: pointer;}
 .room-slider.room-nav .room-nav-slide .room-title {font-weight: bold; color: var(--Sienna-Orange); font-size: 1rem;}
 .room-slider.room-nav .room-nav-slide .room-size {font-size: 0.778rem; color: var(--black-50);}
 
@@ -119,8 +119,7 @@
 .contact-list ul li span.fa-sharp{font-size:1rem; line-height: 27px; max-width: 20px; color: var(--Sienna-Orange);}
 
 .community-form-rt {flex:1;}
-.community-form .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"], .community-form .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input[type="checkbox"] {width: 24px!important; height: 24px!important; margin: auto; display: flex !important;
-  align-items: center; bottom: 0; top: 0; transform: none;}
+.community-form .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"], .community-form .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input[type="checkbox"] {width: 24px!important; height: 24px!important; margin: auto; display: flex !important; align-items: center; bottom: 0; top: 0; transform: none;}
 .community-form .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:checked::before {font-size: 0.778rem; font-weight: normal;}
 .community-form .frm_forms.with_frm_style .frm_checkbox label {padding-left: 32px; font-size: 0.889rem!important; margin: 0;}
 .community-form .frm_forms .frm_filed_wrapper {padding-top: 4px;}

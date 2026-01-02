@@ -1,9 +1,9 @@
-@import url("_hero-banner.css?v000011");
+@import url("_hero-banner.css?v000011333");
 @import url("_notification-module.css?v00001122");
 @import url("_segments-module.css");
 @import url("_take-quiz.css");
 @import url("_affiliates-logo-module.css");
-@import url("_stories-slider-section.css?v88801122");
+@import url("_stories-slider-section.css?v888011223333");
 @import url("_repeater-section.css");
 @import url("_signup-module.css");
 
@@ -34,12 +34,12 @@
 @media only screen and (max-width:1023px) and (min-width:200px) {
     .hero-banner-section {padding: 56px 0 32px 0; margin-bottom: 0;}
     .hero-banner-main .hero-banner-thumb {width: 100%;}
-    .hero-banner-main .hero-banner-thumb .hero-banner-img {min-height: inherit;}
+    .hero-banner-main .hero-banner-thumb .hero-banner-img {position: absolute; bottom: 0; top: 0; min-height: inherit;}
     .hero-banner-main .hero-banner-text {width: 100%; padding: 0 12px;}
     
 }
 @media only screen and (max-width:1023px) and (min-width:768px) {
-    .hero-banner-section {padding: 56px 0 48px 0;}
+    .hero-banner-section {padding: 66px 0 48px 0;}
     .hero-banner-main {gap: 47px;}
     .hero-banner-main .hero-banner-text h1 {margin-bottom: 19px;}
     .hero-banner-main .hero-banner-text p {font-size: 1rem; margin-bottom: 32px;}
