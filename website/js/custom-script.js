@@ -239,27 +239,79 @@ jQuery(function ($) {
     row.toggleClass("open");
   });
 
-  jQuery('.tq-rt .button').on('click', function (e) {
-    e.preventDefault();
-    $(".overlay_main_sec").addClass("active");
+
+  function openQuizFromHash() {
+    if (window.location.hash === '#take-quiz') {
+      $('.overlay_main_sec').addClass('active');
+
+      // Reset quiz steps (optional but recommended)
+      $('#quiz-step-1').show();
+      $('#quiz-step-2, #quiz-step-3').hide();
+    }
+  }
+
+  // On page load
+  openQuizFromHash();
+
+  // If hash changes without reload
+  $(window).on('hashchange', function () {
+    openQuizFromHash();
   });
+
+  // jQuery('.tq-rt .button').on('click', function (e) {
+  //   e.preventDefault();
+  //   $(".overlay_main_sec").addClass("active");
+  // });
 
   jQuery('.overlay-close-btn').on('click', function (e) {
     e.preventDefault();
     $(".overlay_main_sec").removeClass("active");
   });
 
-  jQuery('#quiz-step-1 .quiz-option-btn .button').on('click', function (e) {
+  // jQuery('#quiz-step-1 .quiz-option-btn .button').on('click', function (e) {
+  //   e.preventDefault();
+  //   $("#quiz-step-2").css("display", "block");
+  //   $("#quiz-step-1").css("display", "none");
+  // });
+
+  // jQuery('#quiz-step-2 .quiz-option-btn .button').on('click', function (e) {
+  //   e.preventDefault();
+  //   $("#quiz-step-3").css("display", "block");
+  //   $("#quiz-step-1, #quiz-step-2").css("display", "none");
+  // });
+
+
+  const steps = ['#quiz-step-1', '#quiz-step-2', '#quiz-step-3'];
+
+  function showStep(stepIndex) {
+    $(steps.join(',')).hide();
+    $(steps[stepIndex]).show();
+  }
+
+  // NEXT buttons
+  $('#quiz-step-1 .quiz-option-btn .button').on('click', function (e) {
     e.preventDefault();
-    $("#quiz-step-2").css("display", "block");
-    $("#quiz-step-1").css("display", "none");
+    showStep(1);
   });
 
-  jQuery('#quiz-step-2 .quiz-option-btn .button').on('click', function (e) {
+  $('#quiz-step-2 .quiz-option-btn .button').on('click', function (e) {
     e.preventDefault();
-    $("#quiz-step-3").css("display", "block");
-    $("#quiz-step-1, #quiz-step-2").css("display", "none");
+    showStep(2);
   });
+
+  // BACK button
+  $('.overlay-back-btn').on('click', function (e) {
+    e.preventDefault();
+
+    let currentStep = steps.findIndex(step => $(step).is(':visible'));
+
+    if (currentStep > 0) {
+      showStep(currentStep - 1);
+    }
+  });
+
+
+
 
 
 });

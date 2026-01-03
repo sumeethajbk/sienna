@@ -14,8 +14,8 @@
 .hero-banner-main .hero-banner-text .hero-banner-date-main span.hero-banner-date{font-size: 0.778rem; line-height: 1.5; font-weight: 700; }
 
 .hero-banner-main .hero-banner-text .hero-banner-category{gap: 10px; margin-bottom: 20px;}
-.hero-banner-main .hero-banner-text .hero-banner-category a{font-size: 0.889rem; line-height: 1.5; display: inline-block; font-weight: 700; color: var(--black-75); padding: 8px 16px; background: var(--white); border-radius: 60px; }
-.hero-banner-main .hero-banner-text .hero-banner-category a:hover{color: var(--Foreground);}
+.hero-banner-main .hero-banner-text .hero-banner-category a{font-size: 0.889rem; line-height: 1.5; display: inline-block; font-weight: 700; color: var(--black-75); padding: 8px 16px; background: var(--white); border-radius: 60px; border: 2px solid transparent; outline: 4px solid transparent;}
+.hero-banner-main .hero-banner-text .hero-banner-category a:hover{color: var(--Sienna-Orange);border: 2px solid var(--Sienna-Orange); outline: 4px solid var(--button-outline);}
 
 .hero-banner-section.no-banner-img .hero-banner-main {min-height: inherit;}
 
@@ -48,7 +48,7 @@
 }
 
 @media only screen and (max-width:809px) and (min-width:768px){
-.hero-banner-section {padding:56px 0 48px 0; margin: 0;}
+.hero-banner-section {padding:72px 0 48px 0; margin: 0;}
 }
 
 @media only screen and (max-width: 767px) and (min-width: 200px){

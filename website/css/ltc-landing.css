@@ -3,10 +3,10 @@
 @import url("_features-module.css?v999222");
 @import url("_lterm-module.css");
 @import url("_optional-cta-module.css");
-@import url("_resources-slider-section.css?v000011");
+@import url("_resources-slider-section.css?v002233");
 @import url("_affiliates-logo-module.css");
 @import url("_approach-module.css?v000011");
-@import url("_repeater-section.css");
+@import url("_repeater-section.css?v000011");
 @import url("_signup-module.css");
 
 .optional-cta-module + .affiliation-section {padding-top: 80px;}

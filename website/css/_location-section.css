@@ -91,6 +91,8 @@ body.page-template-locator :-ms-input-placeholder {color: var(--Foreground)!impo
     .location-main{padding: 28px 0; gap: 28px;}
     .location-heading{gap: 12px; }
     .location-title h2{font-size: 1.111rem; line-height: 1.2;}
+    .location-title h2 br{display: none;}
+    .location-heading form{width: 100%;}
     .location-sort{width: 100%; gap: 12px;}
     .location-city-dropdown, .location-funding-dropdown{width: 100%;}
     body .location-city-dropdown .selectBox-dropdown,

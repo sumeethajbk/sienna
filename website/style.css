@@ -12,8 +12,8 @@ Text Domain:Sienna Senior Living
 
 
 @import url("css/_colors.css?v=122222333");
-@import url("css/_reset.css?v=1222223444");
-@import url("css/_header.css?v=22800000777999");
+@import url("css/_reset.css?v=122222344455");
+@import url("css/_header.css?v=999902");
 @import url("css/_footer.css?v=10000033");
 @import url("css/_cookiebar.css?v=123218");
 
@@ -478,9 +478,9 @@ ul.quiz-page-navigation > li:first-child:before{display: none;}
 .quiz-option-item:hover h6 a{color: var(--white);}
 .quiz-option-item:hover .quiz-option-map svg path{stroke: var(--white);}
 .quiz-option-item:hover .quiz-option-icon span{color: var(--white);}
-.overlay-header{justify-content: space-between; padding: 20px 0;}
+.overlay-header{padding: 20px 0;}
 .overlay-back-btn, .overlay-close-btn{width: 64px; height: 64px; background: var(--white); border-radius: 50%; font-size: 24px; color: var(--Sienna-Orange); cursor: pointer;}
-.overlay-logo{width: 150px;}
+.overlay-logo{width: 150px; flex: 1;}
 .overlay-logo img{width: 150px; object-fit: contain;}
 
 .quiz-content-main .location-lists{gap: 24px; margin-bottom: 32px;}
@@ -496,6 +496,15 @@ ul.quiz-page-navigation > li:first-child:before{display: none;}
 .quiz-content-main .location-details ul li span.fa-sharp{font-size: 1.111rem; line-height: 1.5; color: var(--Sienna-Orange); font-weight: 400;}
 .quiz-content-main .location-details ul li span{color: var(--Foreground); font-size: 1rem; font-weight: bold; line-height: 1.5; }
 .quiz-content-main .location-details .circle-arrow-btn span.fa-sharp{background: var(--Tint-Orange);}
+
+/* Hide back button when step 1 is visible */
+/* Hide back button when Step 1 is visible */
+.overlay_main_sec:has(#quiz-step-1:not([style*="display: none"])) 
+  .overlay-back-btn {
+  display: none;
+}
+
+
 
 .load_more_events, .search-wrap {clear: both; width: 100%;}
 
@@ -742,4 +751,7 @@ p:empty{display: none;}
 
 @media only screen and (max-width:480px) {   
     img.alignnone, img.alignleft, img.aligncenter, img.alignright {margin:39px 0 36px 0; width:100%}
+}
+@media only screen and (max-width: 389px) {   
+    .sharethis-inline-share-buttons .st-btn[data-network="sharethis"] span {font-size: 0.889rem;}
 }
