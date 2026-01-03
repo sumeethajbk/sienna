@@ -12,7 +12,7 @@ Text Domain:Sienna Senior Living
 
 
 @import url("css/_colors.css?v=122222333");
-@import url("css/_reset.css?v=122222344455");
+@import url("css/_reset.css?v=12222234445566");
 @import url("css/_header.css?v=999902");
 @import url("css/_footer.css?v=10000033");
 @import url("css/_cookiebar.css?v=123218");
@@ -280,7 +280,7 @@ body ul.selectBox-dropdown-menu li {color: var(--Foreground);}
 body ul.selectBox-dropdown-menu li:before {display: none;}
 body ul.selectBox-dropdown-menu li a {font-size: 0.875rem; line-height: 1.5; letter-spacing: normal; display: block; white-space: nowrap; text-transform: capitalize; color: var(--Foreground); overflow: hidden; text-overflow: ellipsis; text-decoration: none; font-weight: 400; padding: 5px 25px;}
 body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropdown-menu li a:hover {color:var(--Foreground); background-color:var(--Tint-Pink); cursor:pointer;}
-body ul.selectBox-dropdown-menu li.frm-select-placeholder/*, body ul.selectBox-dropdown-menu li.selectBox-selected */{display: none!important;} 
+body ul.selectBox-dropdown-menu li.frm-select-placeholder, body ul.selectBox-dropdown-menu li.selectBox-selected{display: none!important;} 
 /* body ul.selectBox-dropdown-menu li.selectBox-selected{display: none;} */
 
 /*-- common form css starts here --*/

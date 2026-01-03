@@ -6,6 +6,8 @@
 
 .repeater-list-inner{flex-direction: row-reverse; }
 
+.wpsl-select-wrap #wpsl-radius .wpsl-dropdown:last-child{display: none; }
+
 @media screen and (min-width: 1024px) {
     .location-main{padding: 40px 0;}
     .repeater-list .shadow{right: auto; left: -24px; }

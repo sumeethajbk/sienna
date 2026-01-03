@@ -5,3 +5,6 @@
 @import url("_team-carousel-section.css?v2112000444555");
 @import url("tabs-section.css?v2112000");
 @import url("_signup-module.css?v2112000");
+
+
+.divider-section:not(:has(+ .team-carousel-section)) { display: none; }

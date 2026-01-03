@@ -127,7 +127,7 @@ button:focus, .button:focus, button:active, .button:active {color: var(--white);
 .btn-gray:active, .btn-gray:focus {background: var(--Dark-Gray); color: var(--white);}
 
 
-input[type="submit"] {background-image: url("../images/search-icon.svg") !important; background-repeat: no-repeat !important; position: absolute; right:16px; top:0; bottom: 0; padding: 0 !important; width:25px; height: 25px; margin: auto; background-color: transparent !important; border: 0 none; border-radius: 0; z-index: 1; box-shadow: none !important; transform: none !important; min-width: inherit; background-size: 100%;}
+input[type="submit"]:not(#wpsl-search-btn) {background-image: url("../images/search-icon.svg") !important; background-repeat: no-repeat !important; position: absolute; right:16px; top:0; bottom: 0; padding: 0 !important; width:25px; height: 25px; margin: auto; background-color: transparent !important; border: 0 none; border-radius: 0; z-index: 1; box-shadow: none !important; transform: none !important; min-width: inherit; background-size: 100%;}
 input[type="submit"]:hover {box-shadow: none; transform: none;}
 
 
