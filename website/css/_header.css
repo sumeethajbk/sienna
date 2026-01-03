@@ -83,7 +83,7 @@ ul.main_menu > li.menu-item-has-children > a:hover,
 ul.main_menu > li.current_page_item>a, 
 ul.main_menu > li > a:hover, 
 ul.main_menu > li.current_page_item a, 
-ul.main_menu > li.current_page_ancestor li.current-page-ancestor a{color:var(--Sienna-Orange);}
+ul.main_menu > li.current_page_ancestor li.current-page-ancestor > a, ul.main_menu > li.current-menu-ancestor li.current-page-ancestor > a, ul.main_menu > li.current-menu-ancestor li.current-menu-item > a, ul.main_menu > li.current_page_ancestor .current-menu-parent .current-menu-item > a, ul.main_menu > li.current-menu-ancestor .current-menu-item > a{color:var(--Sienna-Orange);}
 ul.main_menu > li.menu-item-has-children > a::after {height: 4px; bottom: 0;}
     
 ul.main_menu > li.menu-button a {background: var(--white); border-radius:60px; padding:11px 14px 10px 14px; border: 2px solid transparent;  outline:4px solid transparent;}
