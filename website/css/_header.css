@@ -82,7 +82,7 @@ ul.main_menu > li.current-menu-ancestor>a,
 ul.main_menu > li.menu-item-has-children > a:hover, 
 ul.main_menu > li.current_page_item>a, 
 ul.main_menu > li > a:hover, 
-ul.main_menu > li.current_page_item a, 
+ul.main_menu > li.current_page_item > a, 
 ul.main_menu > li.current_page_ancestor li.current-page-ancestor > a, ul.main_menu > li.current-menu-ancestor li.current-page-ancestor > a, ul.main_menu > li.current-menu-ancestor li.current-menu-item > a, ul.main_menu > li.current_page_ancestor .current-menu-parent .current-menu-item > a, ul.main_menu > li.current-menu-ancestor .current-menu-item > a{color:var(--Sienna-Orange);}
 ul.main_menu > li.menu-item-has-children > a::after {height: 4px; bottom: 0;}
     
