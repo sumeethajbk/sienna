@@ -7,3 +7,5 @@
 @import url("_signup-module.css");
 
 .fcam-module::before{display: none;}
+
+.content-block { display: block; position: relative; height: 300px; }
