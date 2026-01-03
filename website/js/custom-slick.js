@@ -219,7 +219,7 @@ jQuery(document).ready(function () {
           slidesToScroll: 1,
           adaptiveHeight: true,
           arrows: true,
-          dots: true
+          dots: true,
         }
       }
     ]
