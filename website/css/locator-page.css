@@ -8,6 +8,81 @@
 
 .wpsl-select-wrap #wpsl-radius .wpsl-dropdown:last-child{display: none; }
 
+.wpsl-dropdown{width: 100%; border: none; background: transparent; border-radius: 0;}
+.wpsl-dropdown:hover{box-shadow: none; }
+.wpsl-dropdown .wpsl-selected-item{
+  outline: 0;
+  width: 100% !important;
+  min-width: 178px;
+  font-size: 1rem;
+  background: var(--Tint-Pink);
+  color: var(--Foreground);
+  box-shadow: none;
+  border-radius: 60px !important;
+  padding: 15px 56px 14px 19px !important;
+  vertical-align: middle;
+  height: auto;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  font-weight: 400;
+  border: 1.25px solid var(--Sienna-Orange);
+  display: block;
+  width: 100% !important;
+  text-overflow: ellipsis;
+  font-weight: 700;
+  opacity: 1;
+  line-height: 1.35;
+}
+
+.wpsl-dropdown .wpsl-selected-item::after {
+	position: absolute;
+	content: "\f078";
+	right: 12px;
+	top: auto !important;
+	margin-top: 0 !important;
+	border: none !important;
+	font-size: 1rem;
+	font-family: "Font Awesome 7 Sharp";
+	color: var(--Sienna-Orange);
+	font-weight: 400;
+}
+.wpsl-dropdown.wpsl-active .wpsl-selected-item::after {
+	transform: rotate(-180deg);
+}
+
+.wpsl-dropdown div{
+    border: none !important; 
+    border-radius: 10px !important;
+}
+
+.wpsl-dropdown ul {
+	background-color: var(--white);
+	margin: 1px 0 0 0;
+	border: none;
+	-webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 1px 8px rgba(0, 0, 0, .2);
+	z-index: 50;
+	border-radius: 0 !important;
+}
+.wpsl-dropdown ul li{
+font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: normal;
+  display: block;
+  white-space: nowrap;
+  text-transform: capitalize;
+  color: var(--Foreground);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 5px 25px !important;}
+
+  .wpsl-dropdown  ul li:hover {
+  background: var(--Tint-Pink);}
+
 @media screen and (min-width: 1024px) {
     .location-main{padding: 40px 0;}
     .repeater-list .shadow{right: auto; left: -24px; }

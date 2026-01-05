@@ -130,6 +130,7 @@ body .community-form-inner .frm_forms .frm_submit button, body .community-form-i
 .default-content-section br {display: none;}
 .resources-slider-section::before {display: none;}
 
+
 /*-- media css starts here --*/
 @media only screen and (max-width: 1280px) and (min-width:1024px) {
     .room-slider-module .room-slider-inner {padding: 0 32px;}
