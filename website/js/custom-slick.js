@@ -60,7 +60,7 @@ jQuery(document).ready(function () {
     responsive: [{
       breakpoint: 1024,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 4,
         slidesToScroll: 1,
         vertical: false,
         verticalSwiping: false,

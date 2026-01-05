@@ -35,7 +35,8 @@
     .vision-swrapper .slider-nav .slick-track:before {display: none;}
     .vision-swrapper .slider-nav .slick-track {width: 100%!important; transform: none!important; display: flex; flex-wrap: wrap; gap:12px; justify-content: center;}
     .vision-swrapper .slider-nav .thumb-slide {width: 157px; height: 157px; margin: 0;}
+    .vision-swrapper .slider-nav .slick-track:after {display: none;}
 }
 @media only screen and (max-width:389px) and (min-width:200px) {
-    .vision-swrapper .slider-nav .thumb-slide {width: 142px; height: 142px;}
+    .vision-swrapper .slider-nav .thumb-slide {width: 48%; height: 142px;}
 }

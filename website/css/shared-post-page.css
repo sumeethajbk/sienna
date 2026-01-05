@@ -16,7 +16,7 @@
 
 .default-article .h3{margin-bottom: 24px; }
 
-
+.video-wrap .video-thumbnail > img {height: 585px;}
 
 
 
@@ -35,4 +35,5 @@
     .default-article .h3{margin-bottom: 16px; }
     .hero-banner-main .hero-banner-text .hero-banner-category a{ font-size: 0.778rem; padding: 4px 8px;}
     .image-testimonial-section{margin-bottom: 40px; }
+    .video-wrap .video-thumbnail > img {height: 47vw;}
 }
