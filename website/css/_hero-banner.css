@@ -44,11 +44,14 @@
     .hero-banner-main .hero-banner-thumb {height: 52.965vw;}
     .hero-banner-main .hero-banner-text {padding: 0 24px}
     .hero-banner-main {gap:24px;}
+
+    .hero-banner-main .hero-banner-thumb .hero-banner-img img{object-position: top center;}
     
 }
 
 @media only screen and (max-width:809px) and (min-width:768px){
 .hero-banner-section {padding:72px 0 48px 0; margin: 0;}
+.hero-banner-main .hero-banner-thumb .hero-banner-img img{object-position: top center;}
 }
 
 @media only screen and (max-width: 767px) and (min-width: 200px){

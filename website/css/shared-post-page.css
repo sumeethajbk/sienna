@@ -1,4 +1,4 @@
-@import url("_hero-banner.css?v00022");
+@import url("_hero-banner.css?v000229");
 @import url("default-page.css?v=101");
 @import url("_sm-cta-section.css?v00001");
 @import url("_multi-cta-section.css?v=1014444");
@@ -16,7 +16,7 @@
 
 .default-article .h3{margin-bottom: 24px; }
 
-.video-wrap .video-thumbnail > img {height: 585px;}
+/* .video-wrap .video-thumbnail > img {height: 585px;} */
 
 
 

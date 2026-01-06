@@ -11,7 +11,7 @@
 .location-details{padding: 32px; color: var(--anchor); display: flex; flex-direction: column; height: 100%; flex-wrap: wrap}
 .location-details h2{margin-bottom: 0;}
 .location-details hr{background: var(--Sienna-Orange); margin: 16px 0; opacity: 1;}
-.location-details p{margin-bottom: 8px; padding: 0 !important;}
+.location-details p{margin-bottom: 8px; padding: 0 !important; }
 .location-details ul{margin: 0 0 28px 0 !important; gap: 8px;}
 .location-details ul li::before{display: none;}
 .location-details ul li{gap: 12px; margin-bottom: 0; padding: 0 !important; border: none !important; }
@@ -76,7 +76,7 @@ body.page-template-locator :-ms-input-placeholder {color: var(--Foreground)!impo
     .location-details ul li span.fa-sharp{font-size: 1rem;}
 
 
-    .location-filter-main{gap: 16px; margin-bottom: 4px; width: 100%;}
+    .location-filter-main{gap: 16px; margin-bottom: 37px; width: 100%;}
     .locator-filter{gap: 16px; flex: 100%;}
     .locator-filter > div{flex: 0 0 calc(50% - 8px);}
     body .locator-filter .selectBox-dropdown{font-size: 0.889rem;}
@@ -85,6 +85,9 @@ body.page-template-locator :-ms-input-placeholder {color: var(--Foreground)!impo
     .location-search-btn .button{width: 100%;}
 
     .location-show-btn{gap: 12px; margin-top: 32px;}
+
+    .location-image{height: 178px;}
+    .location-image img{min-height: 178px; max-height: 178px;}
 
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
@@ -118,12 +121,12 @@ body.page-template-locator :-ms-input-placeholder {color: var(--Foreground)!impo
     span.location-btn-text{font-size: 0.889rem;}
     .location-show-btn{gap: 8px; margin-top: 28px;}
 
-    .location-filter-main{gap: 12px; margin-bottom: 4px; width: 100%;}
+    .location-filter-main{gap: 12px; margin-bottom: 32px; width: 100%;}
     .locator-filter{gap: 12px; flex: 100%;}
     .locator-filter > div{flex: 100%;}
     body .locator-filter .selectBox-dropdown{font-size: 0.889rem;}
     body .locator-postal-code-form .frm_forms .frm_form_fields input{font-size: 0.889rem;}
-    .location-search-btn{flex: 100%;}
+    .location-search-btn{flex: 100%; margin: 0 !important;}
     .location-search-btn .button{width: 100%;}
     
 }

@@ -1,13 +1,12 @@
 
 @import url("_locator-top-section.css");
-@import url("_location-section.css?v=2345655678");
+@import url("_location-section.css?v=2003345");
 @import url("_repeater-section.css?v000011");
 @import url("_signup-module.css");
 
 .repeater-list-inner{flex-direction: row-reverse; }
 
-
-#wpsl-result-list #wpsl-stores{height: 100%!important; overflow-y: inherit; }
+#wpsl-result-list #wpsl-stores{height: 100%!important; overflow-y: inherit; width: 100%;}
 .wpsl-search{margin-bottom: 0; padding: 0; background: var(--white); }
 
 .wpsl-select-wrap #wpsl-radius .wpsl-dropdown:last-child{display: none; }
@@ -15,33 +14,32 @@
 .wpsl-dropdown{width: 100%; border: none; background: transparent; border-radius: 0;}
 .wpsl-dropdown:hover{box-shadow: none;}
 .wpsl-dropdown .wpsl-selected-item{outline: 0; width: 100% !important; min-width: 178px; font-size: 1rem; background: var(--Tint-Pink); color: var(--Foreground); box-shadow: none; border-radius: 60px !important; padding: 15px 56px 14px 19px !important; vertical-align: middle; height: auto; transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; cursor: pointer; font-weight: 400; border: 1.25px solid var(--Sienna-Orange); display: block; width: 100% !important; text-overflow: ellipsis; font-weight: 700; opacity: 1; line-height: 1.35; }
-.wpsl-dropdown .wpsl-selected-item::after { position: absolute; content: "\f078"; right: 12px; top: auto !important; margin-top: 0 !important; border: none !important; font-size: 1rem; font-family: "Font Awesome 7 Sharp"; color: var(--Sienna-Orange); font-weight: 400; }
+.wpsl-dropdown .wpsl-selected-item::after{position: absolute; content: "\f078"; right: 20px; top: auto !important; margin-top: 0 !important; border: none !important; font-size: 1rem; font-family: "Font Awesome 7 Sharp"; color: var(--Sienna-Orange); font-weight: 400; transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out;}
 .wpsl-dropdown.wpsl-active .wpsl-selected-item::after { transform: rotate(-180deg); }
 .wpsl-dropdown div{border:none !important;border-radius :10px !important;}
 .wpsl-dropdown ul{background-color :var(--white); margin :1px 0 0 ; border :none;-webkit-box-shadow :0 ; -moz-box-shadow :none ; z-index :50 ; border-radius :none ;}
-.wpsl-dropdown ul li{font-size :.875rem ; line-height :1.5 ; letter-spacing :normal ; display:block ; white-space :nowrap ; text-transform :capitalize ; color :var(--Foreground) ; overflow:hidden ; text-overflow :ellipsis ; text-decoration:none ; font-weight :400 ; padding :5px25px !important;}
+.wpsl-dropdown ul li{font-size: 0.875rem; line-height: 1.5; letter-spacing :normal ; display:block ; white-space :nowrap ; text-transform :capitalize ; color :var(--Foreground) ; overflow:hidden ; text-overflow :ellipsis ; text-decoration:none ; font-weight :400 ; padding :5px 20px !important;}
 .wpsl-dropdown ul li:hover{background: var(--Tint-Pink);}
 
 .wpsl-input input{background: var(--Tint-Orange); width: 100% !important; border-radius: 60px !important; border: 1.25px solid var(--Sienna-Orange) !important; background-color: var(--Tint-Pink) !important; padding: 15px 60px 15px 20px !important; font-size: 1rem !important; line-height: 1.35; background-image: url('../images/keyboard-icon.svg'); background-position: calc(100% - 20px) calc(50% - 1px); background-repeat: no-repeat; background-size: 27px 24px;}
 
 .wpsl-search-btn-wrap{margin: 0 !important;}
 .wpsl-search-btn-wrap #wpsl-search-btn{width: 56px; font-size: 0; height: 56px; padding: 0; background: var(--Sienna-Orange); border-radius: 50%; min-width: 56px; margin: 0; border: none; position: relative; background-image: url('../images/search-icon-white.svg'); background-position: 50% 50%; background-repeat: no-repeat; background-size: 27px 24px;}
-/* .wpsl-search-btn-wrap::before{content: "\f002"; z-index: 2; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 1.333rem; line-height: 1; font-family: "Font Awesome 7 Sharp"; color: var(--white); font-weight: 400; } */
 
 #wpsl-result-list{width: 100%; margin-right: 0; position: relative; clear: both; }
 #wpsl-result-list #wpsl-stores > ul{position: relative; clear: both; display: flex; flex-wrap: wrap; gap: 40px;}
-#wpsl-result-list #wpsl-stores > ul .store-details{flex: 0 0 calc(33.333% - 27px); background-color: var(--Tint-Orange); display: flex; flex-direction: column;}
 
   #wpsl-stores .wpsl-store-thumb {min-width:100%; margin: 0 !important; border-radius: 0 !important; }
 .store-details-text{padding: 32px; color: var(--anchor); display: flex; flex-direction: column; height: 100%; flex-wrap: wrap; }
-.location-dist-name{margin-bottom: 28px; }
-.store-details-text .location-dist-name strong{font-size: 1.778rem; line-height: 1.2; color: var(--Foreground); font-family: "Ivar Display", sans-serif; font-weight: bold; width: 100%; padding-bottom: 16px; border-bottom: 1px solid var(--Sienna-Orange); margin-bottom: 16px; display: block;}
-.store-details-text .location-dist-name p{padding-left: 0; font-size: 1rem; line-height: 1.5; color: var(--Dark-Gray); margin-bottom: 8px;}
-.store-details-text .circle-arrow-btn{margin-top: auto; }
 
 /* 33333 */
 
 .wpsl-select-wrap #wpsl-radius{width: 100%; margin: 0;}
+
+.location-main > div{width: 100%;}
+
+#wpsl-search-wrap .wpsl-dropdown div{margin: 1px 0 0 0; -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .2); -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, .2); transition: all .5s ease;}
+ body.page-template-locator .selectBox-dropdown .selectBox-arrow{right: 20px; }
 
 @media screen and (min-width: 1024px) {
     .location-main{padding: 40px 0;}
@@ -53,8 +51,21 @@
 
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .location-main{padding: 48px 0 20px;}
+
+    #wpsl-result-list #wpsl-stores > ul{gap: 28px;}
+    .location-search-btn .wpsl-search-btn-wrap{width: 100%;}
+    .wpsl-search-btn-wrap #wpsl-search-btn { width: 100%; height: 56px; padding: 0; background: var(--Sienna-Orange); border-radius: 300px; min-width: 56px; margin: 0; border: none; position: relative; background-image: none; background-position: unset; background-repeat: unset; background-size: 0; font-size: 1.333rem; font-weight: 700; line-height: 100%; vertical-align: middle; display: inline-block; float: none; color: var(--white); outline: 4px solid transparent;}
+    .wpsl-search-btn-wrap #wpsl-search-btn:hover{outline: 4px solid var(--button-outline);}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .location-main{padding: 16px 0;}
     .repeater-list:first-child .repeater-list-inner{padding-top: 16px; }
+    #wpsl-search-wrap .wpsl-dropdown, #wpsl-search-input{width: 100% !important; }
+    .wpsl-dropdown .wpsl-selected-item::after{right: 20px;}
+   
+
+    #wpsl-result-list #wpsl-stores > ul{gap: 24px;}
+    .location-search-btn .wpsl-search-btn-wrap{width: 100%;}
+    .wpsl-search-btn-wrap #wpsl-search-btn { width: 100%; height: 56px; padding: 0; background: var(--Sienna-Orange); border-radius: 300px; min-width: 56px; margin: 0 !important; border: none; position: relative; background-image: none; background-position: unset; background-repeat: unset; background-size: 0; font-size: 1.333rem; font-weight: 700; line-height: 100%; vertical-align: middle; display: inline-block; float: none; color: var(--white); outline: 4px solid transparent;}
+    .wpsl-search-btn-wrap #wpsl-search-btn:hover{outline: 4px solid var(--button-outline);}
 }

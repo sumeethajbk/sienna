@@ -220,7 +220,6 @@ img.mobile {display:none;}
 
 /* Video/video popup */
 .video-wrap {margin:64px 0 64px 0; position: relative; clear: both; overflow: hidden; z-index: 1;}
-.video-wrap .video-thumbnail > img {height:441px;}
 
 .video-thumbnail{position: relative;}
 .video-thumbnail.video_post {position: relative;width: 100%; }
@@ -352,7 +351,7 @@ body .frm_style_formidable-style.with_frm_style input.frm_other_input:not(.frm_o
 
 /* Success Message */
 .frm_forms .frm_error_style {display: none;}
-.frm_forms .frm_message, .frm_forms .frm_success_style {margin: 20px 0 0; background: top; border: 0 none; font-weight: bold; font-size: 1rem; line-height: 1.5; padding: 0;}
+.frm_forms .frm_message, .frm_forms .frm_success_style {margin: 20px 0 0; background: top; border: 0 none; font-weight: bold; font-size: 1rem; line-height: 1.5; padding: 0; color: var(--Sienna-Orange);}
 .frm_forms .frm_message p {color: var(--Foreground); text-align: center; font-size: 1rem; line-height: 1.5; margin-bottom: 0;}
 
 .whitebg-form .frm_forms .frm_form_fields input, .whitebg-form .frm_forms .frm_form_fields textarea, .whitebg-form .frm_forms .frm_form_fields select {background-color: var(--Tint-Pink) !important; color: var(--Foreground); padding:15px 20px 15px 20px; width: 100%; border-radius: 60px; border: 1.3px solid var(--Sienna-Orange) !important;}
