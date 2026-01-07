@@ -27,6 +27,7 @@
     .optional-cta-module {padding: 60px 0;}
     .optional-cta-main {gap:40px;}
     .optional-cta-main .optional-cta-thumb {max-width: 100%; height: 70vw;}
+    .optional-cta-main .optional-cta-thumb img{object-position: top center;}
 }
 @media only screen and (max-width:767px) and (min-width: 200px){
     .optional-cta-module {padding: 32px 0;}

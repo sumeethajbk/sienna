@@ -277,7 +277,7 @@ body .selectBox-dropdown.selectBox-menuShowing .selectBox-arrow {transform:rotat
 body ul.selectBox-dropdown-menu { background-color: var(--white); margin:1px 0 0 0; border: none; -webkit-box-shadow:0 1px 8px rgba(0, 0, 0, .2); -moz-box-shadow:0 1px 8px rgba(0, 0, 0, .2); z-index: 50; border-radius: 0!important; }
 body ul.selectBox-dropdown-menu li {color: var(--Foreground);}
 body ul.selectBox-dropdown-menu li:before {display: none;}
-body ul.selectBox-dropdown-menu li a {font-size: 0.875rem; line-height: 1.5; letter-spacing: normal; display: block; white-space: nowrap; text-transform: capitalize; color: var(--Foreground); overflow: hidden; text-overflow: ellipsis; text-decoration: none; font-weight: 400; padding: 5px 25px;}
+body ul.selectBox-dropdown-menu li a {font-size: 0.875rem; line-height: 1.5; letter-spacing: normal; display: block; white-space: nowrap; text-transform: capitalize; color: var(--Foreground); overflow: hidden; text-overflow: ellipsis; text-decoration: none; font-weight: 400; padding: 5px 12px;}
 body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropdown-menu li a:hover {color:var(--Foreground); background-color:var(--Tint-Pink); cursor:pointer;}
 body ul.selectBox-dropdown-menu li.frm-select-placeholder /*, body ul.selectBox-dropdown-menu li.selectBox-selected*/{display: none!important;} 
 /* body ul.selectBox-dropdown-menu li.selectBox-selected{display: none;} */

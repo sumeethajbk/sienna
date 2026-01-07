@@ -4,7 +4,7 @@
 .fcam-module .section-intro .h1 {margin: 0 0 20px;}
 .fcam-wrap {width: 100%; gap:6.666666666666667%; flex-direction: row-reverse;}
 .fcam-thumb {width: 58.333333333333336%; flex-grow: 1;}
-.fcam-thumb .video-thumbnail > img {min-height: 393px; max-height: 393px;}
+.fcam-thumb .video-thumbnail > img {min-height: 393px;}
 .fcam-txt {width: 35%; color: var(--Dark-Gray); flex-grow: 1;}
 
 .hero-banner-section + .fcam-module:before {display: none;}

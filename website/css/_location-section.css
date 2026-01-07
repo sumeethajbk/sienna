@@ -25,6 +25,8 @@
 .location-filter-main{gap: 20px; margin-bottom: 32px; margin-right: 0 !important;}
 .locator-filter{gap: 20px; flex: 1; margin: 0 !important;}
 .locator-filter > div{flex: 1; margin: 0 !important;}
+.locator-filter > div #wpsl-result{margin: 0 !important; width: 100%;}
+.locator-filter > div #wpsl-result .wpsl-dropdown:last-child{display: none;}
 .location-search-btn{flex: 0 0 56px;}
 .location-search-btn .circle-arrow-btn span.fa-sharp{width: 56px; height: 56px;}
 body .locator-postal-code-form .frm_forms .frm_form_fields .frm_form_field{margin-bottom: 0;}
