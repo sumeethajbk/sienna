@@ -90,10 +90,12 @@
     
     .storiesl-lists {gap: 32px 4.289544235924933%;} 
     .storiesl-item {width: 47.85522788203753%;}
+    .storiesl-item:nth-child(2n+1):last-child{width: 100%;}
     .storiesl-item .h5{margin-bottom: 12px;}
     .storiesl-details {padding: 24px;}
     .storiesl-section {padding: 48px 0;}
     .storiesl-main {gap:32px;}
+    .storiesl-image img{object-position: top center;}
     
     .circle-arrow-btn span.fa-sharp {width: 48px; height: 48px; font-size: 1.111rem;}    
     .storiesl-lists:has(> .no-stories) {margin: 0;}

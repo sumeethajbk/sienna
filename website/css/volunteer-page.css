@@ -6,10 +6,13 @@ body .volunteer-main .frm_forms .frm_submit button,
 body .volunteer-main .frm_forms .frm_submit button:hover{background-color: var(--button);}
 body .frm_forms.with_frm_style .frm_checkbox label{cursor: auto;}
 
+body.page-template-volunteer ul.selectBox-dropdown-menu li a {padding: 5px 12px;}
 
 @media screen and (max-width:767px) and (min-width:200px) {
     body .volunteer-main .frm_forms .frm_submit button{width: 100%;}
     body ul.selectBox-dropdown-menu li a{padding: 5px 12px;}
     body .frm_forms .frm_message{margin: 0;}
+
+    body.page-template-volunteer ul.selectBox-dropdown-menu li a {padding: 5px 6px;}
     
 }
