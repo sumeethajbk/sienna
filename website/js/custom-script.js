@@ -311,6 +311,10 @@ jQuery(function ($) {
   });
 
 
+  jQuery(document).ready(function () {
+    jQuery('#wpsl-search-btn').val('Find my community');
+  });
+
 
 
 

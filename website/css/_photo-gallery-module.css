@@ -10,7 +10,7 @@
 
 .photo-slide figure {position: relative;}
 .photo-slide figure figcaption {position: absolute; line-height: 1.3; padding:13px 11px 15px 37px; color: var(--Foreground); background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(4px); max-width: 601px; bottom:20px; z-index: 1; left: 20px; font-size: 0.83rem; font-weight: 300; font-style: italic;}
-.photo-slide figure figcaption:after {content: "\f03e"; display: block; position: absolute; left: 11px; font-family: "Font Awesome 7 sharp"; top: 18px; font-weight: normal; font-size: 1rem; color: var(--Sienna-Orange); line-height: 12px; font-style: normal;}
+.photo-slide figure figcaption:after {content: "\f03e"; display: block; position: absolute; left: 11px; font-family: "Font Awesome 7 sharp"; top: 17px; font-weight: normal; font-size: 1rem; color: var(--Sienna-Orange); line-height: 12px; font-style: normal;}
 
 .photo-slide .photo-thumb figure figcaption {opacity: 0;}
 .photo-slide.slick-center .photo-thumb figure figcaption {opacity: 1;}
