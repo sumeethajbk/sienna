@@ -31,7 +31,7 @@ span.topic-filters-title{font-size: 1rem; line-height: 1.5; display: block; font
 .search-results-content h2 a{color: var(--Umber-3); text-decoration-line: underline; text-decoration-style: solid; text-decoration-skip-ink: auto; text-decoration-color: var(--Sienna-Orange); text-decoration-thickness: auto; text-underline-offset: auto; text-underline-position: from-font;}
 .search-results-content p{display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; text-overflow: ellipsis; overflow: hidden; font-size: 0.778rem; line-height: 1.5; }
 .search-results-image{width: 80px;}
-.search-results-image img{width: 80px;}
+.search-results-image img{width: 80px; height: 80px;}
 
 .search-results-btn{gap: 16px; margin-top: 48px;}
 hr.search-result-line{margin: 0; flex: 1;}

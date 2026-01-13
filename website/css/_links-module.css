@@ -10,6 +10,7 @@
 .ld-grid p{font-size: 1rem; line-height: 1.5; color: var(--Dark-Gray); margin-bottom: 16px;}
 
 .ld-icon {margin-bottom:32px; position: relative; width:100%; height:195.6px; overflow: hidden;}
+.ld-icon img{object-position: top center;}
 .ld-cnt {clear: both; margin-top: auto;}
 
 @media only screen and (max-width:1280px) {

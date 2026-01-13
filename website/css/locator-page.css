@@ -1,6 +1,6 @@
 
 @import url("_locator-top-section.css");
-@import url("_location-section.css?v=20113344");
+@import url("_location-section.css?v=2011334455");
 @import url("_repeater-section.css?v000011");
 @import url("_signup-module.css");
 
@@ -29,6 +29,7 @@
 
 #wpsl-result-list{width: 100%; margin-right: 0; position: relative; clear: both; margin-bottom: 0 !important;}
 #wpsl-result-list #wpsl-stores > ul{position: relative; clear: both; display: flex; flex-wrap: wrap; gap: 40px;}
+#wpsl-result-list #wpsl-stores > ul li::before{display: none !important;}
 
   #wpsl-stores .wpsl-store-thumb {min-width:100%; margin: 0 !important; border-radius: 0 !important; }
 .store-details-text{padding: 32px; color: var(--anchor); display: flex; flex-direction: column; height: 100%; flex-wrap: wrap; }
@@ -56,6 +57,9 @@
 li.wpsl-no-results-msg{font-size: 2.222rem; line-height: 1.2; font-weight: bold; font-family: "Ivar Display", sans-serif; color: var(--Foreground); }
 li.wpsl-no-results-msg::before{display: none;}
 
+.wpsl-input{position: relative;}
+.wpsl-input:has(input.wpsl-error)::after{content: "Postal code is required"; right: 0 !important; width: 100%; display: block; font-size: 12px !important; color: #f00 !important; background: transparent; padding: 0; margin: 0; border-radius: 0; text-align: right !important; line-height: normal !important; font-weight: 400; top: auto; bottom: -17px; position: absolute;}
+
 
 @media screen and (min-width: 1024px) {
     .location-main{padding: 40px 0;}
@@ -75,6 +79,8 @@ li.wpsl-no-results-msg::before{display: none;}
     .location-search-btn .wpsl-search-btn-wrap{width: 100%;}
     .wpsl-search-btn-wrap #wpsl-search-btn { width: 100%; height: 56px; padding: 0; background: var(--Sienna-Orange); border-radius: 300px; min-width: 56px; margin: 0; border: none; position: relative; background-image: none; background-position: unset; background-repeat: unset; background-size: 0; font-size: 1.333rem; font-weight: 700; line-height: 100%; vertical-align: middle; display: inline-block; float: none; color: var(--white); outline: 4px solid transparent;}
     .wpsl-search-btn-wrap #wpsl-search-btn:hover{outline: 4px solid var(--button-outline);}
+
+    .wpsl-input:has(input.wpsl-error)::after{bottom: 0; position: relative; }
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .location-main{padding: 16px 0;}
@@ -90,4 +96,6 @@ li.wpsl-no-results-msg::before{display: none;}
     .wpsl-search-btn-wrap #wpsl-search-btn:hover{outline: 4px solid var(--button-outline);}
 
     li.wpsl-no-results-msg{font-size: 1.333rem; line-height: 1.2;}
+
+     .wpsl-input:has(input.wpsl-error)::after{bottom: 0; position: relative; }
 }

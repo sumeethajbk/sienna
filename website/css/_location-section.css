@@ -42,7 +42,8 @@ body.page-template-locator :-ms-input-placeholder {color: var(--Foreground)!impo
 
 .load_more_locations{width: 100%;}
 
-#city-wrapper { display: block; }
+#city-wrapper{display: block; }
+#postal-wrapper{display: inline-block; }
 
 @media screen  and (min-width: 1024px){
     .location-main{padding: 80px 0; gap: 48px;}
