@@ -8,4 +8,20 @@
 
 .fcam-module::before{display: none;}
 
-.content-block { display: block; position: relative; height: 300px; }
+.content-block { display: block; position: relative; height: 300px; margin: 80px 0 40px;}
+
+/* .nir-node--7376 .quote-wrap{border-bottom: none !important;} */
+
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .content-block{margin: 70px 0 40px; }
+}
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .content-block{margin: 40px 0 7px; height: 550px;}
+    .content-block iframe{height: 550px; width: calc(100% - 50px); margin: 0 auto; margin-left: auto; display: block; margin-left: 25px;}
+}
+
+@media screen and (max-width: 767px) and (min-width: 466px) {
+    .content-block{margin: 40px 0 15px; height: 300px;}
+    .content-block iframe{height: 300px; width: calc(100% - 50px); margin: 0 auto; margin-left: auto; display: block; margin-left: 25px;}
+}

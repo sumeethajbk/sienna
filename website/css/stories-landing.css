@@ -1,7 +1,7 @@
 @import url("_signup-module.css");
 @import url("_filter.css");
 
-.stories-landing {clear: both; width: 100%; position: relative; padding:168px 0 0; background: var(--Tint-Blue);}
+.stories-landing {clear: both; width: 100%; position: relative; padding:168px 0 80px; background: var(--Tint-Blue);}
 .stories-landing .stories-heading {clear: both; width: 100%; width:95%; margin: 0 0 48px 0;}
 .stories-landing .stories-heading h1{color: var(--Sienna-Orange);}
 .stories-landing .stories-heading p {font-size: 2.222rem; font-weight: bold; line-height: 1.2; font-family: "Ivar Display", sans-serif; color: var(--Foreground);}
@@ -74,7 +74,7 @@
 }
 
 @media screen and (max-width: 1023px) and (min-width:768px){
-    .stories-landing {padding: 114px 0 0 0;}
+    .stories-landing {padding: 114px 0 48px 0;}
     .stories-landing .stories-heading h1 {font-size: 3.556rem;}
     .stories-landing .stories-heading p {font-size: 1.778rem;}
     .stories-news-top-lt {min-height: 476px;}
@@ -107,7 +107,7 @@
 }
 
 @media screen and (max-width: 767px) and (min-width: 200px){
-    .stories-landing {padding: 84px 0 0;}
+    .stories-landing {padding: 84px 0 28px;}
     .stories-landing .stories-heading h1 {font-size: 2.667rem;}
     .stories-landing .stories-heading p {font-size: 1.333rem;}
     .stories-landing .stories-heading {margin: 0 0 28px 0;}

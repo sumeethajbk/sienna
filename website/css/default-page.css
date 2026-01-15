@@ -46,6 +46,8 @@ ul.aside-links > li:before{display: none;}
 
 .resources-slider-section:before {background: var(--Foreground); opacity: 0.2; content: ""; display: block; max-width: calc(1344px - 64px); height: 1px; margin: 8px auto 7px; position: relative;}
 
+.default-article .fixed-social-icons{margin-top: 64px;}
+
 /*-- media css starts here --*/
 @media only screen and (max-width: 1280px){
     .resources-slider-section:before {margin:8px 32px 7px;}
@@ -82,4 +84,6 @@ ul.aside-links > li:before{display: none;}
 	.default-thumb figure img {height: 100%;}
     
     .resources-slider-section::before {margin: 4px 32px 4px;}
+
+    .default-article .fixed-social-icons{margin-top: 40px;}
 }
