@@ -61,6 +61,8 @@ a.search-btn .custom_icon {width: 100%; height: 100%; display: flex; justify-con
 
 ul.main_menu li.flex-menu > ul > li.flex-cta-menu li.sub-menu-li-hide > a{display: none;}
 
+li.no-pointer> a{pointer-events: none;}
+
 @media only screen and (min-width:810px) {
 .main_header .header-btm {display:flex; flex-wrap:wrap; justify-content:flex-end; width:100%; transition:all 0.8s ease-in-out; -webkit-transition:all 0.8s ease-in-out; -moz-transition:all 0.8s ease-in-out; gap:20px;}
 .main_header .header_right {width:calc(100% - 150px); transition:all 0.8s ease-in-out; -webkit-transition:all 0.8s ease-in-out; -moz-transition:all 0.8s ease-in-out; margin: 4px 0 0 0;}
@@ -68,18 +70,18 @@ ul.main_menu li.flex-menu > ul > li.flex-cta-menu li.sub-menu-li-hide > a{displa
     
 /* Menu Level 1*/
 ul.main_menu {margin:0; font-size:0; line-height: normal;}
-ul.main_menu > li {margin:0 0 0 33px; display:inline-block; line-height: normal;}
+ul.main_menu > li {margin:0; display:inline-block; line-height: normal;}
 ul.main_menu > li:first-child {margin-left:0;}
 ul.main_menu > li > a {font-size:1rem; font-weight: 700; display:inline-block; position:relative; color:var(--Foreground); padding: 0 0 32px 0;}
 ul.main_menu > li > a:hover {color:var(--Foreground);}
 ul.main_menu > li:first-child > a {pointer-events: none;}
 ul.main_menu > li >a::after {content: ''; position: absolute; display: block; margin: auto; height:1px; width: 0; bottom:32px; transition: width .5s ease, background-color .5s ease; left:0; transform: translate(0, 0);}
-ul.main_menu > li >a:hover:after {width: 100%; background: var(--Sienna-Orange);}
+ul.main_menu > li:hover >a:after, ul.main_menu > li >a:hover:after {width: 100%; background: var(--Sienna-Orange);}
 ul.main_menu > li.current-menu-item>a, 
 ul.main_menu > li.current-menu-parent>a, 
 ul.main_menu > li.current-page-ancestor>a, 
 ul.main_menu > li.current-menu-ancestor>a, 
-ul.main_menu > li.menu-item-has-children > a:hover, 
+ul.main_menu > li.menu-item-has-children:hover > a:hover, 
 ul.main_menu > li.current_page_item>a, 
 ul.main_menu > li > a:hover, 
 ul.main_menu > li.current_page_item > a, 
@@ -91,7 +93,8 @@ ul.main_menu > li.menu-button a:hover {border: 2px solid var(--Sienna-Orange);  
 ul.main_menu > li.menu-button a:hover:after {display: none;}
 
 /* Submenu Level 2*/  
-ul.main_menu > li > ul {margin:0; padding:32px; min-width:335px; top:100%; position:absolute; left:50%; transform: translateX(-50%); text-align:left;  width:100%; opacity:0; visibility:hidden; background:var(--white); transition: visibility .3s ease,opacity .3s ease,transform .3s ease; text-transform: capitalize; font-size: 0.889rem; font-weight: bold; box-shadow: -1px 3px 17px -10px rgba(0, 0, 0, 0.75);}
+ul.main_menu > li > ul {margin:0; padding:32px; min-width:335px; top:100%; position:absolute; left:50%; transform: translateX(-50%); text-align:left;  width:100%; opacity:0; visibility:hidden; background:var(--white); transition: visibility .3s ease,opacity .3s ease,transform .3s ease;  font-size: 0.889rem; font-weight: bold; box-shadow: -1px 3px 17px -10px rgba(0, 0, 0, 0.75);}
+/* text-transform: capitalize; */
 
 
 ul.main_menu > li:hover > ul {opacity: 1; visibility: visible;}
@@ -107,7 +110,7 @@ ul.main_menu > li > ul ul li {margin-bottom: 8px;}
 
  
 /* Flex Menu */
-ul.main_menu li.flex-menu > ul { max-width: 670px; width: 100%; max-height: none; display: flex; flex-wrap: wrap; padding: 0; min-width: 670px; transform: translateX(-25.4%);}
+ul.main_menu li.flex-menu > ul { max-width: 670px; width: 100%; max-height: none; display: flex; flex-wrap: wrap; padding: 0; min-width: 670px; transform: translateX(-50%);}
 ul.main_menu li.flex-menu > ul:before {transform: translateX(-25.4%);}
 ul.main_menu li.flex-menu > ul > li { flex: 1; margin: 0;}
 ul.main_menu li.flex-menu > ul > li.flex-cta-menu li {margin-bottom: 0;}
@@ -152,6 +155,9 @@ ul.main_menu li.flex-menu > ul > li ul li a .menu-text p {color: var(--muted); f
     
 nav.navigation {transition:.4s all ease-in-out;}
 ul.main_menu li.flex-menu > ul > li.hide-menu, ul.main_menu li > ul > li.hide-menu {display: none!important;}
+
+ul.main_menu > li.menu-item-has-children > a { padding-left: 17px; padding-right: 17px;}
+ul.main_menu > li:not(.menu-item-has-children) > a { margin-left: 17px; margin-right: 17px;}
 }
 
 @media only screen and (max-width:1023px) and (min-width:810px) {
@@ -160,12 +166,17 @@ ul.main_menu li.flex-menu > ul > li.hide-menu, ul.main_menu li > ul > li.hide-me
     .main_header .logo {width: 107px; height: auto;}
     .main_header .header_right {width: calc(100% - 107px); margin: 0;}
     .main_header .header-btm {gap:16px;}
-    ul.main_menu > li {margin: 0 0 0 24px;}
+    ul.main_menu > li {margin: 0;}
     ul.main_menu > li > a {font-size: 0.889rem; line-height: 1; padding: 0 0 9px 0;}
     ul.main_menu > li.menu-button a {padding: 11px 10px 11px 10px;}
     .header-search {height: 40px; width: 40px;}
     a.search-btn {font-size: 1rem;}
-    
+
+    ul.main_menu > li.menu-item-has-children > a{padding-left: 10px; padding-right: 10px;}
+    ul.main_menu > li:not(.menu-item-has-children) > a{margin-left: 10px; margin-right: 10px;}
+
+     ul.main_menu li.flex-menu > ul{transform: translateX(-35%); }
+
 }
 
 @media only screen and (max-width:809px) and (min-width:200px) {
@@ -270,7 +281,7 @@ ul.main_menu li.flex-menu.cta-flex-menu > ul > li.menu-cta .cta-brand-icon {disp
     ul.main_menu li.investor-sub-menu > ul {background: var(--Tint-Orange); margin: -5px 0 0 0; padding: 24px 0;}
     ul.main_menu li.investor-sub-menu > ul > li {padding: 0 24px; margin-bottom: 16px;}
     ul.main_menu li.investor-sub-menu > ul > li:last-child {margin-bottom: 0;}
-    ul.main_menu li.investor-sub-menu > ul > li:first-child > a {pointer-events: none;}
+    /* ul.main_menu li.investor-sub-menu > ul > li:first-child > a {pointer-events: none;} */
     ul.main_menu li.investor-sub-menu > ul > li ul {margin:8px 0 0 14px;}    
     ul.main_menu li.investor-sub-menu > ul > li ul li {width: 100%; margin-bottom: 16px;}
     ul.main_menu li.investor-sub-menu > ul > li ul li:last-child{margin-bottom: 0;}

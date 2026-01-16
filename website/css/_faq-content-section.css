@@ -11,7 +11,7 @@ ul.faq-content-category li span.faq-category-name{flex: 1;}
 ul.faq-content-category li a.active span.dot{background: var(--Tint-Orange);}
 ul.faq-content-category li a.active span.dot::before{background: var(--Sienna-Orange);}
 
-.faq-content-main{align-items: flex-start;}
+/* .faq-content-main{align-items: flex-start;} */
 .faq-content-question{gap: 48px;}
 .faq-content-question.faq-no-gap{gap: 0;}
 .faq-content-item{width: 100%;}

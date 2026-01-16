@@ -1,10 +1,21 @@
 
-.volunterr-lt{font-size: 1.333rem; color: var(--Foreground); font-family: "Ivar Display", sans-serif; font-weight: 700; line-height: 1.2;}
 .volunterr-lt h1{font-size: 2.667rem; color: var(--Sienna-Orange); margin-bottom: 20px;}
+.volunterr-lt p{font-size: 1.333rem; color: var(--Foreground); font-family: "Ivar Display", sans-serif; font-weight: 700; line-height: 1.2;}
 .volunterr-rt{background: var(--Tint-Orange); padding: 32px 40px;}
 
+.volunteer-form-detais{padding-top: 20px; border-top: 1px solid var(--black-20); margin-top: 20px; }
+.volunteer-form-detais:not(:last-child){padding-bottom: 20px; border-bottom: 1px solid var(--black-20); margin-bottom: 20px; }
+.volunteer-form-detais h2{font-size: 1.111rem; line-height: 1.2; margin-bottom: 8px;}
+.volunteer-form-detais ul{margin: 0;}
+.volunteer-form-detais ul li::before{display: none;}
+.volunteer-form-detais ul li{margin-bottom: 4px;}
+.volunteer-form-detais ul li a, .volunteer-form-detais ul li{gap: 12px;}
+.volunteer-form-detais ul li a:hover span{color: var(--Sienna-Orange);}
+.volunteer-form-detais ul li span.fa-sharp{font-size: 18px; line-height: 27px; max-width: 20px; color: var(--Sienna-Orange);}
+.volunteer-form-detais ul li span{font-size: 0.889rem; line-height: 1.5; color: var(--Coal); flex: 1;}
+
 @media screen and (min-width: 1024px){
-    .volunteer-main{padding: 80px 0; gap: 80px;}
+    .volunteer-main{padding: 80px 0; gap: 80px; align-items: flex-start;}
     .volunterr-lt{flex: 0 0 335px; flex-grow: 1;}
     .volunterr-rt{flex: 0 0 calc(100% - 415px); flex-grow: 1;}
 }
@@ -12,16 +23,16 @@
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .volunteer-main{padding: 48px 0; gap: 48px;}
     .volunterr-lt, .volunterr-rt{width: 100%;}
-    .volunterr-lt{font-size: 1.333rem;}
     .volunterr-lt h1{font-size: 2.222rem;}
     .volunterr-lt h1 br{display: none;}
+    .volunterr-lt p{font-size: 1.333rem;}
     .volunterr-rt{padding: 24px 28px;}
 }   
 @media screen and (max-width: 767px) and (min-width: 200px){
     .volunteer-main{padding: 28px 0; gap: 40px;}
     .volunterr-lt, .volunterr-rt{width: 100%;}
-    .volunterr-lt{font-size: 1rem;}
     .volunterr-lt h1{font-size: 1.778rem;}
     .volunterr-lt h1 br{display: none;}
+    .volunterr-lt p{font-size: 1rem;}
     .volunterr-rt{padding: 20px 24px;}
 }   

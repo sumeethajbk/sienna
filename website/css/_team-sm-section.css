@@ -19,6 +19,9 @@ span.team-sm-role{font-size: 0.889rem; display: block; line-height: 1.5; opacity
     .team-sm-heading{margin-bottom: 48px;}
     .team-sm-list{gap: 40px;}
     .team-sm-item{flex: 0 0 calc(33.333% - 27px); gap: 24px;}
+
+    .team-sm-section:has(+ .cta-module) .team-sm-main{padding-bottom: 80px;}
+    #mainContent > .team-sm-section:last-of-type .team-sm-main {padding-bottom: 80px;}
 }
 
 @media screen and (max-width: 1199px) and (min-width: 1024px) {
@@ -33,6 +36,9 @@ span.team-sm-role{font-size: 0.889rem; display: block; line-height: 1.5; opacity
     .team-sm-heading{margin-bottom: 32px; width: 100%;}
     .team-sm-list{gap: 28px; width: 100%;}
     .team-sm-item{flex: 0 0 calc(50% - 14px); gap: 20px;}
+
+    .team-sm-section:has(+ .cta-module) .team-sm-main{padding-bottom: 48px;}
+    #mainContent > .team-sm-section:last-of-type .team-sm-main {padding-bottom: 48px;}
 }
 
 @media screen and (max-width: 767px) and (min-width: 200px) {
@@ -46,4 +52,7 @@ span.team-sm-role{font-size: 0.889rem; display: block; line-height: 1.5; opacity
     .team-sm-email a{gap: 4px;}
     .team-sm-email a span.fa-at{font-size: 1rem; width: 18px; }
     .team-sm-email a span.team-sm-email-name{font-size: 0.889rem;}
+
+    .team-sm-section:has(+ .cta-module) .team-sm-main{padding-bottom: 28px;}
+    #mainContent > .team-sm-section:last-of-type .team-sm-main {padding-bottom: 28px;}
 }

@@ -24,7 +24,7 @@ ul.resources-category li a:hover {color: var(--Sienna-Orange);}
 .resource-show-btn{gap: 16px; margin-top: 48px;}
 .resource-line{margin: 0; flex: 1;}
 
-.select-province-msg { font-size: 1rem; line-height: 1.5; }
+.select-province-msg{font-size: 1rem; line-height: 1.5; font-family: "Blackbird", sans-serif; font-weight: 400;}
 
 @media screen  and (min-width: 1024px){
     .resource-main{padding: 80px 0; gap: 48px;}

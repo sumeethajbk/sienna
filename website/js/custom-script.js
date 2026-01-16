@@ -118,8 +118,8 @@ jQuery(document).ready(function () {
       jQuery(this).closest(".accordion-item").addClass("active");
     }
     var jQuerycontent = jQuery(this).next();
-    jQuerycontent.slideToggle(600);
-    jQuery(".accordion-item .content").not(jQuerycontent).slideUp("600");
+    jQuerycontent.slideToggle(200);
+    jQuery(".accordion-item .content").not(jQuerycontent).slideUp("200");
   });
 
 
