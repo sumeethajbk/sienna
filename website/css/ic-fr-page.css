@@ -30,7 +30,7 @@
 .stock-quote-rt {flex: 1;}
 .stock-quote-thumb {width: 100%; clear: both;}
 .stock-quote-thumb img {border-radius: 12px; box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.15);}
-
+ul.side-menu{display: flex !important; flex-wrap: wrap !important; gap: 20px !important; margin-bottom: 20px !important;}
 
 /* Analyst Coverage */
 .analyst-coverage {clear: both; width: 100%; position: relative; background: var(--white); padding: 80px 0; margin-bottom: 0;}
@@ -350,6 +350,9 @@ br {display: none;}
 .dividend-table tr.open td:first-child {padding-left: 0;}
 
     .dividend-module .btn-text {margin: 0;}
+
+    .stock-quote-rt{width: 100%;}
+    .stock-quote-rt iframe{width: 100%;}
     
 }
 
