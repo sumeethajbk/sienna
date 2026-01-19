@@ -92,6 +92,8 @@ ul.main_menu > li.menu-button a {background: var(--white); border-radius:60px; p
 ul.main_menu > li.menu-button a:hover {border: 2px solid var(--Sienna-Orange);  outline:4px solid var(--button-outline);}
 ul.main_menu > li.menu-button a:hover:after {display: none;}
 
+ul.main_menu > li.menu-button a::after{display: none; }
+
 /* Submenu Level 2*/  
 ul.main_menu > li > ul {margin:0; padding:32px; min-width:335px; top:100%; position:absolute; left:50%; transform: translateX(-50%); text-align:left;  width:100%; opacity:0; visibility:hidden; background:var(--white); transition: visibility .3s ease,opacity .3s ease,transform .3s ease;  font-size: 0.889rem; font-weight: bold; box-shadow: -1px 3px 17px -10px rgba(0, 0, 0, 0.75);}
 /* text-transform: capitalize; */

@@ -32,6 +32,10 @@
 .stock-quote-thumb img {border-radius: 12px; box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.15);}
 ul.side-menu{display: flex !important; flex-wrap: wrap !important; gap: 20px !important; margin-bottom: 20px !important;}
 
+.stock-quote-thumb p{display: flex; justify-content: flex-end; }
+.stock-quote-thumb p iframe{width: 100%;}
+
+
 /* Analyst Coverage */
 .analyst-coverage {clear: both; width: 100%; position: relative; background: var(--white); padding: 80px 0; margin-bottom: 0;}
 .analyst-coverage-inner {gap:6.666666666666667%;}
@@ -249,6 +253,8 @@ br {display: none;}
     .fr-txt .h5 {margin-bottom: 6px;}
     .fr-download  {width: 48px;}
     .fr-download a {width: 48px; height: 48px; font-size: 1.111rem;}
+
+    .stock-quote-rt{width: 100%;}
     
     
 }
@@ -353,6 +359,10 @@ br {display: none;}
 
     .stock-quote-rt{width: 100%;}
     .stock-quote-rt iframe{width: 100%;}
+
+    .menu-button, .normal-menu {
+    width: 130px;
+  }
     
 }
 

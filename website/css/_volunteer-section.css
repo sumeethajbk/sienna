@@ -14,6 +14,8 @@
 .volunteer-form-detais ul li span.fa-sharp{font-size: 18px; line-height: 27px; max-width: 20px; color: var(--Sienna-Orange);}
 .volunteer-form-detais ul li span{font-size: 0.889rem; line-height: 1.5; color: var(--Coal); flex: 1;}
 
+.no-volunteer-line .volunteer-form-detais{padding-top: 0; border-top: none; margin-top: 0;}
+
 @media screen and (min-width: 1024px){
     .volunteer-main{padding: 80px 0; gap: 80px; align-items: flex-start;}
     .volunterr-lt{flex: 0 0 335px; flex-grow: 1;}
