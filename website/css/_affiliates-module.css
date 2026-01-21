@@ -2,7 +2,7 @@
 .affiliates-module .secwrapper {gap: 47px;}
 .affiliates-module .section-intro .h1 {margin: 0 0 20px;}
 .aff-mod-wrap {gap:48px 4%;}
-.aff-grid {width: 30.666666666666664%; flex-grow: 1; padding: 32px; background: var(--white);}
+.aff-grid {width: 30.666666666666664%; padding: 32px; background: var(--white);}
 .aff-grid p {display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; text-overflow: ellipsis; color: var(--Dark-Gray);} 
 .aff-thumb {margin-bottom:16px; position: relative; width:auto; height: 72px; display: flex; align-items: center;}
 .aff-thumb img {width: auto; height: 100%; max-height: 72px;}

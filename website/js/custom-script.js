@@ -227,6 +227,50 @@ jQuery(document).ready(function () {
 
 });
 
+// financial-results page script
+  jQuery('ul.year-filter li:first-child').addClass('active');
+
+  jQuery('ul.year-filter li').on('click', function (e) {
+    e.preventDefault();
+
+    // add/remove active class
+    jQuery('ul.year-filter li').removeClass('active');
+    jQuery(this).addClass('active');
+
+  });
+
+// Financial Results accordion Show More/Less
+// jQuery(document).ready(function ($) {
+//   var $items = $('.accordion-main .accordion-item');
+//   var $btn = $('.btn-text .more');
+//   var visibleCount = 5;
+
+//   // Hide items after first 5
+//   $items.each(function (index) {
+//     if (index >= visibleCount) {
+//       $(this).addClass('is-hidden');
+//     }
+//   });
+
+//   // Toggle show more / show less
+//   $btn.on('click', function (e) {
+//     e.preventDefault();
+
+//     var isExpanded = $(this).hasClass('expanded');
+
+//     $items.each(function (index) {
+//       if (index >= visibleCount) {
+//         $(this).toggleClass('is-hidden', isExpanded);
+//       }
+//     });
+
+//     $(this)
+//       .toggleClass('expanded')
+//       .text(isExpanded ? 'Show more years' : 'Show less years');
+//   });
+// });
+
+// Dividend Table Script
 
 jQuery(function ($) {
   $(".dividend-table tbody tr").each(function () {
@@ -258,27 +302,10 @@ jQuery(function ($) {
     openQuizFromHash();
   });
 
-  // jQuery('.tq-rt .button').on('click', function (e) {
-  //   e.preventDefault();
-  //   $(".overlay_main_sec").addClass("active");
-  // });
-
   jQuery('.overlay-close-btn').on('click', function (e) {
     e.preventDefault();
     $(".overlay_main_sec").removeClass("active");
   });
-
-  // jQuery('#quiz-step-1 .quiz-option-btn .button').on('click', function (e) {
-  //   e.preventDefault();
-  //   $("#quiz-step-2").css("display", "block");
-  //   $("#quiz-step-1").css("display", "none");
-  // });
-
-  // jQuery('#quiz-step-2 .quiz-option-btn .button').on('click', function (e) {
-  //   e.preventDefault();
-  //   $("#quiz-step-3").css("display", "block");
-  //   $("#quiz-step-1, #quiz-step-2").css("display", "none");
-  // });
 
 
   const steps = ['#quiz-step-1', '#quiz-step-2', '#quiz-step-3'];

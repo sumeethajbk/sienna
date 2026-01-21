@@ -14,6 +14,7 @@ nav.tab-nav li:has(.tab[aria-selected="true"]){border-color: var(--Tint-Orange);
 .contact-form-detais ul{margin: 0;}
 .contact-form-detais ul li::before{display: none;}
 .contact-form-detais ul li{margin-bottom: 4px;}
+.contact-form-detais ul li a{text-decoration: none; font-weight: normal;}
 .contact-form-detais ul li a, .contact-form-detais ul li{gap: 12px;}
 .contact-form-detais ul li a:hover span{color: var(--Sienna-Orange);}
 .contact-form-detais ul li span.fa-sharp{font-size: 18px; line-height: 27px; max-width: 20px; color: var(--Sienna-Orange);}
