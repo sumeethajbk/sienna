@@ -1,8 +1,8 @@
 
 .volunterr-lt h1{font-size: 2.667rem; color: var(--Sienna-Orange); margin-bottom: 20px;}
-/* .volunterr-lt p{font-size: 1.333rem; color: var(--Foreground); font-family: "Ivar Display", sans-serif; font-weight: 700; line-height: 1.2;} */
-.volunterr-lt > p:first-of-type{font-size: 1.333rem; color: var(--Foreground); font-family: "Ivar Display", sans-serif; font-weight: 700; line-height: 1.2;}
-.volunterr-lt p a{font-weight: normal; text-decoration: none;}
+body:not(.page-id-2472) .volunterr-lt p{font-size: 1.333rem; color: var(--Foreground); font-family: "Ivar Display", sans-serif; font-weight: 700; line-height: 1.2;}
+body.page-id-2472 .volunterr-lt > p:first-of-type{font-size: 1.333rem; color: var(--Foreground); font-family: "Ivar Display", sans-serif; font-weight: 700; line-height: 1.2;}
+.volunterr-lt p a{position: relative; font-weight: bold; text-decoration-line: underline; text-decoration-style: solid; text-decoration-skip-ink: auto; text-decoration-color: var(--Sienna-Orange, #EF4629); text-decoration-thickness:2px; text-underline-offset: auto; text-underline-position: from-font;}
 .volunterr-lt p a:hover{color: var(--Sienna-Orange);}
 .volunterr-rt{background: var(--Tint-Orange); padding: 32px 40px;}
 

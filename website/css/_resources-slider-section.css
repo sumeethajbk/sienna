@@ -9,8 +9,8 @@
 ul.resources-slider-category{margin: 0 0 20px 0; gap: 10px;}
 ul.resources-slider-category li{font-size: 0.889rem; line-height: 1.5; color: var(--Umber-3); font-weight: bold; padding-left: 9px; border-left: 1px solid var(--Sienna-Orange); margin-bottom: 0;}
 ul.resources-slider-category li::before{display: none;}
-ul.resources-slider-category li a {color: var(--Umber-3);}
-ul.resources-slider-category li a:hover {color: var(--Sienna-Orange);}
+ul.resources-slider-category li a {color: var(--Umber-3); text-decoration: none;}
+ul.resources-slider-category li a:hover{color: var(--Sienna-Orange);}
 .resources-slider-text h2{margin-bottom: 20px;}
 
 .resources-slider-row .slick-list{overflow: inherit !important;}

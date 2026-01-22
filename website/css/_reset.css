@@ -5,7 +5,7 @@ html {overflow-y: scroll; overflow-x: hidden; -webkit-text-size-adjust: 100%; -m
 a {color: var(--anchor); text-decoration: none; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1);}
 a:focus {outline: 0;} 
 a:hover, a:active {outline: 0;}
-a:hover {color: var(--Foreground);}
+a:hover {color: var(--Sienna-Orange);}
 h1, h2, h3, h4, h5, h6 {clear: both; margin: 0 0 20px; color: var(--heading); font-family: "Ivar Display", sans-serif; font-weight: bold;}
 h1 {font-size: 4rem; line-height:1.2; margin-bottom: 20px;}
 h2 {font-size: 3.556rem; line-height:1.2; margin-bottom: 24px;}

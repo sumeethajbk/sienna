@@ -7,6 +7,7 @@
 .board-commite-item ul{margin-top: 12px;}
 .board-commite-item ul li{font-size: 0.889rem; line-height: 1.5; margin-bottom: 12px;}
 .board-commite-item ul li i{color: var(--Dark-Gray); display: block;}
+.board-commite-item ul li a{text-decoration: none; font-weight: normal;}
 
 
 @media screen and (min-width: 1024px) {

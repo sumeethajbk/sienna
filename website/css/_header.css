@@ -138,6 +138,8 @@ ul.main_menu li.flex-menu > ul > li:nth-child(2) ul ul li a:not(.text-link) img,
       
 ul.main_menu li.flex-menu ul li.menu-cta { padding: 24px 24px 32px 24px; background: var(--Sienna-Orange); color: var(--white); margin:auto 0 0 0;}
 ul.main_menu li.flex-menu ul li.menu-cta a.button {color: var(--Sienna-Orange); padding: 16px 18px; line-height: 1; display: inline-block;}
+ul.main_menu li.flex-menu ul li.menu-cta a.button:active,
+ul.main_menu li.flex-menu ul li.menu-cta a.button:focus{color: var(--white); outline: 4px solid var(--white);}
 ul.main_menu li.flex-menu ul li.menu-cta a.button:hover {outline: 4px solid var(--white-50);}
 ul.main_menu li.flex-menu ul li.menu-cta .h6 {color: var(--white); margin: 0;}
 ul.main_menu li.flex-menu ul li.menu-cta .menu-cta-container { clear: both; width: 100%; display: flex; flex-wrap: wrap; gap:20px; justify-content: center; text-align: center;}

@@ -1,7 +1,7 @@
 
 .faq-sidebar-question{padding-top: 32px; border-top: 1px solid var(--Sienna-Orange); margin-top: 32px;}
 ul.faq-content-category{margin: 0;}
-ul.faq-content-category li a{gap: 8px; font-size: 0.889rem; color: var(--Foreground); font-weight: 700; line-height: 1.3; }
+ul.faq-content-category li a{gap: 8px; font-size: 0.889rem; color: var(--Foreground); font-weight: 700; line-height: 1.3; text-decoration: none;}
 ul.faq-content-category li a:hover{color: var(--Sienna-Orange);}
 ul.faq-content-category li::before{display: none;}
 ul.faq-content-category li{margin-bottom: 20px;}

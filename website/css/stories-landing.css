@@ -1,5 +1,5 @@
 @import url("_signup-module.css");
-@import url("_filter.css");
+@import url("_filter.css?v1661233344");
 
 .stories-landing {clear: both; width: 100%; position: relative; padding:168px 0 0; background: var(--Tint-Blue);}
 .stories-landing:not(:has(.signup-module)) { padding-bottom: 80px; }
@@ -37,12 +37,13 @@
 
 .storiesl-main {gap:48px;}
 .storiesl-section {clear: both; width: 100%; padding: 80px 0;}
-.storiesl-lists {gap:40px 3.3333333333333335%; margin: 0 0 48px 0;}
+.storiesl-lists {gap:40px 3.3333333333333335%; margin: 0 0 48px 0; align-items: stretch;}
 .storiesl-image {height: 373.3px; overflow: hidden; clear: both; width: 100%;}
-.storiesl-item {width: 31.10833333333333%;}
-.storiesl-details {padding: 33px 32px 32px 32px; clear: both; width: 100%;}
+.storiesl-item {width: 31.10833333333333%; display: flex; flex-direction: column; }
+.storiesl-details {padding: 33px 32px 32px 32px; clear: both; width: 100%; display: flex; flex-direction: column; flex-grow: 1; flex-wrap: wrap;}
 .storiesl-details .h5 a {color: var(--Foreground);}
 .storiesl-details .h5 a:hover {color: var(--anchor-hover);}
+.storiesl-details .circle-arrow-btn{margin-top: auto;}
 
 .storiesl-show-btn{gap: 16px; }
 .storiesl-line{margin: 0; flex: 1;}

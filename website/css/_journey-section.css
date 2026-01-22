@@ -9,11 +9,12 @@
 
 ul.journey-step-title{margin: 0;}
 ul.journey-step-title li{margin-bottom: 20px;}
-ul.journey-step-title li a{gap: 8px; font-size: 0.889rem; color: var(--Foreground); font-weight: 700; line-height: 1; }
+ul.journey-step-title li a{gap: 8px; font-size: 0.889rem; color: var(--Foreground); font-weight: 700; line-height: 1; text-decoration: none;}
 ul.journey-step-title li a:hover{color: var(--Sienna-Orange);}
 ul.journey-step-title li::before{display: none;}
 ul.journey-step-title li span.dot{width: 20px; height: 20px; border-radius: 50%; background: transparent; position: relative; transition: all .5s ease;}
 ul.journey-step-title li span.dot::before{content: ""; top: 50%; left: 50%; position: absolute; transform: translate(-50% , -50%); width: 10px; height: 10px; display: block; border-radius: 50%; background: var(--white);}
+ul.journey-step-title li span.step-title{flex: 1;}
 ul.journey-step-title li a.current span.dot{background: var(--Sienna-Orange);}
 ul.journey-step-title li a.current span.dot::before{background: var(--white);}
 
