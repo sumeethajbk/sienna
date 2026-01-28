@@ -48,7 +48,7 @@ jQuery(document).ready(function () {
   
     function setOffsets() {
       var h = jQuery('.notification-bar:visible').outerHeight() || 0;
-      jQuery('#mainContent').css('padding-top', basePad + h);
+      // jQuery('#mainContent').css('padding-top', basePad + h);
       jQuery('.main_header .header_right.mobile_menu').css('top', baseTop + h);
     }
   

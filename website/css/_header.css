@@ -1,3 +1,11 @@
+:root {
+  --sticky-header-height: 88px;
+}
+
+:focus-visible {
+  scroll-margin-top: var(--sticky-header-height);
+}
+
 .main_header {width:100%; top:0; left:0; right:0; position:fixed; z-index:99; background:transparent; transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out;}
 .main_header .header {padding:16px 0 16px; max-height:88px; transition:all 0.8s ease-in-out; -webkit-transition:all 0.8s ease-in-out; -moz-transition:all 0.8s ease-in-out;}
 .main_header .container-lg {transition:all 0.8s ease-in-out; -webkit-transition:all 0.8s ease-in-out; -moz-transition:all 0.8s ease-in-out;}
@@ -39,9 +47,10 @@ a.search-btn .custom_icon {width: 100%; height: 100%; display: flex; justify-con
 .search_form { width:100%; padding:32px; margin: auto; background: rgba(135, 57, 28, 0.50); backdrop-filter: blur(6px); display: flex; flex-wrap: wrap; height: 100%; align-items: center; position: fixed; left: 0; top: 0; z-index: 100; transition: .8s; -webkit-transition: .8s; -moz-transition: .8s; transform: translateY(-100%); -webkit-transform: translateY(-100%); -moz-transform: translateY(-100%); opacity: 0;}
 .search_form.form-active {transform: translateY(0); -webkit-transform: translateY(0); -moz-transform: translateY(0); opacity: 1;}
 .search_form .hdrsearch-form {position: relative;}
+.search_form .hdrsearch-form label{display: none;}
 .search_form input[type="submit"] {display: none;}
 .search_form input.search-field {font-size: 1.111rem; padding:19px 50px 18px 79px; border-radius:32px; background: var(--white); width: 100%; height: 64px; color: var(--Foreground); font-weight: 400;}
-.search_form .clear-btn{ top: 0; bottom: 0; right:16px; position: absolute; height: 100%; cursor: pointer; font-size: 1rem; opacity: 0.5; display: flex; align-items: center;} 
+.search_form .clear-btn{ top: 0; bottom: 0; right:16px; position: absolute; height: 100%; cursor: pointer; font-size: 1rem; opacity: 0.5; display: flex; align-items: center; background: none; border-radius: 0; padding: 0; color: var(--Dark-Gray); outline: none;} 
 .search_form .clear-btn:hover{opacity: 0.75;}
 
 
@@ -181,6 +190,8 @@ ul.main_menu > li:not(.menu-item-has-children) > a { margin-left: 17px; margin-r
 
      ul.main_menu li.flex-menu > ul{transform: translateX(-35%); }
 
+     :root { --sticky-header-height: 66px; }
+
 }
 
 @media only screen and (max-width:809px) and (min-width:200px) {
@@ -312,7 +323,7 @@ html.no-scroll {overflow:hidden;}
 
 .header-search{display: none;}
 
-  
+  :root { --sticky-header-height: 56px; }
 
 
 }
